@@ -27,16 +27,18 @@
 
 | 工具 | 用途 | 获取方式 |
 |---|---|---|
-| **HTML Help Workshop** | CHM 反编译 / 编译 | [Microsoft 官方下载](https://www.microsoft.com/en-us/download/details.aspx?id=21138) 或 `htmlhelp.exe` |
+| **HTML Help Workshop** | CHM 编译（`hhc.exe`） | [Internet Archive](https://archive.org/details/html-help-workshop-1.32) |
 | **Python 3.x** | 运行翻译和编译脚本 | [python.org](https://www.python.org/downloads/) |
 
-Python 依赖（翻译脚本需要）：
+> **注意**：Microsoft 官方下载链接已失效。HTML Help Workshop 1.32 可从 Internet Archive 获取，下载 `htmlhelp.exe` 安装即可。
+
+Python 依赖（仅翻译脚本需要）：
 
 ```powershell
 pip install beautifulsoup4 openai tqdm
 ```
 
-HTML Help Workshop 安装后，`hhc.exe` 默认路径：
+安装后 `hhc.exe` 默认路径：
 ```
 C:\Program Files (x86)\HTML Help Workshop\hhc.exe
 ```

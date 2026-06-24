@@ -7,7 +7,7 @@ Usage:
 Requirements:
     - Python 3.x (no extra packages needed)
     - Microsoft HTML Help Workshop (hhc.exe)
-      Download: https://www.microsoft.com/en-us/download/details.aspx?id=21138
+      Download: https://archive.org/details/html-help-workshop-1.32
       Default install path: C:\Program Files (x86)\HTML Help Workshop\hhc.exe
 
 Workflow:
@@ -154,7 +154,7 @@ def compile_chm():
 
     # hhc.exe not found
     print("\n  ERROR: HTML Help Workshop not found.")
-    print("  Download: https://www.microsoft.com/en-us/download/details.aspx?id=21138")
+    print("  Download: https://archive.org/details/html-help-workshop-1.32")
     print("  Expected at: C:\\Program Files (x86)\\HTML Help Workshop\\hhc.exe")
     print(f"\n  After installation, run:")
     print(f'  & "C:\\Program Files (x86)\\HTML Help Workshop\\hhc.exe" "{hhp_path}"')
