@@ -1,47 +1,126 @@
 # WITec Suite Help — 中文翻译
 
-将 WITec Suite 6.2 软件帮助文件 (`WITecSuiteHelp.chm`) 完整翻译为简体中文，使用 AI 子代理并行翻译，保持术语一致性。
+将 WITec Suite 6.2 软件帮助文件 (`WITecSuiteHelp.chm`) 完整翻译为简体中文。14 个 AI 子代理并行翻译，统一术语表保证专业术语一致性。
 
 ## 文件说明
 
 | 文件 | 说明 |
 |---|---|
 | `WITecSuiteHelp.chm` | 原始英文帮助文件（~15 MB） |
-| `WITecSuiteHelp_CN.chm` | 中文翻译版帮助文件 |
-| `glossary.json` | WITec 专业术语中英对照表（~180 条） |
+| `WITecSuiteHelp_CN.chm` | 中文翻译版帮助文件，可直接使用 |
+| `glossary.json` | WITec 专业术语中英对照表（180+ 条） |
 | `translated_terms.json` | 目录/索引完整术语翻译（620 条） |
 | `translate_chm.py` | 批量翻译脚本（需 OpenAI 兼容 API key） |
 | `recompile_chm.py` | 一键重新编译 CHM 脚本 |
-| `chm_extracted_cn/` | 翻译工作目录（HTML + 资源 + 项目文件） |
+| `chm_extracted_cn/` | 翻译工作目录（HTML + 资源 + HHP 项目文件） |
 
 ## 翻译内容
 
 - **402** 个 HTML 帮助页面，**1,088** 张图片
-- 涵盖：拉曼光谱、AFM、SNOM、共聚焦显微镜、WITec Control、WITec Project、TrueMatch、ParticleScout、COM 自动化等全部模块
+- 涵盖全部模块：拉曼光谱、AFM、SNOM、共聚焦显微镜、WITec Control、WITec Project、TrueMatch、ParticleScout、COM 自动化、用户管理等
 
-## 翻译方法
+---
 
-1. `hh.exe -decompile` 反编译 CHM → 1,504 个文件
-2. 从目录 (`.hhc`) 和索引 (`.hhk`) 提取 620 条术语，建立统一术语表
-3. **14 个 AI 子代理并行翻译**全部 HTML
-4. 目录/索引文件转换为 GB2312 编码以兼容 CHM 编译器
-5. `hhc.exe` 重新编译为 CHM
+## 完整工作流程
 
-## 重新编译
+### 环境要求
 
-如果修改了 `chm_extracted_cn/` 中的 HTML 内容：
+| 工具 | 用途 | 获取方式 |
+|---|---|---|
+| **HTML Help Workshop** | CHM 反编译 / 编译 | [Microsoft 官方下载](https://www.microsoft.com/en-us/download/details.aspx?id=21138) 或 `htmlhelp.exe` |
+| **Python 3.x** | 运行翻译和编译脚本 | [python.org](https://www.python.org/downloads/) |
+
+Python 依赖（翻译脚本需要）：
 
 ```powershell
+pip install beautifulsoup4 openai tqdm
+```
+
+HTML Help Workshop 安装后，`hhc.exe` 默认路径：
+```
+C:\Program Files (x86)\HTML Help Workshop\hhc.exe
+```
+
+### 第一步：反编译原始 CHM
+
+Windows 自带 `hh.exe` 即可反编译，无需额外工具：
+
+```powershell
+hh -decompile chm_extracted WITecSuiteHelp.chm
+```
+
+生成 `chm_extracted/` 目录，包含全部 HTML、图片、CSS、JS 以及目录文件 (`.hhc`) 和索引文件 (`.hhk`)。
+
+### 第二步：翻译
+
+**方式 A — 运行翻译脚本（需 API key）：**
+
+```powershell
+$env:OPENAI_API_KEY = "sk-..."
+$env:OPENAI_BASE_URL = "https://api.openai.com/v1"  # 或其他兼容 API
+python translate_chm.py
+```
+
+脚本流程：
+1. 加载 `glossary.json` 术语表
+2. 遍历全部 HTML，调用 LLM API 翻译正文
+3. 翻译 `.hhc` 目录和 `.hhk` 索引
+4. 输出到 `chm_extracted_cn/`
+
+**方式 B — AI 子代理翻译（本项目使用的方式）：**
+
+将 HTML 分批提交给 AI 子代理并行翻译，术语表嵌入 prompt 保证一致性。
+
+### 第三步：修复编码
+
+CHM 编译器对中文语言标识（`Language=0x804`）强制使用 GB2312，需将目录/索引文件转为 GB2312 编码，同时 HTML 添加 UTF-8 声明：
+
+```powershell
+# 为所有 HTML 添加 <meta charset="UTF-8">
+python -c "
+from pathlib import Path
+for f in Path('chm_extracted_cn').glob('*.html'):
+    c = f.read_text(encoding='utf-8')
+    if 'charset' not in c:
+        c = c.replace('<meta http-equiv=\"Content-Style-Type\"', '<meta charset=\"UTF-8\">\n<meta http-equiv=\"Content-Style-Type\"')
+        f.write_text(c, encoding='utf-8')
+"
+
+# HHC/HHK 转为 GB2312
+python -c "
+from pathlib import Path
+for fn in ['WITecSuiteHelp.hhc','WITecSuiteHelp.hhk']:
+    f = Path('chm_extracted_cn') / fn
+    f.write_text(f.read_text('utf-8').replace('<meta charset=\"UTF-8\">\n',''), encoding='gb2312')
+"
+```
+
+### 第四步：编译 CHM
+
+```powershell
+# 一键编译（复制资源 + 生成 HHP + 编译）
 python recompile_chm.py
 ```
 
-或手动编译：
+或手动：
 
 ```powershell
+# 1. 复制 JS/CSS/图片到 chm_extracted_cn/
+# 2. 确保 chm_extracted_cn/WITecSuiteHelp.hhp 文件列表正确
+# 3. 编译
 & "C:\Program Files (x86)\HTML Help Workshop\hhc.exe" "chm_extracted_cn\WITecSuiteHelp.hhp"
 ```
 
-编译输出：`chm_extracted_cn\WITecSuiteHelp_CN.chm`
+编译输出：`chm_extracted_cn\WITecSuiteHelp_CN.chm`（约 15 MB，402 主题，1,088 图片）
+
+### 技术要点
+
+- **HTML 编码**：正文使用 UTF-8 + `<meta charset="UTF-8">`
+- **HHC/HHK 编码**：必须使用 GB2312，CHM 编译器忽略 charset 声明
+- **HHP 语言设置**：`Language=0x804 中文(简体，中国)`
+- **术语一致性**：`glossary.json` 作为权威术语源，所有翻译 agent 引用同一文件
+
+---
 
 ## 翻译署名
 

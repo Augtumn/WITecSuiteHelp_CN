@@ -1,12 +1,21 @@
-"""Recompile translated CHM using hh.exe (built-in Windows HTML Help compiler)
+"""Recompile translated CHM from chm_extracted_cn/ workspace
 
-Usage: python recompile_chm.py
+Usage:
+    python recompile_chm.py            # Full recompile
+    python recompile_chm.py --quick    # Skip encoding fix (if already applied)
 
-This script:
-1. Copies static assets (JS, CSS, Images) to the output directory
-2. Generates/updates the .hhp project file
-3. Attempts to compile using hh.exe (if available)
-4. Falls back to instructions for HTML Help Workshop
+Requirements:
+    - Python 3.x (no extra packages needed)
+    - Microsoft HTML Help Workshop (hhc.exe)
+      Download: https://www.microsoft.com/en-us/download/details.aspx?id=21138
+      Default install path: C:\Program Files (x86)\HTML Help Workshop\hhc.exe
+
+Workflow:
+    1. Add <meta charset="UTF-8"> to all HTML files  
+    2. Convert HHC/HHK to GB2312 (required by CHM compiler for zh-CN)
+    3. Copy static assets (JS, CSS, Images) from original extraction
+    4. Generate/update .hhp project file
+    5. Compile with hhc.exe
 """
 
 import shutil
@@ -14,37 +23,72 @@ import subprocess
 import sys
 from pathlib import Path
 
-BASE_DIR = Path(r"D:\Code\WITec")
-INPUT_DIR = BASE_DIR / "chm_extracted"
-OUTPUT_DIR = BASE_DIR / "chm_extracted_cn"
+BASE_DIR = Path(__file__).resolve().parent
+INPUT_DIR = BASE_DIR / "chm_extracted"        # Original decompiled source
+OUTPUT_DIR = BASE_DIR / "chm_extracted_cn"     # Translated workspace
+
+
+def fix_html_encoding():
+    """Add UTF-8 charset declaration to all HTML files"""
+    print("[1/5] Fixing HTML encoding...")
+    fixed = 0
+    for f in OUTPUT_DIR.glob("*.html"):
+        content = f.read_text(encoding="utf-8")
+        if 'charset' not in content:
+            old = '<meta http-equiv="Content-Style-Type"'
+            new = '<meta charset="UTF-8">\n' + old
+            content = content.replace(old, new)
+            f.write_text(content, encoding="utf-8")
+            fixed += 1
+    print(f"  Added <meta charset='UTF-8'> to {fixed} files")
+
+
+def fix_hhc_hhk_encoding():
+    """Convert HHC and HHK to GB2312 (required by CHM compiler)"""
+    print("[2/5] Fixing HHC/HHK encoding (UTF-8 -> GB2312)...")
+    for fname in ["WITecSuiteHelp.hhc", "WITecSuiteHelp.hhk"]:
+        f = OUTPUT_DIR / fname
+        if not f.exists():
+            print(f"  WARNING: {fname} not found, skipping")
+            continue
+        content = f.read_text(encoding="utf-8")
+        # Remove UTF-8 charset (ignored by compiler, misleading)
+        content = content.replace('<meta charset="UTF-8">\n', '')
+        try:
+            f.write_text(content, encoding="gb2312")
+            print(f"  Converted {fname} to GB2312")
+        except UnicodeEncodeError:
+            f.write_text(content, encoding="gbk")
+            print(f"  Converted {fname} to GBK (fallback)")
+
 
 def copy_static_assets():
-    """Copy JavaScript, CSS, and images to output directory"""
-    print("[1/3] Copying static assets...")
-    
-    # JS and CSS files
+    """Copy JS, CSS, and Images from original extraction"""
+    print("[3/5] Copying static assets...")
+    if not INPUT_DIR.exists():
+        print("  WARNING: chm_extracted/ not found.")
+        print("  Run: hh -decompile chm_extracted WITecSuiteHelp.chm")
+        return
+
     for ext in ['.js', '.css']:
         for f in INPUT_DIR.glob(f'*{ext}'):
             shutil.copy2(f, OUTPUT_DIR / f.name)
-            print(f"  Copied {f.name}")
-    
-    # Images directory
+
     images_src = INPUT_DIR / "Images"
     images_dst = OUTPUT_DIR / "Images"
     if images_src.exists():
         if images_dst.exists():
             shutil.rmtree(images_dst)
         shutil.copytree(images_src, images_dst)
-        img_count = sum(1 for _ in images_dst.rglob('*') if _.is_file())
-        print(f"  Copied Images/ ({img_count} files)")
+    print("  Done")
+
 
 def generate_hhp():
-    """Generate .hhp project file"""
-    print("[2/3] Generating HHP project file...")
-    
+    """Generate .hhp project file with all HTML files listed"""
+    print("[4/5] Generating HHP project file...")
     html_files = sorted(OUTPUT_DIR.glob("*.html"))
     file_lines = "\n".join(f.name for f in html_files)
-    
+
     hhp_content = f"""[OPTIONS]
 Compatibility=1.1 or later
 Compiled file=WITecSuiteHelp_CN.chm
@@ -65,73 +109,91 @@ FHFlyoverPopups.js
 [INFOTYPES]
 """
     hhp_path = OUTPUT_DIR / "WITecSuiteHelp.hhp"
-    with open(hhp_path, 'w', encoding='utf-8') as f:
-        f.write(hhp_content)
-    print(f"  Created HHP with {len(html_files)} files")
+    hhp_path.write_text(hhp_content, encoding="utf-8")
+    print(f"  {len(html_files)} HTML files listed")
 
-def try_compile():
-    """Try to compile using available tools"""
-    print("[3/3] Compiling CHM...")
-    
+
+def compile_chm():
+    """Compile using hhc.exe (command-line HTML Help Compiler)"""
+    print("[5/5] Compiling CHM...")
+
     hhp_path = OUTPUT_DIR / "WITecSuiteHelp.hhp"
-    
-    # Try HTML Help Workshop (hhw.exe)
-    hhw_paths = [
-        r"C:\Program Files (x86)\HTML Help Workshop\hhw.exe",
-        r"C:\Program Files\HTML Help Workshop\hhw.exe",
+
+    # Try hhc.exe first (command-line, most reliable)
+    hhc_paths = [
+        r"C:\Program Files (x86)\HTML Help Workshop\hhc.exe",
+        r"C:\Program Files\HTML Help Workshop\hhc.exe",
     ]
-    
-    for hhw in hhw_paths:
-        if Path(hhw).exists():
-            print(f"  Using HTML Help Workshop: {hhw}")
-            result = subprocess.run([hhw, str(hhp_path)], 
-                                    capture_output=True, text=True, 
-                                    cwd=str(OUTPUT_DIR))
-            if result.returncode == 0:
-                chm_path = OUTPUT_DIR / "WITecSuiteHelp_CN.chm"
-                if chm_path.exists():
-                    print(f"  SUCCESS! Created: {chm_path}")
-                    print(f"  Size: {chm_path.stat().st_size / 1024 / 1024:.1f} MB")
-                    return True
-    
-    print("\n  HTML Help Workshop (hhw.exe) not found.")
-    print("  To compile manually:")
-    print(f"  1. Install HTML Help Workshop from: C:\\Users\\15817\\Downloads\\htmlhelp.exe")
-    print(f"  2. Open: {hhp_path}")
-    print(f"  3. File → Compile")
-    print(f"\n  Or try the command line method:")
-    print(f'  & "C:\\Program Files (x86)\\HTML Help Workshop\\hhw.exe" "{hhp_path}"')
+
+    for hhc in hhc_paths:
+        if Path(hhc).exists():
+            print(f"  Compiler: {hhc}")
+            result = subprocess.run(
+                [hhc, str(hhp_path)],
+                capture_output=True, text=True,
+                cwd=str(OUTPUT_DIR),
+            )
+            # hhc.exe prints to stdout; check for output file
+            chm_path = OUTPUT_DIR / "WITecSuiteHelp_CN.chm"
+            if chm_path.exists():
+                size_mb = chm_path.stat().st_size / (1024 * 1024)
+                print(f"  SUCCESS: {chm_path.name} ({size_mb:.1f} MB)")
+
+                # Copy to project root for convenience
+                root_chm = BASE_DIR / "WITecSuiteHelp_CN.chm"
+                shutil.copy2(chm_path, root_chm)
+                print(f"  Copied to project root: {root_chm}")
+                return True
+            else:
+                print(f"  Compilation may have failed. Output:")
+                # Print last few lines of stderr
+                lines = result.stderr.strip().split('\n')
+                for line in lines[-5:]:
+                    print(f"    {line}")
+                return False
+
+    # hhc.exe not found
+    print("\n  ERROR: HTML Help Workshop not found.")
+    print("  Download: https://www.microsoft.com/en-us/download/details.aspx?id=21138")
+    print("  Expected at: C:\\Program Files (x86)\\HTML Help Workshop\\hhc.exe")
+    print(f"\n  After installation, run:")
+    print(f'  & "C:\\Program Files (x86)\\HTML Help Workshop\\hhc.exe" "{hhp_path}"')
     return False
 
+
 def main():
+    quick = "--quick" in sys.argv
+
     print("=" * 60)
     print("WITec Suite CHM Recompiler")
+    if quick:
+        print("(Quick mode — skip encoding fix)")
     print("=" * 60)
-    
+
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    
-    # Check if translations exist
+
     html_count = len(list(OUTPUT_DIR.glob("*.html")))
-    hhc_exists = (OUTPUT_DIR / "WITecSuiteHelp.hhc").exists()
-    
     if html_count == 0:
-        print("\nERROR: No translated HTML files found in output directory!")
-        print("Run translate_chm.py first, or wait for subagent translations to complete.")
+        print("\nERROR: No HTML files in chm_extracted_cn/")
+        print("Run translate_chm.py first.")
         sys.exit(1)
-    
-    print(f"\nFound: {html_count} HTML files")
-    print(f"HHC: {'Yes' if hhc_exists else 'No'}")
-    
+
+    print(f"\nFound: {html_count} HTML files in chm_extracted_cn/")
+
+    if not quick:
+        fix_html_encoding()
+        fix_hhc_hhk_encoding()
+    else:
+        print("[skip] Encoding fix")
+
     copy_static_assets()
     generate_hhp()
-    success = try_compile()
-    
+    success = compile_chm()
+
     print(f"\n{'=' * 60}")
-    if success:
-        print("DONE! WITecSuiteHelp_CN.chm is ready.")
-    else:
-        print("Ready for manual compilation.")
+    print("DONE" if success else "FAILED — see instructions above")
     print(f"{'=' * 60}")
+
 
 if __name__ == "__main__":
     main()
