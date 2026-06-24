@@ -12,12 +12,23 @@
 | `translated_terms.json` | 目录/索引完整术语翻译（620 条） |
 | `translate_chm.py` | 批量翻译脚本（需 OpenAI 兼容 API key） |
 | `recompile_chm.py` | 一键重新编译 CHM 脚本 |
+| `chm_to_pdf.py` | CHM → PDF 转换脚本 |
 | `chm_extracted_cn/` | 翻译工作目录（HTML + 资源 + HHP 项目文件） |
 
 ## 翻译内容
 
 - **402** 个 HTML 帮助页面，**1,088** 张图片
 - 涵盖全部模块：拉曼光谱、AFM、SNOM、共聚焦显微镜、WITec Control、WITec Project、TrueMatch、ParticleScout、COM 自动化、用户管理等
+
+### 将文档喂给 AI
+
+如需将全部帮助内容提供给 AI 作为上下文，使用合并后的单文件 HTML：
+
+```
+chm_extracted_cn/_combined.html
+```
+
+该文件包含全部 402 页内容，内部链接已转为页内锚点，可直接拖入 AI 对话窗口或作为知识库导入。
 
 ---
 
