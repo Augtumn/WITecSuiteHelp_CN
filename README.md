@@ -27,10 +27,10 @@
 
 | 工具 | 用途 | 获取方式 |
 |---|---|---|
-| **HTML Help Workshop** | CHM 编译（`hhc.exe`） | [Internet Archive](https://archive.org/details/html-help-workshop-1.32) |
+| **HTML Help Workshop** | CHM 编译（`hhc.exe`） | 搜索 `htmlhelp.exe`（Microsoft 原下载链接已失效） |
 | **Python 3.x** | 运行翻译和编译脚本 | [python.org](https://www.python.org/downloads/) |
 
-> **注意**：Microsoft 官方下载链接已失效。HTML Help Workshop 1.32 可从 Internet Archive 获取，下载 `htmlhelp.exe` 安装即可。
+> **注意**：Microsoft 已于 2023 年前后移除 HTML Help Workshop 的官方下载页面。可通过搜索引擎查找 `htmlhelp.exe`（约 3.5 MB，微软数字签名），或使用 Internet Archive 等镜像站。
 
 Python 依赖（仅翻译脚本需要）：
 
