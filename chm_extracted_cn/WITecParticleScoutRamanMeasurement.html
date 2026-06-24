@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>拉曼测量</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="Raman Measurement (ParticleScout)">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll {padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll {left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+hr { color: #000000}
+body, table { font-size: 10pt; font-family: 'Arial'; font-style: normal; font-weight: normal; color: #000000; text-decoration: none; }
+span.rvts1 { font-family: 'Arial Unicode MS'; }
+span.rvts2 { font-family: 'Microsoft Sans Serif'; color: #000000; }
+span.rvts3 { font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #000000; }
+span.rvts4 { font-size: 12pt; font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #151f6d; }
+a.rvts5, span.rvts5 { font-family: 'Microsoft Sans Serif'; color: #0000ff; text-decoration: none; }
+a.rvts5:hover { color: #0000ff; }
+span.rvts6 { font-size: 14pt; font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #151f6d; }
+p,ul,ol { text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; }
+.rvps1 { }
+.rvps2 { margin: 0px 0px 0px 24px; }
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>拉曼测量</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+<p class=rvps1><span class=rvts2>拉曼测量视图允许为每个颗粒获取拉曼光谱。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>WITec Control配置设置</span></p>
+<p class=rvps1><span class=rvts2>在开始拉曼测量之前，您可以在WITec Control中选择一个拉曼配置（例如"Raman CCD 1"）。可以测量一组颗粒，然后切换WITec Control配置为"Raman CCD 2"或更改到另一个激发激光器，然后测量其他颗粒。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>测量顺序</span></p>
+<p class=rvps1><span class=rvts2>对于每个颗粒，软件执行以下任务：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>使用定位设置将样品定位器移动到颗粒</span></li>
+<li class=rvps1><span class=rvts2>根据Z轴行为，执行光谱自动对焦</span></li>
+<li class=rvps1><span class=rvts2>测量光谱</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>单光谱</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1045208986.jpg" width="300" height="208"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>测量模式</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>正常：使用定义的累加次数</span></li>
+<li class=rvps1><span class=rvts2>优化：仅累加改善拉曼信号信噪比的光谱。荧光信号高的光谱被拒绝。</span></li>
+<li class=rvps1><span class=rvts2>快速优化：除上述选项外，此模式将在达到定义的累加次数之前停止：</span></li>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps2 style="margin-left: 0"><span class=rvts2>如果达到最优累加光谱的信噪比限制</span></li>
+<li class=rvps2 style="margin-left: 0"><span class=rvts2>如果单光谱的拉曼信号太低</span></li>
+<li class=rvps2 style="margin-left: 0"><span class=rvts2>如果最优累加光谱的信噪比没有改善</span></li>
+</ul></ul>
+<p class=rvps1><span class=rvts3>累加次数</span></p>
+<p class=rvps1><span class=rvts2>光谱测量的累加次数。如果使用超过1次累加，可以执行宇宙射线去除。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>积分时间</span></p>
+<p class=rvps1><span class=rvts2>每次光谱累加的积分时间。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>低信号限制</span></p>
+<p class=rvps1><span class=rvts2>仅用于测量模式"快速优化"。如果单光谱信号低于此值，测量将停止以节省时间。</span></p>
+<p class=rvps1><span class=rvts3>SNR限制</span></p>
+<p class=rvps1><span class=rvts2>仅用于测量模式"快速优化"。如果最优累加光谱具有更高的信噪比，测量将停止以节省时间。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>编辑掩膜</span></p>
+<p class=rvps1><span class=rvts2>仅用于测量模式"优化"和"快速优化"。在此您可以定义光谱掩膜，以定义光谱的哪些部分用于计算信号。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>Z轴行为</span></p>
+<p class=rvps1><img border="0" src="Images/image1561701731.jpg" width="300" height="123"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>无Z移动：用户可以移动Z轴到所需位置</span></li>
+<li class=rvps1><span class=rvts2>光谱自动对焦：在每个颗粒处执行光谱自动对焦</span></li>
+<li class=rvps1><span class=rvts2>固定Z位置：允许定义绝对Z位置（软件控制，Z轴空间有限）</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>光谱自动对焦</span></p>
+<p class=rvps1><span class=rvts2>在使用光谱自动对焦之前，调整以下参数：</span></p>
+<p class=rvps1><img border="0" src="Images/image575714844.jpg" width="300" height="170"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Z轴范围 / 最小积分时间 / 步长乘数</span></p>
+<p class=rvps1><span class=rvts2>参见&nbsp;<a class=rvts5 href="WCSpectralAutoFocus.html">光谱自动对焦</a>&nbsp;的WITec Control文档。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>编辑掩膜</span></p>
+<p class=rvps1><span class=rvts2>允许编辑光谱掩膜，定义光谱的哪些部分用于执行自动对焦。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>执行光谱自动对焦</span></p>
+<p class=rvps1><span class=rvts2>在当前位置执行光谱自动对焦。这样您可以测试光谱自动对焦是否按预期工作。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>测量顺序和其他选项</span></p>
+<p class=rvps1><img border="0" src="Images/image844754463.jpg" width="300" height="120"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>测量顺序</span></p>
+<p class=rvps1><span class=rvts2>在此您可以定义颗粒的测量顺序：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>最短路径：计算最短路径的估计值，以节省移动到每个颗粒的时间。</span></li>
+<li class=rvps1><span class=rvts2>用户定义：使用颗粒管理器中列表视图的排序顺序，例如"面积"。</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>定位和预处理</span></p>
+<p class=rvps1><span class=rvts2>参见&nbsp;<a class=rvts5 href="WITecParticleScoutMenu.html#MeasurementOptions">测量选项</a>。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>操作</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1508245783.jpg" width="60" height="40"><span class=rvts2>&nbsp;</span><span class=rvts3>使用结果</span></p>
+<p class=rvps1><span class=rvts2>这将把测量的光谱分配给颗粒。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image144865156.jpg" width="60" height="40"><span class=rvts2>&nbsp;</span><span class=rvts3>开始测量</span></p>
+<p class=rvps1><span class=rvts2>开始测量。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image2016681673.jpg" width="60" height="40"><span class=rvts2>&nbsp;</span><span class=rvts3>暂停/停止测量</span></p>
+<p class=rvps1><span class=rvts2>停止测量。您可以在最后测量的颗粒处继续，或重新测量所有颗粒。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>进度</span></p>
+<p class=rvps1><img border="0" src="Images/image156034418.jpg" width="612" height="40"></p>
+<p class=rvps1><span class=rvts2>显示进度和已测量的颗粒数量。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>预览</span></p>
+<p class=rvps1><img border="0" src="Images/image1064220245.jpg" width="488" height="68"></p>
+<p class=rvps1><span class=rvts2>在此您可以选择显示哪个测量的光谱及对应的颗粒。如果选择最后测量的颗粒，预览将自动停留在最新的测量上。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>颗粒详细信息</span></p>
+<p class=rvps1><span class=rvts2>参见&nbsp;<a class=rvts5 href="WITecParticleScoutParticleDetails.html">颗粒详细信息</a>。</span></p>
+</div></body></html>

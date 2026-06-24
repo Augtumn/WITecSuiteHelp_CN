@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>WITec ASCII导入</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="ASCII Import (TrueMatch)">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll {padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll {left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+hr { color: #000000}
+body, table { font-size: 10pt; font-family: 'Arial'; font-style: normal; font-weight: normal; color: #000000; text-decoration: none; }
+span.rvts1 { font-family: 'Arial Unicode MS'; }
+span.rvts2 { font-family: 'Microsoft Sans Serif'; color: #000000; }
+span.rvts3 { font-size: 14pt; font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #151f6d; }
+span.rvts4 { font-family: 'Courier New'; color: #000000; }
+p,ul,ol { text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; }
+.rvps1 { }
+.rvps2 { text-align: justify; margin: 0px 0px 10px 0px; }
+.rvps3 { background: #c0c0c0; margin: 0px 12px 0px 12px; }
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>WITec ASCII导入</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+<p class=rvps1><span class=rvts2>您可以使用以下WITec ASCII格式导入一个或多个光谱，以执行搜索或将光谱添加到自定义数据库。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>文件必须以[WITEC_TRUEMATCH_ASCII_HEADER]开头。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>每个光谱必须以[SpectrumHeader]开头，包含关于光谱的基本信息。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>可选地，可以定义[SampleMetaData]部分，以便在将光谱添加到自定义数据库时添加一些样品属性。格式为&lt;key&gt; = &lt;value&gt;，如果前面有"double"或"int"，您可以定义一个浮点数或整数作为值。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>最后，必须跟随[SpectrumData]数据部分，每行一个光谱值，从xdata/光谱位置（单位为nm或1/cm）开始，后跟&lt;制表符&gt;字符，再后跟该像素的ydata/CCD计数。浮点数格式必须使用"."作为小数分隔符。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>示例：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps3><span class=rvts4>[WITEC_TRUEMATCH_ASCII_HEADER]</span></p>
+<p class=rvps3><span class=rvts4><br></span></p>
+<p class=rvps3><span class=rvts4>[SpectrumHeader]</span></p>
+<p class=rvps3><span class=rvts4>Title = Component 1</span></p>
+<p class=rvps3><span class=rvts4>ExcitationWavelength = 532.235</span></p>
+<p class=rvps3><span class=rvts4>SpectrumSize = 1024</span></p>
+<p class=rvps3><span class=rvts4>XDataKind = nm (or 1/cm)</span></p>
+<p class=rvps3><span class=rvts4><br></span></p>
+<p class=rvps3><span class=rvts4>[SampleMetaData]</span></p>
+<p class=rvps3><span class=rvts4>CAS_NUMBER = 123-54578</span></p>
+<p class=rvps3><span class=rvts4>double mol_weight = 63.123</span></p>
+<p class=rvps3><span class=rvts4>int NumComponents = 2</span></p>
+<p class=rvps3><span class=rvts4><br></span></p>
+<p class=rvps3><span class=rvts4>[SpectrumData]</span></p>
+<p class=rvps3><span class=rvts4>YourXData1 &lt;tabulator&gt; YourYData1</span></p>
+<p class=rvps3><span class=rvts4>YourXData2 &lt;tabulator&gt; YourYData2</span></p>
+<p class=rvps3><span class=rvts4>....</span></p>
+<p class=rvps3><span class=rvts4>YourXData1024 &lt;tabulator&gt; YourYData1024</span></p>
+<p class=rvps3><span class=rvts4><br></span></p>
+<p class=rvps3><span class=rvts4>[SpectrumHeader]</span></p>
+<p class=rvps3><span class=rvts4>Title = Component 2</span></p>
+<p class=rvps3><span class=rvts4>ExcitationWavelength = 785.122</span></p>
+<p class=rvps3><span class=rvts4>SpectrumSize = 1600</span></p>
+<p class=rvps3><span class=rvts4>XDataKind = 1/cm</span></p>
+<p class=rvps3><span class=rvts4><br></span></p>
+<p class=rvps3><span class=rvts4>[SampleMetaData]</span></p>
+<p class=rvps3><span class=rvts4>CAS_NUMBER = 123-11222</span></p>
+<p class=rvps3><span class=rvts4>double mol_weight = 11.55</span></p>
+<p class=rvps3><span class=rvts4><br></span></p>
+<p class=rvps3><span class=rvts4>[SpectrumData]</span></p>
+<p class=rvps3><span class=rvts4>YourXData1 &lt;tabulator&gt; YourYData1</span></p>
+<p class=rvps3><span class=rvts4>YourXData2 &lt;tabulator&gt; YourYData2</span></p>
+<p class=rvps3><span class=rvts4>....</span></p>
+<p class=rvps3><span class=rvts4>YourXData1600 &lt;tabulator&gt; YourYData1600</span></p>
+<p class=rvps3><span class=rvts4><br></span></p>
+<p class=rvps3><span class=rvts4>...</span></p>
+<p class=rvps3><span class=rvts4>...</span></p>
+<p class=rvps3><span class=rvts4>...</span></p>
+<p class=rvps3><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>共享XData</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts2>对于共享相同X轴值/XData的大量光谱，也可以只在第一个[SpectrumHeader]之前定义一次XData。这样，可以缩短ASCII保存/加载时间。在这种情况下，每个光谱只需要定义YData。XData值的数量必须为SpectrumSize，并且所有光谱必须具有相同的大小。</span></p>
+<p class=rvps2><span class=rvts2>示例：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps3><span class=rvts4>[WITEC_TRUEMATCH_ASCII_HEADER]</span></p>
+<p class=rvps3><span class=rvts4><br></span></p>
+<p class=rvps3><span class=rvts4>[XData]</span></p>
+<p class=rvps3><span class=rvts4>YourXData1</span></p>
+<p class=rvps3><span class=rvts4>YourXData2</span></p>
+<p class=rvps3><span class=rvts4>...</span></p>
+<p class=rvps3><span class=rvts4>YourXData1600</span></p>
+<p class=rvps3><span class=rvts4><br></span></p>
+<p class=rvps3><span class=rvts4>[SpectrumHeader]</span></p>
+<p class=rvps3><span class=rvts4>...</span></p>
+<p class=rvps3><span class=rvts4>SpectrumSize = 1600</span></p>
+<p class=rvps3><span class=rvts4>...</span></p>
+<p class=rvps3><span class=rvts4>...</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2></span></p>
+</div></body></html>

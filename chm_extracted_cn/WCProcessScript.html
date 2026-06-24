@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>处理脚本</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+a.rvts4, span.rvts4
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts4:hover { color: #0000ff; }
+span.rvts5
+{
+ font-size: 9pt;
+ font-family: 'Microsoft Sans Serif';
+ color: #151f6d;
+}
+span.rvts6
+{
+ font-family: 'Courier New';
+ color: #000000;
+}
+span.rvts7
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #808080;
+}
+span.rvts8
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #808080;
+}
+span.rvts9
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #808080;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+.rvps2
+{
+ text-align: justify;
+ margin: 0px 0px 5px 0px;
+}
+.rvps3
+{
+ text-align: center;
+ margin: 10px 0px 10px 0px;
+}
+.rvps4
+{
+ background: #c0c0c0;
+ margin: 0px 12px 0px 12px;
+}
+.rvps5
+{
+ text-align: justify;
+ border-color: #000000;
+ border-style: solid;
+ border-width: 1px;
+ padding: 5px 5px 5px 5px;
+ margin: 0px 19px 10px 19px;
+}
+.rvps6
+{
+ text-align: justify;
+ margin: 0px 0px 10px 0px;
+}
+.rvps7
+{
+ line-height: 1.7;
+}
+.rvps8
+{
+ text-align: justify;
+ line-height: 1.7;
+}
+.rvps9
+{
+ text-align: justify;
+ line-height: 1.9;
+ margin: 0px 34px 6px 0px;
+}
+.rvps10
+{
+ text-align: justify;
+ line-height: 1.46;
+ margin: 0px 34px 0px 0px;
+}
+.rvps11
+{
+ text-align: justify;
+ line-height: 1.9;
+ margin: 0px 0px 0px 2px;
+}
+.rvps12
+{
+ text-align: center;
+ margin: 0px 0px 10px 0px;
+}
+.rvps13
+{
+ text-align: justify;
+ margin: 0px 0px 5px 24px;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>处理脚本</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+<div></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts2>处理脚本参数组允许为自动执行多个连续任务定义基于脚本的命令行。可以包含在脚本中的每个任务都显示在此参数组中。在各自参数组中已完全定义的任务（如图像扫描或自动对焦）使用其各自参数组中设置的参数。这些任务仍将显示在处理脚本参数组中，但不带任何参数。一些额外的任务包含在处理脚本参数组中，其参数可在此处调整。表 1 显示了可用的任务及其参数。</span></p>
+<p class=rvps3><span class=rvts5>表 1：可在处理脚本序列器中使用的任务。描述了新参数并标明了在其他参数组中定义的参数位置。</span></p>
+<p class=rvps11><span class=rvts2><br></span></p>
+<div class=rvps12><div align=center><table width=572 border=1 cellpadding=4 cellspacing=-1 style="border-width: 0px; border-collapse: collapse;">
+<tr valign=top>
+<td width=123 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts3>任务名称</span></p>
+</td>
+<td width=123 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts3>命令行</span></p>
+</td>
+<td width=100 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts3>参数</span></p>
+</td>
+<td width=204 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts3>参数描述</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=123 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>暂停</span></p>
+</td>
+<td width=123 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts6>pause</span></p>
+</td>
+<td width=100 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>持续时间 [ms]</span></p>
+</td>
+<td width=204 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>此时暂停的持续时间</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td rowspan=2 width=123 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>显微镜 Z 轴移动</span></p>
+</td>
+<td rowspan=2 width=123 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps8><span class=rvts6>movezmicroscope</span></p>
+</td>
+<td width=100 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>距离 [µm]</span></p>
+</td>
+<td width=204 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>显微镜 Z 台应移动的距离（+ = 增大物镜-样品间距；- = 减小）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=100 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>速度 [µm/s]</span></p>
+</td>
+<td width=204 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>移动过程中显微镜 Z 台的速度</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=123 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>自动对焦</span></p>
+</td>
+<td width=123 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts6>autofocus</span></p>
+</td>
+<td colspan=2 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>使用</span><a class=rvts4 href="WCSpectralAutoFocus.html">自动对焦</a><span class=rvts2>中的参数。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td rowspan=3 width=123 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>探针逼近</span></p>
+</td>
+<td rowspan=3 width=123 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts6>tipapproach</span></p>
+</td>
+<td height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>逼近设点值</span></p>
+</td>
+<td valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>用于逼近的反馈设点值</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>逼近 P 增益</span></p>
+</td>
+<td rowspan=2 valign=middle style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>逼近的反馈增益</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>逼近 I 增益</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=123 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>单光谱</span></p>
+</td>
+<td width=123 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts6>singlespectrum</span></p>
+</td>
+<td colspan=2 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>使用</span><a class=rvts4 href="WCSingleSpectrum.html">单光谱</a><span class=rvts2>中的参数。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=123 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>图像扫描</span></p>
+</td>
+<td width=123 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts6>imagescan</span></p>
+</td>
+<td colspan=2 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>使用</span><a class=rvts4 href="OGRamanImageScan.html">图像扫描</a><span class=rvts2>中的参数。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=123 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>保存项目</span></p>
+</td>
+<td width=123 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts6>saveproject</span></p>
+</td>
+<td colspan=2 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>使用</span><a class=rvts4 href="AutoSaveProjectOptions.html">程序选项</a><span class=rvts2>中的参数。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=123 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>存储位置</span></p>
+</td>
+<td width=123 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts6>storeposition</span></p>
+</td>
+<td colspan=2 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>存储当前扫描台位置</span></p>
+<p class=rvps7><span class=rvts2>（仅限压电扫描器）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=123 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>转到位置</span></p>
+</td>
+<td width=123 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts6>gotoposition</span></p>
+</td>
+<td colspan=2 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>移动到存储的扫描台位置</span></p>
+</td>
+</tr>
+</table>
+</div></div>
+<p class=rvps12><span class=rvts2><br></span></p>
+<p class=rvps9><span class=rvts2>在执行一个脚本期间，参数保持不变。例如，如果脚本中包含多个显微镜 Z 轴移动命令，则所有命令将以相同的速度和距离执行。</span></p>
+<p class=rvps10><span class=rvts2>脚本本身可以包含由分号分隔的各种命令。以下是一个脚本示例：</span></p>
+<p class=rvps4><span class=rvts6>pause ; autofocus ; singlespectrum ; imagescan ; saveproject ; movezmicroscope</span></p>
+<p class=rvps10><span class=rvts2><br></span></p>
+<p class=rvps6><span class=rvts2>在此示例中，显微镜将首先暂停定义的持续时间，然后执行自动对焦功能。接着记录一个单光谱，然后执行图像扫描。该图像扫描完成后，项目将被保存，显微镜将在 Z 方向移动定义的距离。</span></p>
+<p class=rvps6><span class=rvts2>脚本可以通过按下启动脚本按钮（见下文）来执行，也可以通过</span><a class=rvts4 href="WCSampleRaster.html">栅格</a><span class=rvts2>（定义在</span><a class=rvts4 href="WCPointViewer.html">点编辑器</a><span class=rvts2>中）来执行。</span></p>
+<p class=rvps6><span class=rvts2>一旦触发脚本执行，首先检查语法错误。如果脚本包含任何错误，执行将不会启动，并在消息窗口中显示相应的消息，标识错误发生处的命令编号。错误的命令也将被显示。</span></p>
+<p class=rvps6><span class=rvts2>除可执行命令外，处理脚本参数组中还可以找到以下条目：</span></p>
+<p class=rvps1><img border="0" src="Images/image196946424.jpg" width="364" height="261"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>启动脚本 </span></p>
+<p class=rvps2><span class=rvts2>使用此按钮可以启动脚本的执行。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>取消当前命令</span></p>
+<p class=rvps2><span class=rvts2>此触发按钮取消当前命令。命令行中的下一个命令将自动执行。在上面显示的命令行示例中，在图像扫描执行期间按下取消当前命令按钮将取消此执行，并自动执行 saveproject 功能。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>命令行</span></p>
+<p class=rvps2><span class=rvts2>可以在此处输入脚本功能的命令，如上面的示例所示。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>命令参数</span></p>
+<p class=rvps2><span class=rvts2>此组包含可以通过脚本执行的所有任务，这些任务已在表 1 中说明。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps5><span class=rvts2>使用配置菜单中的另存为功能，可以将当前脚本以及各个参数组中设置的所有参数保存以供以后使用。这实际上表示另一个配置，基于标准配置，但具有预定义的脚本执行参数。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts8>自动对焦</span></p>
+<p class=rvps2><span class=rvts7>自动对焦的附加参数。</span></p>
+<p class=rvps13><span class=rvts9>二次尝试</span></p>
+<p class=rvps13><span class=rvts7>在自动对焦未成功时启用第二次运行。</span></p>
+<p class=rvps13><span class=rvts9>失败时继续</span></p>
+<p class=rvps13><span class=rvts7>如果选择停止，则处理脚本将在自动对焦失败时停止，否则将继续。</span></p>
+
+</div></body></html>

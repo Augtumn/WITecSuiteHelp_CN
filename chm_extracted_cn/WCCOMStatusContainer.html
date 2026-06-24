@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>状态容器</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="Status Container">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1 { font-family: 'Arial Unicode MS'; }
+span.rvts2 { font-family: 'Microsoft Sans Serif'; color: #000000; }
+span.rvts3 { font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #000000; }
+a.rvts4, span.rvts4 { font-family: 'Microsoft Sans Serif'; color: #0000ff; text-decoration: none; }
+a.rvts4:hover { color: #0000ff; }
+span.rvts5 { font-family: 'Courier New'; color: #000000; }
+span.rvts6 { font-size: 12pt; font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #151f6d; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1 { margin: 0px 0px 14px 0px; }
+.rvps2 { text-align: justify; margin: 0px 0px 10px 0px; }
+.rvps3 { }
+.rvps4 { text-align: justify; margin: 0px 0px 5px 0px; }
+.rvps5 { text-align: justify; }
+.rvps6 { text-align: justify; border-color: #000000; border-style: solid; border-width: 1px; padding: 5px 5px 5px 5px; margin: 0px 19px 10px 19px; }
+.rvps7 { text-align: justify; line-height: 1.15; margin: 0px 0px 13px 0px; }
+.rvps8 { line-height: 1.15; margin: 0px 0px 13px 0px; }
+.rvps9 { text-align: right; }
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>状态容器</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+<div></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps2><span class=rvts2>状态容器用于连接到 WITec Control。所有状态容器的路径以</span><span class=rvts3>Status|</span><span class=rvts2>开头，并实现为</span><a class=rvts4 href="WCCOMClasses.html#CBUCSStatusContainer">CBUCSStatusContainer</a><span class=rvts2>。如果更新未实现的状态，应用程序返回 E_NOTIMPL。除非另有说明，数据方向是从服务器到客户端。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>应用程序状态</span></p>
+<div class=rvps2><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>路径 &nbsp; &nbsp; &nbsp; &nbsp;</span></p></td><td width=1484><p class=rvps4><span class=rvts2>Status|Software|Application|ProgramVersion</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>类型</span></p></td><td width=1484><p class=rvps4><span class=rvts2>单值，字符串</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>描述</span></p></td><td width=1484><p class=rvps4><span class=rvts2>应用程序的名称、版本以及（如果存在）构建版本。</span></p></td></tr>
+</table></div>
+<div class=rvps2><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>路径 &nbsp; &nbsp; &nbsp; &nbsp;</span></p></td><td width=1484><p class=rvps4><span class=rvts2>Status|Software|Application|MemoryStatus|PhysicalMemory</span></p><p class=rvps4><span class=rvts2>Status|Software|Application|MemoryStatus|PageFile</span></p><p class=rvps4><span class=rvts2>Status|Software|Application|MemoryStatus|AddressSpace</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>类型</span></p></td><td width=1484><p class=rvps4><span class=rvts2>单值，整数</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>描述</span></p></td><td width=1484><p class=rvps2><span class=rvts2>相应值的可用空间百分比。</span></p></td></tr>
+</table></div>
+<div class=rvps2><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>路径 &nbsp; &nbsp; &nbsp; &nbsp;</span></p></td><td width=1484><p><span class=rvts2>Status|Software|Application|CurrentFileName</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>类型</span></p></td><td width=1484><p class=rvps4><span class=rvts2>单值，字符串</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>描述</span></p></td><td width=1484><p class=rvps2><span class=rvts2>项目文件的名称（如果存在）。</span></p></td></tr>
+</table></div>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>序列器状态</span></p>
+<div class=rvps2><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>路径 &nbsp; &nbsp; &nbsp; &nbsp;</span></p></td><td width=1484><p class=rvps2><span class=rvts2>Status|Software|Sequencers|IsASequencerActive</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>类型</span></p></td><td width=1484><p class=rvps4><span class=rvts2>单值，布尔</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>描述</span></p></td><td width=1484><p class=rvps4><span class=rvts2>如果序列器活动则返回 true。</span></p></td></tr>
+</table></div>
+<div class=rvps2><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>路径 &nbsp; &nbsp; &nbsp; &nbsp;</span></p></td><td width=1484><p class=rvps3><span class=rvts2>Status|Software|Sequencers|ActiveSequencer|Name</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>类型</span></p></td><td width=1484><p class=rvps4><span class=rvts2>单值，字符串</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>描述</span></p></td><td width=1484><p class=rvps4><span class=rvts2>活动序列器的名称。如果没有序列器活动，返回 E_ACCESSDENIED。</span></p></td></tr>
+</table></div>
+<div class=rvps2><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>路径 &nbsp; &nbsp; &nbsp; &nbsp;</span></p></td><td width=1484><p class=rvps3><span class=rvts2>Status|Software|Sequencers|ActiveSequencer|CurrentActivity</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>类型</span></p></td><td width=1484><p class=rvps4><span class=rvts2>单值，字符串</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>描述</span></p></td><td width=1484><p class=rvps4><span class=rvts2>序列器的当前活动（有关详细信息，请参考页面末尾的表格）。如果没有特定操作，返回 Sequence Busy。如果没有序列器活动，返回 E_ACCESSDENIED。</span></p></td></tr>
+</table></div>
+<div class=rvps2><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>路径 &nbsp; &nbsp; &nbsp; &nbsp;</span></p></td><td width=1484><p class=rvps3><span class=rvts2>Status|Software|Sequencers|SequencerTimeSeriesSlow|UserDataCaptions</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>类型</span></p></td><td width=1484><p class=rvps4><span class=rvts2>一维数组，字符串</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>描述</span></p></td><td width=1484><p class=rvps4><span class=rvts2>外部用户数据通道的描述。</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>方向</span></p></td><td width=1484><p class=rvps3><span class=rvts2>客户端 -&gt; 服务器</span></p></td></tr>
+</table></div>
+<div class=rvps2><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>路径 &nbsp; &nbsp; &nbsp; &nbsp;</span></p></td><td width=1484><p class=rvps3><span class=rvts2>Status|Software|Sequencers|SequencerTimeSeriesSlow|UserDataUnits</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>类型</span></p></td><td width=1484><p class=rvps4><span class=rvts2>一维数组，字符串</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>描述</span></p></td><td width=1484><p class=rvps4><span class=rvts2>外部用户数据通道的单位。</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>方向</span></p></td><td width=1484><p class=rvps3><span class=rvts2>客户端 -&gt; 服务器</span></p></td></tr>
+</table></div>
+<div class=rvps2><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>路径 &nbsp; &nbsp; &nbsp; &nbsp;</span></p></td><td width=1484><p class=rvps3><span class=rvts2>Status|Software|Sequencers|SequencerTimeSeriesSlow|UserDataValues</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>类型</span></p></td><td width=1484><p class=rvps4><span class=rvts2>一维数组，浮点</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>描述</span></p></td><td width=1484><p class=rvps4><span class=rvts2>外部用户数据通道的值。</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>方向</span></p></td><td width=1484><p class=rvps3><span class=rvts2>客户端 -&gt; 服务器</span></p></td></tr>
+</table></div>
+<p class=rvps6><span class=rvts2>在启动慢速时间序列之前，所有三个参数（UserDataCaptions、UserDataUnits 和 UserDataValues）必须填充相同维度的数组。这些值在 GUI 中不可见。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>数据通道状态</span></p>
+<div class=rvps2><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>路径 &nbsp; &nbsp; &nbsp; &nbsp;</span></p></td><td width=1484><p class=rvps3><span class=rvts2>Status|Hardware|Controller|DataChannels|[数据通道名称]</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>类型</span></p></td><td width=1484><p class=rvps4><span class=rvts2>单值，浮点</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>描述</span></p></td><td width=1484><p class=rvps4><span class=rvts2>此数据通道的当前值（已考虑比例和偏移）。可用的数据通道取决于硬件配置，可以通过使用</span><a class=rvts4 href="WCCOMInterfaces.html#IBUCSCore">IBUCSCore</a><span class=rvts2>的 GetSubSystemsList() 方法读取。</span></p></td></tr>
+</table></div>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>COM 子系统状态</span></p>
+<div class=rvps2><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>路径 &nbsp; &nbsp; &nbsp; &nbsp;</span></p></td><td width=1484><p class=rvps2><span class=rvts2>Status|Software|COMAutomation|AcceptsRemoteConnection</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>类型</span></p></td><td width=1484><p class=rvps4><span class=rvts2>单值，布尔</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>描述</span></p></td><td width=1484><p class=rvps4><span class=rvts2>如果服务器允许写访问，则返回 true。</span></p></td></tr>
+</table></div>
+<div class=rvps2><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>路径 &nbsp; &nbsp; &nbsp; &nbsp;</span></p></td><td width=1484><p class=rvps2><span class=rvts2>Software|COMAutomation|COMCallPerformance</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>类型</span></p></td><td width=1484><p class=rvps4><span class=rvts2>含两个值的一维数组，长整型</span></p></td></tr>
+<tr valign=top><td width=96><p class=rvps2><span class=rvts2>描述</span></p></td><td width=1484><p class=rvps3><span class=rvts2>索引 0：主机系统的 Tic 频率（低位）</span></p><p class=rvps2><span class=rvts2>索引 1：主机系统的 Tic 计数（低位）</span></p><p class=rvps2><span class=rvts2>用于测量两次 COM 调用之间的时间。</span></p></td></tr>
+</table></div>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>所有序列器的序列活动字符串</span></p>
+<p class=rvps8><span class=rvts2>状态容器 Status|Software|Sequencers|ActiveSequencer|CurrentActivity 检索序列器的当前操作。除非另有说明，它可以传递以下当前活动字符串之一。（无法检索数值。）</span></p>
+<div class=rvps3><table width=529 border=1 cellpadding=0 cellspacing=-1 style="border-width: 0px; border-collapse: collapse;">
+<tr valign=top><td width=361 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p><span class=rvts3>序列活动字符串</span></p></td><td width=164 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p><span class=rvts3>数值</span></p></td></tr>
+<tr valign=top><td width=361 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps5><span class=rvts5>Sequence Busy</span></p></td><td width=164 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps9><span class=rvts5>0</span></p></td></tr>
+<tr valign=top><td width=361 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps5><span class=rvts5>Sequence not Active</span></p></td><td width=164 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps9><span class=rvts5>-1</span></p></td></tr>
+<tr valign=top><td width=361 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps5><span class=rvts5>Cleaning up after Sequence End</span></p></td><td width=164 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps9><span class=rvts5>-2</span></p></td></tr>
+<tr valign=top><td width=361 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps5><span class=rvts5>Unknown Sequence Activity (n)</span></p></td><td width=164 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps9><span class=rvts5>n</span></p></td></tr>
+</table></div>
+<p class=rvps7><span class=rvts2><br></span></p>
+<p class=rvps7><span class=rvts2>以下序列器检索特定的活动字符串。</span></p>
+<p class=rvps2><span class=rvts3>SequencerAutoFocus</span></p>
+<div class=rvps3><table width=529 border=1 cellpadding=0 cellspacing=-1 style="border-width: 0px; border-collapse: collapse;">
+<tr valign=top><td width=345 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p><span class=rvts3>自动对焦活动字符串</span></p></td><td width=156 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p><span class=rvts3>数值</span></p></td></tr>
+<tr valign=top><td width=345 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps5><span class=rvts5>Preparing Data-Channels and Microscope</span></p></td><td width=156 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps9><span class=rvts5>1</span></p></td></tr>
+<tr valign=top><td width=345 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps5><span class=rvts5>Searching for Focus-Position Iteration #n</span></p></td><td width=156 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps9><span class=rvts5>2</span></p></td></tr>
+<tr valign=top><td width=345 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps5><span class=rvts5>Moving Microscope to Focus-Position</span></p></td><td width=156 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps9><span class=rvts5>3</span></p></td></tr>
+</table></div>
+<p class=rvps7><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>SequencerScanImage</span></p>
+<div class=rvps3><table width=529 border=1 cellpadding=0 cellspacing=-1 style="border-width: 0px; border-collapse: collapse;">
+<tr valign=top><td width=345 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p><span class=rvts3>图像扫描活动字符串</span></p></td><td width=156 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p><span class=rvts3>数值</span></p></td></tr>
+<tr valign=top><td width=345 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps5><span class=rvts5>Preparing Data Objects and Scan Path</span></p></td><td width=156 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps9><span class=rvts5>1</span></p></td></tr>
+<tr valign=top><td width=345 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps5><span class=rvts5>Scanning Image</span></p></td><td width=156 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps9><span class=rvts5>2</span></p></td></tr>
+<tr valign=top><td width=345 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps5><span class=rvts5>Restarting</span></p></td><td width=156 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps9><span class=rvts5>3</span></p></td></tr>
+<tr valign=top><td width=345 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps5><span class=rvts5>Collecting data</span></p></td><td width=156 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps9><span class=rvts5>4</span></p></td></tr>
+<tr valign=top><td width=345 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps5><span class=rvts5>Moving to next Depth-Scan Line</span></p></td><td width=156 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps9><span class=rvts5>5</span></p></td></tr>
+<tr valign=top><td width=345 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps5><span class=rvts5>Waiting for User to Continue Scan manually</span></p></td><td width=156 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps9><span class=rvts5>6</span></p></td></tr>
+</table></div>
+<p class=rvps7><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>SequencerTimeSeriesSlow</span></p>
+<div class=rvps3><table width=529 border=1 cellpadding=0 cellspacing=-1 style="border-width: 0px; border-collapse: collapse;">
+<tr valign=top><td width=345 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p><span class=rvts3>慢速时间序列活动字符串</span></p></td><td width=156 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p><span class=rvts3>数值</span></p></td></tr>
+<tr valign=top><td width=345 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps5><span class=rvts5>Preparing Data Objects</span></p></td><td width=156 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps9><span class=rvts5>1</span></p></td></tr>
+<tr valign=top><td width=345 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps5><span class=rvts5>Waiting for next Measurement</span></p></td><td width=156 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps9><span class=rvts5>2</span></p></td></tr>
+<tr valign=top><td width=345 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps5><span class=rvts5>Executing Sub-Sequencer</span></p></td><td width=156 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps9><span class=rvts5>3</span></p></td></tr>
+<tr valign=top><td width=345 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps5><span class=rvts5>Acquiring Spectral Data</span></p></td><td width=156 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps9><span class=rvts5>4</span></p></td></tr>
+<tr valign=top><td width=345 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps5><span class=rvts5>Acquiring Data Channels</span></p></td><td width=156 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;"><p class=rvps9><span class=rvts5>5</span></p></td></tr>
+</table></div>
+<p class=rvps3><span class=rvts2></span></p>
+
+</div></body></html>

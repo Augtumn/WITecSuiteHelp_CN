@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>导出JCAMP-DX</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="导出JCAMP-DX">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 16pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #ea7600;
+}
+span.rvts4
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>导出JCAMP-DX</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts3>描述</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>JCAMP-DX格式是一种纯ASCII文件格式，用于导出不同类型的光谱。</span></p>
+<p class=rvps1><span class=rvts2>此格式没有明确的规范，因为文件头属性由各组织以不同方式定义。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>输入和输出</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>输入：</span></p>
+<p class=rvps1><span class=rvts2>一个或多个光谱数据对象（任意维度）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>输出：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>一个或多个文件，每个文件包含每个选定数据对象的所有光谱</span></li>
+<li class=rvps1><span class=rvts2>一个文件，包含所有选定数据对象的所有光谱</span></li>
+<li class=rvps1><span class=rvts2>所有数据都可以导出到Windows剪贴板</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>格式</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>文件包含不同的头信息，后跟光谱值，以空格分隔。</span></p>
+<p class=rvps1><span class=rvts2>x轴值是等距的。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>导出过滤器选项</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>X单位：</span></p>
+<p class=rvps1><span class=rvts2>导出的x轴数据的单位。</span></p>
+<p class=rvps1><span class=rvts2>可以为：rel. cm 1/cm、1/cm、nm 和 &#181;m。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>插值类型：</span></p>
+<p class=rvps1><span class=rvts2>当x轴值转换为等距值时，y轴值必须进行插值。</span></p>
+<p class=rvps1><span class=rvts2>此参数定义y轴值的插值方式。</span></p>
+<p class=rvps1><span class=rvts2>可以是三次样条插值或线性插值。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>点数类型：</span></p>
+<p class=rvps1><span class=rvts2>导出的支持点/x值的数量可以通过3种方式定义。</span></p>
+<p class=rvps1><span class=rvts2>每种类型都有一个可以修改的参数，请参见以下参数说明。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>过采样因子：</span></p>
+<p class=rvps1><span class=rvts2>计算两个x值之间的最小距离。此距离具有此参数中定义的支持点数量。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>固定点数：</span></p>
+<p class=rvps1><span class=rvts2>精确定义x值的数量。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>期望数据间距：</span></p>
+<p class=rvps1><span class=rvts2>精确定义x值的数据间距（以选定单位定义）。</span></p>
+<p class=rvps1><span class=rvts2>实际间距可能会有轻微变化，因为光谱的第一个点和最后一个点恰好位于支持点上。</span></p>
+
+</div></body></html>

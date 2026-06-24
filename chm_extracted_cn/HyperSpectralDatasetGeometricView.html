@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>光谱叠加（几何视图）</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="高光谱数据集 (几何 视图)">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 14pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+.rvps2
+{
+ text-align: center;
+}
+.rvps3
+{
+ text-align: center;
+}
+.rvps4
+{
+ line-height: 1.15;
+ margin: 0px 0px 13px 24px;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>光谱叠加（几何视图）</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts2>许多数学描述通过使用高光谱数据集的几何模型更容易理解。该几何模型适用于遵循叠加原理的数据，特别是包含多种组分混合物的拉曼光谱。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>包含两种组分的完整高光谱数据集可以用三个光谱来描述：一个恒定的背景光谱和两个具有相应混合值的成分光谱：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps4><img border="0" src="Images/image580472315.jpg" width="216" height="31"></p>
+<p class=rvps4><img border="0" src="Images/image152335852.jpg" width="458" height="144"></p>
+<p class=rvps1><span class=rvts2>通常，成分光谱会归一化为一（面积归一化）。在这种情况下，混合值恰好是对应成分的信号量。</span></p>
+<p class=rvps1><span class=rvts2></span>
+<br><span class=rvts2>为了绘制上述高维向量方程，需要进行降维，即投影到二维空间。使用光谱像素n1和n2处的两个强度值作为二维投影平面的坐标：&nbsp;</span></p>
+<p class=rvps1><img border="0" src="Images/image663638153.jpg" width="461" height="312"></p>
+<p class=rvps1><span class=rvts2>使用这两个坐标，下图中的每个灰点代表高光谱数据集中的一个光谱：</span></p>
+<p class=rvps1><img border="0" src="Images/image990784634.jpg" width="452" height="407"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>如果高光谱数据是从图像扫描中提取的，则混合值可以显示为图像：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<div class=rvps1><table border=0 cellpadding=1 cellspacing=2 style="border-width: 0px;">
+<tr valign=top>
+<td width=327 valign=middle>
+<p class=rvps3><img border="0" src="Images/image306484039.jpg" width="193" height="201"></p>
+</td>
+<td width=331 valign=middle>
+<p class=rvps3><img border="0" src="Images/image764878903.jpg" width="193" height="201"></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=327 valign=middle>
+<p class=rvps2><img border="0" src="Images/image870265374.jpg" width="60" height="47"></p>
+</td>
+<td width=331 valign=middle>
+<p class=rvps2><img border="0" src="Images/image574347571.jpg" width="60" height="46"></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>备注</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>局限性</span></p>
+<p class=rvps1><span class=rvts2>该向量方程&nbsp;</span><span class=rvts3>不</span><span class=rvts2>&nbsp;适用于具有峰位移的拉曼光谱、PFM曲线或CARS光谱。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>恒定背景光谱</span></p>
+<p class=rvps1><span class=rvts2>只要背景光谱是恒定的，其来源并不重要。恒定背景光谱的示例包括：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>CCD相机的偏移</span></li>
+<li class=rvps1><span class=rvts2>热生电子</span></li>
+<li class=rvps1><span class=rvts2>来自基底的信号（如果其是恒定的，即平面扫描）。</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2></span></p>
+
+</div></body></html>

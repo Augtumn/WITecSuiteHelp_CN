@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>反射模式</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="SNOM 反射模式">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 9pt;
+ font-family: 'Microsoft Sans Serif';
+ color: #151f6d;
+}
+span.rvts4
+{
+ font-size: 14pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+a.rvts5, span.rvts5
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts5:hover { color: #0000ff; }
+span.rvts6
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+ background-color: #00ffff;
+}
+span.rvts7
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts8
+{
+ font-size: 12pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: center;
+}
+.rvps2
+{
+ text-align: justify;
+ margin: 0px 0px 5px 0px;
+}
+.rvps3
+{
+ text-align: center;
+ margin: 10px 0px 10px 0px;
+}
+.rvps4
+{
+ direction: ltr;
+ line-height: 1.50;
+}
+.rvps5
+{
+ margin: 0px 0px 14px 0px;
+}
+.rvps6
+{
+ text-align: justify;
+ text-indent: -24px;
+ line-height: 1.25;
+ margin: 0px 0px 0px 48px;
+}
+.rvps7
+{
+}
+.rvps8
+{
+ border-color: #ff0000;
+ border-style: solid;
+ border-width: 4px;
+ border-top: none;
+ border-right: none;
+ border-bottom: none;
+ padding: 0px 0px 0px 5px;
+ margin: 5px 3px 10px 27px;
+}
+.rvps9
+{
+ text-align: justify;
+ margin: 0px 0px 5px 24px;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>反射模式</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+<div></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps2><span class=rvts7>系统要求：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps2><span class=rvts2>反射模式模块</span></li>
+</ul>
+<p class=rvps6><span class=rvts2><br></span></p>
+<p class=rvps5><span class=rvts4>设置反射模式</span></p>
+<ol style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li value=1 class=rvps2><span class=rvts2>检查反射显微镜是否与光子计数设备连接。</span></li>
+<li value=2 class=rvps2><span class=rvts2>按照 </span><a class=rvts5 href="OGSNOMProcedure.html">透射模式说明</a><span class=rvts2> 进行样品安装和对焦（跳过第 5 步）以及粗调对准。</span></li>
+<li value=3 class=rvps2><span class=rvts2>选择 </span><a class=rvts5 href="VideoCameraSelection.html">后置相机</a><span class=rvts2>。</span></li>
+<li value=4 class=rvps2><span class=rvts2>使用反射显微镜的定位台移动它，直到从背面看到悬臂梁，并尝试使用前/后螺丝聚焦探针。（图 1）</span></li>
+</ol>
+<p class=rvps1><span class=rvts2>&nbsp;</span><img border="0" src="Images/image1024031559.jpg" width="400" height="254"></p>
+<p class=rvps3><span class=rvts3>图 1：后视图中带有样品表面反射的 SNOM 悬臂梁。</span></p>
+<p class=rvps5><span class=rvts4>精细对准</span></p>
+<ol style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li value=5 class=rvps2><span class=rvts2>切换到 </span><a class=rvts5 href="MicroscopeModes.html">拉曼模式</a><span class=rvts2>。对于非自动化系统：配置正置光路用于拉曼。</span></li>
+<li value=6 class=rvps2><span class=rvts2>在样品周围放置杂散光防护罩或关闭机箱前门，以减少样品上的环境光。</span></li>
+<li value=7 class=rvps2><span class=rvts2>增加视频图像的亮度，如有必要，增加激光功率直到在探针处看到一个小激光光斑。（参阅提示部分。）</span></li>
+<li value=8 class=rvps2><span class=rvts2>精细调整悬臂梁位置，以最大化通过悬臂梁的透过率。</span></li>
+</ol>
+<p class=rvps5><span class=rvts4>逼近和测量</span></p>
+<ol style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li value=9 class=rvps2><span class=rvts2>检查光束点是否位于 </span><a class=rvts5 href="AFMStatus.html">四象限二极管</a><span class=rvts2> 中心。</span></li>
+<li value=10 class=rvps2><span class=rvts2>点击 </span><span class=rvts6>开始逼近</span></li>
+<li value=11 class=rvps2><span class=rvts2>调整反射显微镜（使用左/右和上/下螺丝），直到从悬臂梁发出的光位于视频图像的绿色圆圈中。（如果是这样，则光正正确照射到光纤上。）</span></li>
+</ol>
+<p class=rvps8><span class=rvts2>请勿更改光纤耦合单元的调整螺丝。</span></p>
+<p class=rvps1><img border="0" src="Images/image340043324.jpg" width="346" height="241"></p>
+<p class=rvps3><span class=rvts3>图 2：来自探针的光斑以及悬臂梁和样品上的反射。</span></p>
+<ol style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li value=12 class=rvps2><span class=rvts2>点击 </span><span class=rvts6>开始示波器</span><span class=rvts2>。</span></li>
+<li value=13 class=rvps2><span class=rvts2>通过在所有三个方向稍微移动反射显微镜来优化信号。（参阅提示部分。）</span></li>
+</ol>
+<p class=rvps8><span class=rvts2>当探针接触时，尽量避免显微镜主体的任何振动。</span></p>
+<ol style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li value=14 class=rvps2><span class=rvts2>调整激光功率以获得适当的信号强度。</span></li>
+<li value=15 class=rvps2><span class=rvts6>停止</span><span class=rvts2> 示波器。</span></li>
+<li value=16 class=rvps2><span class=rvts2>开始测量。</span></li>
+</ol>
+<p class=rvps7><span class=rvts2><br></span></p>
+<p class=rvps7><span class=rvts2><br></span></p>
+<p class=rvps4><span class=rvts8>提示</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps2><span class=rvts2>不要被样品表面的反射所迷惑。</span></li>
+<li class=rvps2><span class=rvts2>改变激光功率也可能会改变悬臂梁的弯曲（其作用类似于双金属片）。这可能导致探针失去样品接触。如果是这样，请在探针回缩时重新调整 </span><a class=rvts5 href="AFMStatus.html">四象限二极管</a><span class=rvts2> 上的光束点。</span></li>
+<li class=rvps2><span class=rvts7>针对 7.：</span><span class=rvts2> 如果您无法观察到来自悬臂梁孔径的光：</span></li>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps9 style="margin-left: 0"><span class=rvts2>尝试重复粗调对准。</span></li>
+<li class=rvps9 style="margin-left: 0"><span class=rvts2>使用 0.17 mm 盖玻片作为样品，在透射模式下对准悬臂梁，包括精细对准（直到第 17 步）。然后使用 </span><a class=rvts5 href="MicroscopeZStage.html">显微镜 Z 控制</a><span class=rvts2> 将显微镜向上移动，用您的样品替换盖玻片，然后再次将显微镜向下移动。</span></li>
+</ul>
+<li class=rvps2><span class=rvts7>针对 13.：</span><span class=rvts2> 靠近探针的反射甚至可能比近场信号具有更高的强度。</span></li>
+<li class=rvps2><span class=rvts7>针对 13.：</span><span class=rvts2> 如果样品完全阻挡了孔径，您可能观察不到信号。请参阅下一条提示。</span></li>
+<li class=rvps2><span class=rvts7>针对 15.：</span><span class=rvts2> 如果您没有观察到样品的结构，在进行图像扫描时仔细调整反射显微镜，直到观察到近场信号。</span></li>
+<li class=rvps7><span class=rvts2>如果您在红色圆圈外观察到近场信号，可以在 </span><a class=rvts5 href="MicroscopeControlMenu.html">菜单</a><span class=rvts2> 中重新定位红色圆圈（探针位置）。</span></li>
+</ul>
+
+</div></body></html>

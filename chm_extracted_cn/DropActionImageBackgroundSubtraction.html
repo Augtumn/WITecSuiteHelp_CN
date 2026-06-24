@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>图像背景扣除对话框</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="Image Background Subtraction Dialog">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css"><style type="text/css"><!--
+#FHNonScroll{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+hr { color: #000000}
+body, table /* Normal */{font-size: 10pt; font-family: 'Arial'; font-style: normal; font-weight: normal; color: #000000; text-decoration: none;}
+span.rvts1{font-family: 'Arial Unicode MS';}
+span.rvts2{font-family: 'Microsoft Sans Serif'; color: #000000;}
+span.rvts3{font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #000000;}
+span.rvts4{font-size: 16pt; font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #ea7600;}
+a.rvts5, span.rvts5{font-family: 'Microsoft Sans Serif'; color: #0000ff; text-decoration: none;}
+a.rvts5:hover { color: #0000ff; }
+span.rvts6{font-size: 12pt; font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #151f6d;}
+p,ul,ol /* Left */{text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;}
+.rvps1{}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><table border=0 cellpadding=1 bordercolor="#000000" cellspacing=2>
+<tr valign=middle>
+<td width=50 valign=middle><font size=2 color="#000000" face="Arial"><div><img border="0" src="Images/image2109644922.jpg" width="48" height="48"></div></font></td>
+<td width=502 valign=middle><font size=2 color="#000000" face="Arial"><div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>图像背景扣除对话框</b></font></div></font></td>
+</tr>
+</table></div></font></TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts4>描述</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>使用图像背景扣除对话框，您可以使用可调阶次的多项式函数对每条线（一维）或整个表面（二维）扣除背景。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>输入与结果</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>输入：</span></p>
+<p class=rvps1><span class=rvts2>一个图像数据对象。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>结果：</span></p>
+<p class=rvps1><span class=rvts2>一个背景扣除后的图像数据对象。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<hr noshade size=1 style="color : #808080">
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>用户界面</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p><img border="0" src="Images/image1172673080.jpg" width="299" height="201"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>线扣除选项卡</span></p>
+<p class=rvps1><span class=rvts2>如果选择线扣除选项卡，将逐线对图像进行扣除（使用一维多项式曲线校正每条线）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>表面扣除选项卡</span></p>
+<p class=rvps1><span class=rvts2>如果选择表面扣除选项卡，将对图像进行表面扣除（使用二维多项式函数扣除整个表面）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>线/表面扣除阶次（整数编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>设置用于线或表面扣除的多项式阶次。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>显示原始（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，预览图像查看器显示原始图像（用于快速比较）。之后请不要忘记取消勾选此复选框以再次查看背景扣除后的图像。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>计算预览（按钮），自动预览（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>参见</span><a class=rvts5 href="AutomaticPreview.html">自动预览。</a></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>提取（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>计算并将结果提取到当前项目。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>提取并下一步（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>向导功能：在此您可以选择将结果图像用于另一次背景扣除、进行图像统计或图像截面：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p><img border="0" src="Images/image172879808.jpg" width="263" height="180"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts4>预览窗口</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image18767709.jpg" width="197" height="216"></p>
+<p class=rvps1><span class=rvts2>第一个预览窗口显示背景扣除后的图像。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image185066965.jpg" width="197" height="216"></p>
+<p class=rvps1><span class=rvts2>第二个预览窗口显示原始图像和绘制掩模。更改掩模以定义应考虑哪些像素用于计算多项式背景拟合函数。</span></p>
+
+</div></body></html>

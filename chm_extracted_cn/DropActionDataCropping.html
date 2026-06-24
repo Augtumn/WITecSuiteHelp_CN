@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>Data Cropping and Reduction Dialog</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="Data Binning and Cropping Dialog">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 16pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #ea7600;
+}
+span.rvts5
+{
+ font-size: 12pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><table border=0 cellpadding=1 bordercolor="#000000" cellspacing=2>
+<tr valign=middle>
+<td width=50 valign=middle><font size=2 color="#000000" face="Arial">
+<div><img border="0" src="Images/image1983839515.jpg" width="48" height="48"></div>
+</font>
+</td>
+<td width=502 valign=middle><font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>数据裁剪和缩减对话框</b></font></div>
+</font>
+</td>
+</tr>
+</table>
+</div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts4>描述</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>使用数据裁剪和缩减对话框，可以裁剪数据的部分区域并减少像素数量/分辨率。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>输入和结果</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>输入：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>一个图像光谱数据对象和任意数量的所属图像，或</span></li>
+<li class=rvps1><span class=rvts2>一个线光谱数据对象和任意数量的所属图谱对象，或</span></li>
+<li class=rvps1><span class=rvts2>一个或多个具有相同空间变换的图像，或</span></li>
+<li class=rvps1><span class=rvts2>一个或多个来自同一拉曼图像扫描的单个光谱数据对象，例如平均光谱</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>结果：</span></p>
+<p class=rvps1><span class=rvts2>裁剪和/或缩减后的数据对象。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<hr noshade size=1 style="color : #808080">
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>用户界面</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image43443234.jpg" width="336" height="336"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>位置对象（组合框）：</span></p>
+<p class=rvps1><span class=rvts2>显示输入数据对象，它们</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>为图像/图像光谱对象定义空间位置，或</span></li>
+<li class=rvps1><span class=rvts2>为时间序列定义其他单位（如时间线）。</span></li>
+</ul>
+<p class=rvps1><span class=rvts2>选中的对象显示在预览窗口中。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>图谱对象（组合框）：</span></p>
+<p class=rvps1><span class=rvts2>显示输入数据对象，如图像光谱、线光谱或单个光谱对象（如果它不定义空间或其他位置）。用于在拖放多个对象时切换预览。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts5>裁剪</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>开始/停止位置 X/Y轴（整数编辑）：</span></p>
+<p class=rvps1><span class=rvts2>可用于裁剪图像或图像光谱对象。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>开始/停止位置 X/Y轴监听（复选框）</span></p>
+<p class=rvps1><span class=rvts2>如果选中，可以简单地在图像查看器中标记一个矩形以裁剪图像或图像光谱数据对象。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>开始/停止位置图谱轴（整数编辑）：</span></p>
+<p class=rvps1><span class=rvts2>可用于裁剪光谱轴的一部分。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>开始/停止位置图谱轴监听（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果选中，可以简单地在图谱查看器中标记一个区域以裁剪光谱对象。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts5>缩减</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>缩减因子 X/Y轴（整数编辑）：</span></p>
+<p class=rvps1><span class=rvts2>可用于更改图像或图像光谱数据对象的像素数量/分辨率。</span></p>
+<p class=rvps1><span class=rvts2>示例：</span></p>
+<p class=rvps1><span class=rvts2>因子1表示不缩减。因子2表示结果仅包含一半的像素数，通过使用原始数据的每隔一个像素。因子3表示结果仅包含所有原始像素的三分之一，使用原始数据的每隔三个像素。</span></p>
+<p class=rvps1><span class=rvts2>如果选中了"使用平均图像值"（用于空间轴）或"使用平均光谱"（用于光谱轴）复选框，则数据使用2、3、4...个像素的平均值/光谱进行缩减，见下文。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>缩减因子图谱轴（整数编辑）：</span></p>
+<p class=rvps1><span class=rvts2>可用于更改光谱数据对象的像素数量/分辨率。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>缩减X轴全部（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>对整个X轴进行数据缩减。结果是一个线图谱对象（垂直线）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>缩减Y轴全部（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>对整个Y轴进行数据缩减。结果是一个线图谱对象（水平线）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>使用平均图像值（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果选中，数据缩减使用所有缩减像素的平均值进行。例如，如果一个轴的缩减因子为2，则结果像素是2个相邻原始像素的平均值。</span></p>
+<p class=rvps1><span class=rvts2>如果未选中，缩减的原始像素将被跳过，不在结果中使用。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>使用平均光谱（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果选中，缩减图像光谱数据对象的结果光谱是从缩减的相邻图像像素计算的平均光谱。例如，如果一个轴的缩减因子为2，结果光谱是两个相邻像素的两个光谱的平均值。</span></p>
+<p class=rvps1><span class=rvts2>如果未选中，仅使用单个光谱，缩减的原始光谱将被跳过，不在结果中使用。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>提取（按钮和拖放区）：</span></p>
+<p class=rvps1><span class=rvts2>计算并提取裁剪/缩减后的数据。您可以通过在此按钮上拖放多个数据对象来进行批处理。</span></p>
+<p class=rvps1><span class=rvts2>请注意，批处理仅当拖放的数据对象与对话框中的数据对象具有相同的维度时才有效。图谱批处理仅当当前对话框中只有一个图谱对象时才有效。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>预览窗口</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>根据输入数据对象，有预览图像和/或预览图谱查看器。</span></p>
+<p class=rvps1><span class=rvts2>一个窗口始终显示原始大小，另一个窗口显示裁剪或缩减后的预览。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>例如，如果您拖放</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>仅光谱图谱数据对象，您将看到两个图谱查看器（原始和光谱/图谱轴的预览）</span></li>
+<li class=rvps1><span class=rvts2>至少一个图像或位图对象，您还将看到两个图像查看器（原始和空间轴的预览）</span></li>
+<li class=rvps1><span class=rvts2>一个高光谱线图谱（例如时间序列）和一个所属的单个图谱（例如时间线），您将看到4个图谱查看器（原始和光谱轴的预览，原始和时间线轴的预览）。</span></li>
+</ul>
+
+</div></body></html>

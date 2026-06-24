@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>图谱强度校正对话框</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="Graph Intensity Correction Dialog">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 16pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #ea7600;
+}
+a.rvts5, span.rvts5
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts5:hover { color: #0000ff; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><table border=0 cellpadding=1 bordercolor="#000000" cellspacing=2>
+<tr valign=middle>
+<td width=50 valign=middle><font size=2 color="#000000" face="Arial">
+<div><img border="0" src="Images/image1705174646.jpg" width="48" height="48"></div>
+</font>
+</td>
+<td width=502 valign=middle><font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>图谱强度校正对话框</b></font></div>
+</font>
+</td>
+</tr>
+</table>
+</div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts4>描述</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>在某些情况下，CCD 检测到的信号响应并非对所有像素都相同。这种不完美尤其可以在拉曼光谱包含高荧光背景时看到。CCD 探测器内部的光学标准具效应和用于减少瑞利光的光学滤波器可能导致此问题。为了消除这种不完美，此对话框使用参考测量来确定校正曲线。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>另请参阅</span></p>
+<p class=rvps1><a class=rvts5 href="UsingGraphIntensityCorrection.html">使用图谱强度校正</a></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>输入与结果</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>输入：</span></p>
+<p class=rvps1><span class=rvts2>一个图谱对象，可以是单光谱或多光谱对象（例如图像图谱）。这是将被校正的对象。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>结果：</span></p>
+<p class=rvps1><span class=rvts2>具有相同维度的图谱对象</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<hr noshade size=1 style="color : #808080">
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>用户界面</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p><img border="0" src="Images/image575069760.jpg" width="470" height="328"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>测量偏移量 - 偏移（编辑框）</span></p>
+<p class=rvps1><span class=rvts2>在此您可以手动定义偏移量，该偏移量将在计算前减去。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>测量偏移量 - 获取掩模平均值（按钮）</span></p>
+<p class=rvps1><span class=rvts2>如果按下此按钮，当前光谱和所选掩模（蓝色）将用于计算平均值。该平均值将输入到偏移编辑框中。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>测量偏移量 - 放置光谱（按钮）</span></p>
+<p class=rvps1><span class=rvts2>如果测量了暗光谱（单光谱或序列），可将其放置在此处以使用。如果按下此按钮，偏移量将被删除。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>参考测量 - 放置光谱（按钮）</span></p>
+<p class=rvps1><span class=rvts2>将参考光谱放置在此处（例如荧光光谱）。计算平均值并显示在预览窗口中。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>参考偏移量 - 偏移（编辑框）</span></p>
+<p class=rvps1><span class=rvts2>在此您可以手动定义参考光谱的偏移量，该偏移量将在计算前减去。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>参考偏移量 - 获取掩模平均值（按钮）</span></p>
+<p class=rvps1><span class=rvts2>如果按下此按钮，平均参考光谱和所选掩模（蓝色）将用于计算平均值。该平均值将输入到偏移编辑框中。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>参考偏移量 - 放置光谱（按钮）</span></p>
+<p class=rvps1><span class=rvts2>如果测量了暗光谱（单光谱或序列），可将其放置在此处以使用。如果按下此按钮，偏移量将被删除。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>设置 - 支撑点间距（编辑框）</span></p>
+<p class=rvps1><span class=rvts2>从平均参考光谱计算平滑样条函数。样条支撑点之间的距离可以通过此编辑框设置。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>设置 - 加载/保存校准（按钮）</span></p>
+<p class=rvps1><span class=rvts2>在此您可以将校准保存到硬盘或从硬盘加载。您可以将其重用于所有在相同条件下获取的未来测量（相同激光、相同光谱位置、相同 CCD 设置）。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>提取（按钮）</span></p>
+<p class=rvps1><span class=rvts2>校正后的数据将导出到项目中。如果在相同条件下获得了多个测量，您可以将所有测量一次性放置在此按钮上。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>预览窗口</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image358265314.jpg" width="766" height="390"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>在上面的预览图谱中显示了原始数据和校正后的数据。通常情况下，对于噪声光谱您不会看到太大的差异。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image70932842.jpg" width="766" height="390"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>在此预览图谱中，您可以看到平均参考光谱和样条拟合。两者的比率是用于数据的校正。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>绿色掩模定义用于计算此比率的区域。如果未设置绿色掩模，校正因子将为 1。</span></p>
+<p class=rvps1><span class=rvts2>请注意，掩模将被视为一个没有间隙的大区域。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>蓝色掩模可用于使用"获取掩模平均值"按钮定义参考的偏移量。</span></p>
+
+</div></body></html>

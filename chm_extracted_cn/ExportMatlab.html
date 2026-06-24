@@ -1,0 +1,354 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>导出MATLAB</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="导出Matlab">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 16pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #ea7600;
+}
+span.rvts4
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts5
+{
+ font-size: 12pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+span.rvts6
+{
+ font-size: 11pt;
+ font-family: 'Calibri';
+ color: #000000;
+}
+a.rvts7, span.rvts7
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts7:hover { color: #0000ff; }
+span.rvts8
+{
+ font-family: 'Courier New';
+ color: #000000;
+}
+span.rvts9
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts10
+{
+ font-family: 'Microsoft Sans Serif';
+ font-style: italic;
+ color: #000000;
+}
+span.rvts11
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+a.rvts12, span.rvts12
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts12:hover { color: #0000ff; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+.rvps2
+{
+ background: #c0c0c0;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>导出MATLAB</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts3>描述</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>MATLAB导出格式将任意类型的图谱数据对象导出为MATLAB结构体或DSO格式。</span></p>
+<p class=rvps1><span class=rvts2>导出限制为2 GB数据。更大的数据可以使用&nbsp;</span><a class=rvts7 href="ExportGraphASCII.html">图谱ASCII或RAW导出</a><span class=rvts2>。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>输入和输出</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>输入：</span></p>
+<p class=rvps1><span class=rvts2>一个或多个图谱数据对象（任意维度）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>输出：</span></p>
+<p class=rvps1><span class=rvts2>一个或多个文件，每个文件包含每个选定数据对象的所有光谱</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>格式</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>根据MATLAB导出类型"DSO"或"Matlab结构体"，格式为以下之一。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts5>DataSetObject（DSO 6.0）</span></p>
+<p class=rvps1><span class=rvts5><br></span></p>
+<p class=rvps1><span class=rvts11>此格式由"Eigenvector"指定。可以从那里下载MATLAB软件包。</span></p>
+<p class=rvps1><span class=rvts2>参见&nbsp;</span><a class=rvts7 href="http://www.eigenvector.com/software/dataset.htm" target="_blank">http://www.eigenvector.com/software/dataset.htm</a></p>
+<p class=rvps1><span class=rvts11>它包含可用于DSO数据格式的MATLAB函数。它是免费的（BSD许可证）。</span></p>
+<p class=rvps1><span class=rvts11>它仅支持用于数据显示的简单函数。</span></p>
+<p class=rvps1><span class=rvts11>DSO作为MATLAB对象mat文件创建，参见</span><a class=rvts12 href="http://www.mathworks.com/help/pdf_doc/matlab/matfile_format.pdf" target="_blank">http://www.mathworks.com/help/pdf_doc/matlab/matfile_format.pdf</a></p>
+<p class=rvps1><span class=rvts2>每个DSO字段的说明可在以下地址获取：</span><a class=rvts7 href="http://wiki.eigenvector.com/index.php?title=DataSet_Object" target="_blank">http://wiki.eigenvector.com/index.php?title=DataSet_Object</a></p>
+<p class=rvps1><span class=rvts2>或在下载的软件包中。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts9>DSO字段：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts10>Name（名称）：</span></p>
+<p class=rvps1><span class=rvts2>包含WITec Project项目管理器中图谱对象的名称。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts10>Type（类型）：</span></p>
+<p class=rvps1><span class=rvts2>图谱对象的类型。如果是2D图谱对象则为"image"，否则为"data"。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts10>Date（日期）：</span></p>
+<p class=rvps1><span class=rvts2>当前日期，格式为 yyyy.mm.dd hh.mm.ss</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts10>ModDate（修改日期）：</span></p>
+<p class=rvps1><span class=rvts2>与Date相同。如果MATLAB更改了文件，将被修改。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts10>ImageSize（图像大小）：</span></p>
+<p class=rvps1><span class=rvts2>对于0D和1D图谱对象为Null，对于2D图谱对象为SizeY和SizeX</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts10>ImageMode（图像模式）：</span></p>
+<p class=rvps1><span class=rvts2>如果是2D图谱对象则为1，否则为0</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts10>Data（数据）：</span></p>
+<p class=rvps1><span class=rvts2>包含图谱数据。对于单个图谱对象，图谱数据保存为行向量。</span></p>
+<p class=rvps1><span class=rvts2>对于0D和1D图谱对象（例如/时间序列/线扫描），图谱保存为连续的行向量。</span></p>
+<p class=rvps1><span class=rvts2>数据存储在一个矩阵中，具有 &lt;光谱数量&gt; 行和 &lt;光谱大小&gt; 列。</span></p>
+<p class=rvps1><span class=rvts2>对于2D图谱对象，矩阵具有 SizeY*SizeX 行和 &lt;光谱大小&gt; 列。</span></p>
+<p class=rvps1><span class=rvts2>图像列顺序存储，然后存储行。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts10>Label（标签）：</span></p>
+<p class=rvps1><span class=rvts2>始终为null。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts10>AxisScale（轴缩放）：</span></p>
+<p class=rvps1><span class=rvts2>图谱缩放存储在具有2x2个元素的单元格中。为此使用导出过滤器选项中的X单位设置。</span></p>
+<p class=rvps1><span class=rvts2>对于1D图谱（例如时间序列），单元格元素(1,1)包含序列缩放（例如时间缩放）。单元格元素(1,2)是序列的单位的字符串（例如"seconds"）。</span></p>
+<p class=rvps1><span class=rvts2>对于单个光谱，单元格元素(1,1)和(1,2)为空。</span></p>
+<p class=rvps1><span class=rvts2>单元格元素(2,1)始终是图谱x轴缩放，单元格元素(2,2)是x轴缩放的单位字符串（例如"rel. 1/cm"）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts10>ImageAxisScale（图像轴缩放）：</span></p>
+<p class=rvps1><span class=rvts2>图像轴缩放存储在具有2x2个元素的单元格中。使用标准单位。</span></p>
+<p class=rvps1><span class=rvts2>对于0D和1D图谱对象，元素为空。对于2D图谱对象，元素(1,1)包含图像列的缩放，元素(2,1)包含图像行的缩放，元素(1,2)和(2,2)包含x/y缩放的单位字符串（例如&#181;m）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts10>Title（标题）：</span></p>
+<p class=rvps1><span class=rvts2>始终为null。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts10>Class（类）：</span></p>
+<p class=rvps1><span class=rvts2>用于MATLAB识别文件为DSO格式。包含"dataset"。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts10>Include（包含）：</span></p>
+<p class=rvps1><span class=rvts2>用于设置图像或图谱掩模，告诉MATLAB应使用哪些像素。WITec Project始终在掩模中设置所有像素。</span></p>
+<p class=rvps1><span class=rvts2>该字段是一个具有2个元素的单元格。元素1具有图像掩模，作为具有 &lt;SizeY*SizeX&gt; 个元素的行向量。</span></p>
+<p class=rvps1><span class=rvts2>元素2具有图谱掩模，作为具有 &lt;光谱大小&gt; 个元素的行向量。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts10>ClassLookUp（类查找）：</span></p>
+<p class=rvps1><span class=rvts2>始终为null。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts10>AxisType（轴类型）：</span></p>
+<p class=rvps1><span class=rvts2>可用于表征光谱轴缩放（数据不会被此更改）。可以为"none"、"continuous"和"discrete"。WITec Project使用"none"。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts10>ImageAxisType（图像轴类型）：</span></p>
+<p class=rvps1><span class=rvts2>参见AxisType，但用于图像轴缩放。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts10>Description（描述）：</span></p>
+<p class=rvps1><span class=rvts2>始终为null。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts10>UserData（用户数据）：</span></p>
+<p class=rvps1><span class=rvts2>始终为null。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts10>DataVersion（数据版本）：</span></p>
+<p class=rvps1><span class=rvts2>WITec Project使用DSO 6.0，因此写入"6.0"。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts10>History（历史）：</span></p>
+<p class=rvps1><span class=rvts2>包含"Created by WITec Project (Version XXX)"。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts10>UniqueID（唯一ID）：</span></p>
+<p class=rvps1><span class=rvts2>为每个图谱对象从标题+日期生成唯一ID。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts9>在MATLAB中使用DSO</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>下载的软件包包含一个 @dataset 文件夹。要在MATLAB中打开导出的DSO文件，文件必须与 @dataset 文件夹位于同一文件夹中（或者文件必须是此文件夹的同级文件）。</span></p>
+<p class=rvps1><span class=rvts2>在MATLAB窗口"当前文件夹"中，可以双击文件或通过命令"load('filename_dso-file')"加载。</span></p>
+<p class=rvps1><span class=rvts2>MATLAB随后在MATLAB窗口"工作区"中显示它。您可以通过输入DSO文件名在MATLAB命令窗口中列出DSO字段。</span></p>
+<p class=rvps1><span class=rvts2>您可以使用字段，通过"dso-filename.fieldname"。具有多个值的字段（如AxisScale）可以通过例如"dso-filename.axisscale{2,1}"来访问。可以使用 @dataset 文件夹中的函数来处理DSO。</span></p>
+<p class=rvps1><span class=rvts2>以下地址有相关文档：</span><a class=rvts7 href="http://wiki.eigenvector.com/index.php?title=DataSet_Object_Methods" target="_blank">http://wiki.eigenvector.com/index.php?title=DataSet_Object_Methods</a></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts5>MATLAB结构体</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>这是由WITec定义的自定义结构体格式。</span></p>
+<p class=rvps1><span class=rvts2>字段Name、Date、Data、AxisScale、ImageSize、ImageAxisScale与DSO格式相同。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts9>在MATLAB中的使用</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>您可以在MATLAB的"当前文件夹"窗口中双击导出的文件或通过load命令来打开它。</span></p>
+<p class=rvps1><span class=rvts2>结构体显示在MATLAB窗口"工作区"中。您可以双击结构体来显示字段，字段也可以被双击。</span></p>
+<p class=rvps1><span class=rvts2>字段"date"、"data"和"imagesize"是矩阵，可以使用方括号访问，例如 structurename.data(1,:) 返回第一行数据，即数据集中的第一个光谱。</span></p>
+<p class=rvps1><span class=rvts2>字段"axisscale"和"imageaxisscale"是单元格，通过花括号访问，例如 structurename.axisscale{2,1} 返回光谱轴缩放的行向量。</span></p>
+<p class=rvps1><span class=rvts2>您也可以在输入"structurename."后按tab键来显示可能的字段。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>以下是一些在MATLAB中绘制图谱对象的示例。只需将其中一个函数复制到MATLAB文件（filename.m）中并在MATLAB中加载即可：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts8>function PlotGraph(aGraph, aImagePosition, aYLim)</span></p>
+<p class=rvps2><span class=rvts8>% 在2D坐标系中绘制整个数据集中的一个图谱。</span></p>
+<p class=rvps2><span class=rvts8>% aGraph: 来自WITec Project导出的结构体</span></p>
+<p class=rvps2><span class=rvts8>% aImagePosition: 图谱的x和y图像坐标，例如 [30,50] 表示 x=30, y=50</span></p>
+<p class=rvps2><span class=rvts8>% aYLim: 光谱y轴的下限和上限，例如 [-5,250] 将在 -5 到 250 的范围内绘制图谱</span></p>
+<p class=rvps2><span class=rvts8>% 注意，由于自动缩放，瑞利峰可能会使您重要的拉曼峰不可见。</span></p>
+<p class=rvps2><span class=rvts8><br></span></p>
+<p class=rvps2><span class=rvts8>aSpectrum = aGraph.data(aImagePosition(1) * aGraph.imagesize(1) + aImagePosition(2),:);</span></p>
+<p class=rvps2><span class=rvts8>aXAxisscale = aGraph.axisscale{2, 1};</span></p>
+<p class=rvps2><span class=rvts8>plot(aXAxisscale, aSpectrum);</span></p>
+<p class=rvps2><span class=rvts8>aXLabel = sprintf('[%s]',aGraph.axisscale{2, 2});</span></p>
+<p class=rvps2><span class=rvts8>xlabel(aXLabel)</span></p>
+<p class=rvps2><span class=rvts8>ylabel('CCD cts.')</span></p>
+<p class=rvps2><span class=rvts8>ylim(aYLim)</span></p>
+<p class=rvps2><span class=rvts8>aTitle = sprintf('%s (y = %i, x = %i)',aGraph.name, aImagePosition(2), aImagePosition(1));</span></p>
+<p class=rvps2><span class=rvts8>title(aTitle)</span></p>
+<p class=rvps2><span class=rvts8>end</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts8>function PlotAverageGraph(aGraph, aYLim)</span></p>
+<p class=rvps2><span class=rvts8>% 绘制平均光谱</span></p>
+<p class=rvps2><span class=rvts8>% aGraph: 来自WITec Project导出的结构体</span></p>
+<p class=rvps2><span class=rvts8>% aYLim: y轴的下限和上限</span></p>
+<p class=rvps2><span class=rvts8><br></span></p>
+<p class=rvps2><span class=rvts8>aAverageSpectrum = mean(aGraph.data);</span></p>
+<p class=rvps2><span class=rvts8>aXAxisscale = aGraph.axisscale{2, 1};</span></p>
+<p class=rvps2><span class=rvts8>plot(aXAxisscale,aAverageSpectrum)</span></p>
+<p class=rvps2><span class=rvts8>aXLabel = sprintf('[%s]',aGraph.axisscale{2, 2});</span></p>
+<p class=rvps2><span class=rvts8>xlabel(aXLabel)</span></p>
+<p class=rvps2><span class=rvts8>ylabel('CCD cts.')</span></p>
+<p class=rvps2><span class=rvts8>ylim(aYLim)</span></p>
+<p class=rvps2><span class=rvts8>aTitle = sprintf('%s (Average Spectrum)',aGraph.name);</span></p>
+<p class=rvps2><span class=rvts8>title(aTitle)</span></p>
+<p class=rvps2><span class=rvts8>end</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts8>function PlotImage(aGraph)</span></p>
+<p class=rvps2><span class=rvts8>% 绘制强度图像</span></p>
+<p class=rvps2><span class=rvts8>% aGraph: 来自WITec Project导出的结构体</span></p>
+<p class=rvps2><span class=rvts8><br></span></p>
+<p class=rvps2><span class=rvts8>aSizeY = aGraph.imagesize(1);</span></p>
+<p class=rvps2><span class=rvts8>aSizeX = aGraph.imagesize(2);</span></p>
+<p class=rvps2><span class=rvts8>aSumImage = sum(aGraph.data,2);</span></p>
+<p class=rvps2><span class=rvts8>aImage = zeros(aSizeY,aSizeX);</span></p>
+<p class=rvps2><span class=rvts8>for x=1:aSizeX</span></p>
+<p class=rvps2><span class=rvts8>&nbsp;&nbsp;&nbsp; for y=1:aSizeY</span></p>
+<p class=rvps2><span class=rvts8>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; aImage(y, x) = aSumImage((x - 1) * aSizeY + y);</span></p>
+<p class=rvps2><span class=rvts8>&nbsp;&nbsp;&nbsp; end</span></p>
+<p class=rvps2><span class=rvts8>end</span></p>
+<p class=rvps2><span class=rvts8>figure</span></p>
+<p class=rvps2><span class=rvts8>aXAxisScale = aGraph.imageaxisscale{2, 1};</span></p>
+<p class=rvps2><span class=rvts8>aYAxisScale = aGraph.imageaxisscale{1, 1};</span></p>
+<p class=rvps2><span class=rvts8>imagesc(aXAxisScale, aYAxisScale, aImage)</span></p>
+<p class=rvps2><span class=rvts8>%colormap(gray)</span></p>
+<p class=rvps2><span class=rvts8>colormap(hot(256))</span></p>
+<p class=rvps2><span class=rvts8>aTitle = sprintf('%s (Intensity image)',aGraph.name);</span></p>
+<p class=rvps2><span class=rvts8>title(aTitle)</span></p>
+<p class=rvps2><span class=rvts8>aXLabel = sprintf('[%s]',aGraph.imageaxisscale{2, 2});</span></p>
+<p class=rvps2><span class=rvts8>xlabel(aXLabel)</span></p>
+<p class=rvps2><span class=rvts8>aYLabel = sprintf('[%s]',aGraph.imageaxisscale{1, 2});</span></p>
+<p class=rvps2><span class=rvts8>ylabel(aYLabel)</span></p>
+<p class=rvps2><span class=rvts8>end</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts8>function SpectrumToImage(aGraph, aSpectralPosition)</span></p>
+<p class=rvps2><span class=rvts8>% 绘制指定光谱位置的强度图像</span></p>
+<p class=rvps2><span class=rvts8>% aGraph: 来自WITec Project导出的结构体</span></p>
+<p class=rvps2><span class=rvts8>% aSpectralPosition: 光谱位置</span></p>
+<p class=rvps2><span class=rvts8><br></span></p>
+<p class=rvps2><span class=rvts8>aSizeY = aGraph.imagesize(1);</span></p>
+<p class=rvps2><span class=rvts8>aSizeX = aGraph.imagesize(2);</span></p>
+<p class=rvps2><span class=rvts8>aSumImage = sum(aGraph.data(:,aSpectralPosition),2);</span></p>
+<p class=rvps2><span class=rvts8>aImage = zeros(aSizeY,aSizeX);</span></p>
+<p class=rvps2><span class=rvts8>for x=1:aSizeX</span></p>
+<p class=rvps2><span class=rvts8>&nbsp;&nbsp;&nbsp; for y=1:aSizeY</span></p>
+<p class=rvps2><span class=rvts8>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; aImage(y, x) = aSumImage((x - 1) * aSizeY + y);</span></p>
+<p class=rvps2><span class=rvts8>&nbsp;&nbsp;&nbsp; end</span></p>
+<p class=rvps2><span class=rvts8>end</span></p>
+<p class=rvps2><span class=rvts8>figure</span></p>
+<p class=rvps2><span class=rvts8>aXAxisScale = aGraph.imageaxisscale{2, 1};</span></p>
+<p class=rvps2><span class=rvts8>aYAxisScale = aGraph.imageaxisscale{1, 1};</span></p>
+<p class=rvps2><span class=rvts8>imagesc(aXAxisScale, aYAxisScale, aImage)</span></p>
+<p class=rvps2><span class=rvts8>%colormap(gray)</span></p>
+<p class=rvps2><span class=rvts8>colormap(hot(256))</span></p>
+<p class=rvps2><span class=rvts8>aTitle = sprintf('%s (Intensity image)',aGraph.name);</span></p>
+<p class=rvps2><span class=rvts8>title(aTitle)</span></p>
+<p class=rvps2><span class=rvts8>aXLabel = sprintf('[%s]',aGraph.imageaxisscale{2, 2});</span></p>
+<p class=rvps2><span class=rvts8>xlabel(aXLabel)</span></p>
+<p class=rvps2><span class=rvts8>aYLabel = sprintf('[%s]',aGraph.imageaxisscale{1, 2});</span></p>
+<p class=rvps2><span class=rvts8>ylabel(aYLabel)</span></p>
+<p class=rvps2><span class=rvts8>end</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>导出过滤器选项</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>Matlab导出类型：</span></p>
+<p class=rvps1><span class=rvts2>可以为DataSetObject (DSO 6.0) 或 Matlab结构体。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>X单位：</span></p>
+<p class=rvps1><span class=rvts2>导出的x轴数据的单位。可以为WITec Project能够处理的所有x单位（参见&nbsp;</span><a class=rvts7 href="InterpretationData.html">解释数据</a><span class=rvts2>）。</span></p>
+
+</div></body></html>

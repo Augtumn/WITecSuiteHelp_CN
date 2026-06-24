@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>图谱背景扣除对话框</TITLE><meta name="generator" content="FastHelp"><meta name="keywords" content="Graph Background Subtraction">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 16pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #ea7600;
+}
+span.rvts5
+{
+ font-size: 14pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+a.rvts6, span.rvts6
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts6:hover { color: #0000ff; }
+span.rvts7
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts8
+{
+ font-family: 'Microsoft Sans Serif';
+ font-style: italic;
+ color: #000000;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><table border=0 cellpadding=1 bordercolor="#000000" cellspacing=2>
+<tr valign=middle>
+<td width=50 valign=middle><font size=2 color="#000000" face="Arial">
+<div><img border="0" src="Images/image110260173.jpg" width="48" height="48"></div>
+</font>
+</td>
+<td width=502 valign=middle><font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>图谱背景扣除对话框</b></font></div>
+</font>
+</td>
+</tr>
+</table>
+</div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts4>描述</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>使用此对话框，可以使用多种算法从一个或多个光谱中扣除背景。</span></p>
+<p class=rvps1><span class=rvts2>如果用于多光谱数据集，则可以使用相同的掩模和算法一次校正所有光谱。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>输入与结果</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts7>输入：</span></p>
+<p class=rvps1><span class=rvts2>一个图谱对象，可以是单光谱或多光谱对象（例如图像图谱）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts7>结果：</span></p>
+<p class=rvps1><span class=rvts2>输入图谱对象的副本，已扣除背景。</span></p>
+<p class=rvps1><span class=rvts2>后缀：</span><span class=rvts8>(Sub BG)</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<hr noshade size=1 style="color : #808080">
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>用户界面</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><a class=rvts6 href="#Constant">常数选项卡</a></li>
+<li class=rvps1><a class=rvts6 href="#Minimum">最小值选项卡</a></li>
+<li class=rvps1><a class=rvts6 href="#Polynomial">多项式选项卡</a></li>
+<li class=rvps1><a class=rvts6 href="#Shape">形状选项卡</a></li>
+<li class=rvps1><a class=rvts6 href="#Normalize">归一化选项卡</a></li>
+<li class=rvps1><a class=rvts6 href="#AdvancedMaskControls">高级掩模控件</a></li>
+<li class=rvps1><a class=rvts6 href="#Preview">预览窗口</a></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="Constant"><span class=rvts5>常数选项卡与通用 UI</span></p>
+<p class=rvps1><span class=rvts2>如果选择"常数"选项卡，则使用用户可定义的静态常数值和/或使用一个单光谱从所有输入光谱中减去背景。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p><img border="0" src="Images/image302188713.jpg" width="373" height="221"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>常数值（浮点编辑框）</span></p>
+<p class=rvps1><span class=rvts2>该常数值将从所有像素和所有光谱中减去。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>获取掩模平均值（按钮）</span></p>
+<p class=rvps1><span class=rvts2>按下此按钮将常数值设置为当前设为掩模的所有像素的平均值，使用当前预览光谱。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>放置光谱（按钮和拖放区）</span></p>
+<p class=rvps1><span class=rvts2>您可以将一个单光谱放置到此按钮上，以便从所有输入光谱中减去该光谱。如果您不想再使用该单光谱进行减法，请点击该按钮。</span></p>
+<p class=rvps1><span class=rvts2>如果放置一个单光谱，常数值将设为零；但之后您可以输入一个常数偏移量以进行额外的常数值减法。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>使用掩模的加权减法（复选框）</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，您可以更改掩模以定义应使用哪个光谱区域来计算用于减去放置的单光谱的权重因子。这是一个 Plus 功能。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>减法预览（复选框）</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，蓝色预览图谱将显示减去后的光谱预览，而不是将要减去的线。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>提取（按钮和拖放区）</span></p>
+<p class=rvps1><span class=rvts2>对输入图谱数据对象的所有光谱执行背景扣除，并将结果添加到当前项目中。</span></p>
+<p class=rvps1><span class=rvts2>您可以将多个其他图谱数据对象拖放到此按钮上进行批处理。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>提取并下一步（按钮）</span></p>
+<p class=rvps1><span class=rvts2>向导功能：使用此按钮，您可以选择是否使用此对话框的结果进行真组分分析、聚类分析、峰拟合或归一化</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1412617194.jpg" width="247" height="237"></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts5><br></span></p>
+<p class=rvps1><a name="Minimum"><span class=rvts5>最小值选项卡</span></p>
+<p class=rvps1><span class=rvts2>如果选择"最小值"选项卡，则使用标记区域中所有光谱像素的最小值处的水平线扣除背景。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image2027150806.jpg" width="355" height="221"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>偏移量（浮点编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>为找到的最小值添加偏移量。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="Polynomial"><span class=rvts5>多项式选项卡</span></p>
+<p class=rvps1><span class=rvts2>如果选择"多项式"选项卡，则通过将 n 阶多项式拟合到掩模光谱来扣除背景。</span></p>
+<p class=rvps1><span class=rvts2>如果使用此背景扣除模式，则所有拉曼峰区域应从掩模中移除 - 除非您使用自动掩模模式。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image706255882.jpg" width="355" height="221"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>阶次（整数编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>用于拟合背景的多项式的阶次。0 阶将减去一条水平线，1 阶将减去一个斜率，等等。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>自动掩模（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，算法将尝试通过自动仅使用光谱噪声像素来忽略峰。因此您也可以在有拉曼信息的像素处设置掩模。</span></p>
+<p class=rvps1><span class=rvts2>这是 WITec Project Plus 功能。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>噪声阈值（浮点编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>自动多项式模式的噪声阈值。您可以通过更改此参数来水平移动背景水平。</span></p>
+<p class=rvps1><span class=rvts2>仅在启用"自动掩模"模式时可用。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="Shape"><span class=rvts5>形状选项卡</span></p>
+<p class=rvps1><span class=rvts2>如果选择"形状"选项卡，则使用从下方逐像素接近光谱的圆润形状来扣除背景。形状方法对于扣除荧光区域非常有效，且使用起来相当容易。</span></p>
+<p class=rvps1><span class=rvts2>这是 WITec Project Plus 功能。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p><img border="0" src="Images/image1116752144.jpg" width="373" height="221"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>形状大小：</span></p>
+<p class=rvps1><span class=rvts2>圆润形状的大小。较小的尺寸将从光谱中扣除更多细节，而较大的尺寸将扣除更粗糙的形状。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>保留边界峰：</span></p>
+<p class=rvps1><span class=rvts2>如果未勾选，则靠近边界像素的峰将被扣除。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>掩模：</span></p>
+<p class=rvps1><span class=rvts2>使用蓝色掩模对像素进行线性插值。</span></p>
+<p class=rvps1><span class=rvts5><br></span></p>
+<p class=rvps1><a name="Normalize"><span class=rvts5>归一化选项卡</span></p>
+<p class=rvps1><span class=rvts2>如果选择"归一化"选项卡，则光谱将被归一化到所需值。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image935806362.jpg" width="373" height="221"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>归一化类型：</span></p>
+<p class=rvps1><span class=rvts2>面积归一化为 1 &#8211; 掩模内的面积将为 1</span></p>
+<p class=rvps1><span class=rvts2>面积绝对值归一化为 1 &#8211; 掩模内的面积将为 1，对负值使用绝对值</span></p>
+<p class=rvps1><span class=rvts2>最大峰归一化为 1 &#8211; 掩模内的最大光谱值将归一化为 1</span></p>
+<p class=rvps1><span class=rvts2>最大峰归一化为 100 &#8211; 掩模内的最大光谱值将归一化为 100</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>掩模：</span></p>
+<p class=rvps1><span class=rvts2>使用蓝色掩模来定义光谱的哪些部分应用于归一化。</span></p>
+<p class=rvps1><span class=rvts5><br></span></p>
+<p class=rvps1><span class=rvts5><br></span></p>
+<p class=rvps1><a name="AdvancedMaskControls"><span class=rvts5>高级掩模控件</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>显示高级掩模编辑（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，将显示高级掩模编辑。这些编辑是可选的，您可以直接在预览图谱查看器中更改掩模。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1815799.jpg" width="231" height="254"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>拟合掩模（掩模工具栏）：</span></p>
+<p class=rvps1><span class=rvts2>使用这些工具按钮可以修改蓝色拟合掩模（使用开始/停止 [像素] 编辑框）。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>显示变更掩模（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，图谱预览窗口中会有一个额外的绿色掩模可以进行操作。使用下面的工具按钮可以修改变更掩模（使用开始/停止 [像素] 编辑框）。</span></p>
+<p class=rvps1><span class=rvts2>在变更掩模中清除像素将使结果光谱在此位置变平，使用最后一个被掩模像素的值。这在例如多项式拟合在光谱边界处有非常极端值时可能很有用。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>开始/停止 [像素]，监听（编辑框，复选框）：</span></p>
+<p class=rvps1><span class=rvts2>参见</span><a class=rvts6 href="MaskManipulationTools.html">掩模操作工具。</a></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="Preview"><span class=rvts5>预览窗口</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image319419944.jpg" width="424" height="180"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>预览窗口以红色显示原始图谱对象，以及一条将从原始图谱中减去的蓝色预览曲线。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>如果使用多光谱图谱对象（线光谱、图像光谱），可以点击图像中的任何像素来查看所选光谱的预览。</span></p>
+
+</div></body></html>

@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>平均光谱</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="平均光谱">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 16pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #ea7600;
+}
+a.rvts5, span.rvts5
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts5:hover { color: #0000ff; }
+a.rvts6, span.rvts6
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts6:hover { color: #0000ff; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><table width="100%" border=0 cellpadding=1 bordercolor="#000000" cellspacing=2>
+<tr valign=middle>
+<td width=49 valign=middle><font size=2 color="#000000" face="Arial">
+<div><img border="0" src="Images/image965841685.jpg" width="48" height="48"></div>
+</font>
+</td>
+<td width=1217 valign=middle><font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>平均光谱</b></font></div>
+</font>
+</td>
+</tr>
+</table>
+</div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts4>描述</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>平均光谱计算多维图谱数据对象的平均光谱（可选择使用加权因子）。</span></p>
+<p class=rvps1><span class=rvts2>若要平均多个单光谱数据对象，需要使用&nbsp;</span><a class=rvts6 href="DropActionCalculator.html">计算器对话框</a><span class=rvts2>。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>另请参阅</span></p>
+<p class=rvps1><a class=rvts6 href="CreatingAverageSpectraUsingMasks.html">使用掩模创建平均光谱</a></p>
+<p class=rvps1><a class=rvts6 href="MathAverageSpectrum.html">平均光谱（数学）</a></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>输入与结果</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>输入：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>您可以在该对话框中使用任何类型的多维图谱对象。</span>
+<br><span class=rvts2>此外，您可以将此图谱与</span><span class=rvts3>一个或多个具有相应尺寸的图像</span><span class=rvts2>进行</span><span class=rvts3>组合</span><span class=rvts2>。附加对象可用于为每个待平均的光谱定义加权因子。因此，您可以使用</span><a class=rvts5 href="CreatingImageMasksOverview.html">图像掩模</a><span class=rvts2>仅对掩模中设置的像素进行平均（权重 = 1.0 或 0.0）。</span></li>
+<li class=rvps1><span class=rvts2>您可以使用任意数量的单光谱数据对象来创建所有这些光谱的平均值。</span></li>
+<li class=rvps1><span class=rvts2>您可以使用多个多维图谱对象进行批处理。</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>结果：</span></p>
+<p class=rvps1><span class=rvts2>根据附加加权因子对象的数量 &lt;n&gt;，结果数据对象为一个或 &lt;n&gt; 个平均图谱对象。</span></p>
+<p class=rvps1><span class=rvts2>如果不使用附加加权因子对象，则仅创建一个单一图谱：所拖放数据对象中所有光谱的总平均值。</span></p>
+
+</div></body></html>

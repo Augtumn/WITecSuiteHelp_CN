@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>实现方式</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 9pt;
+ font-family: 'Microsoft Sans Serif';
+ color: #008699;
+}
+span.rvts4
+{
+ font-size: 11pt;
+ font-family: 'Cambria';
+ font-style: italic;
+ color: #000000;
+}
+span.rvts5
+{
+ font-size: 7pt;
+ font-family: 'Cambria';
+ font-style: italic;
+ color: #000000;
+ vertical-align: sub;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: center;
+ margin: 15px 0px 15px 0px;
+}
+.rvps2
+{
+ text-align: justify;
+ margin: 0px 0px 10px 0px;
+}
+.rvps3
+{
+ text-align: center;
+ margin: 0px 0px 10px 0px;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>实现方式</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+<div></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps2><span class=rvts2>KPFM 模式采用双通道测量方式，使用提升模式以最小化串扰，类似于 MFM 或 EFM 测量。在第一通道中，使用轻敲模式和主锁相放大器记录形貌。在第二通道中，悬臂梁不再被机械激励振动。交流电压 </span><span class=rvts4>V</span><span class=rvts5>AC</span><span class=rvts4>(&#969;t)</span><span class=rvts2> 施加在样品和探针之间。由于电力的作用，悬臂梁开始以 &#969; 频率振动，信号由次级锁相放大器分析，提供幅度。为了搜索使悬臂梁幅度达到最小值的 </span><span class=rvts4>V</span><span class=rvts5>DC</span><span class=rvts2> 值，</span><span class=rvts4>V</span><span class=rvts5>DC</span><span class=rvts2> 电压以 100 Hz 进行调制（默认值）。</span></p>
+<p class=rvps3><img border="0" src="Images/image1873813257.jpg" width="627" height="248"></p>
+<p class=rvps1><span class=rvts3>图 1：KPFM 测量原理</span></p>
+<p class=rvps2><span class=rvts2>这种实现方式也称为 KPFM-AM。KPFM-AM 的优点是灵敏度较高，但会牺牲可实现的分辨率。这是因为不仅探针对测量有贡献，整个悬臂梁也有贡献。</span></p>
+
+</div></body></html>

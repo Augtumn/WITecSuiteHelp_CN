@@ -1,0 +1,2294 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><html><head><meta name="GENERATOR" content="FastHelp Multi-User"><!-- Sitemap 1.0 --></head><body>
+<object type="text/site properties">
+  <param name="Font" value="Arial,9,0">
+</object>
+<UL>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="三维数据分析">
+   <param name="Name" value="三维数据分析">
+   <param name="Local" value="3DDataAnalysis.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="三维拉曼成像">
+   <param name="Name" value="图像扫描">
+   <param name="Local" value="OGRamanImageScan.html">
+   <param name="Name" value="大面积扫描">
+   <param name="Local" value="OGRamanLargeAreaScan.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="AC模式">
+   <param name="Name" value="AC模式概述">
+   <param name="Local" value="OGAFMACOverview.html">
+   </OBJECT>
+<UL>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="AC模式理论">
+     <param name="Name" value="理论">
+     <param name="Local" value="OGAFMACTheory.html">
+     </OBJECT>
+</UL>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="累积模式（单光谱）">
+   <param name="Name" value="单光谱">
+   <param name="Local" value="WCSingleSpectrum.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="附加设备">
+   <param name="Name" value="附加设备">
+   <param name="Local" value="AdditionalDevices.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="粘附力">
+   <param name="Name" value="理论">
+   <param name="Local" value="OGAFMDPFMDataEvalTheory.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="调整（AFM）">
+   <param name="Name" value="调整">
+   <param name="Local" value="WCAdjust.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="高级拟合工具对话框">
+   <param name="Name" value="高级拟合工具对话框">
+   <param name="Local" value="DropActionAdvancedFittingTool.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="高级图谱平均对话框">
+   <param name="Name" value="高级图谱平均对话框">
+   <param name="Local" value="DropActionAdvancedGraphAverage.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="仿射变换（数学）">
+   <param name="Name" value="仿射变换（数学）">
+   <param name="Local" value="AffineTransformationMath.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="AFM">
+   <param name="Name" value="AFM概述">
+   <param name="Local" value="OGAFMOverview.html">
+   </OBJECT>
+<UL>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="AFM介绍">
+     <param name="Name" value="介绍">
+     <param name="Local" value="OGAFMIntroduction.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="AFM测量">
+     <param name="Name" value="设置测量">
+     <param name="Local" value="OGAFMProcedure.html">
+     </OBJECT>
+</UL>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="AFM调整">
+   <param name="Name" value="设置测量">
+   <param name="Local" value="OGAFMProcedure.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="AFM状态">
+   <param name="Name" value="AFM状态">
+   <param name="Local" value="AFMStatus.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="alphaControl">
+   <param name="Name" value="WITec服务监视器概述">
+   <param name="Local" value="WITecServiceMonitorOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="检偏器偏振器">
+   <param name="Name" value="检偏器偏振器">
+   <param name="Local" value="AnalyzerPolarizer.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="检偏器系列（OG）">
+   <param name="Name" value="慢速序列">
+   <param name="Local" value="OGRamanSlowSeries.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="动画编辑器">
+   <param name="Name" value="动画编辑器">
+   <param name="Local" value="AnimationEditor.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="APD">
+   <param name="Name" value="检测">
+   <param name="Local" value="WCDetection.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="孔径光阑">
+   <param name="Name" value="视场光阑/孔径光阑">
+   <param name="Local" value="FieldStopApertureStop.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="ASCII导入（TrueMatch）">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="自动保存（控制窗口）">
+   <param name="Name" value="自动保存">
+   <param name="Local" value="WCAutoSave.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="自动保存Project选项">
+   <param name="Name" value="自动保存Project选项">
+   <param name="Local" value="AutoSaveProjectOptions.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="自动亮度">
+   <param name="Name" value="照明">
+   <param name="Local" value="Illumination.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="自动对焦（光谱）">
+   <param name="Name" value="光谱自动对焦">
+   <param name="Local" value="WCSpectralAutoFocus.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="自动化测量">
+   <param name="Name" value="样品栅格">
+   <param name="Local" value="OGRamanSampleRaster.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="自动预览（Project）">
+   <param name="Name" value="自动预览">
+   <param name="Local" value="AutomaticPreview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="使用掩模平均光谱">
+   <param name="Name" value="使用掩模创建平均光谱">
+   <param name="Local" value="CreatingAverageSpectraUsingMasks.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="平均光谱">
+   <param name="Name" value="平均光谱">
+   <param name="Local" value="AverageSpectrum.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="平均光谱（数学）">
+   <param name="Name" value="平均光谱（数学）">
+   <param name="Local" value="MathAverageSpectrum.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="基分析（数学）">
+   <param name="Name" value="基分析（数学）">
+   <param name="Local" value="BasisAnalysisMath.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="双线性变换（数学）">
+   <param name="Name" value="双线性变换（数学）">
+   <param name="Local" value="BilinearTransformationMath.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="二进制导出格式（Project）">
+   <param name="Name" value="WITec二进制导出格式">
+   <param name="Local" value="WITecBinaryExportFormat.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="合并">
+   <param name="Name" value="光谱设置">
+   <param name="Local" value="SpectroscopySettings.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="位图数据">
+   <param name="Name" value="位图数据">
+   <param name="Local" value="BitmapData.html">
+   <param name="Name" value="数据对象概述">
+   <param name="Local" value="DataObjectsOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="明场">
+   <param name="Name" value="照明">
+   <param name="Local" value="Illumination.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="C#">
+   <param name="Name" value="C#">
+   <param name="Local" value="WCCOMCsharp.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="C-AFM">
+   <param name="Name" value="C-AFM概述">
+   <param name="Local" value="OGAFMCAFMOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="计算器对话框">
+   <param name="Name" value="计算器对话框">
+   <param name="Local" value="DropActionCalculator.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="校准（光谱仪）">
+   <param name="Name" value="校准">
+   <param name="Local" value="OGRamanCalibration.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="校准视频图像">
+   <param name="Name" value="物镜视频校准">
+   <param name="Local" value="ObjectiveVideoCalibration.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="悬臂梁调整">
+   <param name="Name" value="惯性驱动控制">
+   <param name="Local" value="InertialDriveControl.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="悬臂梁AC模式">
+   <param name="Name" value="AC模式概述">
+   <param name="Local" value="OGAFMACOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="悬臂梁接触模式">
+   <param name="Name" value="接触模式概述">
+   <param name="Local" value="OGAFMContactOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="CBUCS">
+   <param name="Name" value="COM服务器与类">
+   <param name="Local" value="WCCOMClasses.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="CCD">
+   <param name="Name" value="光谱设置">
+   <param name="Local" value="SpectroscopySettings.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="CCD相机">
+   <param name="Name" value="光谱相机">
+   <param name="Local" value="WCSpecCamera.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="CCD相机配置">
+   <param name="Name" value="CCD相机配置">
+   <param name="Local" value="CCDCameraConfiguration.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="更换物镜对话框">
+   <param name="Name" value="更换物镜对话框">
+   <param name="Local" value="ChangeObjectiveDialog.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="环形菜单（图谱查看器）">
+   <param name="Name" value="图谱查看器环形菜单">
+   <param name="Local" value="GraphViewerCircleMenu.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="环形菜单（图像查看器）">
+   <param name="Name" value="图像查看器环形菜单">
+   <param name="Local" value="ImageViewerCircleMenu.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="环形菜单（项目管理器）">
+   <param name="Name" value="项目管理器环形菜单">
+   <param name="Local" value="DataCategories.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="聚类分析对话框">
+   <param name="Name" value="聚类分析对话框">
+   <param name="Local" value="DropActionClusterAnalysis.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="聚类分析K均值（几何视角）">
+   <param name="Name" value="聚类分析K均值（几何视角）">
+   <param name="Local" value="ClusterAnalysisK-MeansGeometricView.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="聚类分析K均值（数学）">
+   <param name="Name" value="聚类分析K均值（数学）">
+   <param name="Local" value="ClusterAnalysisK-MeansMath.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="颜色配置文件数据">
+   <param name="Name" value="颜色配置文件数据">
+   <param name="Local" value="ColorProfileData.html">
+   <param name="Name" value="数据对象概述">
+   <param name="Local" value="DataObjectsOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="COM自动化">
+   <param name="Name" value="COM自动化概述">
+   <param name="Local" value="WCCOMAutomationOverview.html">
+   <param name="Name" value="COM自动化">
+   <param name="Local" value="WCCOMAutomationTree.html">
+   </OBJECT>
+<UL>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="COM插件">
+     <param name="Name" value="远程访问">
+     <param name="Local" value="WCCOMRemoteAccess.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="COM接口">
+     <param name="Name" value="COM接口">
+     <param name="Local" value="WCCOMInterfaces.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="COM服务器与类">
+     <param name="Name" value="COM服务器与类">
+     <param name="Local" value="WCCOMClasses.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="COM子系统">
+     <param name="Name" value="COM子系统">
+     <param name="Local" value="WCCOMSubsystems.html">
+     </OBJECT>
+</UL>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="组件对象模型（COM）">
+   <param name="Name" value="COM自动化概述">
+   <param name="Local" value="WCCOMAutomationOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="导电原子力显微镜（C-AFM）">
+   <param name="Name" value="C-AFM概述">
+   <param name="Local" value="OGAFMCAFMOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="共聚焦显微镜">
+   <param name="Name" value="共聚焦概述">
+   <param name="Local" value="OGConfocalOverview.html">
+   </OBJECT>
+<UL>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="共聚焦显微镜理论">
+     <param name="Name" value="理论">
+     <param name="Local" value="OGConfocalTheory.html">
+     </OBJECT>
+</UL>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="共聚焦拉曼显微镜">
+   <param name="Name" value="介绍">
+   <param name="Local" value="OGRamanIntroduction.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="共聚焦性">
+   <param name="Name" value="共聚焦性">
+   <param name="Local" value="OGConfocality.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="接触模式">
+   <param name="Name" value="接触模式概述">
+   <param name="Local" value="OGAFMContactOverview.html">
+   </OBJECT>
+<UL>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="接触模式理论">
+     <param name="Name" value="理论">
+     <param name="Local" value="OGAFMContactTheory.html">
+     </OBJECT>
+</UL>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="接触电势差（CPD）">
+   <param name="Name" value="参数">
+   <param name="Local" value="OGAFMKPFMParameters.html">
+   <param name="Name" value="理论">
+   <param name="Local" value="OGAFMKPFMTheory.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="控制树">
+   <param name="Name" value="控制窗口概述">
+   <param name="Local" value="WCControlWindow.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="控制窗口">
+   <param name="Name" value="控制窗口概述">
+   <param name="Local" value="WCControlWindow.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="复制与粘贴数据对象">
+   <param name="Name" value="复制与粘贴数据对象">
+   <param name="Local" value="CopyAndPasteDataObjects.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="CPD">
+   <param name="Name" value="参数">
+   <param name="Local" value="OGAFMKPFMParameters.html">
+   <param name="Name" value="理论">
+   <param name="Local" value="OGAFMKPFMTheory.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="光标数据">
+   <param name="Name" value="光标数据">
+   <param name="Local" value="CursorData.html">
+   <param name="Name" value="数据对象概述">
+   <param name="Local" value="DataObjectsOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="自定义拼接">
+   <param name="Name" value="自定义拼接">
+   <param name="Local" value="CustomStitching.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="暗场">
+   <param name="Name" value="照明">
+   <param name="Local" value="Illumination.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="数据分析">
+   <param name="Name" value="数据分析概述">
+   <param name="Local" value="DataAnalysisOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="数据通道">
+   <param name="Name" value="数据通道">
+   <param name="Local" value="WCDataChannels.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="数据裁剪与缩减">
+   <param name="Name" value="数据裁剪与缩减对话框">
+   <param name="Local" value="DropActionDataCropping.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="数据对象">
+   <param name="Name" value="数据对象概述">
+   <param name="Local" value="DataObjectsOverview.html">
+   </OBJECT>
+<UL>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="数据对象内存消耗">
+     <param name="Name" value="数据对象内存消耗">
+     <param name="Local" value="DataObjectMemoryConsumption.html">
+     </OBJECT>
+</UL>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="数据可视化（Project）">
+   <param name="Name" value="数据可视化概述">
+   <param name="Local" value="DataVisualizationOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="数据库编辑器（TrueMatch）">
+   <param name="Name" value="数据库编辑器">
+   <param name="Local" value="WITecTrueMatchDatabaseEditor.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="数据库导出选项（Project）">
+   <param name="Name" value="数据库导出选项">
+   <param name="Local" value="DatabaseExportOptions.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="数据库管理器（TrueMatch）">
+   <param name="Name" value="数据库管理器">
+   <param name="Local" value="WITecTrueMatchDatabaseManager.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="WITec Project中的数据库搜索">
+   <param name="Name" value="WITec Project中的数据库搜索">
+   <param name="Local" value="DatabaseSearchInWITecProject.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="数据库选择">
+   <param name="Name" value="数据库选择">
+   <param name="Local" value="WITecTrueMatchDatabaseSelection.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="DaVinci纳米光刻">
+   <param name="Name" value="光刻">
+   <param name="Local" value="OGSpecialLithography.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="基光谱分解（数学）">
+   <param name="Name" value="基光谱分解（数学）">
+   <param name="Local" value="DecomposingOfBasisSpectraMath.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="Delaunay三角剖分（数学）">
+   <param name="Name" value="Delaunay三角剖分（数学）">
+   <param name="Local" value="DelaunayTriangulationMath.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="删除对象">
+   <param name="Name" value="删除对象">
+   <param name="Local" value="DeleteObjects.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="退偏比">
+   <param name="Name" value="偏振">
+   <param name="Local" value="OGRamanPolarization.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="检测">
+   <param name="Name" value="检测">
+   <param name="Local" value="WCDetection.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="检测算法">
+   <param name="Name" value="检测算法">
+   <param name="Local" value="TrueMatchDetectionAlgorithms.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="数字脉冲力模式（DPFM）">
+   <param name="Name" value="DPFM概述">
+   <param name="Local" value="OGAFMDPFMOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="距离曲线">
+   <param name="Name" value="距离曲线">
+   <param name="Local" value="WCDistanceCurve.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="分布式COM（DCOM）">
+   <param name="Name" value="远程访问">
+   <param name="Local" value="WCCOMRemoteAccess.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="DPFM">
+   <param name="Name" value="DPFM概述">
+   <param name="Local" value="OGAFMDPFMOverview.html">
+   </OBJECT>
+<UL>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="DPFM曲线">
+     <param name="Name" value="DPFM曲线">
+     <param name="Local" value="OGAFMDPFMDataEvalCurves.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="DPFM数据评估">
+     <param name="Name" value="理论">
+     <param name="Local" value="OGAFMDPFMDataEvalTheory.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="DPFM图像">
+     <param name="Name" value="DPFM图像">
+     <param name="Local" value="OGAFMDPFMDataEvalImages.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="DPFM理论">
+     <param name="Name" value="理论">
+     <param name="Local" value="OGAFMDPFMTheory.html">
+     </OBJECT>
+</UL>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="拖放（数据分析）">
+   <param name="Name" value="拖放操作窗口">
+   <param name="Local" value="DropActionsWindow.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="漂移补偿">
+   <param name="Name" value="信号稳定概述">
+   <param name="Local" value="OGRamanSigStabOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="驱动幅度">
+   <param name="Name" value="频率扫描">
+   <param name="Local" value="WCFrequencySweep.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="驱动幅度（AC模式）">
+   <param name="Name" value="参数">
+   <param name="Local" value="OGAFMACParameters.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="驱动幅度（DPFM）">
+   <param name="Name" value="参数">
+   <param name="Local" value="OGAFMDPFMParameters.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="拖放操作">
+   <param name="Name" value="平均光谱">
+   <param name="Local" value="AverageSpectrum.html">
+   <param name="Name" value="计算器对话框">
+   <param name="Local" value="DropActionCalculator.html">
+   <param name="Name" value="拖放操作窗口">
+   <param name="Local" value="DropActionsWindow.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="拖放操作窗口">
+   <param name="Name" value="拖放操作窗口">
+   <param name="Local" value="DropActionsWindow.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="EasyLink控制器">
+   <param name="Name" value="EasyLink控制器">
+   <param name="Local" value="EasyLinkController.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="EFM">
+   <param name="Name" value="概述">
+   <param name="Local" value="OGAFMLiftModeEFMOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="EFM控制">
+   <param name="Name" value="EFM控制">
+   <param name="Local" value="WCEFMControl.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="静电力显微镜（EFM）">
+   <param name="Name" value="概述">
+   <param name="Local" value="OGAFMLiftModeEFMOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="EMCCD">
+   <param name="Name" value="EMCCD相机">
+   <param name="Local" value="OGRamanEMCCD.html">
+   <param name="Name" value="光谱设置">
+   <param name="Local" value="SpectroscopySettings.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="EMCCD相机">
+   <param name="Name" value="光谱相机">
+   <param name="Local" value="WCSpecCamera.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="导出BCR-STM">
+   <param name="Name" value="导出BCR-STM">
+   <param name="Local" value="ExportBCR-STM.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="导出位图">
+   <param name="Name" value="导出位图">
+   <param name="Local" value="ExportBitmap.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="导出数据对象">
+   <param name="Name" value="导出数据对象">
+   <param name="Local" value="ExportDataObjects.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="导出图谱ASCII或RAW">
+   <param name="Name" value="导出图谱ASCII或RAW">
+   <param name="Local" value="ExportGraphASCII.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="导出图像ASCII">
+   <param name="Name" value="导出图像ASCII">
+   <param name="Local" value="ExportImageASCII.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="导出JCAMP-DX">
+   <param name="Name" value="导出JCAMP-DX">
+   <param name="Local" value="ExportJCAMP-DX.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="导出MATLAB">
+   <param name="Name" value="导出Matlab">
+   <param name="Local" value="ExportMatlab.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="导出概述">
+   <param name="Name" value="导出概述">
+   <param name="Local" value="ExportOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="导出SPC">
+   <param name="Name" value="导出SPC">
+   <param name="Local" value="ExportSPC.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="导出表格">
+   <param name="Name" value="导出表格">
+   <param name="Local" value="ExportTable.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="反馈（AFM）">
+   <param name="Name" value="数据通道">
+   <param name="Local" value="WCDataChannels.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="反馈设置">
+   <param name="Name" value="PI控制器">
+   <param name="Local" value="OGAFMPIController.html">
+   <param name="Name" value="反馈设置">
+   <param name="Local" value="WCFeedbackSettings.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="视场光阑">
+   <param name="Name" value="视场光阑/孔径光阑">
+   <param name="Local" value="FieldStopApertureStop.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="过滤表达式编辑器">
+   <param name="Name" value="过滤表达式编辑器">
+   <param name="Local" value="WITecParticleScoutFilterExpressionEditor.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="过滤列表">
+   <param name="Name" value="过滤列表">
+   <param name="Local" value="FilterList.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="滤波器查看器">
+   <param name="Name" value="滤波器查看器">
+   <param name="Local" value="FilterViewer.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="滤波器查看器（数学）">
+   <param name="Name" value="滤波器查看器（数学）">
+   <param name="Local" value="FilterViewerMath.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="滤光片轮">
+   <param name="Name" value="滤光片轮">
+   <param name="Local" value="FilterWheel.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="查找颗粒">
+   <param name="Name" value="查找颗粒">
+   <param name="Local" value="WITecParticleScoutFindParticles.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="FLIM">
+   <param name="Name" value="StrobeLock概述">
+   <param name="Local" value="OGStrobeLockOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="荧光寿命成像显微镜（FLIM）">
+   <param name="Name" value="StrobeLock概述">
+   <param name="Local" value="OGStrobeLockOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="焦点堆栈">
+   <param name="Name" value="视频焦点堆栈">
+   <param name="Local" value="VideoFocusStacking.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="力-距离曲线">
+   <param name="Name" value="接触模式概述">
+   <param name="Local" value="OGAFMContactOverview.html">
+   <param name="Name" value="参数">
+   <param name="Local" value="OGAFMContactParameters.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="公式编辑器">
+   <param name="Name" value="公式编辑器">
+   <param name="Local" value="FormulaEditor.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="频率扫描">
+   <param name="Name" value="频率扫描">
+   <param name="Local" value="WCFrequencySweep.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图谱与图像数据拼接对话框">
+   <param name="Name" value="图谱与图像数据拼接对话框">
+   <param name="Local" value="DropActionDataStitching.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图谱背景扣除对话框">
+   <param name="Name" value="图谱背景扣除对话框">
+   <param name="Local" value="DropActionGraphBackgroundSubtraction.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图谱宇宙射线去除对话框">
+   <param name="Name" value="图谱宇宙射线去除对话框">
+   <param name="Local" value="DropActionGraphCRR.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图谱数据">
+   <param name="Name" value="数据对象概述">
+   <param name="Local" value="DataObjectsOverview.html">
+   <param name="Name" value="图谱数据">
+   <param name="Local" value="GraphData.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图谱解混器">
+   <param name="Name" value="图谱解混器对话框">
+   <param name="Local" value="DropActionGraphDemixer.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图谱强度校正对话框">
+   <param name="Name" value="图谱强度校正对话框">
+   <param name="Local" value="DropActionGraphIntensityCorrection.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图谱修复对话框">
+   <param name="Name" value="图谱修复对话框">
+   <param name="Local" value="DropActionGraphRepair.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图谱平滑对话框">
+   <param name="Name" value="图谱平滑对话框">
+   <param name="Local" value="DropActionGraphFilter.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图谱查看器">
+   <param name="Name" value="图谱查看器概述">
+   <param name="Local" value="GraphViewerOverview.html">
+   </OBJECT>
+<UL>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图谱查看器操作">
+     <param name="Name" value="图谱查看器操作">
+     <param name="Local" value="GraphViewerActions.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图谱查看器外观">
+     <param name="Name" value="图谱查看器外观">
+     <param name="Local" value="GraphViewerAppearance.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图谱查看器环形菜单">
+     <param name="Name" value="图谱查看器环形菜单">
+     <param name="Local" value="GraphViewerCircleMenu.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图谱查看器上下文菜单">
+     <param name="Name" value="图谱查看器上下文菜单">
+     <param name="Local" value="GraphViewerContextMenu.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图谱查看器拖放">
+     <param name="Name" value="图谱查看器拖放">
+     <param name="Local" value="GraphViewerDragAndDrop.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图谱查看器导出">
+     <param name="Name" value="图谱查看器导出">
+     <param name="Local" value="GraphViewerExport.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图谱查看器列表">
+     <param name="Name" value="图谱查看器列表">
+     <param name="Local" value="GraphViewerList.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图谱查看器掩模操作">
+     <param name="Name" value="图谱查看器掩模操作">
+     <param name="Local" value="GraphViewerMaskManipulation.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图谱查看器其他视觉效果">
+     <param name="Name" value="图谱查看器其他视觉效果">
+     <param name="Local" value="GraphViewerMiscVisuals.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图谱查看器模式">
+     <param name="Name" value="图谱查看器模式">
+     <param name="Local" value="GraphViewerModes.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图谱查看器鼠标模式">
+     <param name="Name" value="图谱查看器鼠标模式">
+     <param name="Local" value="GraphViewerMouseModes.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图谱查看器选项">
+     <param name="Name" value="图谱查看器选项">
+     <param name="Local" value="GraphViewerOptions.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图谱查看器概述">
+     <param name="Name" value="图谱查看器概述">
+     <param name="Local" value="GraphViewerOverview.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图谱查看器峰标记">
+     <param name="Name" value="图谱查看器峰标记">
+     <param name="Local" value="GraphViewerPeakLabeling.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图谱查看器缩放与变焦">
+     <param name="Name" value="图谱查看器缩放与变焦">
+     <param name="Local" value="GraphViewerScaleAndZoom.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图谱查看器变焦模式">
+     <param name="Name" value="图谱查看器变焦模式">
+     <param name="Local" value="GraphViewerZoomModes.html">
+     </OBJECT>
+</UL>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图形导出/编辑器">
+   <param name="Name" value="图形导出/编辑器">
+   <param name="Local" value="GraphicEditorExport.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图形问题">
+   <param name="Name" value="OpenGL选项">
+   <param name="Local" value="SystemOptions.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="加热">
+   <param name="Name" value="加热">
+   <param name="Local" value="WCHeating.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="I增益">
+   <param name="Name" value="PI控制器">
+   <param name="Local" value="OGAFMPIController.html">
+   <param name="Name" value="设置测量">
+   <param name="Local" value="OGAFMProcedure.html">
+   <param name="Name" value="调整">
+   <param name="Local" value="OGRamanTSM3Adjustment.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="IBUCS">
+   <param name="Name" value="COM接口">
+   <param name="Local" value="WCCOMInterfaces.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="照明">
+   <param name="Name" value="照明">
+   <param name="Local" value="Illumination.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图像（定义）">
+   <param name="Name" value="图像（定义）">
+   <param name="Local" value="ImageDef.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图像自动/扩展聚焦对话框">
+   <param name="Name" value="图像自动/扩展聚焦对话框">
+   <param name="Local" value="DropActionImageStackFilter.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图像背景扣除对话框">
+   <param name="Name" value="图像背景扣除对话框">
+   <param name="Local" value="DropActionImageBackgroundSubtraction.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图像合并对话框">
+   <param name="Name" value="图像合并对话框">
+   <param name="Local" value="DropActionImageCombination.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图像相关对话框">
+   <param name="Name" value="图像相关对话框">
+   <param name="Local" value="DropActionImageCorrelation.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图像截面对话框">
+   <param name="Name" value="图像截面对话框">
+   <param name="Local" value="DropActionImageCrossSection.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图像数据">
+   <param name="Name" value="数据对象概述">
+   <param name="Local" value="DataObjectsOverview.html">
+   <param name="Name" value="图像数据">
+   <param name="Local" value="ImageData.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图像导出选项">
+   <param name="Name" value="图像导出选项">
+   <param name="Local" value="ImageExportOptions.html">
+   <param name="Name" value="图像导出选项">
+   <param name="Local" value="ImageExportOptions1.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图像滤波对话框">
+   <param name="Name" value="图像滤波对话框">
+   <param name="Local" value="DropActionImageFilter.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图像傅里叶滤波对话框">
+   <param name="Name" value="图像傅里叶滤波对话框">
+   <param name="Local" value="DropActionImageFourierFilter.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图像掩模">
+   <param name="Name" value="创建图像掩模 - 概述">
+   <param name="Local" value="CreatingImageMasksOverview.html">
+   </OBJECT>
+<UL>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="通过计算器创建图像掩模">
+     <param name="Name" value="使用计算器创建图像掩模">
+     <param name="Local" value="CreatingImageMasksUsingTheCalculator.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="通过绘图工具创建图像掩模">
+     <param name="Name" value="使用绘图工具创建图像掩模">
+     <param name="Local" value="CreatingImageMasksUsingTheDrawTools.html">
+     </OBJECT>
+</UL>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图像修复对话框">
+   <param name="Name" value="图像修复对话框">
+   <param name="Local" value="DropActionImageRepair.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图像扫描（Control）">
+   <param name="Name" value="图像扫描">
+   <param name="Local" value="WCImageScan.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图像扫描（多次扫描）">
+   <param name="Name" value="图像扫描（多次扫描）">
+   <param name="Local" value="WCImageScanMultipass.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图像扫描（拉曼）">
+   <param name="Name" value="图像扫描">
+   <param name="Local" value="OGRamanImageScan.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图像堆栈导出对话框">
+   <param name="Name" value="图像堆栈导出对话框">
+   <param name="Local" value="DropActionImageStackExport.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图像统计（数学）">
+   <param name="Name" value="图像统计（数学）">
+   <param name="Local" value="ImageStatisticsMath.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图像统计对话框">
+   <param name="Name" value="图像统计对话框">
+   <param name="Local" value="DropActionImageStatistics.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图像拼接">
+   <param name="Name" value="视频测量概述">
+   <param name="Local" value="VideoMeasurementOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图像变换与叠加对话框">
+   <param name="Name" value="图像变换与叠加对话框">
+   <param name="Local" value="DropActionImageTransformAndOverlay.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图像查看器">
+   <param name="Name" value="图像查看器概述">
+   <param name="Local" value="ImageViewerOverview.html">
+   </OBJECT>
+<UL>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图像查看器操作">
+     <param name="Name" value="图像查看器操作">
+     <param name="Local" value="ImageViewerActions.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图像查看器外观">
+     <param name="Name" value="图像查看器外观">
+     <param name="Local" value="ImageViewerAppearance.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图像查看器相机">
+     <param name="Name" value="图像查看器相机">
+     <param name="Local" value="ImageViewerCamera.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图像查看器环形菜单">
+     <param name="Name" value="图像查看器环形菜单">
+     <param name="Local" value="ImageViewerCircleMenu.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图像查看器色标">
+     <param name="Name" value="图像查看器色标">
+     <param name="Local" value="ImageViewerColorScale.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图像查看器上下文菜单">
+     <param name="Name" value="图像查看器上下文菜单">
+     <param name="Local" value="ImageViewerContextMenu.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图像查看器拖放">
+     <param name="Name" value="图像查看器拖放">
+     <param name="Local" value="ImageViewerDragAndDropOtherObjects.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图像查看器绘图工具">
+     <param name="Name" value="图像查看器绘图工具">
+     <param name="Local" value="ImageViewerDrawTools.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图像查看器照明">
+     <param name="Name" value="图像查看器照明">
+     <param name="Local" value="ImageViewerLighting.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图像查看器其他视觉效果">
+     <param name="Name" value="图像查看器其他视觉效果">
+     <param name="Local" value="ImageViewerMiscVisuals.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图像查看器鼠标模式">
+     <param name="Name" value="图像查看器鼠标模式">
+     <param name="Local" value="ImageViewerMouseModes.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="图像查看器选项">
+     <param name="Name" value="图像查看器选项">
+     <param name="Local" value="ImageViewerOptions.html">
+     </OBJECT>
+</UL>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="通过滤波器查看器创建图像">
+   <param name="Name" value="使用滤波器查看器创建图像">
+   <param name="Local" value="CreatingImagesUsingTheFilterViewer.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="导入概述">
+   <param name="Name" value="导入概述">
+   <param name="Local" value="ImportOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="惯性驱动控制">
+   <param name="Name" value="惯性驱动控制">
+   <param name="Local" value="InertialDriveControl.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="InGaAs相机">
+   <param name="Name" value="InGaAs相机">
+   <param name="Local" value="OGRamanInGaAsCamera.html">
+   <param name="Name" value="光谱相机">
+   <param name="Local" value="WCSpecCamera.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="安装（ParticleScout）">
+   <param name="Name" value="安装">
+   <param name="Local" value="WITecParticleScoutInstallation.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="安装（TrueMatch）">
+   <param name="Name" value="安装">
+   <param name="Local" value="WITecTrueMatchInstallation.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="强度校正">
+   <param name="Name" value="使用图谱强度校正">
+   <param name="Local" value="UsingGraphIntensityCorrection.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="解释数据">
+   <param name="Name" value="数据对象概述">
+   <param name="Local" value="DataObjectsOverview.html">
+   <param name="Name" value="解释数据">
+   <param name="Local" value="InterpretationData.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="逆基分析（数学）">
+   <param name="Name" value="逆基分析（数学）">
+   <param name="Local" value="InverseBasisAnalysisMath.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="逆基分析对话框">
+   <param name="Name" value="逆基分析对话框">
+   <param name="Local" value="DropActionInverseBasisAnalysis.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="倒置物镜定位">
+   <param name="Name" value="倒置物镜定位">
+   <param name="Local" value="InvertedObjectivePositioning.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="等规聚丙烯">
+   <param name="Name" value="偏振">
+   <param name="Local" value="OGRamanPolarization.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="摇杆控制UI">
+   <param name="Name" value="UI摇杆控制">
+   <param name="Local" value="UIJoystickControl.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="开尔文探针控制">
+   <param name="Name" value="开尔文探针控制">
+   <param name="Local" value="WCKelvinProbeControl.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="开尔文探针力显微镜（KPFM）">
+   <param name="Name" value="KPFM概述">
+   <param name="Local" value="OGAFMKPFMOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="KPFM">
+   <param name="Name" value="KPFM概述">
+   <param name="Local" value="OGAFMKPFMOverview.html">
+   </OBJECT>
+<UL>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="KPFM实现">
+     <param name="Name" value="实现">
+     <param name="Local" value="OGAFMKPFMImplementation.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="KPFM理论">
+     <param name="Name" value="理论">
+     <param name="Local" value="OGAFMKPFMTheory.html">
+     </OBJECT>
+</UL>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="L-R">
+   <param name="Name" value="数据通道">
+   <param name="Local" value="WCDataChannels.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="LabVIEW">
+   <param name="Name" value="LabVIEW驱动程序">
+   <param name="Local" value="WCLabViewDriver.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="λ/2波片">
+   <param name="Name" value="偏振">
+   <param name="Local" value="OGRamanPolarization.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="λ/4波片">
+   <param name="Name" value="偏振">
+   <param name="Local" value="OGRamanPolarization.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="大面积扫描">
+   <param name="Name" value="大面积扫描">
+   <param name="Local" value="WCLargeAreaScan.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="大面积扫描（拉曼）">
+   <param name="Name" value="大面积扫描">
+   <param name="Local" value="OGRamanLargeAreaScan.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="激光控制">
+   <param name="Name" value="激光控制">
+   <param name="Local" value="LaserControl.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="激光功率系列（OG）">
+   <param name="Name" value="慢速序列">
+   <param name="Local" value="OGRamanSlowSeries.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="激光波长更换">
+   <param name="Name" value="更换激光波长">
+   <param name="Local" value="OGRamanChangeLaserWavelength.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="许可证管理器">
+   <param name="Name" value="许可证管理器">
+   <param name="Local" value="LicenseManager.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="许可概述">
+   <param name="Name" value="许可概述">
+   <param name="Local" value="LicensingOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="提升模式">
+   <param name="Name" value="图像扫描（多次扫描）">
+   <param name="Local" value="WCImageScanMultipass.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="提升模式（AC模式）">
+   <param name="Name" value="AC提升模式概述">
+   <param name="Local" value="OGAFMLiftModeOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="线校正（数学）">
+   <param name="Name" value="线校正（数学）">
+   <param name="Local" value="LineSubtractionMath.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="线扫描">
+   <param name="Name" value="线扫描">
+   <param name="Local" value="WCLineScan.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="Linkam">
+   <param name="Name" value="Python">
+   <param name="Local" value="WCCOMPython.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="监听光标机制">
+   <param name="Name" value="监听光标机制">
+   <param name="Local" value="ListenCursorMechanism.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="光刻">
+   <param name="Name" value="光刻">
+   <param name="Local" value="OGSpecialLithography.html">
+   <param name="Name" value="光刻">
+   <param name="Local" value="WCLithography.html">
+   </OBJECT>
+<UL>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="光刻命令">
+     <param name="Name" value="光刻命令">
+     <param name="Local" value="WCLithographyCommands.html">
+     </OBJECT>
+</UL>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="磁力显微镜（MFM）">
+   <param name="Name" value="概述">
+   <param name="Local" value="OGAFMLiftModeMFMOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="主窗口（Control）">
+   <param name="Name" value="主窗口">
+   <param name="Local" value="WCMainWindow.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="主窗口（Project）">
+   <param name="Name" value="主窗口">
+   <param name="Local" value="WITecProjectMainWindow.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="掩模操作工具">
+   <param name="Name" value="掩模操作工具">
+   <param name="Local" value="MaskManipulationTools.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="材料搜索（ParticleScout）">
+   <param name="Name" value="材料搜索">
+   <param name="Local" value="WITecParticleScoutMaterialSearch.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="MATLAB（COM）">
+   <param name="Name" value="MATLAB">
+   <param name="Local" value="WCCOMMATLAB.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="MATLAB（导出）">
+   <param name="Name" value="导出Matlab">
+   <param name="Local" value="ExportMatlab.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="内存选项">
+   <param name="Name" value="内存选项">
+   <param name="Local" value="MemoryOptions.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="菜单（ParticleScout）">
+   <param name="Name" value="菜单">
+   <param name="Local" value="WITecParticleScoutMenu.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="菜单（TrueMatch）">
+   <param name="Name" value="TrueMatch菜单">
+   <param name="Local" value="WITecTrueMatchMainMenu.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="菜单（视频窗口）">
+   <param name="Name" value="菜单">
+   <param name="Local" value="MicroscopeControlMenu.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="消息窗口">
+   <param name="Name" value="消息窗口">
+   <param name="Local" value="WCMessagesWindow.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="MFM">
+   <param name="Name" value="概述">
+   <param name="Local" value="OGAFMLiftModeMFMOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="显微镜模式">
+   <param name="Name" value="显微镜模式">
+   <param name="Local" value="MicroscopeModes.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="显微镜Z台">
+   <param name="Name" value="显微镜Z台">
+   <param name="Local" value="MicroscopeZStage.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="录像">
+   <param name="Name" value="视频录像">
+   <param name="Local" value="VideoMovieRecording.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="批量重命名">
+   <param name="Name" value="批量重命名">
+   <param name="Local" value="MultipleRename.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="Newton相机">
+   <param name="Name" value="EMCCD相机">
+   <param name="Local" value="OGRamanEMCCD.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="NMF">
+   <param name="Name" value="非负矩阵分解对话框">
+   <param name="Local" value="DropActionNMF.html">
+   </OBJECT>
+<UL>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="NMF（数学）">
+     <param name="Name" value="非负矩阵分解（数学）">
+     <param name="Local" value="NonNegativeMatrixFactorizationMath.html">
+     </OBJECT>
+</UL>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="非负矩阵分解（NMF）">
+   <param name="Name" value="非负矩阵分解对话框">
+   <param name="Local" value="DropActionNMF.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="物镜更换">
+   <param name="Name" value="物镜选择">
+   <param name="Local" value="ObjectiveSelection.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="物镜补偿向导">
+   <param name="Name" value="物镜补偿向导">
+   <param name="Local" value="ObjectiveCompensationWizard.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="物镜选择">
+   <param name="Name" value="物镜选择">
+   <param name="Local" value="ObjectiveSelection.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="物镜转塔配置">
+   <param name="Name" value="物镜转塔配置">
+   <param name="Local" value="ObjectiveTurretConfiguration.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="物镜视频校准">
+   <param name="Name" value="物镜视频校准">
+   <param name="Local" value="ObjectiveVideoCalibration.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="物镜">
+   <param name="Name" value="物镜">
+   <param name="Local" value="OGObjectives.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="OpenGL选项">
+   <param name="Name" value="OpenGL选项">
+   <param name="Local" value="SystemOptions.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="光学距离传感器">
+   <param name="Name" value="光学距离传感器">
+   <param name="Local" value="WCOpticalDistanceSensor.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="示波器">
+   <param name="Name" value="示波器">
+   <param name="Local" value="WCOscilloscope.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="输出调整">
+   <param name="Name" value="输出调整">
+   <param name="Local" value="LaserOutputAdjustment.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="P增益">
+   <param name="Name" value="PI控制器">
+   <param name="Local" value="OGAFMPIController.html">
+   <param name="Name" value="设置测量">
+   <param name="Local" value="OGAFMProcedure.html">
+   <param name="Name" value="调整">
+   <param name="Local" value="OGRamanTSM3Adjustment.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="颗粒详情">
+   <param name="Name" value="颗粒详情">
+   <param name="Local" value="WITecParticleScoutParticleDetails.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="颗粒属性">
+   <param name="Name" value="颗粒属性">
+   <param name="Local" value="WITecParticleScoutParticleProperties.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="ParticleScout">
+   <param name="Name" value="ParticleScout概述">
+   <param name="Local" value="WITecParticleScoutOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="ParticleScout拼接">
+   <param name="Name" value="ParticleScout拼接">
+   <param name="Local" value="ParticleScoutStitching.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="图案拼接">
+   <param name="Name" value="渐晕校正">
+   <param name="Local" value="VignettingCorrection.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="PCA">
+   <param name="Name" value="主成分分析">
+   <param name="Local" value="DropActionPCA.html">
+   </OBJECT>
+<UL>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="PCA（数学）">
+     <param name="Name" value="主成分分析（数学）">
+     <param name="Local" value="PrincipalComponentAnalysisMath.html">
+     </OBJECT>
+</UL>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="PDF报告（TrueMatch）">
+   <param name="Name" value="PDF报告">
+   <param name="Local" value="WITecTrueMatchGeneratePDFReport.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="峰标记">
+   <param name="Name" value="图谱查看器峰标记">
+   <param name="Local" value="GraphViewerPeakLabeling.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="皮尔逊相关系数">
+   <param name="Name" value="皮尔逊相关系数">
+   <param name="Local" value="PearsonCorrelationCoefficient.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="PFM控制">
+   <param name="Name" value="PFM控制">
+   <param name="Local" value="WCPFMControl.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="光电流">
+   <param name="Name" value="光电流概述">
+   <param name="Local" value="OGPhotocurrentOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="光致发光（PL）">
+   <param name="Name" value="拉曼概述">
+   <param name="Local" value="OGRamanOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="光子探测器放大器">
+   <param name="Name" value="光子探测器放大器">
+   <param name="Local" value="WCPhotonDetectorAmplifier.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="PI控制器">
+   <param name="Name" value="PI控制器">
+   <param name="Local" value="OGAFMPIController.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="拾取模式">
+   <param name="Name" value="拾取模式">
+   <param name="Local" value="OGSNOMPickup.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="PicoQuant LDH激光器">
+   <param name="Name" value="激光设置">
+   <param name="Local" value="OGStrobeLockLaserSettings.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="压电响应控制">
+   <param name="Name" value="压电响应控制">
+   <param name="Local" value="WCPiezoresponseControl.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="压电响应力显微镜（PRFM）">
+   <param name="Name" value="PRFM概述">
+   <param name="Local" value="OGAFMPRFMOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="针孔">
+   <param name="Name" value="共聚焦性">
+   <param name="Local" value="OGConfocality.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="针孔对准">
+   <param name="Name" value="对准">
+   <param name="Local" value="OGRamanAlignment.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="PL">
+   <param name="Name" value="拉曼概述">
+   <param name="Local" value="OGRamanOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="Plus激活">
+   <param name="Name" value="WITec Project Plus激活">
+   <param name="Local" value="WITecProjectPlusActivation.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="Plus功能">
+   <param name="Name" value="WITec Project Plus功能">
+   <param name="Local" value="WITecProjectPlusFeatures.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="PMT">
+   <param name="Name" value="检测">
+   <param name="Local" value="WCDetection.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="点查看器">
+   <param name="Name" value="点查看器">
+   <param name="Local" value="WCPointViewer.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="偏振">
+   <param name="Name" value="偏振">
+   <param name="Local" value="OGRamanPolarization.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="偏振器系列（OG）">
+   <param name="Name" value="慢速序列">
+   <param name="Local" value="OGRamanSlowSeries.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="可移动坐标系">
+   <param name="Name" value="可移动坐标系">
+   <param name="Local" value="PortableCoordinateSystem.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="开机/关机">
+   <param name="Name" value="开机/关机">
+   <param name="Local" value="OGPowerUpDown.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="初步测量">
+   <param name="Name" value="初步测量">
+   <param name="Local" value="OGAFMDPFMDataEvalTPreliminaryMeasurements.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="PRFM">
+   <param name="Name" value="PRFM概述">
+   <param name="Local" value="OGAFMPRFMOverview.html">
+   </OBJECT>
+<UL>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="PRFM连接设备">
+     <param name="Name" value="连接设备">
+     <param name="Local" value="OGAFMPRFMConnectingDevices.html">
+     </OBJECT>
+</UL>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="主成分分析（PCA）">
+   <param name="Name" value="主成分分析">
+   <param name="Local" value="DropActionPCA.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="处理脚本">
+   <param name="Name" value="处理脚本">
+   <param name="Local" value="WCProcessScript.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="轮廓仪">
+   <param name="Name" value="轮廓仪">
+   <param name="Local" value="OGProfilometer.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="程序选项窗口">
+   <param name="Name" value="程序选项窗口">
+   <param name="Local" value="ProgramOptionsWindow.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="项目管理器">
+   <param name="Name" value="项目管理器概述">
+   <param name="Local" value="ProjectManagerOverview.html">
+   </OBJECT>
+<UL>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="项目管理器环形菜单">
+     <param name="Name" value="项目管理器环形菜单">
+     <param name="Local" value="DataCategories.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="项目管理器上下文菜单">
+     <param name="Name" value="项目管理器上下文菜单">
+     <param name="Local" value="ProjectManagerContextMenu.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="项目管理器选项">
+     <param name="Name" value="项目管理器选项">
+     <param name="Local" value="ProjectManagerOptions.html">
+     </OBJECT>
+</UL>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="Project Plus激活">
+   <param name="Name" value="WITec Project Plus激活">
+   <param name="Local" value="WITecProjectPlusActivation.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="Project Plus功能">
+   <param name="Name" value="WITec Project Plus功能">
+   <param name="Local" value="WITecProjectPlusFeatures.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="Project">
+   <param name="Name" value="使用Project概述">
+   <param name="Local" value="WorkingWithProjectsOverview.html">
+   </OBJECT>
+<UL>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="加载或追加Project">
+     <param name="Name" value="保存与加载">
+     <param name="Local" value="SaveAndLoad.html">
+     </OBJECT>
+</UL>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="Python">
+   <param name="Name" value="Python">
+   <param name="Local" value="WCCOMPython.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="拉曼">
+   <param name="Name" value="拉曼概述">
+   <param name="Local" value="OGRamanOverview.html">
+   </OBJECT>
+<UL>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="拉曼配置">
+     <param name="Name" value="配置">
+     <param name="Local" value="OGRamanConfigurations.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="拉曼介绍">
+     <param name="Name" value="介绍">
+     <param name="Local" value="OGRamanIntroduction.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="拉曼理论">
+     <param name="Name" value="理论">
+     <param name="Local" value="OGRamanTheory.html">
+     </OBJECT>
+</UL>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="拉曼分析（Project）">
+   <param name="Name" value="拉曼分析">
+   <param name="Local" value="RamanAnalysis.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="拉曼测量（ParticleScout）">
+   <param name="Name" value="拉曼测量">
+   <param name="Local" value="WITecParticleScoutRamanMeasurement.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="拉曼叠加">
+   <param name="Name" value="创建拉曼叠加">
+   <param name="Local" value="CreatingRamanOverlay.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="拉曼TV对话框">
+   <param name="Name" value="拉曼TV对话框">
+   <param name="Local" value="DropActionRamanTV.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="拉曼，C. V.">
+   <param name="Name" value="介绍">
+   <param name="Local" value="OGRamanIntroduction.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="拉曼-AFM">
+   <param name="Name" value="拉曼AFM概述">
+   <param name="Local" value="OGAFMRamanOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="读取模式">
+   <param name="Name" value="光谱设置">
+   <param name="Local" value="SpectroscopySettings.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="远程访问（COM）">
+   <param name="Name" value="远程访问">
+   <param name="Local" value="WCCOMRemoteAccess.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="报告配置">
+   <param name="Name" value="报告配置">
+   <param name="Local" value="ParticleScoutReportConfiguration.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="结果显示设置">
+   <param name="Name" value="结果显示设置">
+   <param name="Local" value="WITecTrueMatchFilterResults.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="结果导出（TrueMatch）">
+   <param name="Name" value="结果导出">
+   <param name="Local" value="WITecTrueMatchResultExport.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="样品名称">
+   <param name="Name" value="样品名称">
+   <param name="Local" value="WCSampleName.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="样品定位">
+   <param name="Name" value="样品定位">
+   <param name="Local" value="SamplePositioning.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="样品属性显示">
+   <param name="Name" value="样品属性显示">
+   <param name="Local" value="WITecTrueMatchSamplePropertiesDisplay.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="样品属性编辑器">
+   <param name="Name" value="样品属性编辑器">
+   <param name="Local" value="WITecTrueMatchSamplePropertyEditor.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="样品栅格">
+   <param name="Name" value="样品栅格">
+   <param name="Local" value="WCSampleRaster.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="样品栅格（拉曼）">
+   <param name="Name" value="样品栅格">
+   <param name="Local" value="OGRamanSampleRaster.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="保存与加载（Project）">
+   <param name="Name" value="保存与加载">
+   <param name="Local" value="SaveAndLoad.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="扫描台">
+   <param name="Name" value="扫描台">
+   <param name="Local" value="WCScanTable.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="扫描近场光学显微镜（SNOM）">
+   <param name="Name" value="SNOM概述">
+   <param name="Local" value="OGSNOMOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="SDK（C#）">
+   <param name="Name" value="C#">
+   <param name="Local" value="WCCOMCsharp.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="SDK（Python）">
+   <param name="Name" value="Python">
+   <param name="Local" value="WCCOMPython.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="搜索选项（TrueMatch）">
+   <param name="Name" value="搜索选项">
+   <param name="Local" value="WITecTrueMatchSearchOptions.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="搜索概述（TrueMatch）">
+   <param name="Name" value="搜索概述">
+   <param name="Local" value="WITecTrueMatchSearchOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="二次谐波产生（SHG）">
+   <param name="Name" value="SHG">
+   <param name="Local" value="OGSHG.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="慢速序列">
+   <param name="Name" value="慢速序列">
+   <param name="Local" value="WCSeriesSlow.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="服务监视器">
+   <param name="Name" value="WITec服务监视器概述">
+   <param name="Local" value="WITecServiceMonitorOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="设点值（AC模式）">
+   <param name="Name" value="参数">
+   <param name="Local" value="OGAFMACParameters.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="设点值（接触模式）">
+   <param name="Name" value="参数">
+   <param name="Local" value="OGAFMContactParameters.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="设点值（DPFM）">
+   <param name="Name" value="参数">
+   <param name="Local" value="OGAFMDPFMParameters.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="SHG">
+   <param name="Name" value="SHG">
+   <param name="Local" value="OGSHG.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="快捷键">
+   <param name="Name" value="快捷键">
+   <param name="Local" value="Shortcuts.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="信号稳定">
+   <param name="Name" value="信号稳定">
+   <param name="Local" value="WCSignalStabilization.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="信号稳定（OG）">
+   <param name="Name" value="信号稳定概述">
+   <param name="Local" value="OGRamanSigStabOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="单光谱">
+   <param name="Name" value="单光谱">
+   <param name="Local" value="WCSingleSpectrum.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="慢速序列">
+   <param name="Name" value="慢速序列">
+   <param name="Local" value="OGRamanSlowSeries.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="智能亮度">
+   <param name="Name" value="照明">
+   <param name="Local" value="Illumination.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="智能拼接">
+   <param name="Name" value="智能拼接">
+   <param name="Local" value="SmartStitching.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="SNOM">
+   <param name="Name" value="SNOM概述">
+   <param name="Local" value="OGSNOMOverview.html">
+   </OBJECT>
+<UL>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="SNOM AC">
+     <param name="Name" value="SNOM AC概述">
+     <param name="Local" value="OGSNOMACOverview.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="SNOM反射模式">
+     <param name="Name" value="反射模式">
+     <param name="Local" value="OGSNOMReflectionMode.html">
+     </OBJECT>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="SNOM理论">
+     <param name="Name" value="理论">
+     <param name="Local" value="OGSNOMTheory.html">
+     </OBJECT>
+</UL>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="空间变换（数学）">
+   <param name="Name" value="空间变换（数学）">
+   <param name="Local" value="SpatialTransformationMath.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="光谱相机">
+   <param name="Name" value="光谱相机">
+   <param name="Local" value="WCSpecCamera.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="光谱自动对焦">
+   <param name="Name" value="光谱自动对焦">
+   <param name="Local" value="WCSpectralAutoFocus.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="光谱拼接">
+   <param name="Name" value="光谱拼接">
+   <param name="Local" value="WCSpectralStitching.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="光谱仪">
+   <param name="Name" value="光谱设置">
+   <param name="Local" value="SpectroscopySettings.html">
+   <param name="Name" value="光谱仪">
+   <param name="Local" value="WCSpectrograph.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="光谱仪校准">
+   <param name="Name" value="校准">
+   <param name="Local" value="OGRamanCalibration.html">
+   <param name="Name" value="光谱仪校准">
+   <param name="Local" value="SpectrographCalibration.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="光谱仪校准">
+   <param name="Name" value="校准">
+   <param name="Local" value="OGRamanCalibration.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="光谱设置">
+   <param name="Name" value="光谱设置">
+   <param name="Local" value="SpectroscopySettings.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="光谱（定义）">
+   <param name="Name" value="光谱（定义）">
+   <param name="Local" value="SpectrumDefinition.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="光谱归一化（数学）">
+   <param name="Name" value="光谱归一化（数学）">
+   <param name="Local" value="SpectrumNormalizationMath.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="光谱属性（ParticleScout）">
+   <param name="Name" value="光谱属性">
+   <param name="Local" value="WITecParticleScoutSpectrumProperties.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="光谱选择器（TrueMatch）">
+   <param name="Name" value="光谱选择器">
+   <param name="Local" value="WITecTrueMatchSpectrumSelector.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="光谱查看器（TrueMatch）">
+   <param name="Name" value="光谱查看器">
+   <param name="Local" value="SpectrumViewer.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="光谱查看器导出">
+   <param name="Name" value="光谱查看器导出">
+   <param name="Local" value="SpectrumViewerExport.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="ST Japan数据库">
+   <param name="Name" value="ST Japan数据库">
+   <param name="Local" value="TrueMatchSTJapan.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="状态编辑器">
+   <param name="Name" value="状态编辑器">
+   <param name="Local" value="StateEditor.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="状态管理器">
+   <param name="Name" value="状态管理器">
+   <param name="Local" value="StateManager.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="状态重置器">
+   <param name="Name" value="状态重置器">
+   <param name="Local" value="StateResetter.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="状态容器">
+   <param name="Name" value="状态容器">
+   <param name="Local" value="WCCOMStatusContainer.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="状态值">
+   <param name="Name" value="状态值">
+   <param name="Local" value="StatusValues.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="刚度">
+   <param name="Name" value="理论">
+   <param name="Local" value="OGAFMDPFMDataEvalTheory.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="StrobeLock">
+   <param name="Name" value="StrobeLock概述">
+   <param name="Local" value="OGStrobeLockOverview.html">
+   </OBJECT>
+<UL>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="StrobeLock理论">
+     <param name="Name" value="理论">
+     <param name="Local" value="OGStrobeLockTheory.html">
+     </OBJECT>
+</UL>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="光谱叠加（几何视角）">
+   <param name="Name" value="光谱叠加（几何视角）">
+   <param name="Local" value="HyperSpectralDatasetGeometricView.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="光谱叠加（数学）">
+   <param name="Name" value="光谱叠加（数学）">
+   <param name="Local" value="SuperpositionOfSpectraMath.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="支持与联系">
+   <param name="Name" value="支持与联系">
+   <param name="Local" value="SupportAndContacts.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="支持ZIP文件">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="表面校正">
+   <param name="Name" value="手动形貌校正">
+   <param name="Local" value="OGRamanManualTopographyCorrection.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="表面校正（数学）">
+   <param name="Name" value="表面校正（数学）">
+   <param name="Local" value="SurfaceCorrectionMath.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="系统对准">
+   <param name="Name" value="对准">
+   <param name="Local" value="OGRamanAlignment.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="T-B">
+   <param name="Name" value="数据通道">
+   <param name="Local" value="WCDataChannels.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="轻敲模式">
+   <param name="Name" value="AC模式概述">
+   <param name="Local" value="OGAFMACOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="TERS">
+   <param name="Name" value="拉曼AFM概述">
+   <param name="Local" value="OGAFMRamanOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="文本数据（Project）">
+   <param name="Name" value="数据对象概述">
+   <param name="Local" value="DataObjectsOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="文本查看器（Project）">
+   <param name="Name" value="文本查看器">
+   <param name="Local" value="TextViewer.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="THG">
+   <param name="Name" value="SHG">
+   <param name="Local" value="OGSHG.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="三次谐波产生（THG）">
+   <param name="Name" value="SHG">
+   <param name="Local" value="OGSHG.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="倾斜校正">
+   <param name="Name" value="手动形貌校正">
+   <param name="Local" value="OGRamanManualTopographyCorrection.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="时间序列（快速）">
+   <param name="Name" value="时间序列（快速）">
+   <param name="Local" value="WCTimeSeriesFast.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="时间分辨光谱">
+   <param name="Name" value="StrobeLock概述">
+   <param name="Local" value="OGStrobeLockOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="时间光谱">
+   <param name="Name" value="参数">
+   <param name="Local" value="OGStrobeLockParameters.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="探针逼近">
+   <param name="Name" value="探针逼近">
+   <param name="Local" value="WCTipApproach.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="针尖增强拉曼光谱（TERS）">
+   <param name="Name" value="拉曼AFM概述">
+   <param name="Local" value="OGAFMRamanOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="形貌（AFM）">
+   <param name="Name" value="数据通道">
+   <param name="Local" value="WCDataChannels.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="形貌校正">
+   <param name="Name" value="手动形貌校正">
+   <param name="Local" value="OGRamanManualTopographyCorrection.html">
+   <param name="Name" value="形貌校正">
+   <param name="Local" value="WCTopographyCorrection.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="变换数据">
+   <param name="Name" value="数据对象概述">
+   <param name="Local" value="DataObjectsOverview.html">
+   <param name="Name" value="变换数据">
+   <param name="Local" value="TransformationData.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="真组分分析对话框">
+   <param name="Name" value="真组分分析对话框">
+   <param name="Local" value="DropActionTrueComponentAnalysis.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="真实功率激光工具">
+   <param name="Name" value="真实功率激光工具">
+   <param name="Local" value="TruePowerLaserTool.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="TrueMatch">
+   <param name="Name" value="TrueMatch概述">
+   <param name="Local" value="WITecTrueMatchOverview.html">
+   </OBJECT>
+<UL>
+    <LI><OBJECT type="text/sitemap">
+     <param name="Name" value="TrueMatch菜单">
+     <param name="Name" value="TrueMatch菜单">
+     <param name="Local" value="WITecTrueMatchMainMenu.html">
+     </OBJECT>
+</UL>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="TrueSurface Mk1/2">
+   <param name="Name" value="TrueSurface Mk1/2概述">
+   <param name="Local" value="OGRamanTSM2Overview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="TrueSurface Mk3">
+   <param name="Name" value="TrueSurface Mk3概述">
+   <param name="Local" value="OGRamanTSM3Overview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="用户界面选项（Project）">
+   <param name="Name" value="用户界面选项">
+   <param name="Local" value="UserInterfaceOptions.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="用户管理概述">
+   <param name="Name" value="用户管理概述">
+   <param name="Local" value="UserManagementOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="用户管理设置">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="摄像机选择">
+   <param name="Name" value="摄像机选择">
+   <param name="Local" value="VideoCameraSelection.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="摄像机设置">
+   <param name="Name" value="摄像机设置">
+   <param name="Local" value="VideoCameraSettings.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="视频控制窗口">
+   <param name="Name" value="视频控制概述">
+   <param name="Local" value="MicroscopeControlOverview.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="视频焦点堆栈常见问题">
+   <param name="Name" value="视频焦点堆栈常见问题">
+   <param name="Local" value="VideoFocusStackingFAQ.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="视频录制">
+   <param name="Name" value="视频录像">
+   <param name="Local" value="VideoMovieRecording.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="渐晕校正">
+   <param name="Name" value="渐晕校正">
+   <param name="Local" value="VignettingCorrection.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="分水岭示例">
+   <param name="Name" value="分水岭示例">
+   <param name="Local" value="WatershedExamples.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="WITec Control">
+   <param name="Name" value="欢迎使用 WITec Control">
+   <param name="Local" value="WelcomeToWITecControl.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="WITec导出管理器">
+   <param name="Name" value="WITec导出管理器">
+   <param name="Local" value="WITecExportManager.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="WITec Project">
+   <param name="Name" value="欢迎使用 WITec Project">
+   <param name="Local" value="WelcomeToWITecProject.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="WITec Suite 6.0">
+   <param name="Name" value="WITec Suite 6.0">
+   <param name="Local" value="WITecSuite60.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="WITec Suite 6.1">
+   <param name="Name" value="WITec Suite 6.1">
+   <param name="Local" value="WITecSuite61.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="WITec Suite 6.2">
+   <param name="Name" value="WITec Suite 6.2">
+   <param name="Local" value="WITecSuite62.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="WITec用户管理器应用程序">
+   <param name="Name" value="WITec用户管理器应用程序">
+   <param name="Local" value="WITecUserManagerApplication.html">
+   </OBJECT>
+  <LI><OBJECT type="text/sitemap">
+   <param name="Name" value="工作流管理器">
+   <param name="Name" value="工作流管理器">
+   <param name="Local" value="WorkflowManager.html">
+   </OBJECT>
+</UL></body></html>

@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>监听光标机制</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="监听光标机制">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 14pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+span.rvts5
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+ background-color: #b0edad;
+}
+span.rvts6
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+ background-color: #ff6a6a;
+}
+a.rvts7, span.rvts7
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts7:hover { color: #0000ff; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>监听光标机制</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p><span class=rvts2>软件的某些部分可以监听从其他窗口（例如图谱查看器或图像查看器）发送的光标位置。</span></p>
+<p><span class=rvts2><br></span></p>
+<p><span class=rvts2>存在隐式和显式两种监听模式：</span></p>
+<p><span class=rvts2><br></span></p>
+<p><span class=rvts3>隐式监听&nbsp;</span><span class=rvts2>自动发生，例如，如果您点击图像查看器，图谱查看器会监听空间位置并显示图像图谱数据对象的相应光谱。</span></p>
+<p><span class=rvts2><br></span></p>
+<p><span class=rvts3>显式监听&nbsp;</span><span class=rvts2>由对话框或编辑框自动激活，或需要由用户激活。显式监听有以下几种可能性：</span></p>
+<p><span class=rvts2><br></span></p>
+<p><span class=rvts2><br></span></p>
+<p><span class=rvts4>具有监听功能的编辑框</span></p>
+<p><span class=rvts2><br></span></p>
+<p><img border="0" src="Images/image74285696.jpg" width="88" height="54"></p>
+<p><span class=rvts2><br></span></p>
+<p><span class=rvts2>软件中所有具有&nbsp;</span><span class=rvts5>绿色</span><span class=rvts2>&nbsp;背景颜色的编辑控件都是"可监听"的。</span></p>
+<p><span class=rvts2>这意味着它们的值可以通过从其他窗口发送光标位置来更改。</span></p>
+<p><span class=rvts2>您可以通过&nbsp;</span><span class=rvts3>双击编辑控件</span><span class=rvts2>&nbsp;来开启或关闭监听模式。</span></p>
+<p><span class=rvts2>当前正在监听的编辑控件具有&nbsp;</span><span class=rvts6>红色</span><span class=rvts2>&nbsp;背景颜色。</span></p>
+<p><span class=rvts2><br></span></p>
+<p><span class=rvts2>编辑控件将监听哪个单位或光标取决于值的类型。</span></p>
+<p><span class=rvts2><br></span></p>
+<p><span class=rvts2><br></span></p>
+<p><span class=rvts4>通过监听光标机制操作掩模</span></p>
+<p><span class=rvts3><br></span></p>
+<p><span class=rvts2>请参阅&nbsp;</span><a class=rvts7 href="MaskManipulationTools.html">掩模操作工具。</a></p>
+
+</div></body></html>

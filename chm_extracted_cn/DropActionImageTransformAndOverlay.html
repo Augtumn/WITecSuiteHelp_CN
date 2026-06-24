@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>图像变换与叠加对话框</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="Image Transform and Overlay">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css"><style type="text/css"><!--
+#FHNonScroll{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}#MainSection {overflow: hidden; }
+#FHScroll{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+hr { color: #000000}body, table /* Normal */{font-size: 10pt; font-family: 'Arial'; font-style: normal; font-weight: normal; color: #000000; text-decoration: none;}
+span.rvts1{font-family: 'Arial Unicode MS';}span.rvts2{font-family: 'Microsoft Sans Serif'; color: #000000;}
+span.rvts3{font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #000000;}
+span.rvts4{font-size: 16pt; font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #ea7600;}
+a.rvts5, span.rvts5{font-family: 'Microsoft Sans Serif'; color: #0000ff; text-decoration: none;}a.rvts5:hover { color: #0000ff; }
+span.rvts6{font-size: 14pt; font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #151f6d;}
+p,ul,ol /* Left */{text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;}.rvps1{}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><table border=0 cellpadding=1 bordercolor="#000000" cellspacing=2>
+<tr valign=middle>
+<td width=48 valign=middle><font size=2 color="#000000" face="Arial"><div><img border="0" src="Images/image1489871875.jpg" width="48" height="48"></div></font></td>
+<td width=512 valign=middle><font size=2 color="#000000" face="Arial"><div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>图像变换与叠加对话框</b></font></div></font></td>
+</tr></table></div></font></TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts4>描述</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>图像变换与叠加对话框具有以下功能：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>创建两个图像/位图的叠加（例如，在视频图像上显示化学拉曼图像）</span></li>
+<li class=rvps1><span class=rvts2>更改空间</span><a class=rvts5 href="TransformationData.html">变换数据</a><span class=rvts2>对象以校正位移（位置、比例、旋转），或仅更改其预览以创建位图</span></li>
+<li class=rvps1><span class=rvts2>用于位图创建的高级变换：仿射映射、双线性映射、通过三角网格的多重仿射映射</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>另请参阅</span></p>
+<p class=rvps1><a class=rvts5 href="CreatingRamanOverlay.html">创建拉曼叠加</a></p>
+<p class=rvps1><a class=rvts5 href="TransformationData.html">变换数据</a></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>输入与结果</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>输入：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>背景图像（图像或位图数据对象）</span></li>
+<li class=rvps1><span class=rvts2>叠加图像（图像或位图数据对象）</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>结果：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>叠加位图</span></li>
+<li class=rvps1><span class=rvts2>现有数据对象的已更改空间变换</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<hr noshade size=1 style="color : #808080">
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>用户界面</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><a class=rvts5 href="#OverlayBitmap">叠加位图选项卡</a></li>
+<li class=rvps1><a class=rvts5 href="#Transformation">变换选项卡</a></li>
+<li class=rvps1><a class=rvts5 href="#AdvancedTransformation">高级变换选项卡</a></li>
+<li class=rvps1><a class=rvts5 href="#PreviewWindows">预览窗口</a></li>
+</ul>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><a name="OverlayBitmap"><span class=rvts6>叠加位图选项卡</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1411687295.jpg" width="372" height="439"></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts3>叠加绘制（滑块）：</span></p>
+<p class=rvps1><span class=rvts2>使用此滑块可以更改叠加图像的不透明度。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>使用全色锐化（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，背景图像定义亮度（因此仅为黑白），叠加图像定义颜色：叠加滑块从"无叠加"到"中心"的位置定义叠加颜色的不透明度；从"中心"到"完全叠加"的叠加滑块位置定义叠加强度的不透明度。如果未勾选，背景图像保留其颜色，叠加图像仅被覆盖。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>自动变换（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，叠加图像不透明度会自动平滑变化（这有助于例如在比较叠加图像中的特征与背景图像中的特征时调整变换）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>导出变换动画（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>打开</span><a class=rvts5 href="AnimationEditor.html">动画编辑器</a><span class=rvts2>以导出动画。仅使用叠加参数进行动画。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>背景/叠加图像颜色比例（分组框）：</span></p>
+<p class=rvps1><span class=rvts2>可以更改彩色位图的对比度/亮度或浮点图像的颜色比例——取决于此对话框使用的数据对象类型。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>交换图像（按钮，拖放区）：</span></p>
+<p class=rvps1><span class=rvts2>按下此按钮会使对话框重新初始化，使用当前叠加图像作为背景图像，反之亦然。这也是一个拖放区。您可以将另一个叠加图像放置到此按钮上，以保留所有设置和变换。这仅在放置的图像使用相同的空间变换时有效。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>提取位图（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>按下此按钮将当前预览作为新的彩色位图数据对象提取并添加到当前项目。</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><a name="Transformation"><span class=rvts6>变换选项卡</span></p>
+<p class=rvps1><span class=rvts6><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1660201870.jpg" width="372" height="439"></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts3>中心（分组框）：</span></p>
+<p class=rvps1><span class=rvts2>使用 X/Y/Z 编辑框可以查看和更改叠加图像的当前绝对位置。注意：更改位置的更好方法是下述的监听机制。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>监听（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，可以在预览图像查看器中点击并移动叠加图像以更改叠加图像的绝对位置或比例。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>背景中心（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>将叠加图像的中心位置设置为背景图像的中心（在叠加图像的变换完全不同时有意义，例如导入图像时）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>重置（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>使用原始变换重置叠加图像的中心或比例位置。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>旋转（浮点编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>更改叠加图像的旋转（此参数仅在垂直于图像平面的轴上旋转图像）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>提高叠加分辨率（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>通过提高分辨率创建新的背景图像或位图。当叠加图像的分辨率高于背景图像（在叠加区域）时很有用。提高分辨率后，背景图像有足够的像素，使得叠加图像可以以其完整分辨率显示。注意您只会在叠加区域看到差异。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>写入变换（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>这将覆盖叠加图像的空间</span><a class=rvts5 href="TransformationData.html">变换数据</a><span class=rvts2>（不仅仅是预览变换！）。这可能影响使用相同空间变换的其他数据对象（图像和图像图谱对象）。通常这意味着由同一测量创建的对象或同一测量分析的结果。在确认或取消永久变换更改之前，您将获得所有受影响数据对象的列表。</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><a name="AdvancedTransformation"><span class=rvts6>高级变换选项卡</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><img border="0" src="Images/image521930016.jpg" width="372" height="439"></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts3>使用高级变换（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>打开或关闭高级变换。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>高级变换选择器（组合框）：</span></p>
+<p class=rvps1><span class=rvts2>可以选择以下高级变换：仿射（3 点仿射映射，参见</span><a class=rvts5 href="AffineTransformationMath.html">仿射变换数学</a><span class=rvts2>）、双线性（4 点双线性映射，参见</span><a class=rvts5 href="BilinearTransformationMath.html">双线性变换数学</a><span class=rvts2>）、三角网格（任意数量的点创建三角网格；每个三角形使用仿射映射，参见</span><a class=rvts5 href="DelaunayTriangulationMath.html">三角剖分数学</a><span class=rvts2>）</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>移动选定点（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>打开监听机制以更改单个点的位置。如果</span><span class=rvts3>自动选择复选框</span><span class=rvts2>被勾选，鼠标光标附近的点将监听光标位置；否则，点列表中当前选定的点将监听。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>选择并移动特征（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，按下鼠标按钮时鼠标光标位置将用作变形的源位置。如果您希望点击叠加图像中的特征并将其"移动"到背景图像上的对应特征上，请使用此功能。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>添加点（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>在三角网格模式下添加新点。按下鼠标时使用点击位置的源位置添加点。如果之后移动鼠标，点的目标位置会更改。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>删除点（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>删除点列表中当前选定的点。角点不能被删除。注意：如果自动选择复选框被勾选，您可能在删除前意外选择了另一个点。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>全部重置（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>删除所有自定义点并将角位置重置为原始图像角位置。</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><a name="PreviewWindows"><span class=rvts6>预览窗口</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image239756948.jpg" width="206" height="185"></p>
+<p class=rvps1><span class=rvts2>预览图像窗体显示背景和叠加图像。在高级变换模式下，还显示当前选定的点，这使得使用自定义失真效果变得容易。</span></p>
+
+</div></body></html>

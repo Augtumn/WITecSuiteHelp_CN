@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>COM 子系统</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="Video Control Parameter">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 14pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+span.rvts4
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts5
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+a.rvts6, span.rvts6
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts6:hover { color: #0000ff; }
+span.rvts7
+{
+ font-family: 'Microsoft Sans Serif';
+ font-style: italic;
+ color: #000000;
+}
+a.rvts8, span.rvts8
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts8:hover { color: #0000ff; }
+a.rvts9, span.rvts9
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts9:hover { color: #0000ff; }
+span.rvts10
+{
+ font-size: 11pt;
+ font-family: 'Calibri';
+}
+span.rvts11
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+ background-color: #ffff00;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ margin: 0px 0px 14px 0px;
+}
+.rvps2
+{
+ text-align: justify;
+ margin: 0px 0px 10px 0px;
+}
+.rvps3
+{
+}
+.rvps4
+{
+ text-align: justify;
+ margin: 0px 0px 5px 0px;
+}
+.rvps5
+{
+ text-align: justify;
+}
+.rvps6
+{
+ line-height: 1.17;
+ margin: 0px 0px 13px 0px;
+}
+.rvps7
+{
+ text-align: center;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>COM 子系统</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+<div></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps2><span class=rvts2>在 WITec Control 中，所有可用的参数、操作和状态信息都组织在子系统及其各自对象的层次结构中。每个子系统可能包含多个子系统，但并非每个子系统都是离散对象。有些子系统仅将其他子系统分组在其下，本身不是对象（如参数、操作或状态）。</span></p>
+<p class=rvps2><span class=rvts2>要创建对象，必须知道其完整路径。该路径类似于文件系统中的路径。竖线（|）用作分隔符。路径可以是例如 A|B|C|X。</span></p>
+<p class=rvps2><span class=rvts2>所有对象属于构成路径第一部分的四个主要组之一：</span><span class=rvts7>UserParameters</span><span class=rvts2>、</span><span class=rvts7>MultiComm</span><span class=rvts2>、</span><span class=rvts7>Status</span><span class=rvts2>和</span><span class=rvts7>ApplicationControl</span><span class=rvts2>。下面将详细说明。</span></p>
+<p class=rvps6><span class=rvts2>可以通过执行 LabVIEW vi "Get Available Subsystems.vi" 或使用</span><a class=rvts6 href="WCCOMInterfaces.html#IBUCSCore">IBUCSCore</a><span class=rvts2>的 GetSubSystemsList() 方法列出所有可用参数。单个参数的可用性取决于显微镜配置。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<div class=rvps7><div align=center><table border=1 cellpadding=1 cellspacing=-1 style="border-width: 0px; border-collapse: collapse;">
+<tr valign=middle>
+<td width=195 height=25 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps3><a class=rvts9 href="#ApplicationControl">应用程序控制</a></p>
+</td>
+<td width=139 height=25 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p><span class=rvts7>ApplicationControl</span></p>
+</td>
+<td width=322 height=25 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps3><span class=rvts2>主菜单的操作</span></p>
+</td>
+</tr>
+<tr valign=middle>
+<td width=195 height=25 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps3><a class=rvts8 href="#UserParameters">用户参数</a></p>
+</td>
+<td width=139 height=25 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p><span class=rvts7>UserParameters</span></p>
+</td>
+<td width=322 height=25 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps3><span class=rvts2>控制树的参数</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=195 height=25 valign=middle style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps3><a class=rvts8 href="WCCOMStatusContainer.html">状态容器</a></p>
+</td>
+<td width=139 height=25 valign=middle style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p><span class=rvts7>Status</span></p>
+</td>
+<td width=322 height=25 valign=middle style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps3><span class=rvts2>检索状态信息或发送数据</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=195 height=25 valign=middle style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps3><a class=rvts8 href="#MultiComm">附加参数</a></p>
+</td>
+<td width=139 height=25 valign=middle style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p><span class=rvts7>MultiComm</span></p>
+</td>
+<td width=322 height=25 valign=middle style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps3><span class=rvts2>视频控制窗口的参数</span></p>
+</td>
+</tr>
+</table>
+</div></div>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps1><a name="ApplicationControl"><span class=rvts3>应用程序控制</span></p>
+<p class=rvps2><span class=rvts2>WITec Control 主菜单中的选定操作被实现为独立的子系统。这些子系统的路径以</span><span class=rvts4>ApplicationControl|</span><span class=rvts2>开头。</span></p>
+<div class=rvps2><table border=1 cellpadding=0 cellspacing=-1 style="border-width: 0px; border-collapse: collapse;">
+<tr valign=top>
+<td width=196 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps5><span class=rvts10>名称</span></p>
+</td>
+<td width=77 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps5><span class=rvts10>类型</span></p>
+</td>
+<td width=465 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps5><span class=rvts10>描述</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=196 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps5><span class=rvts10>LoadConfiguration</span></p>
+</td>
+<td width=77 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps5><span class=rvts10>字符串</span></p>
+</td>
+<td width=465 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps5><span class=rvts10>检索或更改当前选择的配置。检索/期望配置名称（不含文件扩展名）及其相对于配置文件夹的路径，例如 "AFM\AFM AC"。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=196 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps5><span class=rvts10>UpdateHardware</span></p>
+</td>
+<td width=77 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps5><span class=rvts10>触发</span></p>
+</td>
+<td width=465 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps5><span class=rvts10>将用户参数的更改应用到硬件，然后更新状态数据。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=196 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps5><span class=rvts10>ExitApplication</span></p>
+</td>
+<td width=77 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps5><span class=rvts10>触发</span></p>
+</td>
+<td width=465 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps5><span class=rvts10>关闭 WITec Control。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=196 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps5><span class=rvts10>FileNameToAppendToProject</span></p>
+</td>
+<td width=77 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps5><span class=rvts10>字符串</span></p>
+</td>
+<td width=465 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps5><span class=rvts10>将 WIP 文件的文件名写入此参数将把该项目追加到当前项目。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=196 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps5><span class=rvts10>NewProject</span></p>
+</td>
+<td width=77 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps5><span class=rvts10>触发</span></p>
+</td>
+<td width=465 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps5><span class=rvts10>删除当前项目并创建新项目</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts2>有关保存项目，请参考默认树中的</span><a class=rvts6 href="WCAutoSave.html">自动保存</a><span class=rvts2>组。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps1><a name="UserParameters"><span class=rvts3>用户参数</span></p>
+<p class=rvps2><span class=rvts2>在 WITec Control 的</span><a class=rvts6 href="WCControlWindow.html">控制树</a><span class=rvts2>中可以找到的大多数参数都组织在 UserParameters 组中。在</span><a class=rvts6 href="WCControlWindow.html">控制树</a><span class=rvts2>中选择相关参数的左列，然后按</span><span class=rvts11>Ctrl + C</span><span class=rvts2>将其路径复制到剪贴板。要创建到相应参数的完整路径，需要在开头添加</span><span class=rvts4>UserParameters|</span><span class=rvts2>部分。可以找到以下类型的参数：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps4><span class=rvts2>整数参数是</span><a class=rvts6 href="WCCOMClasses.html#CBUCSIntSingleValueMinMax">CBUCSIntSingleValueMinMax</a><span class=rvts2>类型的对象。</span></li>
+<li class=rvps4><span class=rvts2>使用小数点的数字参数是</span><a class=rvts6 href="WCCOMClasses.html#CBUCSFloatSingleValueMinMax">CBUCSFloatSingleValueMinMax</a><span class=rvts2>类型的对象。</span></li>
+<li class=rvps4><span class=rvts2>字符串参数是</span><a class=rvts6 href="WCCOMClasses.html#CBUCSStringSingleValue">CBUCSStringSingleValue</a><span class=rvts2>类型的对象。</span></li>
+<li class=rvps4><span class=rvts2>使用下拉列表的参数是</span><a class=rvts6 href="WCCOMClasses.html#CBUCSEnumSingleValue">CBUCSEnumSingleValue</a><span class=rvts2>类型的对象。</span></li>
+<li class=rvps4><span class=rvts2>布尔参数是</span><a class=rvts6 href="WCCOMClasses.html#CBUCSBoolSingleValue">CBUCSBoolSingleValue</a><span class=rvts2>类型的对象。只有两个可能值的列表参数与布尔参数之间的区别并不明显。</span></li>
+<li class=rvps2><span class=rvts2>启动操作的按钮是</span><a class=rvts6 href="WCCOMClasses.html#CBUCSTriggerSingleValue">CBUCSTrigger</a><span class=rvts2>类型的对象。</span></li>
+</ul>
+<p class=rvps2><span class=rvts2>如果客户端尝试为未实现的参数创建对象，服务器会引发错误并返回空指针。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps1><a name="MultiComm"><span class=rvts3>附加参数</span></p>
+<p class=rvps2><span class=rvts2>与</span><a class=rvts6 href="MicroscopeControlOverview.html">视频控制窗口</a><span class=rvts2>相关的附加参数以</span><span class=rvts4>MultiComm|MicroscopeControl|</span><span class=rvts2>开头。可用参数列表可以在视频控制窗口</span><a class=rvts6 href="MicroscopeControlMenu.html">菜单</a><span class=rvts2>的高级部分中找到。</span></p>
+
+</div></body></html>

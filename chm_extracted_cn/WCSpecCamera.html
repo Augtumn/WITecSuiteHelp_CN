@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>光谱相机</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="光谱相机">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+a.rvts4, span.rvts4
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts4:hover { color: #0000ff; }
+span.rvts5
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #808080;
+}
+span.rvts6
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #808080;
+}
+span.rvts7
+{
+ font-size: 12pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: justify;
+ margin: 0px 0px 5px 0px;
+}
+.rvps2
+{
+}
+.rvps3
+{
+ text-align: justify;
+ margin: 0px 0px 10px 0px;
+}
+.rvps4
+{
+ margin: 0px 0px 14px 0px;
+}
+.rvps5
+{
+ text-align: justify;
+ margin: 0px 0px 5px 24px;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>光谱相机</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+<div></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps3><span class=rvts2>对于连接到计算机的每个光谱相机，将提供一个"光谱相机 X"参数组。</span></p>
+<p class=rvps1><span class=rvts3>更多信息：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><a class=rvts4 href="CCDCameraConfiguration.html">服务监视器</a><span class=rvts2>&nbsp;（CCD 温度和状态）</span></li>
+<li class=rvps1><a class=rvts4 href="SpectroscopySettings.html#CCD">光谱设置</a><span class=rvts2>&nbsp;（CCD 读取和合并）</span></li>
+<li class=rvps1><a class=rvts4 href="OGRamanInGaAsCamera.html">InGaAs 相机</a><span class=rvts2>&nbsp;（操作指南）</span></li>
+</ul>
+<p><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts2>以下参数仅适用于&nbsp;</span><a class=rvts4 href="OGRamanInGaAsCamera.html">InGaAs 相机</a><span class=rvts2>。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image930588694.jpg" width="372" height="221"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>偏移校准</span></p>
+<p class=rvps1><span class=rvts2>校准程序以 0&nbsp;s 积分时间且无光照射探测器测量一系列光谱（累积次数可由用户调整）。如果启用，所有测量的光谱现在都减去所采集系列的平均光谱。为了只得到正值，添加了 2000 的偏移。现有的强度和暗电流校准现在无效，因此自动禁用。</span></p>
+<p class=rvps1><span class=rvts3>强度校准</span></p>
+<p class=rvps1><span class=rvts2>为了校准每个像素的增益，需要具有平滑分布的光谱。每个像素的增益通过其相邻像素的平均强度计算。算法开始时，会搜索一个给出最大信号 50000 的积分时间。然后以 10 个不同的积分时间测量一系列光谱（累积次数可由用户调整）。从这些数据计算增益查找表。现有的暗电流校准现在无效，因此由软件禁用。</span></p>
+<p class=rvps1><span class=rvts3>暗电流校准</span></p>
+<p class=rvps1><span class=rvts2>暗电流校准程序以不同的积分时间获取一系列时间序列。用户可以更改最大积分时间、时间序列数量和累积次数。从这些数据计算每个像素的暗信号率。根据当前积分时间，从测量的光谱中减去暗信号。为获得最佳结果，此校准需要覆盖用于测量的建议积分时间。</span></p>
+<p class=rvps5><span class=rvts3>开始</span></p>
+<p class=rvps5><span class=rvts2>此按钮启动校准。仅在偏移校准有效且开启时，强度校准和暗电流校准才可用。对于偏移校准和暗校准，确保没有光照射到相机上。记录的校准保存在内部设置文件夹中。</span></p>
+<p class=rvps5><span class=rvts3>累积次数</span></p>
+<p class=rvps5><span class=rvts2>此参数描述将累积多少个光谱。</span></p>
+<p class=rvps5><span class=rvts3>启用校准</span></p>
+<p class=rvps5><span class=rvts2>此参数打开或关闭相应的校准。如果校准成功，则自动设置为"是"。</span></p>
+<p class=rvps5><span class=rvts3>间隔数</span></p>
+<p class=rvps5><span class=rvts2>间隔数确定在零和最大积分时间之间取多少个不同的积分时间步长。</span></p>
+<p class=rvps5><span class=rvts3>最大积分时间</span></p>
+<p class=rvps5><span class=rvts2>此参数定义暗校准的最大积分时间。</span></p>
+<p><span class=rvts2><br></span></p>
+<p class=rvps4><span class=rvts7>仅特殊系统可用：</span></p>
+<p><img border="0" src="Images/image102468157.jpg" width="364" height="21"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>选项 </span></p>
+<p class=rvps1><span class=rvts5>按下此按钮，打开光谱相机选项对话框。可用选项取决于相机型号，因此并非所有选项都可能在您的情况下可用。</span></p>
+<p class=rvps2><img border="0" src="Images/image479513808.jpg" width="440" height="218"></p>
+<p class=rvps5><span class=rvts3><br></span></p>
+<p class=rvps3><span class=rvts5>有关所有选项的解释，请参阅</span><span class=rvts2>&nbsp;</span><a class=rvts4 href="SpectroscopySettings.html#CCD">光谱设置</a><span class=rvts2>。</span></p>
+
+</div></body></html>

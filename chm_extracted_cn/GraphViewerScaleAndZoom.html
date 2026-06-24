@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>图谱查看器刻度和缩放</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="Graph Viewer Scale and Zoom">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+a.rvts3, span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts3:hover { color: #0000ff; }
+span.rvts4
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>图谱查看器刻度和缩放</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts2>您可以使用</span><a class=rvts3 href="GraphViewerCircleMenu.html">图谱查看器环形菜单</a><span class=rvts2>打开这些功能。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>一般来说，</span><span class=rvts4>X轴</span><span class=rvts2>对于同一查看器中显示的所有图谱对象始终相同。</span></p>
+<p class=rvps1><span class=rvts2>对于同一查看器中显示的所有图谱对象，</span><span class=rvts4>Y轴</span><span class=rvts2>可以不同。每个图谱的Y轴标尺值可以使用</span><a class=rvts3 href="GraphViewerList.html">图谱查看器列表</a><span class=rvts2>来定义。此外，还有一些不同的操作可以快速更改Y轴缩放行为（见下文）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1022503790.jpg" width="473" height="122"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts4>放大Y轴标尺：</span></p>
+<p class=rvps1><span class=rvts2>放大Y轴标尺以查看当前选定图谱对象的所有Y像素。</span></p>
+<p class=rvps1><span class=rvts2>右键点击可切换</span><span class=rvts4>自动放大Y模式</span><span class=rvts2>。这将在图谱更改时自动执行放大操作。快捷键"Y"。</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts4>放大X轴标尺：</span></p>
+<p class=rvps1><span class=rvts2>放大X轴标尺以查看所有图谱对象的所有X像素。</span></p>
+<p class=rvps1><span class=rvts2>右键点击可切换</span><span class=rvts4>自动放大X模式</span><span class=rvts2>。这将在图谱更改时自动执行放大操作。快捷键"X"。</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts4>相同Y轴标尺：</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，所有图谱数据对象共享相同的Y轴标尺。在任何图谱上更改标尺时，它会自动同步。</span></p>
+<p class=rvps1><span class=rvts2>如果"</span><span class=rvts4>自动放大Y模式</span><span class=rvts2>"已开启：您可以停用同步缩放并选择一个所需图谱（使用颜色区域或双击图谱），以定义哪个图谱应用于自动缩放Y标尺。快捷键"1"。</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts4>层叠图谱：</span></p>
+<p class=rvps1><span class=rvts2>将多个图谱对象层叠显示。更改层叠距离以定义图谱之间的间隙大小。</span></p>
+<p class=rvps1><span class=rvts4>注意：</span><span class=rvts2>如果"相同Y轴标尺"也处于活动状态，您可以使用鼠标滚轮缩放所有图谱，但请确保将鼠标定位在正确（选定）的图谱位置。快捷键"C"。</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts4>同步缩放：</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，通过鼠标滚轮更改Y轴将缩放查看器中的所有图谱对象。</span></p>
+<p class=rvps1><span class=rvts2>仅在多个图谱未层叠时有效。快捷键"S"。</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts4>忽略瑞利：</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，任何放大Y轴标尺操作将忽略瑞利区域。仅适用于光谱图谱对象。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>放大瑞利峰：</span></p>
+<p class=rvps1><span class=rvts2>放大瑞利峰。在校准瑞利峰时可能有用。快捷键"R"。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>仅自动放大Y轴：</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，更改时的自动Y轴缩放只会放大，不会缩小。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>对数X轴：</span></p>
+<p class=rvps1><span class=rvts2>打开或关闭对数X轴标尺。快捷键"Control-L"。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>对数Y轴：</span></p>
+<p class=rvps1><span class=rvts2>打开或关闭对数Y轴标尺。小于0的值将绘制在窗口的最底部。快捷键"L"。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>鼠标缩放：</span></p>
+<p class=rvps1><span class=rvts2>将鼠标模式更改为"鼠标缩放模式"。在图谱查看器中点击并拖动一个矩形，将选定的图谱对象精确缩放到该区域。</span></p>
+<p class=rvps1><span class=rvts2>您可以</span><span class=rvts4>按住 Control 键缩放矩形区域</span><span class=rvts2>，而不是切换到鼠标缩放模式。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>X标尺左/右（浮点编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>定义所有图谱的X轴标尺。您也可以在键盘上按住 Control 键同时转动鼠标滚轮来缩放X轴。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>层叠距离（滑块）</span></p>
+<p class=rvps1><span class=rvts2>在这里您可以定义层叠多个图谱对象时的间隙大小。</span></p>
+<p class=rvps1><span class=rvts2>值为0.0表示无层叠，值为1.0表示完全层叠。滑块顶部的小按钮可用于将值设置为1.0。</span></p>
+
+</div></body></html>

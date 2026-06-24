@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>状态管理器</TITLE><meta name="generator" content="FastHelp"><meta name="keywords" content="状态管理器">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+a.rvts4, span.rvts4
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts4:hover { color: #0000ff; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+.rvps2
+{
+ text-align: justify;
+ margin: 0px 0px 5px 0px;
+}
+.rvps3
+{
+ text-align: justify;
+ margin: 0px 0px 10px 0px;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>状态管理器</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+<div></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps3><span class=rvts2>状态管理器可以保存和调用预定义的状态，这些状态可以包含以下设备状态：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps2><span class=rvts2>激光选择，激光功率</span></li>
+<li class=rvps2><span class=rvts2>光栅和位置</span></li>
+<li class=rvps2><span class=rvts2>CCD读出和合并设置</span></li>
+<li class=rvps2><span class=rvts2>偏振器和检偏器位置</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>行为</span></p>
+<p class=rvps1><span class=rvts2>当在WITec Control中更改配置（例如更改为"拉曼 CCD2"）时，状态管理器将自动选择CCD2的启动状态。</span></p>
+<p class=rvps1><span class=rvts2>当当前输出为"CCD2"时，您可以选择为输出"CCD2"配置的所有状态。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1262729878.jpg" width="525" height="27"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>状态组合框</span></p>
+<p class=rvps1><span class=rvts2>使用状态组合框选择预定义的状态之一。</span></p>
+<p class=rvps1><span class=rvts2>请注意，如果您在执行状态后自行更改了设备，设备的实际状态可能与所选状态不同。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1540770781.jpg" width="27" height="27"><span class=rvts3>执行所选状态</span></p>
+<p class=rvps1><span class=rvts2>执行当前选择的状态，以确保所有设备处于所需状态。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1555535855.jpg" width="27" height="27"><span class=rvts3>编辑状态</span></p>
+<p class=rvps1><span class=rvts2>打开&nbsp;</span><a class=rvts4 href="StateEditor.html">状态编辑器</a><span class=rvts2>。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image347834934.jpg" width="25" height="27"><span class=rvts3>打开状态重置器</span></p>
+<p class=rvps1><span class=rvts2>打开&nbsp;</span><a class=rvts4 href="StateResetter.html">状态重置器</a><span class=rvts2>：</span></p>
+<p class=rvps1><span class=rvts2></span></p>
+
+</div></body></html>

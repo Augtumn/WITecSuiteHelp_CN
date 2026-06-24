@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>滤波器查看器</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="滤波器查看器">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 16pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #ea7600;
+}
+a.rvts5, span.rvts5
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts5:hover { color: #0000ff; }
+span.rvts6
+{
+ font-size: 14pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+}
+span.rvts7
+{
+ font-size: 12pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+.rvps2
+{
+ margin: 0px 0px 0px 24px;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><table width="70%" border=0 cellpadding=1 bordercolor="#000000" cellspacing=2>
+<tr valign=middle>
+<td width=48 valign=middle><font size=2 color="#000000" face="Arial">
+<div><img border="0" src="Images/image2016689164.jpg" width="48" height="48"></div>
+</font>
+</td>
+<td width=1007 valign=middle><font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>滤波器查看器</b></font></div>
+</font>
+</td>
+</tr>
+</table>
+</div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts4>描述</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>滤波器查看器使用定义的滤波器（例如求和滤波器）从图像-图谱对象（或从线-图谱对象创建图谱对象，或从单光谱创建单个结果值）创建图像。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>另请参阅</span></p>
+<p class=rvps1><a class=rvts5 href="CreatingImagesUsingTheFilterViewer.html">使用滤波器查看器创建图像</a></p>
+<p class=rvps1><a class=rvts5 href="FilterList.html">过滤列表</a></p>
+<p class=rvps1><a class=rvts5 href="FilterViewerMath.html">滤波器查看器（数学）</a></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>输入与结果</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>输入：</span></p>
+<p class=rvps1><span class=rvts2>您可以在该对话框中使用任何图谱对象。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>结果：</span></p>
+<p class=rvps1><span class=rvts2>结果取决于输入图谱对象的维度。</span></p>
+<p class=rvps1><span class=rvts2>滤波器查看器为每个定义的滤波器创建以下结果：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>对于图像-图谱输入数据对象创建图像对象</span></li>
+<li class=rvps1><span class=rvts2>对于线-图谱输入数据对象创建单个图谱对象</span></li>
+<li class=rvps1><span class=rvts2>对于单图谱输入数据对象创建包含结果文本的文本对象</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>特殊功能</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>某些测量（尤其是多光谱测量）将在开始测量时创建滤波器查看器。</span></li>
+<li class=rvps1><span class=rvts2>与其他拖放操作或数据分析功能不同，可以在测量期间使用滤波器查看器。</span></li>
+<li class=rvps1><span class=rvts2>滤波器查看器及其包含的过滤器随项目一起保存。预览窗口以及输入图谱预览不会被保存，但可以在加载后重新打开（参见</span><a class=rvts5 href="SaveAndLoad.html">保存项目</a><span class=rvts2>)。</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<hr noshade size=1 style="color : #808080">
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>用户界面</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p><img border="0" src="Images/image198039623.jpg" width="341" height="188"></p>
+<p class=rvps1><span class=rvts6><br></span></p>
+<p><img border="0" src="Images/image977435384.jpg" width="32" height="32"></p>
+<p class=rvps1><span class=rvts3>创建求和滤波器（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>创建一个新的求和滤波器。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p><img border="0" src="Images/image21638564.jpg" width="32" height="32"></p>
+<p class=rvps1><span class=rvts3>创建滤波器（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>您可以通过按下"创建滤波器"并选择其中一个可用滤波器来简单创建新滤波器。</span></p>
+<p class=rvps1><span class=rvts2>请参阅</span><a class=rvts5 href="FilterList.html">过滤列表</a><span class=rvts2>以获取每个滤波器及其用途的简要描述。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p><img border="0" src="Images/image1060766550.jpg" width="32" height="32"></p>
+<p class=rvps1><span class=rvts3>快速滤波器（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>如果您想将滤波器保存到硬盘并在以后重新加载，可以使用"快速滤波器"菜单。</span></p>
+<p class=rvps1><span class=rvts2>您可以使用白色过滤列表框中的上下文菜单保存</span><span class=rvts3>选定的滤波器</span><span class=rvts2>。可以使用快速滤波器按钮保存</span><span class=rvts3>所有滤波器</span><span class=rvts2>。</span></p>
+<p class=rvps1><span class=rvts2>保存在快速滤波器目录中的滤波器会自动显示在快速滤波器菜单中。</span></p>
+<p class=rvps1><span class=rvts2>您可以打开该目录，使用子目录组织您的快速滤波器，这些子目录将作为快速滤波器菜单中的子菜单显示。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p><img border="0" src="Images/image1783145825.jpg" width="32" height="32"></p>
+<p class=rvps1><span class=rvts3>删除（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>删除所有选定的滤波器。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p><img border="0" src="Images/image1723296473.jpg" width="71" height="32"></p>
+<p class=rvps1><span class=rvts3>上一个/下一个（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>切换到项目管理器中的下一个或上一个可能的图谱对象，以将其用作新的输入图谱对象。</span></p>
+<p class=rvps1><span class=rvts2>快捷键：在预览图像查看器（显示滤波器的结果）中按 Page-Up 或 Page-Down。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p><img border="0" src="Images/image664795767.jpg" width="32" height="32"></p>
+<p class=rvps1><span class=rvts3>显示输入图谱（复选按钮）：</span></p>
+<p class=rvps1><span class=rvts2>显示或隐藏显示（平均后）输入图谱的图谱查看器窗口。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1669326553.jpg" width="38" height="32"></p>
+<p class=rvps1><span class=rvts3>空间平均尺寸（整数编辑）：</span></p>
+<p class=rvps1><span class=rvts2>定义扫描光谱的平均滤波器尺寸，这些光谱将在上述图谱查看器中平均并显示为预览。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>提取（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>这将为选定的滤波器创建新的数据对象。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>全部（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>这将为您的所有滤波器创建新的数据对象。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>过滤列表框：</span></p>
+<p class=rvps1><span class=rvts2>显示所有滤波器</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>点击"滤波器名称"列标题可选择或取消选择所有滤波器。</span></li>
+<li class=rvps1><span class=rvts2>点击"显示"复选框可切换滤波器预览（影响所有选定的滤波器）。</span></li>
+<li class=rvps1><span class=rvts2>双击任意滤波器仅显示该滤波器的预览（快捷键：回车键）。</span></li>
+<li class=rvps1><span class=rvts2>滤波器参数更改将影响所有选定的滤波器。</span></li>
+<li class=rvps1><span class=rvts2>点击"开始"或"停止"列标题可打开/关闭监听机制。</span></li>
+</ul>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>"4.8880 CCD 计数。"（标签）</span></p>
+<p class=rvps1><span class=rvts2>显示单光谱输入图谱对象的选定滤波器结果。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>位置（浮点编辑）：</span></p>
+<p class=rvps1><span class=rvts2>定义选定滤波器的位置。</span></p>
+<p class=rvps1><span class=rvts2>双击可从任何图谱查看器窗口监听位置；如果监听已启用，编辑框将变为红色。再次双击可禁用监听。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>宽度（浮点编辑）</span></p>
+<p class=rvps1><span class=rvts2>定义选定滤波器的宽度。滤波器范围将从 &lt;位置 - 宽度/2&gt; 到 &lt;位置 + 宽度/2&gt;。</span></p>
+<p class=rvps1><span class=rvts2>双击可从任何图谱查看器窗口监听位置；如果监听已启用，编辑框将变为红色。再次双击可禁用监听。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>背景扣除（编辑框和按钮）</span></p>
+<p class=rvps1><span class=rvts2>更改当前滤波器使用的背景扣除：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>左右编辑框将定义滤波器区域左侧和右侧的像素数量，用作背景扣除的平均值。</span></li>
+<li class=rvps1><span class=rvts2>两个编辑框的值都为 0 表示不进行背景扣除。</span></li>
+<li class=rvps1><span class=rvts2>如果两个编辑框都不为 0，则扣除连接左侧像素平均值和右侧像素平均值的斜率</span></li>
+<li class=rvps1><span class=rvts3></span><img border="0" src="Images/image638383626.jpg" width="89" height="22"><span class=rvts2>点击工具按钮进行定义：</span></li>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps2 style="margin-left: 0"><span class=rvts2>无背景扣除</span></li>
+<li class=rvps2 style="margin-left: 0"><span class=rvts2>4 和 4（两侧，扣除斜率）</span></li>
+<li class=rvps2 style="margin-left: 0"><span class=rvts2>4 和 0（左侧，扣除水平线）</span></li>
+<li class=rvps2 style="margin-left: 0"><span class=rvts2>0 和 4（右侧，扣除水平线）。</span></li>
+</ul></ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>参见</span><a class=rvts5 href="FilterViewerMath.html">滤波器查看器（数学）</a></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts7>拖放区域/批处理</span></p>
+<p class=rvps1><span class=rvts7><br></span></p>
+<p class=rvps1><span class=rvts2>如果拖放的图谱具有相同的维度和 x 变换类型，则以下两个选项可用：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>将图谱对象拖放到窗体标题栏上以设置新的输入图谱对象</span></li>
+<li class=rvps1><span class=rvts2>将一个或多个图谱对象拖放到"提取"或"全部提取"按钮上进行批处理。</span></li>
+</ul>
+
+</div></body></html>

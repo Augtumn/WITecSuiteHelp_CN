@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>光谱自动对焦</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="WITecControl Auto Focus">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+a.rvts4, span.rvts4
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts4:hover { color: #0000ff; }
+span.rvts5
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+a.rvts6, span.rvts6
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts6:hover { color: #0000ff; }
+span.rvts7
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #808080;
+}
+span.rvts8
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #808080;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+.rvps2
+{
+ text-align: justify;
+ margin: 0px 0px 5px 0px;
+}
+.rvps3
+{
+ text-align: justify;
+ margin: 0px 0px 10px 0px;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>光谱自动对焦</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps3><span class=rvts2>光谱自动对焦组件自动寻找具有最佳拉曼信号的 Z 轴位置。这对于自动化测量特别有用，例如在</span><a class=rvts4 href="WCProcessScript.html">处理脚本</a><span class=rvts2>或</span><a class=rvts4 href="WITecParticleScoutRamanMeasurement.html">ParticleScout</a><span class=rvts2>中。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image523202866.jpg" width="365" height="161"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts5>模式</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps2><span class=rvts2>查找峰值：通过多次扫描搜索最大总信号（高精度）。</span></li>
+<li class=rvps2><span class=rvts2>查找拉曼信号：附加背景扣除，并在一次扫描中搜索最大拉曼信号（快速）。</span></li>
+</ul>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts5>最大搜索范围（Z 轴范围）</span></p>
+<p class=rvps2><span class=rvts2>自动对焦的最大搜索范围。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts5>中心</span></p>
+<p class=rvps2><span class=rvts2>自动对焦在中心位置上下各使用最大搜索范围的一半进行。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts5>步长乘数</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps2><span class=rvts2>仅在自动对焦模式"查找拉曼信号"中使用。</span></li>
+<li class=rvps2><span class=rvts2>定义此自动对焦模式的精度和速度</span></li>
+<li class=rvps2><span class=rvts2>典型范围：0.5 - 2.0</span></li>
+<li class=rvps2><span class=rvts2>较大值：较大步长 -> 较低精度 -> 更快。</span></li>
+<li class=rvps2><span class=rvts2>实际步长取决于物镜放大倍率。</span></li>
+</ul>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts5>最小积分时间</span></p>
+<p class=rvps2><span class=rvts2>为寻找最佳对焦位置而采集的每个光谱的最小积分时间。（如果 Z 台较慢，可以更长。）</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><a class=rvts6 href="WCControlWindow.html#Listen">监听 </a><span class=rvts5>掩模</span></p>
+<p class=rvps2><span class=rvts2>掩模决定使用哪个光谱区域来搜索最大信号。</span></p>
+<p class=rvps2><span class=rvts2>它使用由分号分隔的值对定义："250;300;500;550"（掩模设置为 250 到 300 以及 500 到 550。）</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1027250481.jpg" width="400" height="217"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts2>定义的掩模在所用 CCD 相机的硬件光谱窗口中可见。如果监听掩模模式已激活，您也可以在此窗口中编辑掩模。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps3><span class=rvts8>对焦后移动 [µm]</span></p>
+<p class=rvps3><span class=rvts7>在自动对焦后移动定义的微米数。</span></p>
+
+</div></body></html>

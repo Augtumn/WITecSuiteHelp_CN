@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>加热</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #808080;
+}
+span.rvts5
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #808080;
+}
+span.rvts6
+{
+ font-size: 12pt;
+ font-family: 'The Sans';
+ color: #808080;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: justify;
+ margin: 0px 0px 5px 0px;
+}
+.rvps2
+{
+}
+.rvps3
+{
+ text-align: justify;
+ margin: 0px 0px 5px 24px;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>加热</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+<div></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts2>加热参数组控制通过 alphaControl 控制器驱动的 WITec 加热台。</span></p>
+<p class=rvps1><span class=rvts2>软件启动时，加热台使用台内的 PT100 元件进行校准。此过程的信息显示在消息窗口中。加热台的状态（启用、禁用、稳定等）以及加热过程中的当前温度也显示在消息窗口中。</span></p>
+<p class=rvps1><span class=rvts2>如果加热台存在，则测量（如图像扫描）开始和结束时确定的温度将保存在自动创建的描述扫描的文本对象中。</span></p>
+<p class=rvps1><span class=rvts2>以下参数允许控制加热台：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps2><img border="0" src="Images/image1250133998.jpg" width="364" height="181"></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>启用温度控制</span></p>
+<p class=rvps1><span class=rvts2>使用此参数可以启用（是）或禁用（否）温度控制。如果温度控制被禁用，此组中的所有其他参数将变为非活动状态，目标温度自动设置为 20&nbsp;&#176;C。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>目标温度 [&#176;C]</span></p>
+<p class=rvps1><span class=rvts2>此处可以输入加热台的目标温度。如果更改了目标温度，加热台将尝试使用比例(P)积分(I)微分(D)调节回路的 P、I 和 D 参数达到新的目标温度。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>温度斜坡</span></p>
+<p class=rvps1><span class=rvts2>使用此组可以线性地将温度斜坡到特定目标温度。以下参数允许进行此控制：</span></p>
+<p class=rvps3><span class=rvts3>结束温度 [&#176;C]</span></p>
+<p class=rvps3><span class=rvts2>斜坡结束时加热台应达到的温度。</span></p>
+<p class=rvps3><span class=rvts3>温度梯度 [&#176;C/min]</span></p>
+<p class=rvps3><span class=rvts2>温度斜坡的斜率，单位为 &#176;C/分钟。</span></p>
+<p class=rvps3><span class=rvts3>开始梯度</span></p>
+<p class=rvps3><span class=rvts2>启动温度斜坡。</span></p>
+<p class=rvps3><span class=rvts3>停止梯度</span></p>
+<p class=rvps3><span class=rvts2>停止温度斜坡。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>校准</span></p>
+<p class=rvps1><span class=rvts2>此按钮触发使用加热台内 PT100 元件的加热台自动校准。（此步骤在启动 WITec Control 时自动执行。）</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts5>P 增益</span></p>
+<p class=rvps1><span class=rvts4>PID 调节回路的 P 增益。</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts5>I 增益</span></p>
+<p class=rvps1><span class=rvts4>PID 调节回路的 I 增益。</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts5>D 增益</span></p>
+<p class=rvps1><span class=rvts4>PID 调节回路的 D 增益。</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts5>获取温度间隔 [s]</span></p>
+<p class=rvps1><span class=rvts4>此参数确定测量温度的时间间隔</span><span class=rvts6>。</span><span class=rvts1></span></p>
+
+</div></body></html>

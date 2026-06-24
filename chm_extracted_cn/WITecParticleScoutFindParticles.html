@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>查找颗粒</TITLE><meta name="generator" content="FastHelp"><meta name="keywords" content="WITec ParticleScout Create Particles">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 14pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+span.rvts5
+{
+ font-size: 12pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+a.rvts6, span.rvts6
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts6:hover { color: #0000ff; }
+a.rvts7, span.rvts7
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts7:hover { color: #0000ff; }
+a.rvts8, span.rvts8
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts8:hover { color: #0000ff; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>查找颗粒</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts4>查找颗粒</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><img border="0" src="Images/image79917028.jpg" width="348" height="205"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>亮色 / 暗色颗粒&nbsp;</span><span class=rvts2>（自动设置）</span></p>
+<p class=rvps1><span class=rvts2>亮色颗粒：查找比背景更亮的颗粒（例如暗场图像）</span></p>
+<p class=rvps1><span class=rvts2>暗色颗粒：查找比背景更暗的颗粒（例如明场图像）</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts5>通过阈值掩模</span></p>
+<p class=rvps1><span class=rvts2>定义用于检测颗粒的亮度级别。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>自动</span></p>
+<p class=rvps1><span class=rvts2>计算自动阈值（启动时也使用此方法）。</span></p>
+<p class=rvps1><span class=rvts2>自动阈值使用"大津法"：&nbsp;</span><a class=rvts7 href="https://en.wikipedia.org/wiki/Otsu%27s_method">维基百科链接</a></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts5><br></span></p>
+<p class=rvps1><span class=rvts5>通过分水岭掩模</span></p>
+<p class=rvps1><span class=rvts2>此算法可用于解决颗粒检测中的两个问题。</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>亮色和较暗的颗粒都根据颗粒亮度使用单独的阈值进行掩模。</span></li>
+<li class=rvps1><span class=rvts2>非常靠近彼此颗粒可以被分离。</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1968840686.jpg" width="334" height="208"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>为获得最佳结果，请按以下顺序逐步定义参数：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>背景阈值</span></p>
+<p class=rvps1><span class=rvts2>为背景定义一个阈值。</span></p>
+<p class=rvps1><span class=rvts2>更改此参数时，预览将暂时显示背景掩模。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>检测阈值</span></p>
+<p class=rvps1><span class=rvts2>只有高于此阈值（背景阈值 + 检测阈值）的区域才会被用于查找颗粒。</span></p>
+<p class=rvps1><span class=rvts2>更改此参数时，预览将暂时显示检测掩模。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>关联</span></p>
+<p class=rvps1><span class=rvts2>如果选中关联复选框，分离和掩模阈值将设置为相等。如果您只关心为每个颗粒设置单独的阈值，这将很有用。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>分离阈值</span></p>
+<p class=rvps1><span class=rvts2>在计算过程中，颗粒围绕局部强度最大值扩展。如果强度下降到分离阈值以下，该区域将成为一个独立的颗粒。它不会与其他低于其分离阈值的颗粒合并。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>掩模阈值</span></p>
+<p class=rvps1><span class=rvts2>此参数定义相对于局部最大值的掩模阈值。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>请参阅&nbsp;</span><a class=rvts8 href="WatershedExamples.html">分水岭示例</a></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts4>过滤颗粒</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image149890469.jpg" width="484" height="390"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>排除边缘颗粒</span></p>
+<p class=rvps1><span class=rvts2>如果设置，所有轮廓不完全在图像内的颗粒将被跳过。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>过滤表达式 / 快速过滤器</span></p>
+<p class=rvps1><span class=rvts2>您可以过滤掉不符合特定条件或自定义过滤表达式的颗粒。</span></p>
+<p class=rvps1><span class=rvts2>例如，您可以定义仅检测面积大于 50 &#181;m 的颗粒。</span></p>
+<p class=rvps1><span class=rvts2>请参阅&nbsp;</span><a class=rvts6 href="WITecParticleScoutFilterExpressionEditor.html">过滤表达式编辑器</a><span class=rvts2>。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>用户定义材料</span></p>
+<p class=rvps1><span class=rvts2>可以从 WITec Project 导出带有已知材料的颗粒图像。在这种情况下，您只需输入材料名称，该名称将被分配给结果颗粒列表中的颗粒对象。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts5>操作</span></p>
+<p class=rvps1><span class=rvts5><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1508245783.jpg" width="60" height="40"><span class=rvts2>&nbsp;</span><span class=rvts3>使用结果</span></p>
+<p class=rvps1><span class=rvts2>这将接受当前掩模并继续进行颗粒过滤。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>预览</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>预览图像显示原始颗粒图像和当前掩模的叠加。</span></p>
+<p class=rvps1><span class=rvts2>在右上角，您可以打开选项以更改亮度/对比度以及掩模的不透明度和颜色。</span></p>
+
+</div></body></html>

@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>图谱与图像数据拼接对话框</TITLE><meta name="generator" content="FastHelp"><meta name="keywords" content="Graph and Image Data Stitching Dialog">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css"><style type="text/css"><!--
+#FHNonScroll{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}#MainSection {overflow: hidden; }
+#FHScroll{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+hr { color: #000000}body, table /* Normal */{font-size: 10pt; font-family: 'Arial'; font-style: normal; font-weight: normal; color: #000000; text-decoration: none;}
+span.rvts1{font-family: 'Arial Unicode MS';}span.rvts2{font-family: 'Microsoft Sans Serif'; color: #000000;}
+span.rvts3{font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #000000;}
+span.rvts4{font-size: 16pt; font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #ea7600;}
+a.rvts5, span.rvts5{font-family: 'Microsoft Sans Serif'; color: #0000ff; text-decoration: none;}a.rvts5:hover { color: #0000ff; }
+p,ul,ol /* Left */{text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;}.rvps1{}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><table border=0 cellpadding=1 bordercolor="#000000" cellspacing=2>
+<tr valign=middle>
+<td width=50 valign=middle><font size=2 color="#000000" face="Arial"><div><img border="0" src="Images/image242943519.jpg" width="48" height="48"></div></font></td>
+<td width=502 valign=middle><font size=2 color="#000000" face="Arial"><div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>图谱与图像数据拼接对话框</b></font></div></font></td>
+</tr></table></div></font></TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts4>描述</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>图谱与图像数据拼接对话框允许将多个图像并排显示/作为平铺显示在一个更大的图像中。也可以将多个光谱图像数据对象拼接成一个更大的图谱数据对象。如果例如由多个堆叠图像扫描组成的三维数据应使用多变量算法（如</span><a class=rvts5 href="DropActionClusterAnalysis.html">聚类分析</a><span class=rvts2>）进行分析，这很有用。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>输入与结果</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>输入：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>任意数量的图像数据对象，或</span></li>
+<li class=rvps1><span class=rvts2>任意数量的位图数据对象，或</span></li>
+<li class=rvps1><span class=rvts2>任意数量的图像光谱数据对象。</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>所有对象必须具有相同的像素大小。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>结果：</span></p>
+<p class=rvps1><span class=rvts2>一个更大的/拼接的图像或图像光谱数据对象。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<hr noshade size=1 style="color : #808080">
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>用户界面</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image522718895.jpg" width="344" height="454"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>图像顺序（列表框）</span></p>
+<p class=rvps1><span class=rvts2>允许您通过简单地选择一个图像，然后按下"上"或"下"来更改图像顺序。您也可以通过按下"删除"从列表中移除一个图像。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>第一个图像索引（整数编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>在此定义第一个图像。如果进行深度堆栈，通常第一个和最后一个图像不显示拉曼信号，因此您可以在拼接图像中隐藏它们。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>最后一个图像索引（整数编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>在此定义最后一个图像。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>步长（整数编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>您可以使用步长跳过图像；例如，如果您想在高分辨率深度堆栈中显示更大的差异。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>列数（整数编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>定义拼接图像的列数。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>行数（整数编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>定义拼接图像的行数。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>求和预览的光谱位置（浮点编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>拼接图像光谱数据对象时，预览显示特定光谱位置的求和图像。更改位置或双击打开监听模式以查看另一个预览图像。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>间隙值（整数编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>如果图像数量不符合平铺数量（行 * 列），将有一个空间隙。间隙值将用于这些空白区域。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>使用第一个像素（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>如果您有图像间隙，使用与图像数据相似的间隙值可能很有用。此按钮使用第一个图像像素值作为间隙值。如果选择的间隙值不是最优的，可能会有图像查看器自动比例的问题，可能难以在拼接图像中看到足够的细节。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>间隙颜色（颜色选择器）：</span></p>
+<p class=rvps1><span class=rvts2>如果使用彩色位图对象进行数据拼接，则可以定义间隙颜色。只需点击画布并在颜色选择器对话框中定义颜色即可。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>提取（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>创建新的拼接数据对象并将其添加到当前项目。</span></p>
+<p class=rvps1><span class=rvts4>预览窗口</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1979997896.jpg" width="209" height="229"></p>
+<p class=rvps1><span class=rvts2>预览图像查看器显示拼接图像——可能具有比真实结果更低的分辨率（以获得更好的预览性能）。如果拼接图像光谱数据对象，预览图像查看器显示所选光谱位置的求和图像。</span></p>
+
+</div></body></html>

@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>光谱归一化（数学）</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="光谱归一化（数学）">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 14pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+a.rvts5, span.rvts5
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts5:hover { color: #0000ff; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+.rvps2
+{
+ line-height: 1.15;
+ margin: 0px 0px 13px 24px;
+}
+.rvps3
+{
+ line-height: 1.15;
+ margin: 0px 0px 13px 0px;
+}
+.rvps4
+{
+ text-align: center;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>光谱归一化（数学）</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts2>有时需要对光谱进行归一化。如果将光谱解释为向量，通常有多种方法可以完成。对于光谱分析，常用的有所谓的L1范数和L2范数，更一般的形式是Lp范数。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps2><img border="0" src="Images/image1399416701.jpg" width="145" height="90"></p>
+<p class=rvps2><img border="0" src="Images/image710950776.jpg" width="125" height="60"></p>
+<p class=rvps2><img border="0" src="Images/image946053469.jpg" width="293" height="115"></p>
+<p class=rvps3><span class=rvts2>另请参阅：&nbsp;</span><a class=rvts5 href="SpectrumDefinition.html">光谱（定义）</a></p>
+<p class=rvps3><span class=rvts4>备注</span></p>
+<p class=rvps3><span class=rvts3>曼哈顿范数</span></p>
+<p class=rvps3><span class=rvts2>当 p 等于 1 时，该范数有时称为曼哈顿范数。在这种情况下，它等于光谱下的面积，因此与信号成正比。如果与信号的比例关系很重要，应使用这种归一化类型。</span></p>
+<div class=rvps3><table border=0 cellpadding=1 cellspacing=2 style="border-width: 0px;">
+<tr valign=top>
+<td width=329 valign=middle>
+<p class=rvps4><img border="0" src="Images/image66351798.jpg" width="264" height="179"></p>
+</td>
+<td width=328 valign=middle>
+<p class=rvps4><img border="0" src="Images/image357027178.jpg" width="162" height="147"></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=329>
+<p class=rvps4><span class=rvts2>光谱</span></p>
+</td>
+<td width=328>
+<p class=rvps4><span class=rvts2>光谱投影到二维空间，显示曼哈顿范数</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts3>欧几里得范数</span></p>
+<p class=rvps3><span class=rvts2>如果 p 等于 2，该范数称为欧几里得范数。在这种情况下，它等于向量的长度，即向量中小值的影响与大值相比更小。这种归一化类型适用于需要抑制小值影响的情况。</span></p>
+<div class=rvps3><table border=0 cellpadding=1 cellspacing=2 style="border-width: 0px;">
+<tr valign=top>
+<td width=329 valign=middle>
+<p class=rvps4><img border="0" src="Images/image1196913757.jpg" width="160" height="146"></p>
+</td>
+<td width=328 valign=middle>
+<p class=rvps4><img border="0" src="Images/image2021511156.jpg" width="217" height="128"></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=329>
+<p class=rvps4><span class=rvts2>光谱投影到二维空间，显示欧几里得范数</span></p>
+</td>
+<td width=328>
+<p class=rvps4><span class=rvts2>曼哈顿范数与欧几里得范数的比较</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts2><br></span></p>
+<p class=rvps3><span class=rvts2></span></p>
+
+</div></body></html>

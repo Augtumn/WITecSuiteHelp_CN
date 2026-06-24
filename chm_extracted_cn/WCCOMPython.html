@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>Python</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="Python">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{ font-size: 10pt; font-family: 'Arial'; font-style: normal; font-weight: normal; color: #000000; text-decoration: none; ; }
+span.rvts1 { font-family: 'Arial Unicode MS'; }
+span.rvts2 { font-family: 'Microsoft Sans Serif'; color: #000000; }
+span.rvts3 { font-family: 'Courier New'; color: #000000; }
+span.rvts4 { font-size: 14pt; font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #151f6d; }
+span.rvts5 { font-size: 12pt; font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #151f6d; }
+span.rvts6 { font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #000000; }
+a.rvts7, span.rvts7 { font-family: 'Microsoft Sans Serif'; color: #0000ff; text-decoration: none; }
+a.rvts7:hover { color: #0000ff; }
+span.rvts8 { font-size: 11pt; font-family: 'Calibri'; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */ { text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; }
+.rvps1 { }
+.rvps2 { background: #c0c0c0; margin: 0px 12px 0px 12px; }
+.rvps3 { text-align: justify; border-color: #000000; border-style: solid; border-width: 1px; padding: 5px 5px 5px 5px; margin: 0px 19px 10px 19px; }
+.rvps4 { margin: 0px 0px 14px 0px; }
+.rvps5 { text-align: justify; margin: 0px 0px 5px 0px; }
+.rvps6 { text-align: justify; margin: 0px 0px 10px 0px; }
+.rvps7 { text-align: justify; margin: 0px 0px 5px 24px; }
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>Python</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+<div></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps6><span class=rvts2>对于 Python，WITec Control 随附了即用型的包，其中包含不同测量模式和操作的类。以下描述安装过程。进一步说明如何在不使用此包的情况下使用 Python。</span></p>
+<p class=rvps6><span class=rvts2><br></span></p>
+<p class=rvps4><span class=rvts4>WITec Python 包</span></p>
+<p class=rvps4><span class=rvts5>前提条件</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps5><span class=rvts2>安装</span><a class=rvts7 href="https://www.python.org/" target="_blank">最新 Python</a><span class=rvts2>版本（&gt;= 3.10）</span></li>
+</ul>
+<p class=rvps5><span class=rvts2><br></span></p>
+<p class=rvps4><span class=rvts5>包安装</span></p>
+<p class=rvps6><span class=rvts2>WITec Python 包可以使用 pip 安装：</span></p>
+<p class=rvps2><span class=rvts3>pip install WITecSDK</span></p>
+<p class=rvps6><span class=rvts2><br></span></p>
+<p class=rvps5><span class=rvts2>如果计算机未连接互联网，安装离线包及其依赖项（将 6.X 和 1.2.X 替换为当前的 WITec Suite 和包版本）：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps5><span class=rvts3>pip install "C:\ProgramData\WITec\WITec Suite 6.X\Common Files\WITec.SDK\Python\WITecSDK-1.2.X.tar.gz"</span></li>
+<li class=rvps5><a class=rvts7 href="https://pypi.org/project/comtypes/" target="_blank">comtypes</a><span class=rvts2> — 轻量级 Python COM 库 — 推荐，测试更充分</span></li>
+<li class=rvps5><a class=rvts7 href="https://pypi.org/project/pywin32/" target="_blank">pywin32 —</a><span class=rvts2> 在 Python 下提供对许多 Windows API 的访问 — 备用方案（如未安装 comtypes）</span></li>
+</ul>
+<p class=rvps6><span class=rvts2><br></span></p>
+<p class=rvps6><span class=rvts5>示例</span></p>
+<p class=rvps6><span class=rvts2>使用 WITec Python 包的示例代码：</span></p>
+<p class=rvps2><span class=rvts3>from asyncio import run</span></p>
+<p class=rvps2><span class=rvts3>from WITecSDK import WITecSDKClass</span></p>
+<p class=rvps2><span class=rvts3><br></span></p>
+<p class=rvps2><span class=rvts3>WITec = WITecSDKClass()</span></p>
+<p class=rvps2><span class=rvts3>WITec.RequestWriteAccess()</span></p>
+<p class=rvps2><span class=rvts3>videoImageAcquisition = WITec.CreateVideoControl()</span></p>
+<p class=rvps2><span class=rvts3>bitmappath = run(videoImageAcquisition.AcquireVideoImageToFile())</span></p>
+<p class=rvps1><span class=rvts8><br></span></p>
+<p class=rvps6><span class=rvts2>更多示例可以在这里找到（将 6.X 替换为当前 WITec Suite 版本）：</span></p>
+<p class=rvps3><span class=rvts2>C:\ProgramData\WITec\WITec Suite 6.X\Common Files\WITec.SDK\Python\Examples</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps5><span class=rvts6>LASExample.py：</span><span class=rvts2>展示如何定义和启动不同类型的大面积扫描</span></li>
+<li class=rvps5><span class=rvts6>LAScanfromFile.py：</span><span class=rvts2>可用于在 WITec Control 中定义大面积扫描并使用</span><span class=rvts3>WriteLAtoFile(filename)</span><span class=rvts2>将设置保存到文件。该文件可用于通过</span><span class=rvts3>RunLAfromFile(filename)</span><span class=rvts2>自动运行预定义的扫描。此示例展示如何动态使用写访问。在测量时，可以关闭</span><a class=rvts7 href="WCCOMAutomationOverview.html#WriteAccess">允许写访问</a><span class=rvts2>到 WITec Control 的窗口，以便使用滤波器查看器等。程序将等待，直到再次按下控制树中的</span><a class=rvts7 href="WCCOMAutomationTree.html">COM 自动化</a><span class=rvts2>按钮以允许外部软件的写访问后，才启动下个大面积扫描。</span></li>
+<li class=rvps5><span class=rvts6>ManualTopography.py：</span><span class=rvts2>展示一种通过使用光谱自动对焦来自动化</span><a class=rvts7 href="WCTopographyCorrection.html">手动形貌校正</a><span class=rvts2>的可能性。</span></li>
+<li class=rvps5><span class=rvts6>HeatWITecTimed.py：</span><span class=rvts2>展示</span><a class=rvts7 href="WCHeating.html">WITec 加热台</a><span class=rvts2>的使用以及如何将附加数据通道提供给慢速时间序列。此外，它为慢速时间序列实现了</span><a class=rvts7 href="WCSpectralAutoFocus.html">光谱自动对焦</a><span class=rvts2>。</span></li>
+<li class=rvps5><span class=rvts6>HeatWITecManual.py：</span><span class=rvts2>与上一示例功能相同，但使用手动慢速时间序列。这允许单独触发下一次测量。</span></li>
+<li class=rvps5><span class=rvts6>AdditionalParameter.py：</span><span class=rvts2>展示如何将所有可用参数读取到文件以及如何访问特定参数。</span></li>
+</ul>
+<p class=rvps5><span class=rvts2><br></span></p>
+<p class=rvps4><span class=rvts5>Linkam 台</span></p>
+<p class=rvps6><span class=rvts2>可以提供用于控制 Linkam 台的附加包。请</span><a class=rvts7 href="SupportAndContacts.html">联系我们</a><span class=rvts2>获取更多信息。</span></p>
+<p class=rvps6><span class=rvts2><br></span></p>
+<p class=rvps4><span class=rvts4>不使用 WITec Python 包</span></p>
+<p class=rvps6><span class=rvts2>前提条件：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps5><span class=rvts2>安装</span><a class=rvts7 href="https://pypi.org/project/comtypes/" target="_blank">comtypes</a><span class=rvts2>（pip install comtypes）</span></li>
+</ul>
+<p class=rvps7><span class=rvts2>或</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps5><span class=rvts2>安装</span><a class=rvts7 href="https://pypi.org/project/pywin32/" target="_blank">pywin32</a><span class=rvts2>（pip install pywin32）</span></li>
+</ul>
+<p class=rvps6><span class=rvts2>使用 comtypes 的示例代码：</span></p>
+<p class=rvps2><span class=rvts3>from socket import gethostname</span></p>
+<p class=rvps2><span class=rvts3>from comtypes.client import GetModule, CreateObject</span></p>
+<p class=rvps2><span class=rvts3>bucstlb_id = '{E84FEF4C-DD2F-4B8D-9C2F-D016FEBB01F4}'</span></p>
+<p class=rvps2><span class=rvts3>GetModule((bucstlb_id, 1, 0))</span></p>
+<p class=rvps2><span class=rvts3>from comtypes.gen.BasicUniversalCOMServerLib import *</span></p>
+<p class=rvps2><span class=rvts3># 连接到 WITec Control</span></p>
+<p class=rvps2><span class=rvts3>wcCoreInterface = CreateObject(CBUCSCore, interface = IBUCSCore, machine = gethostname())</span></p>
+<p class=rvps2><span class=rvts3># 获取参数修改器</span></p>
+<p class=rvps2><span class=rvts3>parameterModifier = wcCoreInterface.GetSubSystemDefaultInterface("UserParameters|SequencerAsTimeGoesBy|IntegrationTime").QueryInterface(IBUCSFloat)</span></p>
+<p class=rvps2><span class=rvts3># 读取浮点参数的值</span></p>
+<p class=rvps2><span class=rvts3>value = parameterModifier.GetValue()</span></p>
+<p class=rvps2><span class=rvts3>print(value)</span></p>
+<p class=rvps2><span class=rvts3># 请求写访问</span></p>
+<p class=rvps2><span class=rvts3># 前提条件：WITec Control 必须允许远程写访问（控制窗口，参数：COM 自动化 -> 允许远程访问）</span></p>
+<p class=rvps2><span class=rvts3>wcCoreInterface.QueryInterface(IBUCSAccess).RequestWriteAccess(true)</span></p>
+<p class=rvps2><span class=rvts3># 写入浮点参数的值</span></p>
+<p class=rvps2><span class=rvts3>parameterModifier.SetValue(0.42)</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps6><span class=rvts2>使用 pywin32 的示例代码：</span></p>
+<p class=rvps2><span class=rvts3>from pythoncom import CLSCTX_REMOTE_SERVER, VT_ARRAY, VT_R4, VT_BSTR</span></p>
+<p class=rvps2><span class=rvts3>from win32com.client import DispatchEx, CastTo, VARIANT</span></p>
+<p class=rvps2><span class=rvts3>from socket import gethostname</span></p>
+<p class=rvps2><span class=rvts3>CLSID = "{C45E77CE-3D66-489A-B5E2-159F443BD1AA}"</span></p>
+<p class=rvps2><span class=rvts3>IBUCSAccess = DispatchEx(CLSID, machine = gethostname(), clsctx = CLSCTX_REMOTE_SERVER)</span></p>
+<p class=rvps2><span class=rvts3>IBUCSCore = CastTo(IBUCSAccess, 'IBUCSCore')</span></p>
+<p class=rvps2><span class=rvts3>parameterModifier = IBUCSCore.GetSubSystemDefaultInterface("UserParameters|SequencerAsTimeGoesBy|IntegrationTime")</span></p>
+<p class=rvps2><span class=rvts3>parameterModifierFloat = CastTo(parameterModifier, 'IBUCSFloat')</span></p>
+<p class=rvps2><span class=rvts3>value = parameterModifierFloat.GetValue()</span></p>
+<p class=rvps2><span class=rvts3>print(value)</span></p>
+<p class=rvps2><span class=rvts3>IBUCSAccess.RequestWriteAccess(True)</span></p>
+<p class=rvps2><span class=rvts3>parameterModifierFloat.SetValue(0.42)</span></p>
+<p class=rvps2><span class=rvts3>stringarray = VARIANT(VT_ARRAY | VT_BSTR, ["str1","str2"])</span></p>
+<p class=rvps2><span class=rvts3>floatarray = VARIANT(VT_ARRAY | VT_R4, [5.2,8.4])</span></p>
+<p class=rvps6><span class=rvts2><br></span></p>
+<p class=rvps6><span class=rvts2>互联网上有客户提供的开源 Python 项目。请</span><a class=rvts7 href="SupportAndContacts.html">联系我们</a><span class=rvts2>获取更多信息。</span></p>
+
+</div></body></html>

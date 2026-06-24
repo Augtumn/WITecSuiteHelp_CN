@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>聚类分析对话框</TITLE><meta name="generator" content="FastHelp"><meta name="keywords" content="Cluster Analysis Dialog">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 16pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #ea7600;
+}
+span.rvts5
+{
+ font-size: 14pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+a.rvts6, span.rvts6
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts6:hover { color: #0000ff; }
+span.rvts7
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><table border=0 cellpadding=1 bordercolor="#000000" cellspacing=2>
+<tr valign=middle>
+<td width=50 valign=middle><font size=2 color="#000000" face="Arial">
+<div><img border="0" src="Images/image1493975550.jpg" width="48" height="48"></div>
+</font>
+</td>
+<td width=502 valign=middle><font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>聚类分析对话框</b></font></div>
+</font>
+</td>
+</tr>
+</table>
+</div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts4>描述</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>聚类分析对话框自动在图像光谱数据对象中寻找相似的光谱，并创建相应的聚类平均光谱以及聚类分布图。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>另请参阅</span></p>
+<p class=rvps1><a class=rvts6 href="MathAverageSpectrum.html">平均光谱（数学）</a></p>
+<p class=rvps1><a class=rvts6 href="ClusterAnalysisK-MeansMath.html">聚类分析 K-Means（数学）</a></p>
+<p class=rvps1><a class=rvts6 href="ClusterAnalysisK-MeansGeometricView.html">聚类分析 K-Means（几何视角）</a></p>
+<p class=rvps1><a class=rvts6 href="CreatingAverageSpectraUsingMasks.html">使用掩模创建平均光谱</a></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>输入与结果</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>输入：</span></p>
+<p class=rvps1><span class=rvts2>一个高光谱数据对象。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>结果：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>聚类平均光谱</span></li>
+<li class=rvps1><span class=rvts2>聚类分布掩模</span>
+<br><span class=rvts2>或</span>
+<br><span class=rvts2>相对聚类归属</span>
+<br><span class=rvts2>（当使用强度图像时，结果图像显示每个光谱/像素到其聚类中心的"距离"）</span></li>
+<li class=rvps1><span class=rvts2>聚类颜色组合位图</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<hr noshade size=1 style="color : #808080">
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>用户界面</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><a class=rvts6 href="#MainWindow">主窗口</a></li>
+<li class=rvps1><a class=rvts6 href="#ContextMenu">上下文菜单</a></li>
+<li class=rvps1><a class=rvts6 href="#RootClusterOptions">根聚类选项</a></li>
+<li class=rvps1><a class=rvts6 href="#ClusterAlgorithmOptions">聚类算法选项</a></li>
+<li class=rvps1><a class=rvts6 href="#PreviewOptions">预览选项</a></li>
+<li class=rvps1><a class=rvts6 href="#IntensityImageOptions">强度图像选项</a></li>
+<li class=rvps1><a class=rvts6 href="#PreviewWindows">预览窗口</a></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="MainWindow"><span class=rvts5>主窗口</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image810358907.jpg" width="518" height="459"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>聚类数目（整数编辑框/上下按钮）：</span></p>
+<p class=rvps1><span class=rvts2>设置用于后续聚类分析的聚类数。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>聚类（开始聚类分析）：</span></p>
+<p class=rvps1><span class=rvts2>使用当前选定的聚类节点开始聚类分析。如果之前未创建根聚类，将创建新的根聚类并自动聚类（使用当前的根聚类创建选项）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>新建（创建新根聚类）：</span></p>
+<p class=rvps1><span class=rvts2>使用当前的根聚类创建选项创建新根聚类。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>根（显示根聚类选项）：</span></p>
+<p class=rvps1><span class=rvts2>显示</span><span class=rvts7></span><a class=rvts6 href="#RootClusterOptions">根聚类选项</a><span class=rvts2>。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>合并（合并所选聚类）：</span></p>
+<p class=rvps1><span class=rvts2>使用 OR 操作将所选聚类合并到一个新聚类中（即新合并的聚类包含所有合并聚类的所有像素）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>删除（删除所选聚类）：</span></p>
+<p class=rvps1><span class=rvts2>递归删除所有选定聚类。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>删除（删除并保留子级）：</span></p>
+<p class=rvps1><span class=rvts2>删除选定聚类并保留子聚类（"子级"），将它们移动到被删除的原始聚类（"父级"）的树级别。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>删除（仅删除所有子级）：</span></p>
+<p class=rvps1><span class=rvts2>删除选定聚类的所有子级，同时保留选定父聚类的存在。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>聚类（显示聚类算法选项）：</span></p>
+<p class=rvps1><span class=rvts2>显示</span><a class=rvts6 href="#ClusterAlgorithmOptions">聚类算法选项</a><span class=rvts2>。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>预览（显示预览选项）：</span></p>
+<p class=rvps1><span class=rvts2>显示</span><a class=rvts6 href="#PreviewOptions">预览选项</a><span class=rvts2>。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>图像（显示强度图像选项）：</span></p>
+<p class=rvps1><span class=rvts2>显示</span><a class=rvts6 href="#IntensityImageOptions">强度图像选项</a><span class=rvts2>。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>提取（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>提取所有选定聚类的平均光谱。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>聚类掩模（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，按下提取按钮时会额外提取聚类掩模/分布图像。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>组合位图（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，按下提取按钮时会额外提取当前的组合预览位图。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>提取并下一步（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>向导功能：您可以将聚类结果光谱用于真组分分析或解混：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image2108543321.jpg" width="245" height="122"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="ContextMenu"></p>
+<p class=rvps1><span class=rvts5>上下文菜单</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>您可以右键点击聚类结果以打开上下文菜单：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image2092203766.jpg" width="287" height="241"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>聚类</span></p>
+<p class=rvps1><span class=rvts2>这将对当前选定的根聚类/聚类结果/子聚类执行聚类分析。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>合并相似聚类</span></p>
+<p class=rvps1><span class=rvts2>合并两个彼此最相似的子聚类。仅适用于具有子聚类结果的聚类。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>合并所选</span></p>
+<p class=rvps1><span class=rvts2>将所有选定聚类合并为一个更大的聚类，并将选定聚类作为子聚类添加。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>重命名</span></p>
+<p class=rvps1><span class=rvts2>重命名选定聚类。该名称用于提取的数据对象中。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>提取所选</span></p>
+<p class=rvps1><span class=rvts2>将选定的聚类提取到项目中（平均光谱 + 聚类分布图）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>更改聚类颜色</span></p>
+<p class=rvps1><span class=rvts2>更改聚类的颜色（聚类分布图和平均光谱）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>删除所有子级</span></p>
+<p class=rvps1><span class=rvts2>删除选定父聚类的所有子级/子聚类，但保留父聚类。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>删除并保留子级</span></p>
+<p class=rvps1><span class=rvts2>删除选定聚类并将子聚类上移一级。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>删除聚类</span></p>
+<p class=rvps1><span class=rvts2>删除选定聚类和所有子聚类。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>全部清除</span></p>
+<p class=rvps1><span class=rvts2>删除所有内容，所有根聚类及子聚类。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="RootClusterOptions"><span class=rvts5>根聚类选项</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image212778556.jpg" width="448" height="235"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>预设（组合框）：</span></p>
+<p class=rvps1><span class=rvts2>可以选择预定义的根聚类选项之一：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>K-Means：无背景拉曼光谱</span></li>
+<li class=rvps1><span class=rvts2>K-Means：有背景拉曼光谱</span></li>
+<li class=rvps1><span class=rvts2>模糊：无背景拉曼光谱</span></li>
+</ul>
+<p class=rvps1><span class=rvts2></span>
+<br><span class=rvts3>数据缩减（整数编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>数据缩减意味着给定数量的光谱像素被平均并用作聚类分析算法的一个属性，而不是所有单个像素。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>预变换模式（组合框）：</span></p>
+<p class=rvps1><span class=rvts2>在聚类分析中使用之前变换输入光谱：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>无（无预变换）</span></li>
+<li class=rvps1><span class=rvts2>导数</span></li>
+<li class=rvps1><span class=rvts2>SG（6, 6, 4, 1）（使用 Savitzky-Golay 平滑导数的数据）</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>归一化模式（组合框）：</span></p>
+<p class=rvps1><span class=rvts2>在聚类分析中使用之前归一化输入光谱：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>无</span></li>
+<li class=rvps1><span class=rvts2>曼哈顿</span></li>
+<li class=rvps1><span class=rvts2>欧几里得</span></li>
+</ul>
+<p class=rvps1><span class=rvts2>另请参阅</span><a class=rvts6 href="SpectrumNormalizationMath.html">光谱归一化（数学）</a><span class=rvts2>。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>距离模式（组合框）：</span></p>
+<p class=rvps1><span class=rvts2>定义计算光谱相似度/距离的距离模式：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>曼哈顿</span></li>
+<li class=rvps1><span class=rvts2>欧几里得</span></li>
+</ul>
+<p class=rvps1><span class=rvts2>另请参阅</span><a class=rvts6 href="SpectrumNormalizationMath.html">光谱归一化（数学）</a><span class=rvts2>。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>聚类模式（组合框）：</span></p>
+<p class=rvps1><span class=rvts2>定义聚类模式：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>K-Means（创建布尔聚类图，允许子聚类，另请参阅</span><a class=rvts6 href="ClusterAnalysisK-MeansMath.html">聚类分析 K-Means（数学）。</a></li>
+<li class=rvps1><span class=rvts2>模糊（创建强度聚类图像，不允许子聚类。</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>使用掩模带（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，预览窗口中的每个掩模带将作为聚类分析算法的一个属性（而不是光谱中的单个像素）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>高级掩模控件（编辑框和工具按钮）：</span></p>
+<p class=rvps1><span class=rvts2>您可以更改聚类掩模以定义应考虑哪些像素用于聚类分析算法。这些编辑是可选的，您可以直接在预览图谱查看器中更改掩模。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="ClusterAlgorithmOptions"><span class=rvts5>聚类算法选项</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image66103308.jpg" width="252" height="135"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>随机 K-Means 分布（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，K-Means 起始迭代以真正的随机聚类分布开始。如果未勾选，像素按顺序分配到聚类中（按聚类数取模：1, 2, 3, 1, 2, 3, ...）。后者将对相同的根聚类选项和掩模产生相同的结果。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>模糊退出条件（浮点编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>定义迭代模糊聚类算法的退出条件。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>模糊幂（浮点编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>影响模糊聚类算法的结果。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="PreviewOptions"><span class=rvts5>预览选项</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image247460646.jpg" width="196" height="137"></p>
+<p class=rvps1><span class=rvts3>预览图标大小（整数编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>定义聚类树预览缩略图的图标大小。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>彩色预览（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，聚类树预览缩略图使用其聚类颜色。如果未勾选，使用标准黑-黄配色方案。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>自动选择聚类（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，当鼠标光标在图像查看器中点击并移动时，聚类节点将自动选择。注意，如果您有多个根聚类，仅选择当前选定聚类的子聚类或同级（同一级别的聚类）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>显示启动提示（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，聚类分析对话框将显示一个小型启动提示/向导。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>显示状态信息（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，底部状态栏中会显示有关当前根聚类/选定聚类的一些状态信息。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="IntensityImageOptions"><span class=rvts5>强度图像选项</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1080766723.jpg" width="220" height="183"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>使用强度图像（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，K-Means 聚类预览图像——以及提取的图像——不显示布尔聚类分布图，而是显示强度图像，显示光谱到其聚类平均光谱的"距离"（参见</span><a class=rvts6 href="#RootClusterOptions">根聚类选项</a><span class=rvts2>中的"距离模式"）。即强度图像中的单个像素越亮，所选光谱与其平均聚类光谱的相似度越高。这可以用于在同一聚类内找到可能暗示另一组分的结构。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>比例 最小/最大（浮点编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>可以在聚类树视图中选择多于 1 个聚类，在预览图像查看器中一起显示它们。您可以分别更改每个选定聚类的强度比例。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>已选（组合框）：</span></p>
+<p class=rvps1><span class=rvts2>比例 最小/最大编辑框作用于该窗口中选定的聚类。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>自动选择（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，该窗口中的选定聚类会通过点击图像来更改。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>重置所选（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>重置该窗口中选定聚类的比例。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>全部重置（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>重置聚类树中所有选定聚类的所有比例。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="PreviewWindows"><span class=rvts4>预览窗口</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1300352892.jpg" width="199" height="224"></p>
+<p class=rvps1><span class=rvts2>预览图像查看器显示选定的聚类分布图。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image283437671.jpg" width="339" height="179"></p>
+<p class=rvps1><span class=rvts2>第一个预览图谱查看器显示所有选定聚类的平均光谱。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image485027059.jpg" width="339" height="179"></p>
+<p class=rvps1><span class=rvts2>第二个预览图谱查看器显示原始光谱和聚类掩模。在开始聚类分析之前，您可以在此更改聚类掩模，以定义光谱（或掩模带）的哪个部分应用于聚类分析。</span></p>
+
+</div></body></html>

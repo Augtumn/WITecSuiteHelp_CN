@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>物镜视频校准</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="Objective Calibration">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+ background-color: #c0c0c0;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: justify;
+ margin: 0px 0px 5px 0px;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>物镜视频校准</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><img border="0" src="Images/image698844669.jpg" width="25" height="25"><span class=rvts3>视频校准</span></p>
+<p class=rvps1><span class=rvts2>为了图像拼接以及确保视频图像与探针采集的扫描图像之间具有正确的空间相关性，需要进行视频校准，可以通过不同方式完成。</span></p>
+<p class=rvps1><span class=rvts2>如果有样品定位器或扫描台可用，视频校准将使用该台自动完成（优先使用样品定位器）。</span></p>
+<p class=rvps1><span class=rvts2>如果没有可用的台子，可以进行手动校准。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>上下文菜单</span></p>
+<p class=rvps1><span class=rvts2>右键单击视频校准按钮并选择&nbsp;</span><span class=rvts4>使用默认校准</span><span class=rvts2>&nbsp;以使用默认校准。</span></p>
+<p class=rvps1><span class=rvts2>请仅在特殊情况下使用此选项，即没有可用的扫描台或样品定位器时。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>自动校准</span></p>
+<p class=rvps1><span class=rvts2>如果有扫描台或样品定位器台可用，单击"开始校准"按钮或菜单项即可自动完成视频校准。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>自动校准在以下条件下可能失败：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>错误的图像内容：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>无可见结构</span></li>
+<li class=rvps1><span class=rvts2>周期/循环结构</span></li>
+<li class=rvps1><span class=rvts2>未对焦</span></li>
+<li class=rvps1><span class=rvts2>图像过亮或过暗</span></li>
+<li class=rvps1><span class=rvts2>激光光斑可见</span></li>
+<li class=rvps1><span class=rvts2>光影可见</span></li>
+<li class=rvps1><span class=rvts2>悬臂梁可见</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>错误的配置：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>软件中选择了错误的物镜</span></li>
+<li class=rvps1><span class=rvts2>镜筒透镜焦距或视频芯片尺寸配置错误</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>硬件错误：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>扫描台/样品定位器无法正确移动</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>手动校准</span></p>
+<p class=rvps1><span class=rvts2>如果无法使用电动台进行视频校准，可以在默认校准和参考样品之间进行选择：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image577235684.jpg" width="632" height="194"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>默认校准</span></p>
+<p class=rvps1><span class=rvts2>使用当前物镜放大倍率、镜筒透镜焦距和视频芯片尺寸计算默认像素尺寸。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>参考样品</span></p>
+<p class=rvps1><span class=rvts2>可以在视频图像中拖动已知尺寸的特征并输入尺寸。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>高级视频校准对话框</span></p>
+<p class=rvps1><span class=rvts2>高级对话框位于主菜单 -&gt; 高级子菜单中。</span></p>
+<p class=rvps1><span class=rvts2>可以在此处输入自定义校准值：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1267030499.jpg" width="302" height="397"><span class=rvts1></span></p>
+
+</div></body></html>

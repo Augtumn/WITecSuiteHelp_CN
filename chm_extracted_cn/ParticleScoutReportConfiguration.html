@@ -1,0 +1,363 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>报告配置</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="ParticleScout报告 选项">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+a.rvts4, span.rvts4
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts4:hover { color: #0000ff; }
+span.rvts5
+{
+ font-size: 14pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+span.rvts6
+{
+ font-size: 12pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+span.rvts7
+{
+ font-family: 'Courier New';
+ color: #000000;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+.rvps2
+{
+ background: #c0c0c0;
+ margin: 0px 12px 0px 12px;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>报告配置</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts2>ParticleScout报告使用XML格式（</span><a class=rvts4 href="https://en.wikipedia.org/wiki/XML">Extensible Markup Language</a><span class=rvts2>）进行配置，结构如下：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>WITec</span></p>
+<p class=rvps1><span class=rvts2>&nbsp; Style</span></p>
+<p class=rvps1><span class=rvts2>&nbsp; Data</span></p>
+<p class=rvps1><span class=rvts2>&nbsp; &nbsp; Colors</span></p>
+<p class=rvps1><span class=rvts2>&nbsp; &nbsp; Groups</span></p>
+<p class=rvps1><span class=rvts2>&nbsp; &nbsp; Categories</span></p>
+<p class=rvps1><span class=rvts2>&nbsp; &nbsp; Visual Elements (Map, Thumbnail, Bars, Pie, Table)</span></p>
+<p class=rvps1><span class=rvts2>&nbsp; Data</span></p>
+<p class=rvps1><span class=rvts2>&nbsp; &nbsp; [...]</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>点击软件中的示例按钮，可自动创建示例XML代码。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>脚本必须以</span></p>
+<p class=rvps1><span class=rvts2>&lt;WITec&gt;</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>并以</span></p>
+<p class=rvps1><span class=rvts2>&lt;/WITec&gt;</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>样式标签</span></p>
+<p class=rvps1><span class=rvts2>您可以定义恰好一个样式标签。</span></p>
+<p class=rvps1><span class=rvts2>样式标签可用于定义一些显示属性：</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps2><span class=rvts7>&lt;Style ScaleFactor='2'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ShowCaptions='true'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CaptionBackground='LightGray'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CaptionFontSize='16'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CaptionPlacement='Top'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CaptionBorderThickness='1'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CaptionBorderColor='Gray'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ElementBackground='Yellow'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CanvasBackground='#11000000'&gt;</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>ScaleFactor</span><span class=rvts2>：定义缩放因子以缩放所有报告绘图的大小（0.3到3，默认：1）。</span></p>
+<p class=rvps1><span class=rvts3>ShowCaptions</span><span class=rvts2>：显示或隐藏所有标题（默认：true）。</span></p>
+<p class=rvps1><span class=rvts3>CaptionBackground</span><span class=rvts2>：定义标题背景的颜色（默认：#11000000）。</span></p>
+<p class=rvps1><span class=rvts3>CaptionFontSize</span><span class=rvts2>：定义标题字体大小（默认：14）。</span></p>
+<p class=rvps1><span class=rvts3>CaptionPlacement</span><span class=rvts2>：可以是顶部或底部（默认：Top）。</span></p>
+<p class=rvps1><span class=rvts3>CaptionBorderThickness</span><span class=rvts2>：定义标题周围边框的大小（默认：0）。</span></p>
+<p class=rvps1><span class=rvts3>CaptionBorderColor</span><span class=rvts2>：定义标题边框的颜色（默认：Transparent）。</span></p>
+<p class=rvps1><span class=rvts3>ElementBackground</span><span class=rvts2>：定义每个元素背景的颜色（默认：Transparent）。</span></p>
+<p class=rvps1><span class=rvts3>CanvasBackground</span><span class=rvts2>：定义画布的颜色（默认：White）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>数据标签</span></p>
+<p class=rvps1><span class=rvts2>您可以定义任意数量的数据标签。必须至少存在一个数据标签。</span></p>
+<p class=rvps1><span class=rvts2>在每个数据标签中，您可以定义粒子属性的颜色、排序、分组和分类。</span></p>
+<p class=rvps1><span class=rvts2>可以指定任意数量的可视元素，以定义排序后的数据应如何在报告中呈现。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps2><span class=rvts7>&lt;Data GroupCategoryName='Material'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SortCategory='Total 面积'&gt;</span></p>
+<p class=rvps2><span class=rvts7>&nbsp; &lt;Colors&gt; [...]</span></p>
+<p class=rvps2><span class=rvts7>&nbsp; &lt;DynamicGroup&gt; [...]</span></p>
+<p class=rvps2><span class=rvts7>&nbsp; &lt;NamedGroup&gt; [...]</span></p>
+<p class=rvps2><span class=rvts7>&nbsp; &lt;Category&gt; [...]</span></p>
+<p class=rvps2><span class=rvts7>&nbsp; &lt;Map&gt; [...]</span></p>
+<p class=rvps2><span class=rvts7>&nbsp; &lt;Bars&gt; [...]</span></p>
+<p class=rvps2><span class=rvts7>&nbsp; &lt;Pie&gt; [...]</span></p>
+<p class=rvps2><span class=rvts7>&nbsp; &lt;Thumbnail&gt; [...]</span></p>
+<p class=rvps2><span class=rvts7>&nbsp; &lt;Table&gt; [...]</span></p>
+<p class=rvps2><span class=rvts7>&lt;/Data&gt;</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>GroupCategoryName</span><span class=rvts2>：仅用于表格。定义分组列的标题。</span></p>
+<p class=rvps1><span class=rvts3>SortCategory</span><span class=rvts2>：定义应用于排序数据的类别名称。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>颜色标签</span></p>
+<p class=rvps1><span class=rvts2>颜色用于地图和条形图。</span></p>
+<p class=rvps1><span class=rvts2>定义的颜色数量将决定地图和条形图中可见的类别数量。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>您可以使用十六进制 (A)RGB 值或字符串表示来定义颜色</span></p>
+<p class=rvps1><span class=rvts2>（请参阅Microsoft文档中的 System.Windows.Media.Colors 类）：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts7>&lt;Colors DefaultColor='LightGray'&gt;</span></p>
+<p class=rvps2><span class=rvts7>&nbsp; &lt;颜色 值='#4572A7' /&gt;</span></p>
+<p class=rvps2><span class=rvts7>&nbsp; &lt;颜色 值='#4BACC6' /&gt;</span></p>
+<p class=rvps2><span class=rvts7>&nbsp; &lt;颜色 值='#92D050' /&gt;</span></p>
+<p class=rvps2><span class=rvts7>&nbsp; &lt;颜色 值='#F79646' /&gt;</span></p>
+<p class=rvps2><span class=rvts7>&lt;/Colors&gt;</span></p>
+<p class=rvps1><span class=rvts6><br></span></p>
+<p class=rvps1><span class=rvts3>DefaultColor</span><span class=rvts2>：仅用于表格元素。定义最左侧列的分组名称/标题。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>动态分组标签</span></p>
+<p class=rvps1><span class=rvts2>这将自动创建动态数量的粒子分组。</span></p>
+<p class=rvps1><span class=rvts2>每个分组由一个唯一的字符串/名称定义，该名称使用字符串表达式从每个粒子中计算得出。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts7>&lt;DynamicGroup NameExpression='Material' Condition='NOT Material.Equals("PET")' /&gt;</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>NameExpression：</span><span class=rvts2>&nbsp;一个字符串表达式。</span></p>
+<p class=rvps1><span class=rvts2>此表达式将自动为每个粒子计算。</span></p>
+<p class=rvps1><span class=rvts2>您可以在此处使用任何粒子属性，例如 Material。</span></p>
+<p class=rvps1><span class=rvts2>所有返回相同字符串的粒子将属于同一分组（例如，所有Material为"PMMA"的粒子）。</span></p>
+<p class=rvps1><span class=rvts3>Condition：</span><span class=rvts2>&nbsp;一个布尔表达式（可选）。只有匹配此表达式的粒子将用于创建分组。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>命名分组标签</span></p>
+<p class=rvps1><span class=rvts2>这将创建一个具有用户定义名称和条件的分组。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Name：</span><span class=rvts2>&nbsp;分组的名称。用作表格行分组名称。</span></p>
+<p class=rvps1><span class=rvts3>Condition：</span><span class=rvts2>&nbsp;一个布尔表达式。只有匹配表达式的粒子将属于此分组。</span></p>
+<p class=rvps1><span class=rvts3>颜色：</span><span class=rvts2>&nbsp;分组的颜色。用于地图和地图图例。</span></p>
+<p class=rvps1><span class=rvts3>Position：</span><span class=rvts2>&nbsp;可以是"Top"、"Bottom"或"默认"。可以将分组置于所有已排序分组的顶部或底部。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6><br></span></p>
+<p class=rvps1><span class=rvts6><br></span></p>
+<p class=rvps1><span class=rvts6>类别标签</span></p>
+<p class=rvps1><span class=rvts2>这将创建一个具有用户定义名称和条件的类别。类别可用作表格呈现中的列或条形图中。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Name：</span><span class=rvts2>&nbsp;类别的名称。用作表格列标题。</span></p>
+<p class=rvps1><span class=rvts3>Condition：</span><span class=rvts2>&nbsp;一个布尔表达式。只有匹配表达式的粒子将属于此类别。</span></p>
+<p class=rvps1><span class=rvts3>计数：</span><span class=rvts2>&nbsp;允许定义如何计算类别的"总和值"。</span></p>
+<p class=rvps1><span class=rvts2>如果未定义"计数表达式"，则使用值"1"。</span></p>
+<p class=rvps1><span class=rvts2>必须是以下方法之一的方法调用：</span></p>
+<p class=rvps1><span class=rvts2>Min, Max, Sum, Average, Median, StandardDeviation.</span></p>
+<p class=rvps1><span class=rvts2>使用示例："Sum(面积)"。括号中的字符串是一个数值表达式，可以使用所有粒子属性。</span></p>
+<p class=rvps1><span class=rvts3>NormMode：</span><span class=rvts2>&nbsp;通过除以所有粒子的计数结果来归一化每个分组的类别结果（None、Relative1、Relative100）。</span></p>
+<p class=rvps1><span class=rvts3>颜色：</span><span class=rvts2>&nbsp;类别的颜色。仅用作表格列背景颜色。</span></p>
+<p class=rvps1><span class=rvts3>StringFormat：</span><span class=rvts2>&nbsp;表格单元格内容的字符串表示表达式。请参阅Microsoft .NET字符串格式文档。</span></p>
+<p class=rvps1><span class=rvts2>示例：如果数字是 0.2345，则 StringFormat "F0" = 0，"F1" = 0.2，"F2" = 0.23，"P2" = 23.45 %</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts5>可视元素</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>以下属性可用于所有可视元素：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>标题：</span><span class=rvts2>&nbsp;用于周围分组框的标题。</span></p>
+<p class=rvps1><span class=rvts3>SideBySide：</span><span class=rvts2>&nbsp;设为"true"可将元素水平放置在前一个可视元素的右侧。</span></p>
+<p class=rvps1><span class=rvts3>ShowEmptyGroups：</span><span class=rvts2>&nbsp;设为"true"可显示没有匹配粒子的分组。</span></p>
+<p class=rvps1><span class=rvts3>ShowEmptyCategories：&nbsp;</span><span class=rvts2>设为"true"可显示没有匹配粒子的类别。</span></p>
+<p class=rvps1><span class=rvts3>InvertData：</span><span class=rvts2>&nbsp;设为"true"可将分组显示为类别，类别显示为分组。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>地图标签</span></p>
+<p class=rvps1><span class=rvts2>这将使用定义的颜色在地图中呈现分组。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts7>&lt;Map 背景='Transparent'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp; ImageOpacity='0.0'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp; MaskOpacity='1.0' </span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp; 宽度='400' </span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp; LegendType='NameAndValue'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp; ShowScaleBar='true'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp; ScaleBarForeground='Blue'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp; ScaleBarBackground='White'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp; ScaleBarVerticalAlignment='Bottom'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp; ScaleBarHorizontalAlignment='Left'/&gt;</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>背景：</span><span class=rvts2>&nbsp;背景颜色（当 ImageOpacity != 1 时使用，默认：Transparent）。</span></p>
+<p class=rvps1><span class=rvts3>ImageOpacity：</span><span class=rvts2>&nbsp;定义粒子图像的不透明度（0到1，默认：0）。</span></p>
+<p class=rvps1><span class=rvts3>MaskOpacity：</span><span class=rvts2>&nbsp;定义粒子掩模的不透明度（0到1，默认：1）。</span></p>
+<p class=rvps1><span class=rvts3>宽度：</span><span class=rvts2>&nbsp;地图的宽度（以像素为单位，2到4000，默认：400）。</span></p>
+<p class=rvps1><span class=rvts2>高度将使用正确的比例自动调整。</span></p>
+<p class=rvps1><span class=rvts2>像素大小随全局报告缩放因子缩放。</span></p>
+<p class=rvps1><span class=rvts3>LegendType：</span><span class=rvts2>&nbsp;图例的可见性（None、Name、NameAndValue，默认：NameAndValue）。</span></p>
+<p class=rvps1><span class=rvts3>ValueCategory</span><span class=rvts2>：一个类别的名称，定义图例的值（默认：未定义）。</span></p>
+<p class=rvps1><span class=rvts3>ValueStringFormat</span><span class=rvts2>：值的字符串格式（默认：未定义）。</span></p>
+<p class=rvps1><span class=rvts3>ShowScaleBar：</span><span class=rvts2>&nbsp;设为"true"可在地图上显示标尺条（默认：true）。</span></p>
+<p class=rvps1><span class=rvts3>ScaleBarForeground：</span><span class=rvts2>&nbsp;标尺条颜色（默认：Blue）。</span></p>
+<p class=rvps1><span class=rvts3>ScaleBarBackground：</span><span class=rvts2>&nbsp;标尺条背景颜色（默认：White）。</span></p>
+<p class=rvps1><span class=rvts3>ScaleBarVerticalAlignment：</span><span class=rvts2>&nbsp;标尺条垂直位置（Bottom、Top、Center，默认：Bottom）。</span></p>
+<p class=rvps1><span class=rvts3>ScaleBarHorizontalAlignment：</span><span class=rvts2>&nbsp;标尺条水平位置（Left、Center、Right，默认：Left）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>条形图标签</span></p>
+<p class=rvps1><span class=rvts2>显示带有X/Y轴和图例的条形图。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts7>&lt;Bars 标题="Categories"</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 宽度='500'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 高度='300'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BarsSideBySide='false'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Normalize='true'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BarWidth='0.7'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; XAxisLabelRotation='45'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LegendType='NameAndValue'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; InvertData='true' /&gt;</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>宽度：</span><span class=rvts2>&nbsp;图表的宽度，单位与DPI相关（4到4000，默认：500）。</span></p>
+<p class=rvps1><span class=rvts3>高度：</span><span class=rvts2>&nbsp;图表的高度，单位与DPI相关（4到4000，默认：300）。</span></p>
+<p class=rvps1><span class=rvts3>BarsSideBySide：</span><span class=rvts2>&nbsp;设为"true"可将每个分组显示为彼此相邻的独立条形（默认：false）</span></p>
+<p class=rvps1><span class=rvts3>Normalize：</span><span class=rvts2>&nbsp;设为"true"可将类别归一化为100%（默认：false）。</span></p>
+<p class=rvps1><span class=rvts3>BarWidth：</span><span class=rvts2>&nbsp;每个类别的宽度，作为因子（0.1到1，默认：0.7）。</span></p>
+<p class=rvps1><span class=rvts3>XAxisLabelRotation：</span><span class=rvts2>&nbsp;X轴标签角度（以度为单位，-180到180，默认：45）</span></p>
+<p class=rvps1><span class=rvts3>LegendType：</span><span class=rvts2>&nbsp;图例的可见性（None、Name、NameAndValue）</span></p>
+<p class=rvps1><span class=rvts3>ValueCategory</span><span class=rvts2>：条形图的一个类别名称，定义值（默认：未定义）。</span></p>
+<p class=rvps1><span class=rvts3>ValueStringFormat</span><span class=rvts2>：条形图值标签的字符串格式（默认：未定义）。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts6>饼图标签</span></p>
+<p class=rvps1><span class=rvts2>显示带有图例的饼图。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts7>&lt;Pie 标题="Some Pie"</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp; 宽度='300'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp; 高度='300'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp; OutsideLabelStyle='NameAndValue'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp; InsideLabelStyle='None'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp; LegendType='Name'/&gt;</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>宽度：</span><span class=rvts2>&nbsp;图表的宽度，单位与DPI相关（4到4000，默认：300）。</span></p>
+<p class=rvps1><span class=rvts3>高度：</span><span class=rvts2>&nbsp;图表的高度，单位与DPI相关（4到4000，默认：300）。</span></p>
+<p class=rvps1><span class=rvts3>OutsideLabelStyle：</span><span class=rvts2>&nbsp;每个饼图扇区外部标签的可见性（None、Name、NameAndValue、值，默认：None）。</span></p>
+<p class=rvps1><span class=rvts3>InsideLabelStyle：</span><span class=rvts2>&nbsp;每个饼图扇区内部标签的可见性（None、Name、NameAndValue、值，默认：None）。</span></p>
+<p class=rvps1><span class=rvts3>BorderColor：</span><span class=rvts2>&nbsp;每个饼图扇区边框的颜色（默认：White）</span></p>
+<p class=rvps1><span class=rvts3>BorderThickness：</span><span class=rvts2>&nbsp;每个饼图扇区边框的厚度，单位与DPI相关（默认：1.0）</span></p>
+<p class=rvps1><span class=rvts3>LegendType：</span><span class=rvts2>&nbsp;图例的可见性（None、Name、NameAndValue，默认：NameAndValue）</span></p>
+<p class=rvps1><span class=rvts3>ValueCategory</span><span class=rvts2>：饼图的一个类别名称，定义值（默认：未定义）。</span></p>
+<p class=rvps1><span class=rvts3>ValueStringFormat</span><span class=rvts2>：饼图值标签的字符串格式（默认：未定义）。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>缩略图标签</span></p>
+<p class=rvps1><span class=rvts2>这将呈现一个粒子分组列表，包含名称、粒子缩略图和代表性光谱（如果已测量）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts7>&lt;Thumbnail NumberOfEntries='3'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NumberOfThumbnails='3'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ThumbnailWidth='60'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SpectrumWidth='300'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SpectrumHeight='60'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ShowXAxis='false'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ShowYAxis='false'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; XAxisTitle='1/cm'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SortThumbnailsBy='面积'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SortSpectraBy='HQI' /&gt;</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>NumberOfEntries：</span><span class=rvts2>&nbsp;列表条目的最大数量（最大为分组数量，默认：3）。</span></p>
+<p class=rvps1><span class=rvts3>NumberOfThumbnails：</span><span class=rvts2>&nbsp;缩略图的数量（0到20，默认：2）。</span></p>
+<p class=rvps1><span class=rvts3>ThumbnailWidth：</span><span class=rvts2>&nbsp;每个缩略图的宽度，单位与DPI相关（0到4000，默认：60）。</span></p>
+<p class=rvps1><span class=rvts3>SpectrumWidth：</span><span class=rvts2>&nbsp;光谱的宽度，单位与DPI相关（0到4000，默认：400）。</span></p>
+<p class=rvps1><span class=rvts3>SpectrumHeight：</span><span class=rvts2>&nbsp;光谱的高度，单位与DPI相关（0到4000，默认：60）。</span></p>
+<p class=rvps1><span class=rvts3>ShowXAxis：</span><span class=rvts2>&nbsp;设为"true"可显示X轴。</span></p>
+<p class=rvps1><span class=rvts3>ShowYAxis：&nbsp;</span><span class=rvts2>设为"true"可显示Y轴。</span></p>
+<p class=rvps1><span class=rvts3>XAxisTitle：</span><span class=rvts2>&nbsp;X轴的标题。</span></p>
+<p class=rvps1><span class=rvts3>SortThumbnailsBy：</span><span class=rvts2>&nbsp;一个返回粒子属性的表达式，用于排序缩略图（例如"面积" -> 显示面积最大的粒子）</span></p>
+<p class=rvps1><span class=rvts3>SortSpectraBy：&nbsp;</span><span class=rvts2>一个返回粒子属性的表达式，用于排序光谱（例如"面积" -> 显示面积最大的粒子的光谱）</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>表格标签</span></p>
+<p class=rvps1><span class=rvts2>显示一个以分组为行、类别为列的表格。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts7>&lt;Table ColumnWidth='50'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MasterColumnWidth='0'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HeadingColorOpacity='0.5'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CellBackground='LightBlue'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CellBorderThickness='1'</span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CellBorderColor='Transparent' </span></p>
+<p class=rvps2><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CellPadding='2'/&gt;</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>ColumnWidth：</span><span class=rvts2>&nbsp;定义每个类别列的宽度，单位与DPI相关。如果为0，则每列宽度为最小（默认：0）。</span></p>
+<p class=rvps1><span class=rvts3>MasterColumnWidth：</span><span class=rvts2>&nbsp;定义最左侧列的宽度，单位与DPI相关。如果为0，则宽度为最小（默认：0）。</span></p>
+<p class=rvps1><span class=rvts3>HeadingColorOpacity：</span><span class=rvts2>&nbsp;定义标题颜色或列标题和行标题的不透明度（0到1，默认：0.5）。</span></p>
+<p class=rvps1><span class=rvts3>CellBackground：</span><span class=rvts2>&nbsp;定义每个单元格的背景颜色（默认：#19000000）。</span></p>
+<p class=rvps1><span class=rvts3>CellBorderThickness：</span><span class=rvts2>&nbsp;定义每个单元格边框的厚度。请参见&nbsp;</span><a class=rvts4 href="#TicknessFormat">厚度格式</a><span class=rvts2>。（默认：1）。</span></p>
+<p class=rvps1><span class=rvts3>CellBorderColor：</span><span class=rvts2>&nbsp;定义单元格边框的颜色。仅在厚度不为0时可见。（默认：Transparent）。</span></p>
+<p class=rvps1><span class=rvts3>CellPadding：</span><span class=rvts2>&nbsp;定义单元格内容周围的空间。请参见&nbsp;</span><a class=rvts4 href="#TicknessFormat">厚度格式</a><span class=rvts2>。（默认：2）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="TicknessFormat"><span class=rvts6>厚度格式</span></p>
+<p class=rvps1><span class=rvts2>使用一个数字为左/右/上/下定义相同的厚度：'2'</span></p>
+<p class=rvps1><span class=rvts2>使用两个数字定义左/右和上/下：'5 2'</span></p>
+<p class=rvps1><span class=rvts2>使用四个数字定义左/上/右/下：'2 2 1 0'</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>可用的颜色字符串</span></p>
+<p class=rvps1><span class=rvts6><br></span></p>
+<p><img border="0" src="Images/image138200668.jpg" width="871" height="679"><span class=rvts2></span></p>
+
+</div></body></html>

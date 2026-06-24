@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>图谱平滑对话框</TITLE><meta name="generator" content="FastHelp"><meta name="keywords" content="Graph Smoothing and Cosmic Ray Removal">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 16pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #ea7600;
+}
+span.rvts5
+{
+ font-size: 14pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+a.rvts6, span.rvts6
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts6:hover { color: #0000ff; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><table border=0 cellpadding=1 bordercolor="#000000" cellspacing=2>
+<tr valign=middle>
+<td width=50 valign=middle><font size=2 color="#000000" face="Arial">
+<div><img border="0" src="Images/image740609807.jpg" width="48" height="48"></div>
+</font>
+</td>
+<td width=535 valign=middle><font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>图谱平滑对话框</b></font></div>
+</font>
+</td>
+</tr>
+</table>
+</div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts4>描述</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>使用此对话框，可以对光谱应用多种光谱平滑滤波器或进行宇宙射线去除，这是光谱预处理的第一步。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>输入与结果</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>输入：</span></p>
+<p class=rvps1><span class=rvts2>一个或多个图谱对象（单光谱、线光谱或图像图谱对象）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>结果：</span></p>
+<p class=rvps1><span class=rvts2>一个平滑或宇宙射线去除后的图谱数据对象。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<hr noshade size=1 style="color : #808080">
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>用户界面</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><a class=rvts6 href="#SavitzkyGolay">Savitzky-Golay 选项卡</a></li>
+<li class=rvps1><a class=rvts6 href="#Median">中值选项卡</a></li>
+<li class=rvps1><a class=rvts6 href="#Average">平均选项卡</a></li>
+<li class=rvps1><a class=rvts6 href="#PreviewWindow">预览窗口</a></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>提取（按钮和拖放区）</span></p>
+<p class=rvps1><span class=rvts2>按下"提取"按钮以对输入图谱对象的所有光谱启动当前选择的平滑或宇宙射线去除算法。</span></p>
+<p class=rvps1><span class=rvts2>您也可以从项目管理器拖放多个图谱对象到该按钮上，以使用相同的算法和设置进行批处理。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>提取并下一步（按钮）</span></p>
+<p class=rvps1><span class=rvts2>向导功能：您可以选择是否使用当前计算的结果进行背景扣除或进一步的图谱平滑算法：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image815469372.jpg" width="247" height="123"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="SavitzkyGolay"><span class=rvts5>Savitzky-Golay 选项卡</span></p>
+<p class=rvps1><span class=rvts2>如果选择"Savitzky-Golay"选项卡，则使用 Savitzky-Golay 滤波算法对图谱进行平滑。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1511143127.jpg" width="348" height="240"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>左（整数编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>定义平滑算法的窗口大小（从当前像素向左）</span></p>
+<p class=rvps1><span class=rvts2>总窗口大小为 左 + 右 + 1。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>右（整数编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>定义平滑算法的窗口大小（从当前像素向右）</span></p>
+<p class=rvps1><span class=rvts2>总窗口大小为 左 + 右 + 1。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>阶次（整数编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>拟合到平滑窗口的多项式的阶次。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>导数（整数编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>定义滤波器的导数阶次。值为 0 表示不进行求导，即仅进行平滑处理。</span></p>
+<p class=rvps1><span class=rvts2>如果输入值为 1，计算结果将是一阶导数；所得数据可用于例如在进行基分析时对荧光不敏感。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts5><br></span></p>
+<p class=rvps1><a name="Median"><span class=rvts5>中值选项卡</span></p>
+<p class=rvps1><span class=rvts2>如果选择中值选项卡，则使用中值滤波算法对图谱进行平滑。</span></p>
+<p class=rvps1><img border="0" src="Images/image1249645509.jpg" width="348" height="240"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>中值滤波器大小（光谱）：</span></p>
+<p class=rvps1><span class=rvts2>中值滤波器的光谱滤波器大小。总光谱窗口大小为 2*&lt;滤波器大小&gt; + 1。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>中值滤波器大小（空间）：</span></p>
+<p class=rvps1><span class=rvts2>中值滤波器的空间滤波器大小。如果大于零，则使用相邻扫描像素的光谱进行平滑。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>总窗口大小为 &lt;滤波器大小 * 2 + 1&gt;^2 乘以总光谱窗口大小。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="Average"><span class=rvts5>平均选项卡</span></p>
+<p class=rvps1><span class=rvts2>如果选择平均选项卡，则使用采用二项式分布滤波器系数的平均滤波算法对图谱进行平滑。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1932101052.jpg" width="348" height="240"></p>
+<p class=rvps1><span class=rvts3>平均滤波器大小（光谱）：</span></p>
+<p class=rvps1><span class=rvts2>平均滤波器的光谱滤波器大小。总光谱窗口大小为 2*&lt;滤波器大小&gt; + 1。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>平均滤波器大小（空间）：</span></p>
+<p class=rvps1><span class=rvts2>平均滤波器的空间滤波器大小。如果大于零，则使用相邻扫描像素的光谱进行平滑。</span></p>
+<p class=rvps1><span class=rvts2>总窗口大小为 &lt;滤波器大小 * 2 + 1&gt;^2 乘以总光谱窗口大小。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="PreviewWindow"><span class=rvts4>预览窗口</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image245450837.jpg" width="329" height="164"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>预览图谱查看器窗口以红色图谱显示原始图谱对象，以蓝色图谱显示结果预览。</span></p>
+
+</div></body></html>

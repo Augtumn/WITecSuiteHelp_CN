@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>LabVIEW 驱动</TITLE><meta name="generator" content="FastHelp"><meta name="keywords" content="LabView Driver">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{ font-size: 10pt; font-family: 'Arial'; font-style: normal; font-weight: normal; color: #000000; text-decoration: none; ; }
+span.rvts1 { font-family: 'Arial Unicode MS'; }
+span.rvts2 { font-family: 'Microsoft Sans Serif'; color: #000000; }
+a.rvts3, span.rvts3 { font-family: 'Microsoft Sans Serif'; color: #0000ff; text-decoration: none; }
+a.rvts3:hover { color: #0000ff; }
+span.rvts4 { font-size: 14pt; font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #151f6d; }
+span.rvts5 { font-size: 9pt; font-family: 'Microsoft Sans Serif'; color: #151f6d; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */ { text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; }
+.rvps1 { text-align: justify; margin: 0px 0px 5px 0px; }
+.rvps2 { text-align: justify; margin: 0px 0px 10px 0px; }
+.rvps3 { margin: 0px 0px 14px 0px; }
+.rvps4 { text-align: center; margin: 10px 0px 10px 0px; }
+.rvps5 { text-align: justify; border-color: #000000; border-style: solid; border-width: 1px; padding: 5px 5px 5px 5px; margin: 0px 19px 10px 19px; }
+.rvps6 { text-align: justify; line-height: 1.8; margin: 0px 0px 6px 0px; }
+.rvps7 { line-height: 1.9; page-break-inside: avoid; page-break-after: avoid; margin: 0px 0px 14px 0px; }
+.rvps8 { text-align: justify; line-height: 1.8; margin: 0px 0px 12px 0px; }
+.rvps9 { text-align: justify; line-height: 1.8; margin: 0px 0px 1px 0px; }
+.rvps10 { text-align: justify; line-height: 1.8; margin: 0px 0px 17px 0px; }
+.rvps11 { text-align: center; line-height: 1.7; margin: 0px 0px 4px 77px; }
+.rvps12 { text-align: center; margin: 0px 0px 10px 0px; }
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>LabVIEW 驱动</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+<div></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps6><span class=rvts2>LabVIEW 中的功能块称为虚拟仪器（VI），WITec Control 提供的大多数控制功能都已实现相应的 VI。</span></p>
+<p class=rvps6><span class=rvts2>本文描述与 WITec 产品相关的 LabVIEW 软件组件的安装，以及验证安装成功。还包括对接口附带的示例的简要说明。这些内容在单独文档中有更详细的描述。</span></p>
+<p class=rvps8><span class=rvts2>对于常见问题和故障排除，请参阅同时包含的常见问题文档。</span></p>
+<p class=rvps5><span class=rvts2>编写 LabVIEW 代码的协助可从 National Instruments 获得并购买培训。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps3><span class=rvts4>前提条件</span></p>
+<p class=rvps1><span class=rvts2>在安装 WITec Control LabVIEW 驱动之前，必须安装 LabVIEW：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>LabVIEW 版本 8.5（或更高版本）</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps3><span class=rvts4>安装</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps9><span class=rvts2>通过运行程序"WITec Control LabVIEW Driver Setup.msi"来安装 WITec Control LabVIEW 驱动。</span></li>
+<li class=rvps10><span class=rvts2>选择 LabVIEW 安装的正确 LabVIEW instr.lib 目录作为安装目录。</span></li>
+</ul>
+<p class=rvps2><span class=rvts2>安装后，WITec Control LabVIEW 驱动在 LabVIEW 中位于"Instrument IO/Instrument Drivers"文件夹，如图 1 所示。</span></p>
+<p class=rvps11><img border="0" src="Images/image952322272.jpg" width="386" height="212"></p>
+<p class=rvps4><span class=rvts5>图 1：WITec Control LabVIEW 驱动。</span></p>
+<p class=rvps6><span class=rvts2><br></span></p>
+<p class=rvps3><span class=rvts4>示例</span></p>
+<p class=rvps1><span class=rvts2>WITec Control LabVIEW 驱动项目包含一些附加示例，以帮助理解此接口。这些示例及其相应的详细说明位于 LabVIEW 驱动目录及其子目录"Examples"中。第一个示例（慢速时间序列）以最详细的方式记录，包括框图，以便用户理解。</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>慢速时间序列（需要 EFM 许可证和 ADC + DAC 板）</span></li>
+<li class=rvps1><span class=rvts2>快速时间序列（需要 EFM 许可证和 ADC + DAC 板）</span></li>
+<li class=rvps1><span class=rvts2>图像堆栈（需要压电台）</span></li>
+</ul>
+<p class=rvps2><span class=rvts2>建议用户在开始自己的项目之前熟悉这些示例。</span></p>
+<p class=rvps7><span class=rvts2><br></span></p>
+<p class=rvps3><span class=rvts4>测试连接</span></p>
+<p class=rvps6><span class=rvts2>运行 WITec LabVIEW 驱动中包含的示例 LabVIEW VI "QueryReadWrite"。</span></p>
+<p class=rvps6><span class=rvts2>（如果您远程访问显微镜 PC，在相应字段中输入其网络名称作为服务器名称，如图 2 所示。）</span></p>
+<p class=rvps2><span class=rvts2>启动 VI 后，"HasReadAccess"指示灯应为绿色。按下"WantWriteAccess"后，"HasWriteAccess"指示灯也应变为绿色，如图 2 所示（如果 WITec Control 中已授予</span><a class=rvts3 href="WCCOMAutomationOverview.html#WriteAccess">写访问</a><span class=rvts2>）。</span></p>
+<p class=rvps12><img border="0" src="Images/image1024193519.jpg" width="327" height="282"></p>
+<p class=rvps4><span class=rvts5>图 2：测试 LabVIEW 对 WITec Control 的读写权限。</span></p>
+
+</div></body></html>

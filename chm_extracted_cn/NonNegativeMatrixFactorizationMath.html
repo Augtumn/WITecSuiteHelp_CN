@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>非负矩阵分解 (数学)</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="非负矩阵分解 (数学)">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 14pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+a.rvts5, span.rvts5
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts5:hover { color: #0000ff; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+.rvps2
+{
+ line-height: 1.15;
+ margin: 0px 0px 13px 24px;
+}
+.rvps3
+{
+ line-height: 1.15;
+ margin: 0px 0px 13px 0px;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>非负矩阵分解（数学）</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts2>非负矩阵分解（NMF）是一种用于从高光谱数据集中评估分布图、解混基光谱和恒定背景光谱的方法。这种多变量分析要求分布图、基光谱和恒定背景光谱中仅包含正值。它基于&nbsp;</span><a class=rvts5 href="SuperpositionOfSpectraMath.html">光谱叠加（数学）</a><span class=rvts2>&nbsp;一文中描述的基本方程：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps2><img border="0" src="Images/image419955606.jpg" width="157" height="29"></p>
+<p class=rvps3><span class=rvts3>约束条件：</span></p>
+<p class=rvps2><img border="0" src="Images/image1874177008.jpg" width="57" height="27"></p>
+<p class=rvps2><img border="0" src="Images/image1119657908.jpg" width="57" height="31"></p>
+<p class=rvps2><img border="0" src="Images/image968144011.jpg" width="55" height="27"></p>
+<p class=rvps2><img border="0" src="Images/image1375712955.jpg" width="390" height="69"></p>
+<p class=rvps3><span class=rvts2>NMF算法是迭代的，并通过以下步骤收敛到具有最小误差的解：</span></p>
+<ol style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li value=1 class=rvps3><span class=rvts2>初始化基光谱、分布图和恒定背景光谱。</span></li>
+<li value=2 class=rvps3><span class=rvts2>优化基光谱</span></li>
+<li value=3 class=rvps3><span class=rvts2>归一化基光谱</span></li>
+<li value=4 class=rvps3><span class=rvts2>优化分布图</span></li>
+<li value=5 class=rvps3><span class=rvts2>优化恒定光谱</span></li>
+<li value=6 class=rvps3><span class=rvts2>如果这不是最终迭代：</span>
+<br><span class=rvts2>将恒定光谱和基光谱拉入高光谱数据集的数据中</span></li>
+<li value=7 class=rvps3><span class=rvts2>重复步骤2至6，直到误差足够小或达到最终迭代次数</span></li>
+</ol>
+<p class=rvps3><span class=rvts3>另请参阅</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps3><a class=rvts5 href="BasisAnalysisMath.html">基分析（数学）</a></li>
+<li class=rvps1><a class=rvts5 href="InverseBasisAnalysisMath.html">逆基分析（数学）</a></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps3><span class=rvts4>备注</span></p>
+<p class=rvps3><span class=rvts3>恒定光谱</span></p>
+<p class=rvps3><span class=rvts2>如果恒定光谱是平坦的，则可以在步骤5中优化与光谱无关的偏移量。</span></p>
+<p class=rvps3><span class=rvts3>解的唯一性</span></p>
+<p class=rvps3><span class=rvts2>一般情况下不存在唯一解，因为存在无限多个满足上述约束条件的解。</span></p>
+<p class=rvps1><img border="0" src="Images/image1819338214.jpg" width="456" height="415"></p>
+<p class=rvps1><span class=rvts2>通过将恒定光谱和基光谱拉入高光谱数据集的点云中，可以确定一个接近纯光谱的唯一解。此外，这保证了该解对高光谱数据集的描述相对于噪声（例如读出噪声）是对称的。</span></p>
+<p class=rvps1><span class=rvts2>拉入的强度必须由用户调整。</span></p>
+<p class=rvps1><span class=rvts2></span></p>
+
+</div></body></html>

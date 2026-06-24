@@ -1,0 +1,1006 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>COM 接口</TITLE><meta name="generator" content="FastHelp"><meta name="keywords" content="Interface">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+a.rvts4, span.rvts4
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts4:hover { color: #0000ff; }
+span.rvts5
+{
+ font-family: 'Courier New';
+ color: #000000;
+}
+span.rvts6
+{
+ font-size: 14pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+span.rvts7
+{
+ font-family: 'Microsoft Sans Serif';
+ font-style: italic;
+ color: #000000;
+}
+span.rvts8
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+.rvps2
+{
+ text-align: justify;
+ margin: 0px 0px 5px 0px;
+}
+.rvps3
+{
+ text-align: justify;
+ margin: 0px 0px 10px 0px;
+}
+.rvps4
+{
+ margin: 0px 0px 14px 0px;
+}
+.rvps5
+{
+ text-align: center;
+}
+.rvps6
+{
+ text-align: justify;
+ text-indent: -24px;
+ line-height: 1.15;
+ margin: 0px 0px 13px 24px;
+}
+.rvps7
+{
+ text-align: justify;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>COM 接口</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+<div></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps3><span class=rvts2>本节列出所有可用的接口及其各自的方法。实现这些接口的类在</span><a class=rvts4 href="WCCOMClasses.html">类部分</a><span class=rvts2>中描述。</span></p>
+<p class=rvps3><span class=rvts2>所有接口的命名以</span><span class=rvts3>IBUCS</span><span class=rvts2>开头（</span><span class=rvts8>I</span><span class=rvts2>nterface </span><span class=rvts8>B</span><span class=rvts2>asic </span><span class=rvts8>U</span><span class=rvts2>niversal </span><span class=rvts8>C</span><span class=rvts2>OM </span><span class=rvts8>S</span><span class=rvts2>erver）。所有接口都从 IDispatch 派生。</span></p>
+<p class=rvps3><span class=rvts2><br></span></p>
+<p class=rvps4><a name="IBUCSCore"><span class=rvts6>IBUCSCore</span></p>
+<p class=rvps3><span class=rvts2>读取其层次结构中可用的子系统对象。</span></p>
+<p class=rvps3><span class=rvts3>GetSubSystemsList(in Name : BSTR, in SubSystemDepth : int) : IBUCSSubSystemList</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>描述 &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>列出从指定子系统开始的所有子系统，并以列表形式返回。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>Name：</span><span class=rvts2>起始子系统的路径。使用空字符串从根开始。</span></p>
+<p class=rvps3><span class=rvts7>SubSystemsDepth：</span><span class=rvts2>定义应列出的层级数。如果为 0，则仅列出一个层级（已定义子系统的子系统）。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>创建一个 CBUCSSubSystemsList 对象并返回 IBUCSSubSystemsList 指针。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts3>GetSubSystem(in Name : BSTR, in refid : IID) : IUnknown</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>描述 &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>创建一个子系统对象并使用指定的接口。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>Name：</span><span class=rvts2>子系统的路径。</span></p>
+<p class=rvps3><span class=rvts7>refid：</span><span class=rvts2>应用于子系统的接口的 GUID。该接口应为请求的子系统实现。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>如果子系统的路径有效且接口已实现，则返回定义的接口作为 IUnknown*。需要将其转换为根据指定 IId 对应的接口。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts3>GetSubSystemEx(in Name : BSTR, in InterfaceName : BSTR) : IUnknown</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>描述 &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>创建一个子系统对象，但接受接口 GUID 作为字符串。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>Name：</span><span class=rvts2>子系统的路径。</span></p>
+<p class=rvps3><span class=rvts7>InterfaceName：</span><span class=rvts2>应应用于子系统的接口 GUID 作为字符串（格式如</span><a class=rvts4 href="#GUIDs">末尾表格</a><span class=rvts2>所示）。该接口应为请求的子系统实现。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps1><span class=rvts2>如果子系统的路径有效且接口已实现，则返回定义的接口作为 IUnknown*。需要将其转换为根据指定 IId 对应的接口。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts3>GetSubSystemDefaultInterface(in Name : BSTR) : IUnknown</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>描述 &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>创建一个子系统对象并使用默认接口。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>Name：</span><span class=rvts2>子系统的路径。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>如果子系统的路径有效，则返回默认接口（根据 IDL 定义）作为 IUnknown*。需要将其转换为默认接口。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts2><br></span></p>
+<p class=rvps4><a name="IBUCSSubSystemsList"><span class=rvts6>IBUCSSubSystemsList</span></p>
+<p class=rvps3><span class=rvts2></span><a class=rvts4 href="WCCOMClasses.html#CBUCSSubSystemList">CBUCSSubSystemsList</a><span class=rvts2>的接口，其中包含子系统列表。</span></p>
+<p class=rvps3><span class=rvts3>GetNumberOfSystems() : int</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>描述 &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>给出列表中的元素数量。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts2>-</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>列表中子系统的数量。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts3>GetBaseName() : BSTR</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>描述 &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>检索所有子系统的基名称。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>-</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>列表中所有子系统的路径。（该路径用于创建列表。）</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts3>GetSubSystemName(in SystemIndex : int) : BSTR</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>描述 &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>返回由 SystemIndex 指定的子系统的名称。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>SystemIndex：</span><span class=rvts2>子系统的索引。必须 >= 0 且 < 子系统数量（GetNumberOfSystems() - 1）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>包含子系统名称的字符串。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts3>GetSystemSubSystemsList(in SystemIndex : int) : IBUCSSubSystemList</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>描述 &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>创建 SystemIndex 指定子系统下的子系统列表。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>SystemIndex：</span><span class=rvts2>子系统的索引。必须 >= 0 且 < 子系统数量（GetNumberOfSystems() - 1）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>创建一个 CBUCSSubSystemsList 对象，其中包含指定子系统下的子系统，并返回其 IBUCSSubSystemsList 指针。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts3>GetSubSystemNameAndIId(in SystemIndex : int, out SystemName : BSTR, out DefaultInterfaceId : BSTR) : HRESULT</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>描述 &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>返回由 SystemIndex 指定的子系统的名称和 GUID 字符串。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>SystemIndex：</span><span class=rvts2>子系统的索引。必须 >= 0 且 < 子系统数量（GetNumberOfSystems() - 1）</span></p>
+<p class=rvps2><span class=rvts7>SystemName：</span><span class=rvts2>一个字符串指针，填入子系统的名称</span></p>
+<p class=rvps2><span class=rvts7>DefaultInterfaceId：</span><span class=rvts2>一个字符串指针，填入子系统默认接口的 GUID</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>成功则返回 true。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts2><br></span></p>
+<p class=rvps4><a name="IBUCSAccess"><span class=rvts6>IBUCSAccess</span></p>
+<p class=rvps3><span class=rvts2>此接口控制客户端对服务器的访问。</span></p>
+<p class=rvps3><span class=rvts3>HasReadAccess() : bool</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>描述 &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>确定客户端是否具有读权限。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>-</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>如果对象在服务器上有读权限，则返回 true。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts3>HasWriteAccess() : bool</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>描述 &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>确定客户端是否具有写权限。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>-</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>如果对象在服务器上有写权限，则返回 true。如果应用程序的一个对象在服务器上有写权限，则该应用程序创建的所有对象都有写权限。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts3>RequestWriteAccess(in WantWriteAccess : bool) : HRESULT</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>描述 &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>请求客户端的写权限。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>WantWriteAccess：</span><span class=rvts2>true 表示客户端想获取写权限，false 表示客户端想放弃写权限。服务器确保只有一个应用程序具有写权限。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>如果在调用后对象在服务器上有写权限，则返回 true。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts2><br></span></p>
+<p class=rvps4><a name="IBUCSSubSystemInfo"><span class=rvts6>IBUCSSubSystemInfo</span></p>
+<p class=rvps3><span class=rvts2>此接口检索子系统的信息。</span></p>
+<p class=rvps3><span class=rvts3>GetName() : BSTR</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>-</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>完整的路径，包括子系统的名称。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts3>GetEnabled() : bool</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>-</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>如果子系统已启用且可以使用，则返回 true。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts2><br></span></p>
+<p class=rvps4><a name="IBUCSSingleValue"><span class=rvts6>IBUCSSingleValue</span></p>
+<p class=rvps3><span class=rvts2>可用于检索可更改值（参数）的信息。仅为值可转换为字符串的参数实现此接口。</span></p>
+<p class=rvps3><span class=rvts3>GetDisplayName() : BSTR</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>-</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>返回参数在主机应用程序（WITec Control）中的标题（标签）。此描述可能包含空格和特殊字符。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts3>GetValueAsString() : BSTR</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>-</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>参数的当前值作为字符串。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts2><br></span></p>
+<p class=rvps4><a name="IBUCSSingleValueHasLimits"><span class=rvts6>IBUCSSingleValueHasLimits</span></p>
+<p class=rvps3><span class=rvts2>此接口可以请求参数是否具有不同于其数据类型给出的上限或下限。不能用于检索上限或下限的值。</span></p>
+<p class=rvps3><span class=rvts3>HasMinimum() : bool</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>-</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>如果参数有程序设定的下限，则为 True。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts3>HasMaximum() : bool</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>-</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>如果参数有程序设定的上限，则为 True。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts2><br></span></p>
+<p class=rvps4><a name="IBUCSIntFloatBoolString"><span class=rvts6>IBUCSInt/IBUCSFloat/IBUCSBool/IBUCSString</span></p>
+<p class=rvps3><span class=rvts2>这些接口允许根据参数类型访问参数。</span></p>
+<p class=rvps3><span class=rvts3>GetValue() : int/float/bool/BSTR</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>-</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>参数的值作为相应类型。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts3>SetValue(in Value : int/float/bool/BSTR) : HRESULT</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>Value：</span><span class=rvts2>参数的新值作为相应类型。仅在服务器授予写权限时可能。主机应用程序需要确保该值在可能的范围内。服务器 DLL 不会检查。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>成功则返回 true。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts2><br></span></p>
+<p class=rvps4><a name="IBUCSIntFloatMinMaxValues"><span class=rvts6>IBUCSIntMinMaxValues/IBUCSFloatMinMaxValues</span></p>
+<p class=rvps3><span class=rvts2>这些接口根据参数类型检索参数的上限或下限。</span></p>
+<p class=rvps3><span class=rvts3>GetMinimum() : int/float</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>-</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>参数根据其类型的下限。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts3>GetMaximum() : int/float</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>-</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>参数根据其类型的上限。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts2><br></span></p>
+<p class=rvps4><a name="IBUCSEnum"><span class=rvts6>IBUCSEnum</span></p>
+<p class=rvps3><span class=rvts2>此接口可用于更改或读取列表或枚举参数。列表参数对每个数值都有相应的字符串。</span></p>
+<p class=rvps3><span class=rvts3>GetAvailableValues(out NumericalValues : SAFEARRAY, out StringValues : SAFEARRAY) : int</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>NumericalValues：</span><span class=rvts2>数组指针，填入此参数的数值。</span></p>
+<p class=rvps2><span class=rvts7>String Values：</span><span class=rvts2>数组指针，填入相应数值的字符串。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>返回可用值的数量。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts5>C/C++/C#：</span><span class=rvts2>使用此函数后需要为 NumericalValues 和 StringValues 调用</span><span class=rvts5>SafeArrayDestroy()</span><span class=rvts2>！</span></p>
+<p class=rvps3><span class=rvts3>GetValue(out ValueString : BSTR) : int</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>ValueString：</span><span class=rvts2>一个字符串指针，由服务器填入当前选中值的相应字符串。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>参数的当前数值。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts3>SetValueNumeric(in Value : int) : HRESULT</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>Value：</span><span class=rvts2>应由参数设置的数值。主机应用程序需要确保该值在可能的范围内。服务器 DLL 不会检查。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>成功则返回 true。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts3>SetValueString(in Value : BSTR) : HRESULT</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>Value：</span><span class=rvts2>应由参数设置的值的相应字符串。主机应用程序需要确保该值有效。服务器 DLL 不会检查。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>成功则返回 true。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts2><br></span></p>
+<p class=rvps4><a name="IBUCSTrigger"><span class=rvts6>IBUCSTrigger</span></p>
+<p class=rvps3><span class=rvts2>此接口可以触发操作。</span></p>
+<p class=rvps3><span class=rvts3>OperateTrigger() : HRESULT</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts2>-</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>如果操作成功启动，则返回 true。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts2><br></span></p>
+<p class=rvps4><a name="IBUCSStatusContainer"><span class=rvts6>IBUCSStatusContainer</span></p>
+<p class=rvps3><span class=rvts2>一个用于从服务器检索状态信息的接口。这可能是不同类型的单个值或一个或多个维度的数组。</span></p>
+<p class=rvps3><span class=rvts3>Update() : HRESULT</span></p>
+<p class=rvps3><span class=rvts2>更新容器的状态。</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>-</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>成功则返回 true。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts3>GetSingleValueAsString(out StringValue : BSTR) : bool</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>StringValue：</span><span class=rvts2>指向字符串的指针，该字符串由容器当前状态的字符串填充。状态不允许是数组。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>成功则返回 true。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts3>GetSingleValueAsInt(out IntValue : int) : bool</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>IntValue：</span><span class=rvts2>指向 Int 值的指针，该值由容器当前状态的值填充。状态不允许是数组。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>成功则返回 true。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts3>GetSingleValueAsDouble(out DoubleValue : double) : bool</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>DoubleValue：</span><span class=rvts2>指向 double 值的指针，该值由容器当前状态的值填充。状态不允许是数组。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>成功则返回 true。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts3>GetStatusArray(out Dimensions : int, out DimensionExtents : SAFEARRAY, out StatusArray : SAFEARRAY) : bool</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>Dimensions：</span><span class=rvts2>指向 Int 值的指针，调用后包含状态数组的维数。</span></p>
+<p class=rvps2><span class=rvts7>DimensionsExtents：</span><span class=rvts2>指向数组的指针，调用后包含每个维度范围的一维数组。</span></p>
+<p class=rvps2><span class=rvts7>Status Array：</span><span class=rvts2>指向数组的指针，调用后包含完整的状态数组。注意保持一致的索引。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>如果状态数组有效，则返回 true。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts5>C/C++/C#：</span><span class=rvts2>使用此函数后需要为 DimensionExtents 和 StatusArray 调用</span><span class=rvts5>SafeArrayDestroy()</span><span class=rvts2>！</span></p>
+<p class=rvps3><span class=rvts3>GetStatusProperties(out Caption : BSTR, out Unit : BSTR) : bool</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>Caption：</span><span class=rvts2>指向字符串的指针，填入当前状态值的描述。</span></p>
+<p class=rvps2><span class=rvts7>Unit：</span><span class=rvts2>指向字符串的指针，填入当前状态值的单位。</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>如果状态有效，则返回 true。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts2><br></span></p>
+<p class=rvps4><a name="IBUCSFillStatusContainer"><span class=rvts6>IBUCSFillStatusContainer</span></p>
+<p class=rvps3><span class=rvts2>一个用于将一维数据数组传输到服务器的接口。</span></p>
+<p class=rvps3><span class=rvts3>FillDataArray(in DataArray : SAFEARRAY) : HRESULT</span></p>
+<div class=rvps3><table border=0 cellpadding=0 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>参数</span></p>
+</td>
+<td width=1484>
+<p class=rvps2><span class=rvts7>DataArray：</span><span class=rvts2>包含数据的数组（variant SAFEARRAY，数据类型为 VT_ARRAY | VT_R4 或 VT_ARRAY | VT_BSTR）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=96>
+<p class=rvps3><span class=rvts2>返回值</span></p>
+</td>
+<td width=1484>
+<p class=rvps3><span class=rvts2>如果数组传输成功，则返回 true。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps3><span class=rvts5>C/C++/C#：</span><span class=rvts2>服务器会为传递的 DataArray 调用</span><span class=rvts5>VariantClear()</span><span class=rvts2>。</span></p>
+<p class=rvps3><span class=rvts2><br></span></p>
+<p class=rvps6><a name="GUIDs"><span class=rvts6>接口 GUID 表</span></p>
+<p class=rvps3><span class=rvts2>使用</span><a class=rvts4 href="#IBUCSSubSystemsList">IBUCSSubSystemsList</a><span class=rvts2>的</span><span class=rvts5>GetSubSystemNameAndIId()</span><span class=rvts2>方法可以确定对象默认接口的 GUID。下表概述了可用的接口及其各自的 GUID（IId）。</span></p>
+<div class=rvps1><table width=538 border=1 cellpadding=0 cellspacing=-1 style="border-width: 0px; border-collapse: collapse;">
+<tr valign=top>
+<td width=213 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps5><span class=rvts3>接口名称</span></p>
+</td>
+<td width=298 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps5><span class=rvts3>接口 GUID (IId)</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=213 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>IBUCSSubSystemsList</span></p>
+</td>
+<td width=298 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts5>512E8C62-F2C9-4840-8C5C-746E7FCE3B5B</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=213 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>IBUCSCore</span></p>
+</td>
+<td width=298 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts5>78D9E3C8-7E0A-4788-B4D8-EF22365D3648</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=213 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>IBUCSAccess</span></p>
+</td>
+<td width=298 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts5>594ACBE6-938A-411F-A62E-E06FE6DBD35C</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=213 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>IBUCSSubSystemInfo</span></p>
+</td>
+<td width=298 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts5>A548CB11-959F-46C0-BACD-C813837CB9C4</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=213 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts2>IBUCSSingleValue</span></p>
+</td>
+<td width=298 height=20 valign=top style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps7><span class=rvts5>A75ED3DF-D774-412C-8DF3-B7640EAE0551</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps1><span class=rvts2></span></p>
+
+</div></body></html>

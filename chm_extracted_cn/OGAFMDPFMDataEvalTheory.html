@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>理论</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="理论">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 14pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+a.rvts4, span.rvts4
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts4:hover { color: #0000ff; }
+span.rvts5
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+ vertical-align: super;
+}
+span.rvts6
+{
+ font-family: 'Times New Roman';
+}
+span.rvts7
+{
+ font-size: 11pt;
+ font-family: 'Cambria';
+ font-style: italic;
+ color: #000000;
+}
+span.rvts8
+{
+ font-family: 'Times New Roman';
+ font-style: italic;
+}
+span.rvts9
+{
+ font-family: 'Times New Roman';
+ font-weight: bold;
+}
+span.rvts10
+{
+ font-size: 7pt;
+ font-family: 'Cambria';
+ font-style: italic;
+ color: #000000;
+ vertical-align: sub;
+}
+span.rvts11
+{
+ font-size: 11pt;
+ font-family: 'Cambria';
+ color: #000000;
+}
+span.rvts12
+{
+ font-size: 11pt;
+ font-family: 'Cambria';
+ font-style: italic;
+ color: #000000;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ margin: 0px 0px 14px 0px;
+}
+.rvps2
+{
+ text-align: justify;
+ margin: 0px 0px 10px 0px;
+}
+.rvps3
+{
+ text-align: justify;
+ border-color: #ff0000;
+ border-style: solid;
+ border-width: 4px;
+ border-top: none;
+ border-right: none;
+ border-bottom: none;
+ padding: 0px 0px 0px 5px;
+ margin: 5px 3px 10px 3px;
+}
+.rvps4
+{
+ text-align: justify;
+ text-indent: -48px;
+ margin: 0px 0px 0px 48px;
+}
+.rvps5
+{
+ text-align: justify;
+ margin: 0px 0px 10px 48px;
+}
+.rvps6
+{
+ text-align: justify;
+ margin: 0px 0px 0px 48px;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>理论</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+<div></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps2><span class=rvts2>DPFM测量获取的数据，即粘附力和刚度图像，以电压为单位。为了将测量得到的伏特数数学转换为物理单位（例如粘附力图像的N或刚度图像的N/m），需要与实验条件相关的进一步信息。以下部分描述了将电压值转换为相应物理值所需的公式和参数。</span></p>
+<p class=rvps2><span class=rvts2>然而，相互作用的力的性质未被考虑。获得的物理值仍可用于探针-样品界面的建模。</span></p>
+<p class=rvps3><span class=rvts2>请注意，从DPFM测量中提取定量值强烈依赖于温度和湿度等环境条件。此外，在以下描述的步骤中未考虑测量期间的探针变化。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps1><a name=RichViewCheckpoint0></a>
+<span class=rvts3>粘附力</span></p>
+<p class=rvps2><span class=rvts5>粘附力的校准可根据以下公式进行：</span></p>
+<p class=rvps5><img border="0" src="Images/image1478869107.jpg" width="191" height="19"><span class=rvts5> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(1)</span></p>
+<p class=rvps2><span class=rvts2>其中包含测量的电压&nbsp;</span><span class=rvts7>V</span><span class=rvts10>粘附力</span><span class=rvts2>、悬臂梁的弹簧常数k以及光束偏转系统的灵敏度&nbsp;</span><span class=rvts7>S</span><span class=rvts2>。</span></p>
+<p class=rvps2><span class=rvts7>V</span><span class=rvts10>粘附力</span><span class=rvts2>&nbsp;是由粘附峰的负值确定的电压。</span></p>
+<p class=rvps2><span class=rvts2>近似的弹簧常数可在悬臂梁数据表中找到。另一种方法是使用Sader方法进行悬臂梁弹簧常数校准。更多信息和在线计算表格可在&nbsp;</span><a class=rvts4 href="http://www.ampc.ms.unimelb.edu.au/afm/calibration.html" target="_blank">http://www.ampc.ms.unimelb.edu.au/afm/calibration.html</a><span class=rvts2>&nbsp;找到。频率可通过频率扫描确定。品质因子&nbsp;</span><span class=rvts7>Q</span><span class=rvts2>&nbsp;使用悬臂梁频率&nbsp;</span><span class=rvts7>f</span><span class=rvts2>&nbsp;和频率峰的&nbsp;</span><span class=rvts7>FWHM</span><span class=rvts2>&nbsp;计算：</span></p>
+<p class=rvps5><img border="0" src="Images/image22682084.jpg" width="83" height="36"></p>
+<p class=rvps2><span class=rvts2>灵敏度&nbsp;</span><span class=rvts7>S</span><span class=rvts2>&nbsp;可以通过在相对于悬臂梁较硬的表面（如硅晶片）上执行力-距离曲线来确定。灵敏度显示为力曲线在排斥区域中斜率的倒数（因此单位为nm/V）。这些值高度依赖于悬臂梁类型（特别是其长度）以及激光斑点在分段光电二极管上的对准。因此，每次更换悬臂梁时都需要重新计算&nbsp;</span><span class=rvts7>S</span><span class=rvts2>。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps1><a name=RichViewCheckpoint1></a>
+<span class=rvts3>刚度</span></p>
+<p class=rvps2><span class=rvts2>要校准刚度，需要了解一些额外的量。这些量必须在测量前确定。在这种情况下，一个重要的量是探针本身的调制幅度&nbsp;</span><span class=rvts12>M</span><span class=rvts2>。如果无法直接观察该量（例如通过干涉法），则可以从施加到调制压电的驱动幅度与光电探测器的响应幅度之间的线性关系来估计调制幅度。</span></p>
+<p class=rvps2><span class=rvts2>为此，需要在硬硅晶片上进行初步测量，类似于悬臂梁灵敏度&nbsp;</span><span class=rvts12>S</span><span class=rvts2>&nbsp;的确定。通过向调制压电施加较小的驱动幅度&nbsp;</span><span class=rvts7>a</span><span class=rvts10>ds</span><span class=rvts2>，同时悬臂梁与硅晶片接触，预计从光电探测器获得正弦调制&nbsp;</span><span class=rvts7>a</span><span class=rvts10>osc</span><span class=rvts2>&nbsp;作为响应。只要悬臂梁未脱离样品，这两个调制幅度的比值&nbsp;</span><span class=rvts7>U</span><span class=rvts2>&nbsp;不应改变，并且可用于确定DPFM测量期间的调制&nbsp;</span><span class=rvts7>M</span><span class=rvts2>。</span></p>
+<p class=rvps5><img border="0" src="Images/image1770262405.jpg" align="middle" width="59" height="28"><span class=rvts2> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(2)</span></p>
+<p class=rvps5><img border="0" src="Images/image528684273.jpg" align="middle" width="87" height="19"><span class=rvts2> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(3)</span></p>
+<p class=rvps2><span class=rvts2>其中&nbsp;</span><span class=rvts7>A</span><span class=rvts2>&nbsp;表示DPFM成像期间施加的驱动幅度，&nbsp;</span><span class=rvts7>S</span><span class=rvts2>&nbsp;表示灵敏度。</span></p>
+<p class=rvps2><span class=rvts2>使用刚度搜索窗口的宽度，角度&nbsp;</span><span class=rvts7>&#963;</span><span class=rvts2>，可以确定穿透深度&nbsp;</span><span class=rvts11>&#916;</span><span class=rvts7>z</span><span class=rvts2>：</span></p>
+<p class=rvps6><img border="0" src="Images/image1701842182.jpg" align="middle" width="305" height="33"><span class=rvts2> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(4)</span></p>
+<p class=rvps2><span class=rvts7>V</span><span class=rvts10>刚度</span><span class=rvts2>&nbsp;是在刚度图像中测量的电压。</span></p>
+<p class=rvps2><span class=rvts2>如果将样品的局部刚度定义为：</span></p>
+<p class=rvps5><img border="0" src="Images/image1672770172.jpg" align="middle" width="197" height="29"><span class=rvts2> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(5)</span></p>
+<p class=rvps2><span class=rvts2>则：</span></p>
+<p class=rvps5><img border="0" src="Images/image2105209459.jpg" align="middle" width="161" height="28"><span class=rvts2> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(6)</span></p>
+<p class=rvps2><span class=rvts2>该关系允许以与粘附力相同的方式校准DPFM数据。由于将刚度和粘附力数据转换为物理单位是重复性的，因此可以通过使用WITec Project的&nbsp;</span><a class=rvts4 href="DropActionCalculator.html">计算器功能</a><span class=rvts2>&nbsp;来实现。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts2>关于如何将DPFM测量提供的电压转换为物理单位的示例在&nbsp;</span><a class=rvts4 href="OGAFMDPFMDataEvalTPreliminaryMeasurements.html">后续页面</a><span class=rvts2>&nbsp;中描述。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>进一步阅读</span></p>
+<p class=rvps4><span class=rvts6>1. &nbsp; &nbsp; &nbsp; &nbsp;B. Hopp</span><span class=rvts8>&nbsp; 等</span><span class=rvts6>, ArF准分子激光辐照聚甲基丙烯酸甲酯中孵化现象的研究：基于脉冲力模式原子力显微镜.&nbsp;</span><span class=rvts8>Journal of Applied Physics</span><span class=rvts6>&nbsp;</span><span class=rvts9>96</span><span class=rvts6>, 5548 (2004).</span></p>
+<p class=rvps4><span class=rvts6>2. &nbsp; &nbsp; &nbsp; &nbsp;U. Schmidt, S. Hild, W. Ibach, O. Hollricher, 利用共聚焦拉曼AFM在纳米尺度上表征薄聚合物薄膜.&nbsp;</span><span class=rvts8>Macromolecular Symposia</span><span class=rvts6>&nbsp;</span><span class=rvts9>230</span><span class=rvts6>, 133-143 (2005).</span></p>
+<p class=rvps4><span class=rvts6>3. &nbsp; &nbsp; &nbsp; &nbsp;S. Shanmugham, J. Jeong, A. Alkhateeb, D. E. Aston, 利用数字脉冲力模式AFM测量聚合物纳米线弹性模量.&nbsp;</span><span class=rvts8>Langmuir</span><span class=rvts6>&nbsp;</span><span class=rvts9>21</span><span class=rvts6>, 10214-10218 (2005).</span></p>
+<p class=rvps4><span class=rvts6>4. &nbsp; &nbsp; &nbsp; &nbsp;Y. Chen, B. L. Dorgan, D. N. McIlroy, D. Eric Aston, 边界条件对银纳米线纳米力学弯曲行为及弹性模量测定的重要性.&nbsp;</span><span class=rvts8>Journal of Applied Physics</span><span class=rvts6>&nbsp;</span><span class=rvts9>100</span><span class=rvts6>, 104301 (2006).</span></p>
+<p class=rvps4><span class=rvts6>5. &nbsp; &nbsp; &nbsp; &nbsp;M. J. Holzwarth, 数字脉冲力模式.&nbsp;</span><span class=rvts8>G.I.T. Imaging &amp; Microscopy</span><span class=rvts6>&nbsp;</span><span class=rvts9>4</span><span class=rvts6>, (2006).</span></p>
+<p class=rvps4><span class=rvts6>6. &nbsp; &nbsp; &nbsp; &nbsp;Y. Chen</span><span class=rvts8>&nbsp; 等</span><span class=rvts6>, 气-液-固法生长GaN纳米线的力学弹性.&nbsp;</span><span class=rvts8>Nanotechnology</span><span class=rvts6>&nbsp;</span><span class=rvts9>18</span><span class=rvts6>, 135708 (2007).</span></p>
+<p class=rvps4><span class=rvts6>7. &nbsp; &nbsp; &nbsp; &nbsp;A. Gigler, C. Gnahm, O. Marti, T. Schimmel, S. Walheim, 利用数字脉冲力模式成像实现材料的定量表征.&nbsp;</span><span class=rvts8>Journal of Physics: Conference Series</span><span class=rvts6>&nbsp;</span><span class=rvts9>61</span><span class=rvts6>, 346-351 (2007).</span></p>
+<p class=rvps4><span class=rvts6>8. &nbsp; &nbsp; &nbsp; &nbsp;U. Schmidt</span><span class=rvts8>&nbsp; 等</span><span class=rvts6>, 共聚焦拉曼AFM——异质材料无损表征的强大工具.&nbsp;</span><span class=rvts8>Nanotechnology</span><span class=rvts6>&nbsp;</span><span class=rvts9>4</span><span class=rvts6>, 48 (2007).</span></p>
+<p class=rvps4><span class=rvts6>9. &nbsp; &nbsp; &nbsp; &nbsp;O. Marti, M. Holzwarth, M. Beil, 利用数字脉冲力模式成像测量癌细胞的纳米力学性质.&nbsp;</span><span class=rvts8>Nanotechnology</span><span class=rvts6>&nbsp;</span><span class=rvts9>19</span><span class=rvts6>, 384015 (2008).</span></p>
+<p class=rvps4><span class=rvts6>10. &nbsp; &nbsp; &nbsp; &nbsp;J. Dong</span><span class=rvts8>&nbsp; 等</span><span class=rvts6>, 水介质中治疗性生物医学涂层的多模态动态成像.&nbsp;</span><span class=rvts8>Langmuir</span><span class=rvts6>&nbsp;</span><span class=rvts9>25</span><span class=rvts6>, 5442-5445 (2009).</span></p>
+<p class=rvps4><span class=rvts6>11. &nbsp; &nbsp; &nbsp; &nbsp;D. Gangadean, D. N. McIlroy, B. E. Faulkner, D. E. Aston, 一维纳米材料三点弯曲试验的Winkler边界条件.&nbsp;</span><span class=rvts8>Nanotechnology</span><span class=rvts6>&nbsp;</span><span class=rvts9>21</span><span class=rvts6>, 225704 (2010).</span></p>
+<p class=rvps4><span class=rvts6>12. &nbsp; &nbsp; &nbsp; &nbsp;a. Klash, E. Ncube, B. du Toit, M. Meincken, 桉树木纤维表面纤维素和木质素含量与基因型和立地条件的关系测定.&nbsp;</span><span class=rvts8>European Journal of Forest Research</span><span class=rvts6>&nbsp;</span><span class=rvts9>129</span><span class=rvts6>, 741-748 (2010).</span></p>
+<p class=rvps4><span class=rvts6>13. &nbsp; &nbsp; &nbsp; &nbsp;U. Schmidt, 聚合物材料与涂层的多模态成像.&nbsp;</span><span class=rvts8>Physics Best</span><span class=rvts6>, (2013).</span></p>
+
+</div></body></html>

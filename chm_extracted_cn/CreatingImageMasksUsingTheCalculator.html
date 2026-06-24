@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>使用计算器创建图像掩模</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="通过计算器创建图像掩模">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+a.rvts3, span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts3:hover { color: #0000ff; }
+span.rvts4
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts5
+{
+ font-size: 14pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+span.rvts6
+{
+ font-size: 16pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #ea7600;
+}
+span.rvts7
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #808080;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+.rvps2
+{
+ text-align: center;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>使用计算器创建图像掩模</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+<div></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p><span class=rvts2>您可以在</span><a class=rvts3 href="DropActionCalculator.html">计算器对话框</a><span class=rvts2>中使用</span><a class=rvts3 href="FormulaEditor.html">布尔公式</a><span class=rvts2>创建掩模。</span></p>
+<p><span class=rvts2>该公式允许您组合各种逻辑，以便从不同图像创建掩模。</span></p>
+<p><span class=rvts2><br></span></p>
+<p><span class=rvts2>例如，我们可以有一个显示拉曼组分和荧光的总和图像，以及一个仅显示荧光的总和图像：</span></p>
+<p><span class=rvts2><br></span></p>
+<div><table border=0 cellpadding=1 cellspacing=2 style="border-width: 0px;">
+<tr valign=top>
+<td width=257>
+<p class=rvps2><img border="0" src="Images/image485562835.jpg" width="212" height="103"></p>
+</td>
+<td width=275>
+<p class=rvps2><img border="0" src="Images/image1833234025.jpg" width="212" height="103"></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=257>
+<p class=rvps2><span class=rvts2>总和图像 第1层</span></p>
+</td>
+<td width=275>
+<p class=rvps2><span class=rvts2>总和图像 荧光</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><span class=rvts2><br></span></p>
+<p><span class=rvts2>可以使用计算器创建一个掩模，仅遮蔽第一张图像中的拉曼组分。</span></p>
+<p><span class=rvts2><br></span></p>
+<p><span class=rvts2><br></span></p>
+<p><span class=rvts5>步骤</span></p>
+<p><span class=rvts2><br></span></p>
+<ol style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li value=1><span class=rvts2>将两张图像拖放到</span><a class=rvts3 href="DropActionCalculator.html">计算器拖放操作</a><span class=rvts2>上。</span>
+<br><img border="0" src="Images/image1015275922.jpg" width="260" height="191">
+<br><span class=rvts2><br></span></li>
+<li value=2><span class=rvts2>现在您可以输入布尔公式（产生值为 0 和 1 的掩模结果）。可以通过使用大于(&gt;)和小于(&lt;)运算符以及逻辑"与"(&amp;)和"或"(|)运算符来实现：</span>
+<br><img border="0" src="Images/image2104784722.jpg" width="443" height="204">
+<br><span class=rvts2><br></span></li>
+<li value=3><span class=rvts2>使用公式 "x1 &gt; 150"：</span>
+<br><span class=rvts2>这将设置总和图像第1层（聚合物）中值大于150的所有像素，从而仅选择亮像素。</span>
+<br><span class=rvts2>阈值（本例中为150）取决于总和图像。将鼠标光标移到原始总和图像上，了解哪个值可能是亮像素阈值化的良好阈值，并更改该值以查看效果。</span>
+<br><span class=rvts2><br></span></li>
+<li value=4><span class=rvts2>使用公式 "x2 &lt; 30"：</span>
+<br><span class=rvts2>这将清除荧光总和图像中大于或等于30的所有像素，从而移除荧光像素。</span>
+<br><span class=rvts2><br></span></li>
+<li value=5><span class=rvts2>使用"逻辑与"运算符(&amp;)组合两个掩模（两个条件都必须为真才能设置掩模像素），从而从聚合物掩模中移除荧光像素。</span>
+<br><span class=rvts2><br></span></li>
+<li value=6><span class=rvts7>可选：使用单位"布尔"并重命名图像，以便之后识别掩模</span></li>
+</ol>
+<p><span class=rvts2><br></span></p>
+<ol style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li value=7><span class=rvts2>您还可以计算聚合物第2层（阈值120）和聚合物第3层（阈值350）的掩模。</span>
+<br><span class=rvts2><br></span></li>
+<li value=8><span class=rvts2>将您的结果与预定义的掩模数据对象掩模第1/2/3层进行比较。</span></li>
+</ol>
+<p><span class=rvts2><br></span></p>
+<p><span class=rvts2><br></span></p>
+<p><span class=rvts6>结果</span>
+<br><span class=rvts6><br></span></p>
+<div><table border=0 cellpadding=1 cellspacing=2 style="border-width: 0px;">
+<tr valign=top>
+<td width=373 valign=middle>
+<p class=rvps2><img border="0" src="Images/image1857874164.jpg" width="263" height="126"></p>
+</td>
+<td width=373 valign=middle>
+<p class=rvps1><span class=rvts2>计算器结果，公式为 "</span><span class=rvts4>x1 &gt; 150</span><span class=rvts2>"</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=373 valign=middle>
+<p class=rvps2><img border="0" src="Images/image44032089.jpg" width="263" height="126"></p>
+</td>
+<td width=373 valign=middle>
+<p class=rvps1><span class=rvts2>计算器结果，公式为 "</span><span class=rvts4>x2 &lt; 30</span><span class=rvts2>"</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=373 valign=middle>
+<p class=rvps2><img border="0" src="Images/image618154024.jpg" width="263" height="126"></p>
+</td>
+<td width=373 valign=middle>
+<p class=rvps1><span class=rvts2>计算器结果，公式为 "</span><span class=rvts4>x1 &gt; 150 &amp; x2 &lt; 30</span><span class=rvts2>"</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><span class=rvts2><br></span></p>
+<p><span class=rvts2></span></p>
+
+</div></body></html>

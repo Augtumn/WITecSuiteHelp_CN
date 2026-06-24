@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>COM 服务器与类</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="COM Classes">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 12pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+span.rvts4
+{
+ font-size: 14pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+span.rvts5
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts6
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+a.rvts7, span.rvts7
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts7:hover { color: #0000ff; }
+a.rvts8, span.rvts8
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts8:hover { color: #0000ff; }
+a.rvts9, span.rvts9
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts9:hover { color: #0000ff; }
+a.rvts10, span.rvts10
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts10:hover { color: #0000ff; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ margin: 0px 0px 14px 0px;
+}
+.rvps2
+{
+ text-align: justify;
+ margin: 0px 0px 10px 0px;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>COM 服务器与类</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+<div></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps2><span class=rvts4>COM 服务器</span></p>
+<p><span class=rvts2>COM 服务器由一个 DLL 和一个类型库组成。默认情况下两者都随 WITec Control 安装。</span></p>
+<p><span class=rvts2><br></span></p>
+<p><span class=rvts2>它可以通过其类 ID（clsid）</span><span class=rvts5>C45E77CE-3D66-489A-B5E2-159F443BD1AA</span><span class=rvts2>作为本地或进程外服务器使用。没有定义程序 ID（progid）。关于作为远程服务器使用，请参考</span><a class=rvts10 href="WCCOMRemoteAccess.html">远程访问</a><span class=rvts2>。作为进程内服务器使用不可行。</span></p>
+<p><span class=rvts2><br></span></p>
+<p><span class=rvts2>类型库的名称是 BasicUniversalCOMServerLib.tlb。帮助字符串（在 OLE/COM 查看器或 LabVIEW 中显示）是</span><span class=rvts5>Basic Universal COM Server Library</span><span class=rvts2>。</span></p>
+<p class=rvps2><span class=rvts5><br></span></p>
+<p class=rvps2><span class=rvts4>已实现的类</span></p>
+<p class=rvps2><span class=rvts2>本节列出 DLL 提供的所有可用类。每个类实现了一个或多个</span><a class=rvts7 href="WCCOMInterfaces.html">接口</a><span class=rvts2>。</span></p>
+<p class=rvps2><span class=rvts2>所有类的命名以</span><span class=rvts5>CBUCS</span><span class=rvts2>开头（</span><span class=rvts6>C</span><span class=rvts2>类 </span><span class=rvts6>B</span><span class=rvts2>asic </span><span class=rvts6>U</span><span class=rvts2>niversal </span><span class=rvts6>C</span><span class=rvts2>OM </span><span class=rvts6>S</span><span class=rvts2>erver）。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps1><a name="CBUCSCore"><span class=rvts3>CBUCSCore</span></p>
+<p class=rvps2><span class=rvts5>接口：</span><a class=rvts8 href="WCCOMInterfaces.html#IBUCSCore">IBUCSCore</a><span class=rvts5>、</span><a class=rvts9 href="WCCOMInterfaces.html#IBUCSAccess">IBUCSAccess</a></p>
+<p class=rvps2><span class=rvts2>每个客户端应创建此类的一个实体，以使用 IBUCSCore 接口函数创建所有后续对象。</span></p>
+<p class=rvps1><a name="CBUCSSubSystemList"><span class=rvts3>CBUCSSubSystemList</span></p>
+<p class=rvps2><span class=rvts5>接口：</span><a class=rvts8 href="WCCOMInterfaces.html#IBUCSSubSystemsList">IBUCSSubSystemList</a></p>
+<p class=rvps2><span class=rvts2>此对象由 IBUCSCore 接口的 GetSubSystemsList() 函数创建。该对象包含可用的子系统及其各自的接口 GUID。此类的对象本身不是子系统。</span></p>
+<p class=rvps1><a name="CBUCSSubSystem"><span class=rvts3>CBUCSSubSystem</span></p>
+<p class=rvps2><span class=rvts5>接口：</span><a class=rvts8 href="WCCOMInterfaces.html#IBUCSAccess">IBUCSAccess</a><span class=rvts5>、</span><a class=rvts8 href="WCCOMInterfaces.html#IBUCSSubSystemInfo">IBUCSSubSystemInfo</a></p>
+<p class=rvps2><span class=rvts2>所有子系统类都从此类派生。此类不由客户端创建。</span></p>
+<p class=rvps1><a name="CBUCSSingleValue"><span class=rvts3>CBUCSSingleValue</span></p>
+<p class=rvps2><span class=rvts5>接口：</span><a class=rvts8 href="WCCOMInterfaces.html#IBUCSSingleValue">IBUCSSingleValue</a><span class=rvts5>（+ </span><a class=rvts8 href="#CBUCSSubSystem">CBUCSSubSystem</a><span class=rvts5>的接口）</span></p>
+<p class=rvps2><span class=rvts2>所有单值类都从此类派生。此类不由客户端创建。</span></p>
+<p class=rvps1><a name="CBUCSIntSingleValueMinMax"><span class=rvts3>CBUCSIntSingleValueMinMax</span></p>
+<p class=rvps2><span class=rvts5>接口：</span><a class=rvts8 href="WCCOMInterfaces.html#IBUCSIntFloatBoolString">IBUCSInt</a><span class=rvts5>、</span><a class=rvts8 href="WCCOMInterfaces.html#IBUCSSingleValueHasLimits">IBUCSSingleValueHasLimits</a><span class=rvts5>、</span><a class=rvts8 href="WCCOMInterfaces.html#IBUCSIntFloatMinMaxValues">IBCUSIntMinMaxValues</a><span class=rvts5>（+ </span><a class=rvts8 href="#CBUCSSingleValue">CBUCSSingleValue</a><span class=rvts5>的接口）</span></p>
+<p class=rvps2><span class=rvts2>此类实现了修改整数值所需的所有接口。默认接口是 IBUCSInt。此类的所有其他接口均可转换为此接口。</span></p>
+<p class=rvps1><a name="CBUCSFloatSingleValueMinMax"><span class=rvts3>CBUCSFloatSingleValueMinMax</span></p>
+<p class=rvps2><span class=rvts5>接口：</span><a class=rvts8 href="WCCOMInterfaces.html#IBUCSIntFloatBoolString">IBUCSFloat</a><span class=rvts5>、</span><a class=rvts8 href="WCCOMInterfaces.html#IBUCSSingleValueHasLimits">IBUCSSingleValueHasLimits</a><span class=rvts5>、</span><a class=rvts8 href="WCCOMInterfaces.html#IBUCSIntFloatMinMaxValues">IBUCSFloatMinMaxValues</a><span class=rvts5>（+ </span><a class=rvts8 href="#CBUCSSingleValue">CBUCSSingleValue</a><span class=rvts5>的接口）</span></p>
+<p class=rvps2><span class=rvts2>此类实现了修改浮点值所需的所有接口。默认接口是 IBUCSFloat。此类的所有其他接口均可转换为此接口。</span></p>
+<p class=rvps1><a name="CBUCSStringSingleValue"><span class=rvts3>CBUCSStringSingleValue</span></p>
+<p class=rvps2><span class=rvts5>接口：</span><a class=rvts8 href="WCCOMInterfaces.html#IBUCSIntFloatBoolString">IBUCSString</a><span class=rvts5>（+ </span><a class=rvts8 href="#CBUCSSingleValue">CBUCSSingleValue</a><span class=rvts5>的接口）</span></p>
+<p class=rvps2><span class=rvts2>此类用于修改任意长度的字符串值。默认接口是 IBUCSString。</span></p>
+<p class=rvps1><a name="CBUCSBoolSingleValue"><span class=rvts3>CBUCSBoolSingleValue</span></p>
+<p class=rvps2><span class=rvts5>接口：</span><a class=rvts8 href="WCCOMInterfaces.html#IBUCSIntFloatBoolString">IBUCSBool</a><span class=rvts5>（+ </span><a class=rvts8 href="#CBUCSSingleValue">CBUCSSingleValue</a><span class=rvts5>的接口）</span></p>
+<p class=rvps2><span class=rvts2>此类用于修改布尔值。默认接口是 IBUCSBool。</span></p>
+<p class=rvps1><a name="CBUCSEnumSingleValue"><span class=rvts3>CBUCSEnumSingleValue</span></p>
+<p class=rvps2><span class=rvts5>接口：</span><a class=rvts8 href="WCCOMInterfaces.html#IBUCSEnum">IBUCSEnum</a><span class=rvts5>（+ </span><a class=rvts8 href="#CBUCSSingleValue">CBUCSSingleValue</a><span class=rvts5>的接口）</span></p>
+<p class=rvps2><span class=rvts2>此类用于修改列表或枚举值。默认接口是 IBUCSEnum。</span></p>
+<p class=rvps1><a name="CBUCSTriggerSingleValue"><span class=rvts3>CBUCSTrigger</span></p>
+<p class=rvps2><span class=rvts5>接口：</span><a class=rvts8 href="WCCOMInterfaces.html#IBUCSTrigger">IBUCSTrigger</a><span class=rvts5>（+ </span><a class=rvts8 href="#CBUCSSubSystem">CBUCSSubSystem</a><span class=rvts5>的接口）</span></p>
+<p class=rvps2><span class=rvts2>此类用于触发操作。默认接口是 IBUCSTrigger。</span></p>
+<p class=rvps1><a name="CBUCSStatusContainer"><span class=rvts3>CBUCSStatusContainer</span></p>
+<p class=rvps2><span class=rvts5>接口：</span><a class=rvts8 href="WCCOMInterfaces.html#IBUCSStatusContainer">IBUCSStatusContainer</a><span class=rvts5>、</span><a class=rvts8 href="WCCOMInterfaces.html#IBUCSFillStatusContainer">IBUCSFillStatusContainer</a><span class=rvts5>（+ </span><a class=rvts8 href="#CBUCSSubSystem">CBUCSSubSystem</a><span class=rvts5>的接口）</span></p>
+<p class=rvps2><span class=rvts2>此类用于读取状态数据。默认接口是 IBUCSStatusContainer。</span></p>
+
+</div></body></html>

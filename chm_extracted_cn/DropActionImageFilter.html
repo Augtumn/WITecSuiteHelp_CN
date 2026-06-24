@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>图像滤波对话框</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="Image Filter Dialog">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */ { font-size: 10pt; font-family: 'Arial'; font-style: normal; font-weight: normal; color: #000000; text-decoration: none; }
+span.rvts1 { font-family: 'Arial Unicode MS'; }
+span.rvts2 { font-family: 'Microsoft Sans Serif'; color: #000000; }
+span.rvts3 { font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #000000; }
+span.rvts4 { font-size: 16pt; font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #ea7600; }
+a.rvts5, span.rvts5 { font-family: 'Microsoft Sans Serif'; color: #0000ff; text-decoration: none; }
+a.rvts5:hover { color: #0000ff; }
+span.rvts6 { font-size: 14pt; font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #151f6d; }
+span.rvts7 { font-family: 'Microsoft Sans Serif'; color: #000000; background-color: #ff00ff; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */ { text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; }
+.rvps1 { }
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><table border=0 cellpadding=1 bordercolor="#000000" cellspacing=2>
+<tr valign=middle>
+<td width=50 valign=middle><font size=2 color="#000000" face="Arial">
+<div><img border="0" src="Images/image497351308.jpg" width="48" height="48"></div>
+</font>
+</td>
+<td width=502 valign=middle><font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>图像滤波对话框</b></font></div>
+</font>
+</td>
+</tr>
+</table>
+</div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts4>描述</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>图像滤波对话框提供多种图像平滑和边缘滤波器，以及锐化滤波器和用户可自定义的滤波器。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>输入与结果</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>输入：</span></p>
+<p class=rvps1><span class=rvts2>任意数量的图像数据对象。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>结果：</span></p>
+<p class=rvps1><span class=rvts2>平滑图像或边缘滤波图像。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<hr noshade size=1 style="color : #808080">
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>用户界面</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><a class=rvts5 href="#Average">平均选项卡与通用 UI</a></li>
+<li class=rvps1><a class=rvts5 href="#Anisotropic">各向异性选项卡</a></li>
+<li class=rvps1><a class=rvts5 href="#Median">中值选项卡</a></li>
+<li class=rvps1><a class=rvts5 href="#Sobel">Sobel 选项卡</a></li>
+<li class=rvps1><a class=rvts5 href="#Kirsch">Kirsch 选项卡</a></li>
+<li class=rvps1><a class=rvts5 href="#Variance">方差选项卡</a></li>
+<li class=rvps1><a class=rvts5 href="#Laplace">Laplace 选项卡</a></li>
+<li class=rvps1><a class=rvts5 href="#Sharpen">锐化选项卡</a></li>
+<li class=rvps1><a class=rvts5 href="#Custom">自定义选项卡</a></li>
+<li class=rvps1><a class=rvts5 href="#PreviewWindows">预览窗口</a></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="Average"><span class=rvts6>平均选项卡与通用 UI</span></p>
+<p class=rvps1><span class=rvts2>如果选择平均选项卡，则使用采用二项式分布的滤波器系数的二维平均算法对图像进行平滑。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1778809971.jpg" width="477" height="347"></p>
+<p class=rvps1><span class=rvts5><br></span></p>
+<p class=rvps1><span class=rvts3>PET（组合框）：</span></p>
+<p class=rvps1><span class=rvts2>如果放置了多个图像，您可以在此处选择当前预览图像。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>边缘像素（单选按钮）：</span></p>
+<p class=rvps1><span class=rvts2>大多数滤波器使用一定窗口大小，使用输入图像的多个像素来计算结果像素。对于边缘像素/如果滤波器窗口超出图像，您可以选择像素被镜像、边界像素被复制或像素将被设为零。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>显示高级滤波器（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>这将使所有边缘滤波器和自定义滤波器对用户可见。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>显示原始图像（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，预览图像查看器显示选定的原始图像而不是滤波器预览。更改某些滤波器选项时，请不要忘记关闭此模式以查看滤波器预览。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>平均滤波器大小：</span></p>
+<p class=rvps1><span class=rvts2>设置平均滤波器的滤波器大小。总平均窗口大小为 (2 * &lt;滤波器大小&gt; + 1)^2。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>提取（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>计算并将结果图像提取到当前项目中。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>提取并下一步（按钮）</span></p>
+<p class=rvps1><span class=rvts2>向导功能：您可以将此对话框的结果图像用作图像合并：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image275728357.jpg" width="247" height="67"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="Anisotropic"><span class=rvts6>各向异性选项卡</span></p>
+<p class=rvps1><span class=rvts7><br></span></p>
+<p class=rvps1><span class=rvts2>如果选择各向异性选项卡，则使用同时保留边缘的各向异性平滑滤波器对图像进行平滑（参见 D. Tschumperle, Lecture Notes in Computer Science, 3952, 295 [2006]）。这是 WITec Project Plus 功能。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image241778108.jpg" width="462" height="161"></p>
+<p class=rvps1><span class=rvts3>P1, P2, DeltaT, Sigma, 迭代次数（编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>更改各向异性图像滤波器的行为。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>默认设置（组合框）：</span></p>
+<p class=rvps1><span class=rvts2>选择针对小结构和大结构的预定义设置。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>计算预览（按钮），自动预览（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>参见</span><a class=rvts5 href="AutomaticPreview.html">自动预览。</a></p>
+<p class=rvps1><span class=rvts2>对话框打开时自动预览被禁用。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="Median"><span class=rvts6>中值选项卡</span></p>
+<p class=rvps1><span class=rvts2>如果选择中值选项卡，则使用二维中值算法对图像进行平滑。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image2028387750.jpg" width="233" height="45"></p>
+<p class=rvps1><span class=rvts3>中值滤波器大小（整数编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>设置中值滤波器大小。总中值窗口大小为 (2*&lt;滤波器大小&gt;+1)^2。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="Sobel"><span class=rvts6>Sobel 选项卡</span></p>
+<p class=rvps1><span class=rvts2>如果选择 Sobel 选项卡，可以通过在不同方向上使用 Sobel 算子搜索来检测图像中的边缘。此外，可以显示最大梯度的角度。这是 WITec Project Plus 功能。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image37857587.jpg" width="262" height="157"></p>
+<p class=rvps1><span class=rvts3>Sobel 预览图像（组合框）：</span></p>
+<p class=rvps1><span class=rvts2>您可以选择应在预览中显示哪个 Sobel 结果：Gx（显示 x 方向边缘）、Gy（显示 y 方向边缘）、G（显示 x 和 y 方向边缘）、Theta（将边缘角度显示为强度）</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>单位（单选按钮）：</span></p>
+<p class=rvps1><span class=rvts2>更改边缘单位：基于像素或基于空间（单位 &#181;m）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Theta（单选按钮）</span></p>
+<p class=rvps1><span class=rvts2>更改角度单位：弧度或度。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>提取图像（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>选择使用提取按钮时应提取哪些 Sobel 结果。</span></p>
+<p class=rvps1><a name="Kirsch"><span class=rvts6>Kirsch 选项卡</span></p>
+<p class=rvps1><span class=rvts2>如果选择 Kirsch 选项卡，可以通过在不同方向上使用 Kirsch 算子搜索来检测图像中的边缘。这是 WITec Project Plus 功能。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image14064970.jpg" width="234" height="44"></p>
+<p class=rvps1><span class=rvts3>Kirsch 滤波方向（组合框）：</span></p>
+<p class=rvps1><span class=rvts2>您可以更改 Kirsch 滤波器的边缘角度（G1 - G8 和使用所有方向的 GMax）。</span></p>
+<p class=rvps1><a name="Variance"><span class=rvts6>方差选项卡</span></p>
+<p class=rvps1><span class=rvts2>如果选择方差选项卡，可以通过计算二维方差来检测图像中的边缘。这是 WITec Project Plus 功能。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image635508210.jpg" width="233" height="42"></p>
+<p class=rvps1><span class=rvts3>方差滤波器大小（整数编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>您可以更改方差滤波器大小。总滤波器窗口大小为 (2*&lt;滤波器大小&gt;+1)^2。</span></p>
+<p class=rvps1><a name="Laplace"><span class=rvts6>Laplace 选项卡</span></p>
+<p class=rvps1><span class=rvts2>如果选择 Laplace 选项卡，可以使用 Laplace 算子检测图像中的边缘。这是 WITec Project Plus 功能。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1439482068.jpg" width="339" height="43"></p>
+<p class=rvps1><span class=rvts3>Laplace 滤波器类型（组合框）：</span></p>
+<p class=rvps1><span class=rvts2>在预定义的 Laplace 滤波器系数之间选择。</span></p>
+<p class=rvps1><a name="Sharpen"><span class=rvts6>锐化选项卡</span></p>
+<p class=rvps1><span class=rvts2>如果选择锐化选项卡，则使用反锐化掩模技术对图像进行滤波。这是 WITec Project Plus 功能。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image259756473.jpg" width="234" height="99"></p>
+<p class=rvps1><span class=rvts3>半径、数量、阈值（编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>更改锐化图像滤波器的行为。</span></p>
+<p class=rvps1><a name="Custom"><span class=rvts6>自定义选项卡</span></p>
+<p class=rvps1><span class=rvts2>如果选择自定义选项卡，则使用用户定义的滤波器系数对图像进行滤波。这是 WITec Project Plus 功能。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image452460808.jpg" width="341" height="162"></p>
+<p class=rvps1><span class=rvts3>滤波器大小（整数编辑框）</span></p>
+<p class=rvps1><span class=rvts2>更改用户定义滤波器的滤波器大小。总滤波器窗口大小为 (2*&lt;滤波器大小&gt;+1)^2。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>因子（浮点编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>所有滤波器系数相乘的因子。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>加载/保存滤波器（工具按钮）：</span></p>
+<p class=rvps1><span class=rvts2>您可以保存当前自定义滤波器，稍后再重新加载。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>滤波器系数（浮点编辑矩阵）：</span></p>
+<p class=rvps1><span class=rvts2>在右侧的浮点编辑矩阵中输入您的滤波器系数。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><a name="PreviewWindows"><span class=rvts4>预览窗口</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1477972779.jpg" width="168" height="184"></p>
+<p class=rvps1><span class=rvts2>预览图像查看器显示平滑/锐化/边缘算法的预览。您可以切换"显示原始"复选框以将结果与原始图像进行比较。</span></p>
+
+</div></body></html>

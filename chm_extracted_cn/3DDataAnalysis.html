@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>三维数据分析</TITLE><meta name="generator" content="FastHelp"><meta name="keywords" content="">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 14pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+span.rvts4
+{
+ font-family: 'Microsoft Sans Serif';
+}
+span.rvts5
+{
+ font-family: 'Microsoft Sans Serif';
+ background-color: #00ffff;
+}
+span.rvts6
+{
+ font-family: 'Microsoft Sans Serif';
+}
+a.rvts7, span.rvts7
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts7:hover { color: #0000ff; }
+a.rvts8, span.rvts8
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ background-color: #00ffff;
+ text-decoration: none;
+}
+a.rvts8:hover { color: #0000ff; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+.rvps2
+{
+ line-height: 1.25;
+}
+.rvps3
+{
+ text-align: justify;
+ text-indent: -24px;
+ line-height: 1.25;
+ margin: 0px 0px 0px 28px;
+}
+.rvps4
+{
+ text-align: justify;
+ line-height: 1.25;
+ margin: 0px 0px 0px 24px;
+}
+.rvps5
+{
+ text-align: justify;
+ border-color: #000000;
+ border-style: solid;
+ border-width: 1px;
+ padding: 5px 5px 5px 5px;
+ margin: 0px 19px 10px 19px;
+}
+.rvps6
+{
+ margin: 0px 0px 14px 0px;
+}
+.rvps7
+{
+ text-align: justify;
+ margin: 0px 0px 10px 0px;
+}
+.rvps8
+{
+ text-align: justify;
+ margin: 0px 0px 5px 0px;
+}
+.rvps9
+{
+ text-align: center;
+}
+.rvps10
+{
+ text-align: justify;
+ line-height: 1.25;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>三维数据分析</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+<div></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps7><span class=rvts2>本文介绍如何在 WITec Project 中准备三维堆栈数据以供导出。下面给出了数据分析过程的示例。分析一组数据的最佳方式取决于具体数据和您的要求，因此以下过程可能需要修改和调整。</span></p>
+<p class=rvps7><span class=rvts2>我们的目标是对所有层应用相同的分析步骤，如背景扣除和真组分分析（TCA），使用相同的参数。然而，TCA 或其他分析工具需要整个数据集才能找到所有组分。解决方案是将各层拼接在一张图像中，并使用此单个拼接对象设置分析参数。然后，通过将单个层拖放到提取按钮上，将分析应用于所有单个层。</span></p>
+<p class=rvps7><span class=rvts2>如果堆栈层数很多，最好只选择少数有代表性的层（例如 2 或 4 层）进行拼接，这将大大加快分析速度。</span></p>
+<p class=rvps7><span class=rvts2>此处建议的过程使用真组分分析；然而，也可以使用其他工具，如拟合工具。</span></p>
+<p class=rvps7><span class=rvts2>图中的数据显示了安装在载玻片（蓝色）上的石榴石样品（红色）中的一些包裹体（绿色、黄色）。</span></p>
+<p class=rvps2><span class=rvts4><br></span></p>
+<p class=rvps6><span class=rvts3>数据分析</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps8><span class=rvts4>使用拖放操作菜单中的</span><a class=rvts7 href="DropActionDataStitching.html">拼接工具</a><span class=rvts4>将图像拼接到一个对象中。在此示例中，我选择了两层。</span></li>
+<li class=rvps8><span class=rvts4>将拼接的图像拖放到拉曼向导上，它将打开一个预览图像，显示您的代表性层。</span></li>
+<li class=rvps8><span class=rvts4>第一步是</span><a class=rvts7 href="DropActionGraphFilter.html#CRR">宇宙射线去除</a><span class=rvts4>（CRR）。照常设置值。</span></li>
+<li class=rvps8><span class=rvts4>重要提示：在按下</span><span class=rvts5>提取并下一步</span><span class=rvts4> (2) 按钮之前，将堆栈的所有单个层（而非拼接图像）拖放到</span><span class=rvts5>提取</span><span class=rvts4> (1) 按钮上！（参见下图）</span></li>
+</ul>
+<p class=rvps3><span class=rvts4><br></span></p>
+<p class=rvps9><img border="0" src="Images/image2101028319.jpg" width="422" height="425"></p>
+<p class=rvps9><span class=rvts4><br></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps8><span class=rvts4>对基线校正执行相同操作：借助预览图像选择设置，然后将所有（CRR）校正后的层拖放到</span><span class=rvts5>提取</span><span class=rvts4>按钮上，最后按下</span><span class=rvts5>提取并下一步</span><span class=rvts4>按钮。</span></li>
+<li class=rvps8><span class=rvts4>继续使用 TCA 对拼接数据对象进行数据评估（如我们的示例所示）：</span></li>
+<li class=rvps8><span class=rvts4>将所有单个层拖放到</span><span class=rvts5>提取</span><span class=rvts4>按钮上。这将创建一个（长）对象列表，即每个层中每个组分对应一张图像。</span></li>
+</ul>
+<p class=rvps3><span class=rvts4><br></span></p>
+<p class=rvps9><img border="0" src="Images/image1210640516.jpg" width="572" height="356"></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps3 style="margin-left: 0; text-indent: 0px"><span class=rvts4>可选：此时考虑</span><a class=rvts7 href="DropActionImageFilter.html">图像平滑</a><span class=rvts4>。</span></li>
+</ul>
+<p class=rvps3><span class=rvts4><br></span></p>
+<p class=rvps3><span class=rvts4><br></span></p>
+<p class=rvps6><span class=rvts3>数据导出</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps8><span class=rvts4>使用拖放操作菜单中的</span><a class=rvts8 href="DropActionImageStackExport.html">图像堆栈导出</a><span class=rvts4>按钮提取每个组分的图像。</span></li>
+</ul>
+<p class=rvps5><a class=rvts7 href="DataCategories.html">按名称对项目管理器中的对象进行排序</a><span class=rvts4>。</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps8><span class=rvts4>图像堆栈导出工具提供 x,y、x,z 和 y,z 视图。颜色和颜色标度可调整</span></li>
+</ul>
+<p class=rvps8><span class=rvts4><br></span></p>
+<p class=rvps9><img border="0" src="Images/image997389989.jpg" width="456" height="419"></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps4 style="margin-left: 0"><span class=rvts4>为了补偿聚焦到样品更深处时典型的强度下降，激活"随深度更改颜色标度"。</span></li>
+</ul>
+<p class=rvps10><span class=rvts4><br></span></p>
+<p class=rvps9><img border="0" src="Images/image9201124.jpg" width="456" height="417"></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps8><span class=rvts4>使用"截面"去除单个组分的部分，例如如果您只想显示带包裹体的基质的一部分：</span></li>
+</ul>
+<p class=rvps8><span class=rvts4><br></span></p>
+<p class=rvps9><img border="0" src="Images/image19619284.jpg" width="456" height="419"></p>
+<p class=rvps8><span class=rvts4><br></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps8><span class=rvts4>灰度就可以 &#8211; 如果您稍后在 ImageJ 三维查看器中为每个组分选择颜色。（注意：如果您选择其他三维插件，可能需要在此时定义颜色标度。）</span></li>
+<li class=rvps8><span class=rvts4>导出为单个 tif 文件</span></li>
+<li class=rvps7><span class=rvts4>数据可以在任何三维图像软件（例如</span><a class=rvts7 href="https://fiji.sc/" target="_blank">ImageJ</a><span class=rvts1>）中进行可视化</span></li>
+</ul>
+
+</div></body></html>

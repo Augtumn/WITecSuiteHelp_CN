@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>过滤表达式编辑器</TITLE><meta name="generator" content="FastHelp"><meta name="keywords" content="WITec ParticleScout Filter">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 14pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+span.rvts5
+{
+ font-size: 12pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+a.rvts6, span.rvts6
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts6:hover { color: #0000ff; }
+span.rvts7
+{
+ font-family: 'Courier New';
+ color: #000000;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>过滤表达式编辑器</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts2>过滤表达式编辑器允许在&nbsp;</span><a class=rvts6 href="WITecParticleScoutFindParticles.html">创建颗粒列表</a><span class=rvts2>&nbsp;前过滤颗粒，或</span>
+<br><span class=rvts2>在&nbsp;</span><a class=rvts6 href="WITecParticleScoutParticleManager.html">颗粒管理器</a><span class=rvts2>中隐藏或选择某些颗粒。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts5>可视化过滤编辑器</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image261865501.jpg" width="453" height="70"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1129729368.jpg" width="399" height="22"></p>
+<p class=rvps1><span class=rvts2>在此处您可以为所选参数（例如，面积）定义值范围。</span></p>
+<p class=rvps1><span class=rvts2>按&nbsp;</span><img border="0" src="Images/image1467164941.jpg" width="17" height="17"><span class=rvts2>&nbsp;从列表中删除过滤器。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image936531211.jpg" width="25" height="25"><span class=rvts2>&nbsp;通过选择颗粒参数添加过滤器参数：</span></p>
+<p class=rvps1><img border="0" src="Images/image1231645601.jpg" width="186" height="153">
+<br><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1954485932.jpg" width="25" height="25"><span class=rvts2>&nbsp;在简单参数列表和自定义公式编辑器之间切换，见下文。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts5>自定义公式编辑器</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image2050909870.jpg" width="455" height="71"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>允许您定义一个自定义布尔公式来定义过滤条件。</span></p>
+<p class=rvps1><span class=rvts2>点击黄色问号以查看所有可能的变量和一些示例。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>要清除公式，按 X。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>如果存在错误，您可以将鼠标悬停或点击红色感叹号以查看问题所在：</span></p>
+<p class=rvps1><img border="0" src="Images/image1695608388.jpg" width="778" height="105"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts5>示例公式</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<div class=rvps1><table border=1 cellpadding=1 cellspacing=-1 style="border-width: 0px; border-collapse: collapse;">
+<tr valign=top>
+<td width=210 height=25 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts7>Area &gt; 5</span></p>
+</td>
+<td width=359 height=25 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>大于条件</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=210 height=25 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts7>Area &gt; 5 and Area &lt; 10</span></p>
+</td>
+<td width=359 height=25 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>使用 AND 组合</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=210 height=25 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts7>(Area &gt; 10 and Area &lt; 20)</span></p>
+<p class=rvps1><span class=rvts7>or</span></p>
+<p class=rvps1><span class=rvts7>(Area &gt; 50 and Area &lt; 70)</span></p>
+</td>
+<td width=359 height=25 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>使用括号组合 AND 和 OR</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=210 height=25 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts7>Material = "Quartz"</span></p>
+</td>
+<td width=359 height=25 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>字符串比较</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=210 height=25 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts7>Material.Contains("Quar")</span></p>
+</td>
+<td width=359 height=25 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>字符串方法调用 "Contains"</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=210 height=25 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts7>FeretMin &gt; 3 * FeretMax</span></p>
+</td>
+<td width=359 height=25 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>带乘法的比较条件</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=210 height=25 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts7>RandomValue &gt; 0.5</span></p>
+</td>
+<td width=359 height=25 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>随机选择一半元素</span>
+<br><span class=rvts2>（RandomValue = 0 到 1 之间的随机数）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=210 height=25 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts7>IsOversaturated</span></p>
+</td>
+<td width=359 height=25 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>仅显示具有过饱和光谱的颗粒</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=210 height=25 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts7>!IsOversaturated</span></p>
+</td>
+<td width=359 height=25 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>NOT 运算符 "!"：仅显示没有过饱和光谱的颗粒</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=210 height=25 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts7>Math.Sqrt(Length * Width) &gt; 5</span></p>
+</td>
+<td width=359 height=25 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>计算 Length * Width 的平方根并与大于 5 比较。</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts2>请参阅 .NET Framework 4.7.1 文档了解其他 Math 或 String 方法。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts5>快速过滤器</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>您可以定义快速过滤器，以便通过单击鼠标调出自定义公式。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image184853442.jpg" width="273" height="191"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>点击所需的快速过滤器，在过滤表达式编辑器中使用已保存的公式。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>在颗粒管理器中：点击所需的快速过滤器勾选标记以添加/删除颗粒标记。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts5>配置快速过滤器</span></p>
+<p class=rvps1><span class=rvts5><br></span></p>
+<p class=rvps1><img border="0" src="Images/image29826277.jpg" width="407" height="196"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>在此处您可以添加、删除或编辑快速过滤器。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>只需添加一个新过滤器并设置名称和公式。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>在此处您可以在可视化过滤编辑器和自定义公式编辑器之间进行选择。</span></p>
+
+</div></body></html>

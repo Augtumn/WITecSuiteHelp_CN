@@ -1,0 +1,538 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>公式编辑器</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="公式编辑器">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 16pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #ea7600;
+}
+a.rvts5, span.rvts5
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts5:hover { color: #0000ff; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+.rvps2
+{
+ line-height: 1.15;
+ margin: 0px 0px 13px 24px;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>公式编辑器</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><img border="0" src="Images/image1168516328.jpg" width="219" height="21"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>公式编辑器（公式解析器）将代数表达式（文本）转换为计算机可以理解的操作堆栈。此公式解析器可以处理多种数学运算符和函数（见下文）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>执行顺序取决于运算符的优先级。虽然公式解析器使用浮点数，但某些运算符需要布尔值或整数值来操作。在这种情况下，浮点值会在操作前被转换。浮点数到整数的转换会截断小数位。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>浮点数到布尔值的转换如下：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps2><img border="0" src="Images/image2073543455.jpg" width="284" height="41"></p>
+<p class=rvps1><span class=rvts2>结果会转换回浮点数。布尔值 true 被转换为 1.0，布尔值 false 被转换为 0.0。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>所有函数至少有 10 位有效小数位，但 besselj1() 和 airysqr() 函数除外，它们只有 7 位有效小数位。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>根据使用情况，公式解析器接受固定数量 N 的输入变量。这些变量通过 X1, X2 ... Xn 来引用。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>示例公式</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<div class=rvps1><table border=1 cellpadding=1 cellspacing=-1 style="border-width: 0px; border-collapse: collapse;">
+<tr valign=top>
+<td width=108 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>x1+500</span></p>
+</td>
+<td width=354 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>结果是原值加 500</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=108 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>x1&gt;250</span></p>
+</td>
+<td width=354 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>如果原值大于 250，结果为 1；如果小于 250，结果为 0</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=108 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>x1+x2</span></p>
+</td>
+<td width=354 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>结果是 x1 和 x2 的和</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=108 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>x1*(x2&gt;250)</span></p>
+</td>
+<td width=354 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>如果 x2 大于 250，结果是 x1 的原值，否则为零</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>运算符</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<div class=rvps1><table border=1 cellpadding=1 cellspacing=-1 style="border-width: 0px; border-collapse: collapse;">
+<tr valign=top>
+<td width=121 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts3>优先级</span></p>
+</td>
+<td width=139 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts3>运算符</span></p>
+</td>
+<td width=195 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts3>描述</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=121 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>1</span></p>
+</td>
+<td width=139 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>|</span></p>
+</td>
+<td width=195 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>或（布尔）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=121 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>2</span></p>
+</td>
+<td width=139 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>&amp;</span></p>
+</td>
+<td width=195 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>与（布尔）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=121 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>3</span></p>
+</td>
+<td width=139 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>!</span></p>
+</td>
+<td width=195 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>不等于（布尔）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=121 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>4</span></p>
+</td>
+<td width=139 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>=</span></p>
+</td>
+<td width=195 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>等于（布尔）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=121 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>5</span></p>
+</td>
+<td width=139 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>&gt;</span></p>
+</td>
+<td width=195 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>大于（布尔）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=121 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>6</span></p>
+</td>
+<td width=139 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>&lt;</span></p>
+</td>
+<td width=195 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>小于（布尔）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=121 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>7</span></p>
+</td>
+<td width=139 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>-</span></p>
+</td>
+<td width=195 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>减（浮点）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=121 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>7</span></p>
+</td>
+<td width=139 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>+</span></p>
+</td>
+<td width=195 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>加（浮点）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=121 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>8</span></p>
+</td>
+<td width=139 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>%</span></p>
+</td>
+<td width=195 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>取模（整数）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=121 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>9</span></p>
+</td>
+<td width=139 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>*</span></p>
+</td>
+<td width=195 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>乘（浮点）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=121 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>9</span></p>
+</td>
+<td width=139 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>/</span></p>
+</td>
+<td width=195 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>除（浮点）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=121 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>10</span></p>
+</td>
+<td width=139 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>- （代数符号）</span></p>
+</td>
+<td width=195 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>变号（浮点）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=121 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>11</span></p>
+</td>
+<td width=139 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>^</span></p>
+</td>
+<td width=195 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>幂（浮点）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=121 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>12</span></p>
+</td>
+<td width=139 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>( )</span></p>
+</td>
+<td width=195 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>括号（浮点）</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>函数</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<div class=rvps1><table border=1 cellpadding=1 cellspacing=-1 style="border-width: 0px; border-collapse: collapse;">
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts3>函数</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts3>描述</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>sin()</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>正弦（弧度）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>asin()</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>反正弦（弧度）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>cos()</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>余弦（弧度）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>acos()</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>反余弦（弧度）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>tan()</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>正切（弧度）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>atan()</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>反正切（弧度）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>cotan()</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>余切（弧度）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>sinh()</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>双曲正弦</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>asinh()</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>双曲反正弦</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>cosh()</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>双曲余弦</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>acosh()</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>双曲反余弦</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>tanh()</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>双曲正切</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>atanh()</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>双曲反正切</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>loge()</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>自然对数</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>log10()</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>以10为底的对数</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>log2()</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>以2为底的对数</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>exp()</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>指数</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>abs()</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>绝对值</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>sqrt()</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>平方根</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>sinc()</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>sin(x)/x（弧度）</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>sincsqr()</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>(sin(x)/x) ^ 2</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>heavyside()</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>x &lt; 0 时为 0 | x = 0 时为 0.5 | x &gt; 0 时为 1</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>sign()</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>x &lt; 0 时为 -1 | x = 0 时为 0 | x &gt; 0 时为 1</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>besselj1()</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>第一类 J1(x) 贝塞尔函数</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>airysqr()</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>((2J1(x)) / x) ^ 2</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=186 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>pi()</span></p>
+</td>
+<td width=275 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2>数学常数 PI（使用 "pi(0)"）</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>被以下组件使用：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><a class=rvts5 href="DropActionCalculator.html">计算器对话框</a></li>
+<li class=rvps1><a class=rvts5 href="DropActionAdvancedFittingTool.html">高级拟合工具对话框</a></li>
+</ul>
+
+</div></body></html>

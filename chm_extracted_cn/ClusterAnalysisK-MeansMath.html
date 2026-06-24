@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>聚类分析K均值（数学）</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="聚类分析K均值（数学）">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 14pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+a.rvts5, span.rvts5
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts5:hover { color: #0000ff; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+.rvps2
+{
+ line-height: 1.15;
+ margin: 0px 0px 13px 24px;
+}
+.rvps3
+{
+ line-height: 1.15;
+ margin: 0px 0px 13px 0px;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>聚类分析K均值（数学）</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts2>K均值聚类算法将高光谱数据集分割为用户定义数量的集合（簇）。通过最小化以下方程来选择这些集合。</span></p>
+<p class=rvps2><img border="0" src="Images/image1522493553.jpg" width="260" height="71"></p>
+<p class=rvps2><img border="0" src="Images/image441706328.jpg" width="457" height="103"></p>
+<p class=rvps3><span class=rvts2>对于大量光谱，无法在合理的时间内求解上述方程。因此，使用迭代算法来寻找最小值。该最小值不一定等于全局最小值。算法执行以下步骤：</span></p>
+<ol style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li value=1 class=rvps3><span class=rvts2>初始化所有簇中心。</span></li>
+<li value=2 class=rvps3><span class=rvts2>将完整高光谱数据集中的每个光谱与所有簇中心进行比较。</span>
+<br><span class=rvts2>将光谱放入最相似的集合中。</span></li>
+<li value=3 class=rvps3><span class=rvts2>计算新的簇中心。</span></li>
+<li value=4 class=rvps3><span class=rvts2>重复步骤 2-3，直到集合保持不变。</span></li>
+</ol>
+<p class=rvps3><span class=rvts3>另请参阅</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps3><a class=rvts5 href="MathAverageSpectrum.html">平均光谱（数学）</a></li>
+<li class=rvps3><a class=rvts5 href="ClusterAnalysisK-MeansGeometricView.html">聚类分析K均值（几何视角）</a></li>
+</ul>
+<p class=rvps3><span class=rvts4>备注</span></p>
+<p class=rvps3><span class=rvts3>两个光谱的相似性</span></p>
+<p class=rvps3><span class=rvts2>为了计算两个光谱的相似性，可以使用差值光谱的长度。长度的倒数是相似性的度量。通常K均值聚类使用欧几里得范数，但有时曼哈顿范数会给出更好的结果（参见&nbsp;</span><a class=rvts5 href="SpectrumNormalizationMath.html">光谱归一化（数学）</a><span class=rvts2>）。</span></p>
+<p class=rvps3><span class=rvts3>预变换</span></p>
+<p class=rvps3><span class=rvts2>代替使用原始光谱进行聚类，对高光谱数据集中的所有光谱应用预变换可能是有意义的。</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps3><span class=rvts2>数据缩减（加速并获得更清晰的簇，因为噪声更少）</span></li>
+<li class=rvps3><span class=rvts2>归一化（仅对光谱形状敏感，对强度、积分时间和材料密度不敏感）</span></li>
+<li class=rvps3><span class=rvts2>导数（仅对尖锐的拉曼谱线敏感，对荧光不敏感）</span></li>
+</ul>
+<p class=rvps3><span class=rvts2>这些预变换的光谱仅用于聚类过程。为了从原始光谱中获得良好的平均光谱，可以使用集合信息（掩模）。</span></p>
+
+</div></body></html>

@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>逆基分析（数学）</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="逆基分析（数学）">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 14pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+a.rvts5, span.rvts5
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts5:hover { color: #0000ff; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+.rvps2
+{
+ line-height: 1.15;
+ margin: 0px 0px 13px 24px;
+}
+.rvps3
+{
+ line-height: 1.15;
+ margin: 0px 0px 13px 0px;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>逆基分析（数学）</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts2>逆基分析的思想是：如果仅知道属于各组分的光谱图像（分布图），则从高光谱数据集中计算出基光谱和常数光谱。</span></p>
+<p class=rvps1><span class=rvts2>逆基分析基于基本方程，该方程在文章&nbsp;</span><a class=rvts5 href="SuperpositionOfSpectraMath.html">光谱叠加（数学）</a><span class=rvts2>中有详细解释。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps2><img border="0" src="Images/image843040524.jpg" width="157" height="29"></p>
+<p class=rvps3><span class=rvts2>需要对每个光谱位置分别求解以下方程。</span></p>
+<p class=rvps2><img border="0" src="Images/image1162290746.jpg" width="340" height="73"></p>
+<p class=rvps2><img border="0" src="Images/image402025769.jpg" width="430" height="184"></p>
+<p class=rvps3><span class=rvts3>另请参阅</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps3><a class=rvts5 href="BasisAnalysisMath.html">基分析（数学）</a></li>
+<li class=rvps3><a class=rvts5 href="NonNegativeMatrixFactorizationMath.html">非负矩阵分解（数学）</a></li>
+</ul>
+<p class=rvps3><span class=rvts4>备注</span></p>
+<p class=rvps3><span class=rvts3>选择正确的图像</span></p>
+<p class=rvps3><span class=rvts2>与基分析类似，需要一组完整的图像来描述高光谱数据集中的所有组分。此外，每张图像必须只包含一种组分的无背景信号，以获得具有物理意义的光谱。</span></p>
+<p class=rvps3><span class=rvts3>常数光谱</span></p>
+<p class=rvps3><span class=rvts2>如果常数背景光谱是平坦的且无需拟合，用户可设置其偏移值。</span></p>
+<p class=rvps3><span class=rvts3>基光谱重建</span></p>
+<p class=rvps3><span class=rvts2>在某些情况下，可能仅从光谱的很小部分就能获得良好的图像，特别是在使用非负矩阵分解时。在这种情况下，逆基分析可用于在整个光谱范围内重建基光谱。</span></p>
+
+</div></body></html>

@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>形貌校正</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="形貌校正">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+a.rvts4, span.rvts4
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts4:hover { color: #0000ff; }
+a.rvts5, span.rvts5
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts5:hover { color: #0000ff; }
+a.rvts6, span.rvts6
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts6:hover { color: #0000ff; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: justify;
+ margin: 0px 0px 5px 0px;
+}
+.rvps2
+{
+}
+.rvps3
+{
+ text-align: justify;
+ border-color: #000000;
+ border-style: solid;
+ border-width: 1px;
+ padding: 5px 5px 5px 5px;
+ margin: 0px 19px 10px 19px;
+}
+.rvps4
+{
+ text-align: justify;
+ margin: 0px 0px 10px 0px;
+}
+.rvps5
+{
+ text-align: justify;
+ margin: 0px 0px 5px 24px;
+}
+.rvps6
+{
+ margin: 0px 0px 0px 24px;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>形貌校正</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+<div></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps4><span class=rvts2>形貌校正参数组用于手动或使用共聚焦色差传感器（CCS）学习形貌，以便与&nbsp;</span><a class=rvts4 href="WCLargeAreaScan.html">大面积扫描</a><span class=rvts2>配合使用。</span></p>
+<p class=rvps1><span class=rvts3>更多信息（操作指南）：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><a class=rvts5 href="OGRamanManualTopographyCorrection.html">手动形貌校正</a></li>
+<li class=rvps1><a class=rvts4 href="OGRamanTSM2Overview.html">TrueSurface</a></li>
+</ul>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><img border="0" src="Images/image327385454.jpg" width="372" height="301"></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>移至表面</span></p>
+<p class=rvps1><span class=rvts2>如果当前位置存在于当前表面中且可以插值 Z 值，则将 Z 台移动到学习到的焦点位置。</span></p>
+<p class=rvps3><span class=rvts2>如果用户在&nbsp;</span><a class=rvts4 href="MicroscopeZStage.html">显微镜 Z</a><span class=rvts2>&nbsp;中选择了 user-z 时移动 Z 台，则会将偏移添加到学习到的焦点上，此按钮将不再到达正确的焦点位置。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>Z 位移 [&#181;m]</span></p>
+<p><span class=rvts2>此参数可用于定义学习到的焦点位置的偏移。这也可以在进行表面校正的大面积扫描时完成。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>当前表面点数量</span></p>
+<p><span class=rvts2>仅显示定义当前表面的点的数量。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>通过 CCS 学习大面积扫描</span></p>
+<p class=rvps1><span class=rvts2>将使用 CCS 传感器扫描定义的大面积扫描几何形状。</span></p>
+<p class=rvps5><span class=rvts3>图像尺寸 X/Y [像素]</span></p>
+<p class=rvps5><span class=rvts2>定义用于 CCS 学习的大面积扫描的图像像素尺寸。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>手动学习</span></p>
+<p class=rvps1><span class=rvts2>此参数组允许在没有 CCS 的情况下学习简单表面。进度显示在&nbsp;</span><a class=rvts5 href="WCMessagesWindow.html">消息窗口</a><span class=rvts2>中。</span></p>
+<p class=rvps5><span class=rvts3>学习平面（3 个点）</span></p>
+<p class=rvps5><span class=rvts2>这将启动一个序列器，将样品移动到大面积扫描几何形状定义的 3 个位置以进行倾斜校正。</span></p>
+<p class=rvps5><span class=rvts3>学习表面（5x5 个点）</span></p>
+<p class=rvps5><span class=rvts2>这将启动一个序列器，将样品移动到大面积扫描几何形状定义的 25 个位置以进行简单表面校正。</span></p>
+<p class=rvps5><span class=rvts3>下一步</span></p>
+<p class=rvps5><span class=rvts2>对当前点对焦后按此按钮可移至下一点或完成学习。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>大面积扫描中心位于 CCS 位置</span></p>
+<p class=rvps1><span class=rvts2>将大面积扫描几何形状中心设置为当前 X-Y 位置，并使用当前测量的 CCS 高程设置 Z 位置。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>提取上次扫描</span></p>
+<p class=rvps1><span class=rvts2>此按钮可将上次扫描的高程和强度数据提取到项目管理器。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>编辑表面扫描</span></p>
+<p class=rvps1><span class=rvts2>使用 CCS 学习表面后，此按钮可打开一个对话框来更改当前表面，例如掩蔽错误的高程值。为此，还会打开最后测量的高程和强度图像。</span></p>
+<p class=rvps1><img border="0" src="Images/image1289944116.jpg" width="389" height="233"></p>
+<p class=rvps5><span class=rvts3>中值滤波器尺寸</span></p>
+<p class=rvps5><span class=rvts2>定义应用于表面的中值滤波器的尺寸。</span></p>
+<p class=rvps5><span class=rvts3>最小 Z 高程/强度值</span></p>
+<p class=rvps5><span class=rvts2>允许的最小 Z 高程/强度值。更低的值将添加到掩模中。</span></p>
+<p class=rvps5><span class=rvts3>最大 Z 高程/强度值</span></p>
+<p class=rvps5><span class=rvts2>允许的最大 Z 高程/强度值。更高的值将添加到掩模中。</span></p>
+<p class=rvps5><span class=rvts3>自动设置</span></p>
+<p class=rvps5><span class=rvts2>如果设置，高程或强度图像中的掩模将在值更改时自动更新。</span></p>
+<p class=rvps5><span class=rvts3>设置掩模</span></p>
+<p class=rvps5><span class=rvts2>此按钮手动更新高程或强度图像中的掩模。</span></p>
+<p class=rvps5><span class=rvts3>提取预览</span></p>
+<p class=rvps5><span class=rvts2>此按钮将预览提取到项目管理器。</span></p>
+<p class=rvps5><span class=rvts3>计算预览</span></p>
+<p class=rvps5><span class=rvts2>此按钮使用当前选择的掩模和滤波器尺寸重新计算预览。</span></p>
+<p class=rvps5><span class=rvts3>覆盖表面</span></p>
+<p class=rvps6><span class=rvts2>按此按钮将用当前版本（应用了所选掩模和滤波器）覆盖表面。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>编辑表面点</span></p>
+<p class=rvps1><span class=rvts2>将打开一个对话框，查看在不同区域选择时（手动或通过 CCS 学习的）表面会是什么样子。</span></p>
+<p class=rvps1><img border="0" src="Images/image1959713523.jpg" width="334" height="227"></p>
+<p class=rvps5><span class=rvts3>最小/最大 X/Y [&#181;m]</span></p>
+<p class=rvps5><span class=rvts2>当前预览的边界。</span></p>
+<p class=rvps5><span class=rvts3>使用大面积扫描几何形状</span></p>
+<p class=rvps5><span class=rvts2>使用大面积扫描的边界。</span></p>
+<p class=rvps5><span class=rvts3>使用表面边界</span></p>
+<p class=rvps5><span class=rvts2>使用当前表面的边界。</span></p>
+<p class=rvps5><a class=rvts6 href="WCControlWindow.html#Listen">监听</a></p>
+<p class=rvps5><span class=rvts2>如果激活，可以通过在图像或视频窗口中单击来更改当前区域的中心位置。</span></p>
+<p class=rvps5><span class=rvts3>尺寸 X/Y</span></p>
+<p class=rvps5><span class=rvts2>通过更改 X 或 Y 方向的像素数量来更改预览图像的分辨率。</span></p>
+<p class=rvps5><span class=rvts3>计算预览</span></p>
+<p class=rvps5><span class=rvts2>此按钮将使用当前值更新预览。</span></p>
+<p class=rvps5><span class=rvts3>自动预览</span></p>
+<p class=rvps5><span class=rvts2>如果激活，预览将在任何更改时更新。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>清除表面</span></p>
+<p class=rvps1><span class=rvts2>将清除当前表面。</span></p>
+
+</div></body></html>

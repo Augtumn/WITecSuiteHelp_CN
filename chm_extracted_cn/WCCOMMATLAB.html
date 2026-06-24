@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>MATLAB</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="MATLAB (COM)">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{ font-size: 10pt; font-family: 'Arial'; font-style: normal; font-weight: normal; color: #000000; text-decoration: none; ; }
+span.rvts1 { font-family: 'Arial Unicode MS'; }
+span.rvts2 { font-family: 'Microsoft Sans Serif'; color: #000000; }
+a.rvts3, span.rvts3 { font-family: 'Microsoft Sans Serif'; color: #0000ff; text-decoration: none; }
+a.rvts3:hover { color: #0000ff; }
+span.rvts4 { font-family: 'Courier New'; color: #000000; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */ { text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; }
+.rvps1 { text-align: justify; margin: 0px 0px 5px 0px; }
+.rvps2 { text-align: justify; border-color: #000000; border-style: solid; border-width: 1px; padding: 5px 5px 5px 5px; margin: 0px 19px 10px 19px; }
+.rvps3 { text-align: justify; margin: 0px 0px 5px 24px; }
+.rvps4 { background: #c0c0c0; margin: 0px 12px 0px 12px; }
+.rvps5 { text-align: justify; margin: 0px 0px 10px 0px; }
+.rvps6 { background: #c0c0c0; margin: 0px 12px 0px 36px; }
+.rvps7 { background: #c0c0c0; margin: 0px 12px 0px 84px; }
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>MATLAB</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+<div></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps5><span class=rvts2>可以使用 MATLAB 与 WITec Control 的 COM 自动化配合，但存在几个问题。</span></p>
+<ol style="text-indent: 0px; margin-left: 24px; list-style-position: outside;">
+<li value=1 class=rvps1><span class=rvts2>MATLAB 需要 ProgID 才能连接到 COM 服务器。默认未设置。在注册表中添加以下条目：</span></li>
+</ol>
+<p class=rvps6><span class=rvts4>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Witec.COMAutomation]</span></p>
+<p class=rvps6><span class=rvts4>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Witec.COMAutomation\CLSID]</span></p>
+<p class=rvps6><span class=rvts4>@="{C45E77CE-3D66-489A-B5E2-159F443BD1AA}"</span></p>
+<p class=rvps6><span class=rvts4>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WOW6432Node\CLSID\{C45E77CE-3D66-489A-B5E2-159F443BD1AA}\ProgID]</span></p>
+<p class=rvps6><span class=rvts4>@="Witec.COMAutomation"</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<ol style="text-indent: 0px; margin-left: 24px; list-style-position: outside;">
+<li value=2 class=rvps1><span class=rvts2>COM 接口返回 IUnknown 接口，需要将其转换为适当的接口。这仅在 32 位版本的 MATLAB 中可行。最后一个可用的 32 位版本是 R2015b。在 64 位 MATLAB 中，示例代码的最后一行会抛出错误，因此无法使用子系统。（请参考</span><a class=rvts3 href="https://mathworks.com/help/matlab/ref/actxserver.html" target="_blank">actxserver</a><span class=rvts2>的帮助：64 位 MATLAB 不支持自定义接口。）</span></li>
+<li value=3 class=rvps1><span class=rvts2>连接时无法定义服务器类型。默认情况下，MATLAB 将作为进程内服务器连接，但需要作为进程外服务器连接。</span></li>
+</ol>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside;"><ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps3 style="margin-left: 0"><span class=rvts2>对于 32 位 MATLAB：删除以下注册表项，并在 MATLAB 连接后恢复它。</span></li>
+</ul></ul>
+<p class=rvps7><span class=rvts4>HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{C45E77CE-3D66-489A-B5E2-159F443BD1AA}\InprocServer32</span></p>
+<p class=rvps5><span class=rvts2><br></span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside;"><ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps5><span class=rvts2>对于 64 位 MATLAB：这不是问题，因为它无法将 32 位 DLL 加载为进程内服务器，而是将其作为进程外服务器使用。</span></li>
+</ul></ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts2>由于这些原因，不建议直接使用 MATLAB。一种解决方案是创建 C 包装器来实现对 MATLAB 的函数调用。</span></p>
+<p class=rvps5><span class=rvts2><br></span></p>
+<p class=rvps5><span class=rvts2>示例代码：</span></p>
+<p class=rvps4><span class=rvts4>witeccom = actxserver('Witec.COMAutomation')</span></p>
+<p class=rvps4><span class=rvts4>witeccom.RequestWriteAccess(true)</span></p>
+<p class=rvps4><span class=rvts4>witeccom.HasWriteAccess</span></p>
+<p class=rvps4><span class=rvts4>witeccore = invoke(witeccom, 'IBUCSCore')</span></p>
+<p class=rvps4><span class=rvts4>subsyslist = witeccore.GetSubSystemsList('',0)</span></p>
+<p class=rvps4><span class=rvts4>inttime = witeccore.GetSubSystemDefaultInterface('UserParameters|SequencerAsTimeGoesBy|IntegrationTime')</span></p>
+<p class=rvps4><span class=rvts4>inttimefloat = inttime.invoke('IBUCSFloat')</span><span class=rvts1></span></p>
+
+</div></body></html>

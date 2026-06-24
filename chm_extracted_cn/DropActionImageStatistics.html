@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>图像统计对话框</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="Image Statistics Dialog">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css"><style type="text/css"><!--
+#FHNonScroll{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}#MainSection {overflow: hidden; }
+#FHScroll{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+hr { color: #000000}body, table /* Normal */{font-size: 10pt; font-family: 'Arial'; font-style: normal; font-weight: normal; color: #000000; text-decoration: none;}
+span.rvts1{font-family: 'Arial Unicode MS';}span.rvts2{font-family: 'Microsoft Sans Serif'; color: #000000;}
+span.rvts3{font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #000000;}
+span.rvts4{font-size: 16pt; font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #ea7600;}
+a.rvts5, span.rvts5{font-family: 'Microsoft Sans Serif'; color: #0000ff; text-decoration: none;}a.rvts5:hover { color: #0000ff; }
+span.rvts6{font-size: 14pt; font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #151f6d;}
+a.rvts7, span.rvts7{font-family: 'Microsoft Sans Serif'; color: #000000; text-decoration: underline;}a.rvts7:hover { color: #ff0000; }
+p,ul,ol /* Left */{text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;}.rvps1{}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><table border=0 cellpadding=1 bordercolor="#000000" cellspacing=2>
+<tr valign=middle>
+<td width=50 valign=middle><font size=2 color="#000000" face="Arial"><div><img border="0" src="Images/image1050844589.jpg" width="48" height="48"></div></font></td>
+<td width=502 valign=middle><font size=2 color="#000000" face="Arial"><div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>图像统计对话框</b></font></div></font></td>
+</tr></table></div></font></TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts4>描述</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>图像统计对话框可用于通过显示直方图和多种统计参数来分析图像。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>另请参阅</span></p>
+<p class=rvps1><a class=rvts5 href="MathAverageSpectrum.html">平均光谱（数学）</a></p>
+<p class=rvps1><a class=rvts5 href="ImageStatisticsMath.html">图像统计（数学）</a></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>输入与结果</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>输入：</span></p>
+<p class=rvps1><span class=rvts2>任意数量的图像。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>结果：</span></p>
+<p class=rvps1><span class=rvts2>直方图或包含统计或粗糙度信息的文本对象。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<hr noshade size=1 style="color : #808080">
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>用户界面</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><a class=rvts5 href="#Histogram">直方图选项卡</a></li>
+<li class=rvps1><a class=rvts5 href="#StatisticsAndRoughness">统计与粗糙度选项卡</a></li>
+<li class=rvps1><a class=rvts5 href="#DrawField">绘制字段掩模选项卡</a></li>
+<li class=rvps1><a class=rvts5 href="#PreviewWindows">预览窗口</a></li>
+</ul>
+<p class=rvps1><a name="Histogram"><span class=rvts6>直方图选项卡</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image2022775607.jpg" width="371" height="323"></p>
+<p class=rvps1><span class=rvts3>分箱数（整数编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>设置直方图的分箱数或"垂直线"数。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>[CCD cts]（标签）：</span></p>
+<p class=rvps1><span class=rvts2>显示当前选定图像的值单位。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>分箱宽度（标签）：</span></p>
+<p class=rvps1><span class=rvts2>显示一个直方图线的分箱宽度。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>范围开始/停止（浮点编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>定义直方图的开始和停止范围。两个值在启动时自动计算；每个放置的图像有自己的范围。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>同步设置（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>仅在所有图像共享相同值单位类型时启用。如果勾选：所有放置图像的所有直方图在一个图谱预览中一起显示；所有直方图共享相同的范围和分箱数。如果未勾选，每个直方图有自己的分箱数和范围。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>同步绘制字段（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>仅在所有图像共享相同空间变换（同一测量）时启用。如果勾选，当前绘制字段用于所有放置的图像。否则每个图像有自己的绘制字段，定义哪些像素用于直方图和统计计算。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>使用默认范围（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>使用范围确定的默认设置重置当前直方图的开始和停止范围（见下文）。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><img border="0" src="Images/image738139806.jpg" width="25" height="25"><span class=rvts3> 默认范围设置（工具按钮）</span></p>
+<p class=rvps1><img border="0" src="Images/image1346849565.jpg" width="196" height="111"></p>
+<p class=rvps1><span class=rvts3>默认分箱数（整数编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>对话框打开时使用的分箱数。</span></p>
+<p class=rvps1><span class=rvts3>下水平（浮点编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>用于默认范围值确定的所有排序图像值的下水平。</span></p>
+<p class=rvps1><span class=rvts3>上水平（浮点编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>用于默认范围值确定的所有排序图像值的上水平。</span></p>
+<p class=rvps1><span class=rvts3>范围（浮点编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>使用下和上水平后用于扩展范围的范围。</span></p>
+<p class=rvps1><span class=rvts3>计算预览（按钮），自动预览（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>参见</span><a class=rvts5 href="AutomaticPreview.html">自动预览。</a></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>提取直方图（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>计算并提取所有图像的所有直方图。</span></p>
+<p class=rvps1><a name="StatisticsAndRoughness"><span class=rvts6>统计与粗糙度选项卡</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image824317605.jpg" width="371" height="323"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2></span><span class=rvts3>统计选项卡</span><span class=rvts2>显示多种图像统计值，如平均值或方差。这些值针对当前图像掩模中设置的所有像素计算（参见预览图像查看器）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>提取统计（按钮）</span></p>
+<p class=rvps1><span class=rvts2>创建包含所有统计参数的新文本对象。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2></span><span class=rvts3>粗糙度选项卡</span><span class=rvts2>非常相似。它不是标准统计参数，而是显示特殊的粗糙度参数（特别用于形貌图像）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>有关粗糙度参数的详细描述，请参见</span><a class=rvts5 href="ImageStatisticsMath.html">图像统计（数学）。</a></p>
+<p class=rvps1><a name="DrawField"><span class=rvts6>绘制字段掩模选项卡</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1753101543.jpg" width="371" height="323"></p>
+<p class=rvps1><span class=rvts3>监听直方图（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，您可以在预览图谱查看器的直方图中设置或清除（按住 Shift 键）一个区域，以设置或清除图像掩模中的相应像素。</span></p>
+<p class=rvps1><span class=rvts3>清除超出范围像素（按钮）</span></p>
+<p class=rvps1><span class=rvts2>此操作将清除图像掩模中所有值超出直方图当前范围的像素。</span></p>
+<p class=rvps1><span class=rvts3>清除所有图像掩模（复选框）</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，上述按钮会影响所有图像掩模（如果掩模不是已经同步）。</span></p>
+<p class=rvps1><span class=rvts3>提取绘制字段（按钮）</span></p>
+<p class=rvps1><span class=rvts2>将所有绘制字段作为新的布尔图像数据对象提取到当前项目。</span></p>
+<p class=rvps1><a name="PreviewWindows"><span class=rvts4>预览窗口</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image203712635.jpg" width="295" height="157"></p>
+<p class=rvps1><span class=rvts2>图谱预览窗口显示直方图。提示：您可以打开或关闭级联模式，以并排或级联方式查看直方图线。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image181376796.jpg" width="200" height="219"></p>
+<p class=rvps1><span class=rvts2>图像预览窗口显示当前选定的图像和定义哪些像素用于直方图和统计计算的掩模。</span></p>
+
+</div></body></html>

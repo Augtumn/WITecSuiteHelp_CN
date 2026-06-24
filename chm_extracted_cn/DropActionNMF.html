@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>Non Negative Matrix Factorization Dialog</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="Non Negative Matrix Factorization">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 16pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #ea7600;
+}
+a.rvts5, span.rvts5
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts5:hover { color: #0000ff; }
+span.rvts6
+{
+ font-size: 14pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+.rvps2
+{
+ margin: 0px 0px 0px 3px;
+}
+.rvps3
+{
+ margin: 0px 0px 0px 3px;
+}
+.rvps4
+{
+ margin: 0px 0px 0px 3px;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><table border=0 cellpadding=1 bordercolor="#000000" cellspacing=2>
+<tr valign=middle>
+<td width=50 valign=middle><font size=2 color="#000000" face="Arial">
+<div><img border="0" src="Images/image1893544672.jpg" width="48" height="48"></div>
+</font>
+</td>
+<td width=504 valign=middle><font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>非负矩阵分解对话框</b></font></div>
+</font>
+</td>
+</tr>
+</table>
+</div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps2><span class=rvts4>描述</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts2>非负矩阵分解是一种多元分析，同时创建强度分布图像及其所属光谱。它利用图像和光谱都必须具有正值才能成为有意义的結果这一事实。计算是一个迭代过程，包含三个部分：</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<ol style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li value=1 class=rvps1><span class=rvts2>分布图像的优化</span></li>
+<li value=2 class=rvps1><span class=rvts2>基础光谱的优化</span></li>
+<li value=3 class=rvps1><span class=rvts2>偏移的优化</span></li>
+</ol>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts2>第一次迭代从随机开始。此对话框是WITec Project Plus软件包的一部分。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts2>另请参见</span></p>
+<p class=rvps2><a class=rvts5 href="NonNegativeMatrixFactorizationMath.html">非负矩阵分解（数学）</a></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts4>输入和结果</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>输入：</span></p>
+<p class=rvps2><span class=rvts2>一个光谱拉曼图像数据集</span></p>
+<p class=rvps3><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>结果：</span></p>
+<p class=rvps2><span class=rvts2>每个组分的一个图像和一个光谱</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<hr noshade size=1 style="color : #808080">
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts4>用户界面</span></p>
+<p class=rvps2><span class=rvts4><br></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps2 style="margin-left: 0"><a class=rvts5 href="#BasisSpectraGroup">基础光谱组</a></li>
+<li class=rvps2 style="margin-left: 0"><a class=rvts5 href="#ParameterGroup">参数组</a></li>
+<li class=rvps2 style="margin-left: 0"><a class=rvts5 href="#CalculationGroup">计算组</a></li>
+<li class=rvps2 style="margin-left: 0"><a class=rvts5 href="#ErrorGroup">误差组</a></li>
+<li class=rvps2 style="margin-left: 0"><a class=rvts5 href="#MaskGroup">掩码组</a></li>
+<li class=rvps2 style="margin-left: 0"><a class=rvts5 href="#Buttons">按钮</a></li>
+</ul>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><img border="0" src="Images/image714092641.jpg" width="449" height="479"></p>
+<p class=rvps2><span class=rvts6><br></span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><a name="BasisSpectraGroup"><span class=rvts6>基础光谱组</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts2>在此组中可以定义描述数据集所需的基础光谱数量。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>添加（按钮）</span></p>
+<p class=rvps2><span class=rvts2>向描述模型添加一个新的基础光谱。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>删除（按钮）</span></p>
+<p class=rvps2><span class=rvts2>从模型中删除选中的基础光谱。</span></p>
+<p class=rvps2><span class=rvts2>最小基础光谱数量为2。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>列表框</span></p>
+<p class=rvps2><span class=rvts2>列表框显示所有基础光谱的名称。要在不同组分之间切换，请单击列表框中的一个条目。</span></p>
+<p class=rvps2><span class=rvts2>所属信息（名称、显示光谱和图谱颜色）将更改，此外图像预览窗口将显示分布图。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>基础名称（编辑框）</span></p>
+<p class=rvps2><span class=rvts2>所选组分的名称将显示在编辑框中。在提取数据之前，您可以更改组分的名称。该名称将用作数据对象的标题。</span></p>
+<p class=rvps2><span class=rvts3><br></span></p>
+<p class=rvps2><span class=rvts3>显示光谱（复选框）</span></p>
+<p class=rvps2><span class=rvts2>取消选中该复选框将把基础光谱从光谱预览中排除</span></p>
+<p class=rvps2><span class=rvts6><br></span></p>
+<p class=rvps2><span class=rvts3>颜色框</span></p>
+<p class=rvps2><span class=rvts2>在此您可以定义光谱的颜色。</span></p>
+<p class=rvps2><span class=rvts6><br></span></p>
+<p class=rvps2><a name="ParameterGroup"><span class=rvts6>参数组</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts2>此组中的参数将改变算法的行为。</span></p>
+<p class=rvps2><span class=rvts3><br></span></p>
+<p class=rvps2><span class=rvts3>基础偏移强度</span></p>
+<p class=rvps2><span class=rvts2>可能有许多仅具有正值的解。为了获得独特且有意义的結果，有必要将基础光谱推向数据。</span></p>
+<p class=rvps2><span class=rvts2>该值是在迭代开始之前添加到归一化基础光谱的区域。</span></p>
+<p class=rvps2><span class=rvts3><br></span></p>
+<p class=rvps2><span class=rvts3>偏移偏移强度</span></p>
+<p class=rvps2><span class=rvts2>可能有许多仅具有正值的解。为了获得独特且有意义的結果，有必要将基础光谱推向数据。</span></p>
+<p class=rvps2><span class=rvts2>该值是在迭代开始之前添加到偏移光谱的偏移量。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>图像缩减</span></p>
+<p class=rvps2><span class=rvts2>在高光谱数据集上应用算法非常耗时。除了图像掩码之外，还可以通过此因子减少用于计算的像素数量。</span></p>
+<p class=rvps2><span class=rvts2>从掩码中随机添加像素，直到所有分布至少具有其总强度的这一部分。</span></p>
+<p class=rvps2><span class=rvts2>每次迭代时，选中的像素将改变。如果所有基础光谱都已找到，请将此参数设置为接近1。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>光谱缩减</span></p>
+<p class=rvps2><span class=rvts2>在高光谱数据集上应用算法非常耗时。除了光谱掩码之外，还可以通过此因子减少用于计算的光谱像素数量。</span></p>
+<p class=rvps2><span class=rvts2>从光谱掩码中随机添加像素，直到所有基础光谱至少具有其总强度的这一部分。</span></p>
+<p class=rvps2><span class=rvts2>每次迭代时，选中的像素将改变。如果所有基础光谱都已找到，请将此参数设置为接近1。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>数据最小值</span></p>
+<p class=rvps2><span class=rvts2>对于计算，数据集的所有值必须为正。因此，在计算之前向数据添加一个偏移量。启动对话框后，搜索数据集的最小绝对值并复制到编辑框中。由于某些预处理，最小值可能太低（例如背景扣除步骤计算错误）。在这种情况下，请将此值略微调整到基线噪声以下。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>偏移策略</span></p>
+<p class=rvps2><span class=rvts2>可以选择两种不同的偏移计算策略。</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps4 style="margin-left: 0"><span class=rvts2>如果偏移是水平平线，请选择"常数"。</span></li>
+<li class=rvps4 style="margin-left: 0"><span class=rvts2>如果某个组分总是具有相同的强度（例如基底的拉曼光谱），请选择"可变"。</span></li>
+</ul>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3><br></span></p>
+<p class=rvps2><a name="CalculationGroup"><span class=rvts6>计算组</span></p>
+<p class=rvps2><span class=rvts3><br></span></p>
+<p class=rvps2><span class=rvts3>迭代次数</span></p>
+<p class=rvps2><span class=rvts2>定义将使用的迭代次数。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>无限计算</span></p>
+<p class=rvps2><span class=rvts2>如果启用此复选框，计算将持续运行直到用户按下停止按钮</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>停止（按钮）</span></p>
+<p class=rvps2><span class=rvts2>停止NMF计算。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>计算（按钮）</span></p>
+<p class=rvps2><span class=rvts2>启动NMF计算。计算期间预览窗口会定期更新。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><a name="ErrorGroup"><span class=rvts6>误差组</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts2>计算期间这些值会更新。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>总计</span></p>
+<p class=rvps2><span class=rvts2>拟合与数据集之间的平均误差。如果该值减小，则拟合变得更好。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>变化</span></p>
+<p class=rvps2><span class=rvts2>上次和当前平均误差之间的差值。如果此值为正，则拟合变得更好。如果此值在正值和负值之间波动，请增加图像缩减和光谱缩减的值。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>总迭代次数</span></p>
+<p class=rvps2><span class=rvts2>显示迭代次数。</span></p>
+<p class=rvps2><span class=rvts2>您可以简单地转动滚轮或编辑数字来定义用于相互扣除光谱的加权因子。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><a name="MaskGroup"><span class=rvts6>掩码组</span></p>
+<p class=rvps2><span class=rvts2>此组显示标准的</span><a class=rvts5 href="MaskManipulationTools.html">掩码操作工具</a><span class=rvts2>。</span></p>
+<p class=rvps2><span class=rvts3><br></span></p>
+<p class=rvps2><a name="Buttons"><span class=rvts6>按钮</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>提取（按钮）</span></p>
+<p class=rvps2><span class=rvts2>提取基础光谱和分布图像。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>当前作为起始条件（按钮）</span></p>
+<p class=rvps2><span class=rvts2>要找到基础光谱，只需要数据集中少量光谱。但这种情况只有所选像素的分布图是有效的。为了计算所有像素的分布图，请按下此按钮。之后可以扩展图像掩码并重新启动计算。分布图现在用作算法的起始条件。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>重置</span></p>
+<p class=rvps2><span class=rvts2>将所有基础光谱和分布图重置为随机。如果添加了新的基础光谱且计算之前已运行，从而更改了基础光谱和分布图，可以使用此功能。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts4>预览窗口</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts6>图谱NMF（绘制场）</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1066670169.jpg" width="280" height="310"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts2>图像数据显示光谱的总和。使用此图像预览窗口的绘制场来选择应用于计算的像素。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts6>图谱NMF（误差）</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1563647006.jpg" width="274" height="303"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>显示拟合与数据之间的平均误差。高值可能提示需要额外的基础光谱。</span></p>
+<p class=rvps1><span class=rvts2> </span></p>
+<p class=rvps2><span class=rvts6>图谱NMF（分布图）</span></p>
+<p class=rvps1><img border="0" src="Images/image467833201.jpg" width="273" height="302"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>显示当前选中的基础光谱的分布图。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts6>拟合预览和掩码</span></p>
+<p class=rvps2><span class=rvts6><br></span></p>
+<p class=rvps1><img border="0" src="Images/image2049654191.jpg" width="564" height="286"></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts2>拟合图谱预览窗口以红色显示原始光谱，以蓝色显示拟合预览，以绿色显示偏移。</span></p>
+<p class=rvps2><span class=rvts2>只需在预览图像中单击即可查看所选光谱。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts2>使用</span><a class=rvts5 href="GraphViewerMaskManipulation.html">掩码</a><span class=rvts2>定义哪些光谱区域应被NMF计算考虑。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts6>基础光谱</span></p>
+<p class=rvps1><span class=rvts6><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1869840586.jpg" width="556" height="282"></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts2>此图谱预览窗口显示归一化的基础光谱。</span></p>
+
+</div></body></html>

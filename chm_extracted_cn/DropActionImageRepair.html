@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>图像修复对话框</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="Image Repair Dialog">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */ { font-size: 10pt; font-family: 'Arial'; font-style: normal; font-weight: normal; color: #000000; text-decoration: none; }
+span.rvts1 { font-family: 'Arial Unicode MS'; }
+span.rvts2 { font-family: 'Microsoft Sans Serif'; color: #000000; }
+span.rvts3 { font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #000000; }
+span.rvts4 { font-size: 16pt; font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #ea7600; }
+a.rvts5, span.rvts5 { font-family: 'Microsoft Sans Serif'; color: #0000ff; text-decoration: none; }
+a.rvts5:hover { color: #0000ff; }
+span.rvts6 { font-size: 14pt; font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #151f6d; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */ { text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; }
+.rvps1 { }
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><table border=0 cellpadding=1 bordercolor="#000000" cellspacing=2>
+<tr valign=middle>
+<td width=50 valign=middle><font size=2 color="#000000" face="Arial">
+<div><img border="0" src="Images/image930686108.jpg" width="48" height="48"></div>
+</font>
+</td>
+<td width=502 valign=middle><font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>图像修复对话框</b></font></div>
+</font>
+</td>
+</tr>
+</table>
+</div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts4>描述</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>图像修复对话框可用于使用不同的替换算法替换图像中不需要的像素或区域。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>输入与结果</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>输入：</span></p>
+<p class=rvps1><span class=rvts2>任意数量的图像数据对象。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>结果：</span></p>
+<p class=rvps1><span class=rvts2>修复后的图像数据对象。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<hr noshade size=1 style="color : #808080">
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>用户界面</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><a class=rvts5 href="#LineInterpolation">线插值选项卡与通用 UI</a></li>
+<li class=rvps1><a class=rvts5 href="#SimpleFilling">简单填充选项卡</a></li>
+<li class=rvps1><a class=rvts5 href="#SimpleInterpolation">简单插值选项卡</a></li>
+<li class=rvps1><a class=rvts5 href="#TextureAnalysis">纹理分析选项卡</a></li>
+<li class=rvps1><a class=rvts5 href="#PreviewWindows">预览窗口</a></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="LineInterpolation"><span class=rvts6>线插值选项卡与通用 UI</span></p>
+<p class=rvps1><span class=rvts2>如果选择线插值选项卡，掩模预览窗口中掩模设置的区域将使用掩模区域上方和下方的线进行插值。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1547161946.jpg" width="402" height="229"></p>
+<p class=rvps1><span class=rvts3>"Fisher Pattern"（组合框）：</span></p>
+<p class=rvps1><span class=rvts2>如果放置了多个图像，您可以使用此组合框选择当前预览。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>计算预览（按钮），自动预览（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>参见</span><a class=rvts5 href="AutomaticPreview.html">自动预览。</a></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>提取（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>计算并将修复后的图像提取到当前项目。</span></p>
+<p class=rvps1><a name="SimpleFilling"><span class=rvts6>简单填充选项卡</span></p>
+<p class=rvps1><span class=rvts2>如果选择简单填充选项卡，掩模预览窗口中掩模设置的区域将使用给定值替换，并可添加一些随机噪声。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image112384928.jpg" width="330" height="77"></p>
+<p class=rvps1><span class=rvts3>替换值（复选框和浮点编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，掩模区域将使用替换值替换。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>噪声（复选框和浮点编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>如果勾选，替换值将带上给定噪声水平/强度的噪声。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>噪声选项（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>打开噪声选项窗口：</span></p>
+<p class=rvps1><img border="0" src="Images/image1234364781.jpg" width="241" height="96"></p>
+<p class=rvps1><span class=rvts3>噪声分布（单选按钮）：</span></p>
+<p class=rvps1><span class=rvts2>在此您可以选择噪声分布（盒形或高斯噪声）。</span></p>
+<p class=rvps1><span class=rvts3>噪声方向（单选按钮）：</span></p>
+<p class=rvps1><span class=rvts2>在此您可以选择噪声"方向"，即非对称地添加/减去或对称添加噪声。</span></p>
+<p class=rvps1><a name="SimpleInterpolation"><span class=rvts6>简单插值选项卡</span></p>
+<p class=rvps1><span class=rvts2>如果选择简单插值选项卡，掩模预览窗口中掩模设置的区域将使用简单的插值算法替换，该算法使用掩模区域的边界进行插值。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1057798341.jpg" width="230" height="44"></p>
+<p class=rvps1><span class=rvts3>迭代次数（整数编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>设置插值的迭代次数。迭代次数越多，图像强度的过渡越平滑。</span></p>
+<p class=rvps1><a name="TextureAnalysis"><span class=rvts6>纹理分析选项卡</span></p>
+<p class=rvps1><span class=rvts2>如果选择纹理分析选项卡，掩模预览窗口中掩模设置的区域将使用纹理分析算法替换，该算法使用同一图像中最适合待替换区域的区域。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1190051966.jpg" width="234" height="75"></p>
+<p class=rvps1><span class=rvts3>纹理窗口大小（整数编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>定义用于搜索合适替换纹理的纹理窗口大小。</span></p>
+<p class=rvps1><span class=rvts3>旋转次数（整数编辑框）：</span></p>
+<p class=rvps1><span class=rvts2>定义寻找更合适替换纹理的旋转次数。这两个参数对计算时间有很大影响。</span></p>
+<p class=rvps1><a name="PreviewWindows"><span class=rvts4>预览窗口</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1445654882.jpg" width="166" height="182"></p>
+<p class=rvps1><span class=rvts2>第一个预览图像查看器显示修复预览。</span></p>
+<p class=rvps1><img border="0" src="Images/image1688112548.jpg" width="166" height="182"></p>
+<p class=rvps1><span class=rvts2>第二个预览图像查看器显示原始图像和掩模，可以更改掩模以定义哪些像素应被替换或修复。</span></p>
+
+</div></body></html>

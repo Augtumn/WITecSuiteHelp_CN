@@ -1,0 +1,415 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>Advanced Fitting Tool Dialog</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="Advanced Fitting Tool Dialog">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 16pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #ea7600;
+}
+span.rvts5
+{
+ font-size: 14pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+a.rvts6, span.rvts6
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts6:hover { color: #0000ff; }
+span.rvts7
+{
+ font-size: 12pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+span.rvts8
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #008000;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+.rvps2
+{
+ margin: 0px 0px 0px 24px;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><table border=0 cellpadding=1 bordercolor="#000000" cellspacing=2>
+<tr valign=middle>
+<td width=50 valign=middle><font size=2 color="#000000" face="Arial">
+<div><img border="0" src="Images/image537629503.jpg" width="48" height="48"></div>
+</font>
+</td>
+<td width=502 valign=middle><font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>高级拟合工具对话框</b></font></div>
+</font>
+</td>
+</tr>
+</table>
+</div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts4>描述</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>使用高级拟合工具可以进行简单以及更高级的曲线拟合。该工具支持峰拟合以及其他曲线，如指数曲线、多项式曲线甚至用户自定义函数。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>输入和结果</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>输入：</span></p>
+<p class=rvps1><span class=rvts2>一个图谱对象（单个光谱或高光谱数据对象）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>结果：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>对于输入单个图谱对象：包含所有拟合参数的文本对象。</span></li>
+<li class=rvps1><span class=rvts2>对于输入线图谱对象：每个拟合参数的一个光谱。</span></li>
+<li class=rvps1><span class=rvts2>对于输入图像图谱对象：每个拟合参数的一个图像。</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>如何操作 ...？</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>保存我的拟合函数参数以供以后再次使用：</span></p>
+<ol style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li value=1 class=rvps1><span class=rvts2>在</span><a class=rvts6 href="#FitParameters">拟合参数选项卡</a><span class=rvts2>中更改您的函数参数。</span></li>
+<li value=2 class=rvps1><span class=rvts2>打开</span><a class=rvts6 href="#FitFunction">拟合函数选项卡</a><span class=rvts2>，然后按下拟合函数列表上方的"添加"。这会将当前选中的函数及其所有当前参数添加到"用户"类别中。</span></li>
+<li value=3 class=rvps1><span class=rvts2>在"用户"类别中选择新添加的函数。现在您可以按需更改其名称。</span></li>
+</ol>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>使用我自己的拟合函数公式：</span></p>
+<ol style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li value=1 class=rvps1><span class=rvts2>打开</span><a class=rvts6 href="#FitFunction">拟合函数选项卡</a><span class=rvts2>，并选择"通用"类别。选择拟合函数"用户自定义"。</span></li>
+<li value=2 class=rvps1><span class=rvts2>更改拟合参数的数量。</span></li>
+<li value=3 class=rvps1><span class=rvts2>您可以通过先设置参数编号（参数 #），然后更改其余参数，来定义每个拟合参数的名称和单位。</span></li>
+</ol>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<hr noshade size=1 style="color : #808080">
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>用户界面</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><a class=rvts6 href="#FitFunction">拟合函数选项卡</a></li>
+<li class=rvps1><a class=rvts6 href="#FitMask">拟合掩码选项卡</a></li>
+<li class=rvps1><a class=rvts6 href="#FitParameters">拟合参数选项卡</a></li>
+<li class=rvps1><a class=rvts6 href="#PreviewOptions">预览选项选项卡</a></li>
+<li class=rvps1><a class=rvts6 href="#ExtractOptions">提取选项选项卡</a></li>
+<li class=rvps1><a class=rvts6 href="#PreviewWindow">预览窗口</a></li>
+<li class=rvps1><a class=rvts6 href="#FitFunctionOptions">拟合函数选项</a></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="FitFunction"><span class=rvts5>拟合函数选项卡</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image802835394.jpg" width="634" height="364"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>类别（列表框）：</span></p>
+<p class=rvps1><span class=rvts2>在此选择一个拟合函数类别。选择另一个类别时，"函数"列表将更新。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>函数（列表框）：</span></p>
+<p class=rvps1><span class=rvts2>在此选择一个拟合函数。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>添加（工具按钮）：</span></p>
+<p class=rvps1><span class=rvts2>将当前选中的函数及其所有当前设置和参数添加为用户拟合函数。将创建一个额外的"用户"类别，其中可以找到添加的函数。</span></p>
+<p class=rvps1><span class=rvts2>用户添加的所有函数将在关闭对话框时自动保存（"每用户"设置）。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>删除（工具按钮）：</span></p>
+<p class=rvps1><span class=rvts2>从用户函数列表中移除用户自定义函数。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>打开（工具按钮）：</span></p>
+<p class=rvps1><span class=rvts2>打开一个WITec用户拟合函数文件，并替换当前的用户拟合函数。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>追加（工具按钮）：</span></p>
+<p class=rvps1><span class=rvts2>打开一个WITec用户拟合函数文件，并将加载的拟合函数添加到当前用户定义的拟合函数中。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>保存（工具按钮）：</span></p>
+<p class=rvps1><span class=rvts2>将当前用户拟合函数列表保存到一个文件中。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>选项（参数列表）：</span></p>
+<p class=rvps1><span class=rvts2>一些标准拟合算法参数可以在此更改（如容差和迭代次数）。每个拟合函数也可能有自己的参数，如某些参数的提取类型或曲线数量（例如多峰拟合）。</span></p>
+<p class=rvps1><span class=rvts2>请参见</span><a class=rvts6 href="#FitFunctionOptions">拟合函数选项</a><span class=rvts2>。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>描述（图形框）：</span></p>
+<p class=rvps1><span class=rvts2>显示拟合公式及其所有参数。您可以通过单击并移动或使用滚动条来移动图形。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>拟合并提取全部（按钮，拖放区）：</span></p>
+<p class=rvps1><span class=rvts2>为当前高光谱数据集中的所有光谱启动拟合计算。您也可以从项目管理器中拖放（多个）数据对象到此按钮以进行批处理。这是一个WITec Project Plus功能。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>拟合并提取当前（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>为当前选中的光谱启动拟合计算并提取结果。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>提取和下一步（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>向导功能：您可以选择是否希望将此对话框的结果图像用于</span><a class=rvts6 href="DropActionImageStatistics.html">图像统计</a><span class=rvts2>对话框或进行一些</span><a class=rvts6 href="DropActionImageFilter.html">图像平滑</a><span class=rvts2>：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image621281256.jpg" width="247" height="122"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="FitMask"><span class=rvts5>拟合掩码选项卡</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image567898307.jpg" width="634" height="364"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>您可以更改拟合掩码以定义哪些像素应被拟合算法考虑。</span></p>
+<p class=rvps1><span class=rvts2>这些编辑是可选的，您也可以直接在预览图谱查看器中更改掩码。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>高级模式</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>如果打开高级模式，可以访问所有拟合参数和预览/提取选项。</span></p>
+<p class=rvps1><span class=rvts2>如果您进行多峰拟合或用户自定义拟合函数以定义所有拟合参数的起始值，则需要此模式。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="FitParameters"><span class=rvts5>拟合参数选项卡</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1906786180.jpg" width="634" height="364"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts7>模式</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>定义起始值（单选按钮）：</span></p>
+<p class=rvps1><span class=rvts2>选择此模式以定义拟合的起始值。这将在预览图谱查看器中以蓝色预览曲线显示使用起始值的拟合函数，以便于找到良好的起始值。</span></p>
+<p class=rvps1><span class=rvts2>如果您希望在不进行自动拟合的情况下更改任何参数或限制，也请选择此模式："起始值"列（或"值"列）中的值将被保留。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>更改时拟合（单选按钮）：</span></p>
+<p class=rvps1><span class=rvts2>如果任何参数或限制被更改，甚至通过单击图像等其他位置选择另一个光谱时，自动计算拟合，请选择此模式。</span></p>
+<p class=rvps1><span class=rvts2>这是默认模式。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>拟合一次（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>单击此按钮以执行一次拟合算法。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts7>当前拟合结果</span></p>
+<p class=rvps1><span class=rvts2>指示上次拟合是否成功，并显示典型的拟合结果信息。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts7>参数</span></p>
+<p class=rvps1><span class=rvts2>显示所有拟合函数参数。请注意，所有</span><span class=rvts8>绿色</span><span class=rvts2>编辑框可以双击以启用监听在查看器窗口中执行的鼠标操作。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>重置参数（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>将所有参数、值、起始值、限制和所有复选框重置为其默认值。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>名称（标签列）：</span></p>
+<p class=rvps1><span class=rvts2>显示每个函数参数的名称。用鼠标拖过标签以获取更详细的信息。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>自动（复选框列）：</span></p>
+<p class=rvps1><span class=rvts2>如果选中，函数参数的起始值将在进行拟合时自动计算。</span></p>
+<p class=rvps1><span class=rvts2>如果使用多峰函数或用户自定义函数，则此功能不可用。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>起始值（浮点编辑列）：</span></p>
+<p class=rvps1><span class=rvts2>显示所有参数的起始值。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>预览（起始值列单选按钮）：</span></p>
+<p class=rvps1><span class=rvts2>如果选中此单选按钮，预览图谱查看器中的蓝色图谱将显示使用起始值列参数（自动估计或用户定义）的当前拟合函数。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>值（浮点编辑列）：</span></p>
+<p class=rvps1><span class=rvts2>显示当前拟合结果的所有参数。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>预览（值列单选按钮）：</span></p>
+<p class=rvps1><span class=rvts2>如果选中此单选按钮，预览图谱查看器中的蓝色图谱将显示使用值列参数（通常是当前拟合结果）的当前拟合函数。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>变化（复选框列）：</span></p>
+<p class=rvps1><span class=rvts2>如果选中，该参数（值列）用于拟合，因此会由拟合过程更改——如果您希望参数保持静态（例如已知的峰位置），则不要变化该参数。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>下限（复选框和浮点编辑列）：</span></p>
+<p class=rvps1><span class=rvts2>允许为每个参数定义下限。仅当复选框被选中时，该限制才会生效。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>上限（复选框和浮点编辑列）</span></p>
+<p class=rvps1><span class=rvts2>允许为每个参数定义上限。仅当复选框被选中时，该限制才会生效。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="PreviewOptions"><span class=rvts5>预览选项选项卡</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1236547071.jpg" width="634" height="364"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts7>预览拟合曲线范围</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>点数（整数编辑）：</span></p>
+<p class=rvps1><span class=rvts2>设置拟合预览曲线的支撑点数（通常应为输入图谱光谱像素数的两倍左右）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>开始/停止值（浮点编辑）：</span></p>
+<p class=rvps1><span class=rvts2>设置应显示为预览拟合曲线的范围。</span></p>
+<p class=rvps1><span class=rvts2>使用此功能，您可以隐藏"不需要"的区域（例如，如果多项式等曲线具有极值）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>监听（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>可以监听来自图谱查看器的范围（使用标记区域鼠标模式）以设置范围。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>重置范围（按钮）：</span></p>
+<p class=rvps1><span class=rvts2>将范围重置为完整的输入光谱范围。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts7>附加选项</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>启动时显示所有副本（复选框）</span></p>
+<p class=rvps1><span class=rvts2>如果选中，多峰曲线的副本将在预览图谱窗口中显示为绿色图谱。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts7>显示副本（复选框列表）</span></p>
+<p class=rvps1><span class=rvts2>您可以切换预览图谱窗口中多峰拟合函数的每个单个副本曲线的可见性。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="ExtractOptions"><span class=rvts5>提取选项选项卡</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1597278797.jpg" width="634" height="364"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts7>额外提取选项</span></p>
+<p class=rvps1><span class=rvts2></span>
+<br><span class=rvts3>提取带输入数据支撑点的拟合曲线（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果选中，提取的拟合曲线使用与输入数据对象相同的精确支撑点和相同的X变换。这使得提取的拟合曲线可以与其他拖放操作对话框中的光谱对象一起使用（例如</span><a class=rvts6 href="DropActionCalculator.html">计算器</a><span class=rvts2>）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>提取副本（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果选中，执行提取操作时每个副本拟合曲线将分别提取。</span></p>
+<p class=rvps1><span class=rvts2></span>
+<br><span class=rvts3>参数精度（整数编辑）：</span></p>
+<p class=rvps1><span class=rvts2>定义使用"拟合并提取当前"按钮时文本对象中浮点数的精度。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts7>拟合并提取全部选项</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>提取Chi^2（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果选中，Chi^2（描述拟合误差）将与拟合结果一起提取。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>提取拟合失败掩码（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果选中，拟合失败掩码将与拟合结果一起提取。所有未能拟合（由于拟合错误）的像素在此掩码中设置为1。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>提取拟合曲线（复选框）：</span></p>
+<p class=rvps1><span class=rvts2>如果选中，拟合曲线将与拟合结果一起提取。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>值（复选框列）：</span></p>
+<p class=rvps1><span class=rvts2>您可以选择应提取其拟合结果的函数参数作为结果数据对象。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>误差（复选框列）：</span></p>
+<p class=rvps1><span class=rvts2>您可以选择应提取其拟合误差的函数参数作为结果数据对象。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>拟合失败时的值（浮点编辑列）：</span></p>
+<p class=rvps1><span class=rvts2>输入一个值，如果拟合失败，该值将用作参数的拟合结果。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="PreviewWindow"><span class=rvts4>预览窗口</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1395583199.jpg" width="377" height="178"></p>
+<p class=rvps1><span class=rvts2>图谱预览窗口以红色图谱显示原始图谱，以蓝色曲线显示拟合预览。</span></p>
+<p class=rvps1><span class=rvts2>在高级模式下，可以显示起始值列作为预览曲线。在这种情况下，蓝色曲线显示使用起始值的拟合函数。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><a name="FitFunctionOptions"><span class=rvts4>拟合函数选项</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts7>峰拟合选项</span></p>
+<p class=rvps1><span class=rvts7><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1068859383.jpg" width="310" height="155"></p>
+<p class=rvps1><span class=rvts3>容差：</span></p>
+<p class=rvps1><span class=rvts2>如果达到此误差阈值，拟合算法停止。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>最大迭代次数：</span></p>
+<p class=rvps1><span class=rvts2>如果达到此编辑框中指定的拟合迭代次数，拟合算法也会停止——即使尚未达到容差误差。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>函数数量：</span></p>
+<p class=rvps1><span class=rvts2>一些峰拟合函数（高斯、洛伦兹）允许多峰拟合；可以在此更改函数数量。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>提取峰宽类型：</span></p>
+<p class=rvps1><span class=rvts2>一些峰函数允许不同的峰宽类型（如"标准偏差"或"FWHM"）。只有提取的结果包含这些宽度类型。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>提取峰强度类型：</span></p>
+<p class=rvps1><span class=rvts2>一些峰函数允许不同的峰强度类型"面积"和"幅度"。只有提取的结果包含这些强度类型。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>提取排序类型：</span></p>
+<p class=rvps1><span class=rvts2>高斯拟合函数允许在使用多峰拟合时对提取结果进行排序，例如按峰中心/位置排序。这意味着第一个结果具有最低的峰位置，第二个结果具有第二低的峰位置，依此类推。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts7>用户自定义拟合函数的选项</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image100402585.jpg" width="283" height="239"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>参数数量：</span></p>
+<p class=rvps1><span class=rvts2>定义拟合函数的变量数量。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>公式：</span></p>
+<p class=rvps1><span class=rvts2>在此输入您的拟合公式（请参见</span><a class=rvts6 href="FormulaEditor.html">公式编辑器</a><span class=rvts2>）：</span></p>
+<p class=rvps2><img border="0" src="Images/image1949663151.jpg" width="343" height="95"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>例如，x2 + x3 * x1 是一条简单的线，其中 x2 是偏移量（参数编号2），x3 是斜率（参数编号3）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>参数编号：</span></p>
+<p class=rvps1><span class=rvts2>输入参数索引/编号以为该参数定义短名称、长名称、单位和监听类型。</span></p>
+<p class=rvps1><span class=rvts2>例如，参数编号2是第一个参数，在公式中命名为x2。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>短名称：</span></p>
+<p class=rvps1><span class=rvts2>参数的短名称。应仅包含几个字符。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>长名称</span></p>
+<p class=rvps1><span class=rvts2>参数的详细名称。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>单位：</span></p>
+<p class=rvps1><span class=rvts2>参数单位。您可以使用以下变量：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2> 表示输入图谱的X轴单位。</span></li>
+<li class=rvps1><span class=rvts2> 表示输入图谱的Y轴单位。</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>监听类型：</span></p>
+<p class=rvps1><span class=rvts2>此参数的监听类型。例如，如果参数表示峰位置，可以使用监听类型"X轴"来使用</span><a class=rvts6 href="ListenCursorMechanism.html">监听机制</a><span class=rvts2>在</span><a class=rvts6 href="#FitParameters">拟合参数选项卡</a><span class=rvts2>中找到良好的起始值。</span></p>
+<p class=rvps1><span class=rvts2>以下监听类型可用：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>X轴（监听绝对X轴位置）。</span></li>
+<li class=rvps1><span class=rvts2>Y轴（监听绝对Y轴位置）。</span></li>
+<li class=rvps1><span class=rvts2>X差（监听在X轴上单击并移动光标位置的差值）。</span></li>
+<li class=rvps1><span class=rvts2>Y差（监听在Y轴上单击并移动光标位置的差值）。</span></li>
+<li class=rvps1><span class=rvts2>X差绝对值（与X差相同但始终为正）。</span></li>
+<li class=rvps1><span class=rvts2>Y差绝对值（与Y差相同但始终为正）。</span></li>
+<li class=rvps1><span class=rvts2>面积（监听从单击并移动光标位置在X轴上计算的面积）。</span></li>
+</ul>
+
+</div></body></html>

@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>颗粒属性</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="Particle Parameter">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll {padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll {left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+hr { color: #000000}
+body, table { font-size: 10pt; font-family: 'Arial'; font-style: normal; font-weight: normal; color: #000000; text-decoration: none; }
+span.rvts1 { font-family: 'Arial Unicode MS'; }
+span.rvts2 { font-family: 'Microsoft Sans Serif'; color: #000000; }
+span.rvts3 { font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #000000; }
+span.rvts4 { font-size: 14pt; font-family: 'Microsoft Sans Serif'; font-weight: bold; color: #151f6d; }
+p,ul,ol { text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; }
+.rvps1 { }
+.rvps2 { line-height: 1.15; margin: 0px 0px 13px 0px; }
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>颗粒属性</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+<p class=rvps1><span class=rvts2>为从图像计算描述性颗粒属性，执行以下步骤：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>将图像转换为掩膜</span></li>
+<li class=rvps1><span class=rvts2>创建颗粒列表（所有相连的掩膜像素属于一个颗粒）</span></li>
+<li class=rvps1><span class=rvts2>为每个颗粒计算轮廓线</span></li>
+<li class=rvps1><span class=rvts2>使用像素位置和轮廓线计算描述性颗粒属性</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image1507554667.jpg" width="586" height="159"></p>
+<p><span class=rvts2><br></span></p>
+<div class=rvps2><table border=1 cellpadding=1 cellspacing=-1 style="border-width: 0px; border-collapse: collapse;">
+<tr valign=top>
+<td width=407 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts4>颗粒像素定义</span></p>
+<p class=rvps2><img border="0" src="Images/image1339293985.jpg" width="253" height="54"></p>
+<p class=rvps2><img border="0" src="Images/image2127544746.jpg" width="276" height="71"></p>
+</td>
+<td width=311 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=407 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps2><span class=rvts4>颗粒轮廓定义</span></p>
+<p class=rvps2><img border="0" src="Images/image1313033708.jpg" width="323" height="54"></p>
+<p class=rvps2><img border="0" src="Images/image2109196209.jpg" width="384" height="71"></p>
+</td>
+<td width=311 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=407 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps2><span class=rvts4>长度和宽度</span></p>
+<p class=rvps1><span class=rvts2>为计算颗粒的长度和宽度，将具有最小面积的外接矩形拟合到颗粒轮廓。较长的一侧定义为长度。</span></p>
+<p class=rvps2><img border="0" src="Images/image1471459076.jpg" width="409" height="62"></p>
+</td>
+<td width=311 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><img border="0" src="Images/image53112149.jpg" width="306" height="307"></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=407 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts4>纵横比</span></p>
+<p class=rvps2><img border="0" src="Images/image139997583.jpg" width="190" height="49"></p>
+<p class=rvps2><span class=rvts2>纵横比范围在0到1之间。正方形外接矩形的纵横比为1。</span></p>
+</td>
+<td width=311 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=407 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts4>像素数量</span></p>
+<p class=rvps2><img border="0" src="Images/image1232067813.jpg" width="67" height="25"></p>
+<p class=rvps2><img border="0" src="Images/image101302590.jpg" width="262" height="25"></p>
+</td>
+<td width=311 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=407 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts4>面积</span></p>
+<p class=rvps2><img border="0" src="Images/image2098771856.jpg" width="87" height="25"></p>
+<p class=rvps2><img border="0" src="Images/image1722820261.jpg" width="152" height="41"></p>
+</td>
+<td width=311 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><img border="0" src="Images/image1983337955.jpg" width="306" height="307"></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=407 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts4>凸包面积</span></p>
+<p class=rvps2><img border="0" src="Images/image2106315422.jpg" width="134" height="25"></p>
+</td>
+<td width=311 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><img border="0" src="Images/image1200557524.jpg" width="306" height="307"></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=407 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts4>周长</span></p>
+<p class=rvps2><img border="0" src="Images/image1531548864.jpg" width="155" height="69"></p>
+<p class=rvps2><img border="0" src="Images/image1146089877.jpg" width="125" height="25"></p>
+</td>
+<td width=311 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><img border="0" src="Images/image1691144516.jpg" width="306" height="307"></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=407 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts4>凸包周长</span></p>
+<p class=rvps2><img border="0" src="Images/image1395950330.jpg" width="198" height="69"></p>
+<p class=rvps2><img border="0" src="Images/image1217221500.jpg" width="234" height="25"></p>
+</td>
+<td width=311 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><img border="0" src="Images/image1441745102.jpg" width="306" height="307"></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=407 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts4>最大费雷特直径</span></p>
+<p class=rvps1><span class=rvts2>最大费雷特直径是颗粒在一对卡钳之间旋转时可测量的最大距离。至少一个卡钳必须接触周长的线段。</span></p>
+</td>
+<td width=311 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><img border="0" src="Images/image1889909102.jpg" width="306" height="307"></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=407 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts4>最小费雷特直径</span></p>
+<p class=rvps1><span class=rvts2>最小费雷特直径是颗粒在一对卡钳之间旋转时可测量的最小距离。至少一个卡钳必须接触周长的线段。</span></p>
+</td>
+<td width=311 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><img border="0" src="Images/image402987393.jpg" width="307" height="307"></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=407 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts4>等效圆直径</span></p>
+<p class=rvps2><img border="0" src="Images/image2088107253.jpg" width="90" height="69"></p>
+<p class=rvps2><img border="0" src="Images/image595879054.jpg" width="307" height="25"></p>
+</td>
+<td width=311 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><img border="0" src="Images/image972577366.jpg" width="306" height="307"></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=407 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts4>圆形度</span></p>
+<p class=rvps2><img border="0" src="Images/image94492916.jpg" width="201" height="50"></p>
+<p class=rvps2><img border="0" src="Images/image66203684.jpg" width="312" height="46"></p>
+<p class=rvps2><span class=rvts2>圆形度范围在0到1之间。如果参数为1，颗粒形状为圆形。</span></p>
+</td>
+<td width=311 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><img border="0" src="Images/image140910453.jpg" width="306" height="307"></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=407 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts4>凸度</span></p>
+<p class=rvps2><img border="0" src="Images/image383773999.jpg" width="164" height="45"></p>
+<p class=rvps2><span class=rvts2>凸度范围在0到1之间。如果参数为1，颗粒形状为凸形。</span></p>
+</td>
+<td width=311 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=407 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts4>坚实度</span></p>
+<p class=rvps2><img border="0" src="Images/image1606647899.jpg" width="150" height="49"></p>
+<p class=rvps2><span class=rvts2>坚实度范围在0到1之间。如果参数为1，颗粒形状为凸形。</span></p>
+</td>
+<td width=311 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts2><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=407 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><span class=rvts4>球体等效体积</span></p>
+<p class=rvps2><img border="0" src="Images/image1246068599.jpg" width="102" height="50"></p>
+<p class=rvps2><img border="0" src="Images/image666611809.jpg" width="297" height="25"></p>
+</td>
+<td width=311 height=20 style="border-width : 1px; border-color: #808080; border-style: solid; border-right: none; border-left: none;">
+<p class=rvps1><img border="0" src="Images/image12119002.jpg" width="306" height="307"></p>
+</td>
+</tr>
+</table></div>
+<p class=rvps2><span class=rvts2></span></p>
+</div></body></html>

@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>Principal Component Analysis</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="Principal Component Analysis">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 16pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #ea7600;
+}
+a.rvts5, span.rvts5
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts5:hover { color: #0000ff; }
+span.rvts6
+{
+ font-size: 14pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><table border=0 cellpadding=1 bordercolor="#000000" cellspacing=2>
+<tr valign=middle>
+<td width=50 valign=middle><font size=2 color="#000000" face="Arial">
+<div><img border="0" src="Images/image1439939024.jpg" usemap="#map45" width="48" height="48"><map name="map45"><area shape="RECT" coords="1,0,45,46," HREF="PrincipalComponentAnalysis.html"></map></div>
+</font>
+</td>
+<td width=510 valign=middle><font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>主成分分析对话框</b></font></div>
+</font>
+</td>
+</tr>
+</table>
+</div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts4>描述</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>主成分分析对话框进行主成分计算并允许提取其结果。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>另请参见</span></p>
+<p class=rvps1><a class=rvts5 href="PrincipalComponentAnalysisMath.html">主成分分析（数学）</a></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>输入和结果</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>输入：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>一个光谱拉曼图像数据集</span>
+<br><span class=rvts2>或</span></li>
+<li class=rvps1><span class=rvts2>一个光谱线图谱数据集（例如沿线的光谱）</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>结果：</span></p>
+<p class=rvps1><span class=rvts2>请参见下方的"提取数据"。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<hr noshade size=1 style="color : #808080">
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>用户界面</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>光谱选择</span></p>
+<p class=rvps1><img border="0" src="Images/image1183104380.jpg" width="389" height="148"></p>
+<p class=rvps1><span class=rvts2>在此您可以选择</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>哪些光谱范围应参与PCA，请参见</span><a class=rvts5 href="MaskManipulationTools.html">掩码操作工具</a></li>
+<li class=rvps1><span class=rvts2>哪些光谱应参与主成分计算：</span>
+<br><span class=rvts2>如果选中"使用绘制场"，则使用预览图像查看器上的当前掩码来选择光谱。</span>
+<br><span class=rvts2>如果您单击"随机化绘制场"，则会随机选择所需数量的像素。</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>计算PCA</span></p>
+<p class=rvps1><img border="0" src="Images/image1030716543.jpg" width="389" height="75"></p>
+<p class=rvps1><span class=rvts2>启动PCA计算。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>主成分选择</span></p>
+<p class=rvps1><img border="0" src="Images/image1714333725.jpg" width="389" height="169"></p>
+<p class=rvps1><span class=rvts2>在此您可以使用"特征值"预览的图谱掩码添加或移除主成分，请参见</span><a class=rvts5 href="MaskManipulationTools.html">掩码操作工具。</a></p>
+<p class=rvps1><span class=rvts2>选中的主成分用于计算重建光谱预览。</span></p>
+<p class=rvps1><span class=rvts2>提取数据时仅使用选中的主成分。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>显示重建图像</span></p>
+<p class=rvps1><span class=rvts2>如果选中，将在预览中显示重建图像。</span></p>
+<p class=rvps1><span class=rvts2>值"当前PC"定义哪个组件将被重建</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>添加到掩码 / 从掩码删除</span></p>
+<p class=rvps1><span class=rvts2>添加或移除"当前PC"值的主成分。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>提取数据</span></p>
+<p class=rvps1><span class=rvts2>在此您可以选择按下"提取选定数据"按钮时应导出哪些结果。</span></p>
+<p class=rvps1><span class=rvts6><br></span></p>
+<p class=rvps1><img border="0" src="Images/image628853249.jpg" width="389" height="171"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>PCA结果</span></p>
+<p class=rvps1><span class=rvts2>向项目添加三个图谱对象：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>特征值</span></li>
+<li class=rvps1><span class=rvts2>对应的特征向量</span></li>
+<li class=rvps1><span class=rvts2>平均光谱（偏移光谱）</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>通过单击特征值图谱，可以在特征向量中导航。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>PC图谱</span></p>
+<p class=rvps1><span class=rvts2>每个选中/标记的主成分的特征向量被提取为单个图谱对象。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>变换光谱</span></p>
+<p class=rvps1><span class=rvts2>选中的特征向量定义了一个新的坐标系。每个原始光谱可以在新坐标系中表示。对于每个选中的特征向量，计算一个新的坐标。</span></p>
+<p class=rvps1><span class=rvts2>这些变换后的坐标存储在一个图谱对象中。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>重建光谱</span></p>
+<p class=rvps1><span class=rvts2>也可以对变换后的光谱进行反变换。输出等于重建预览窗口中的蓝色光谱。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>预览窗口</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><img border="0" src="Images/image2024940552.jpg" width="502" height="255"></p>
+<p class=rvps1><span class=rvts3>重建预览</span></p>
+<p class=rvps1><span class=rvts2>以红色显示原始数据，以蓝色显示重建预览光谱。</span></p>
+<p class=rvps1><span class=rvts2>重建光谱使用主成分选择（特征值预览中的掩码）计算。</span></p>
+<p class=rvps1><span class=rvts2>您可以操作掩码以定义哪些光谱范围应参与主成分计算。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><img border="0" src="Images/image805235555.jpg" width="502" height="255"></p>
+<p class=rvps1><span class=rvts3>特征值</span></p>
+<p class=rvps1><span class=rvts2>显示排序后的特征值。</span></p>
+<p class=rvps1><span class=rvts2>您可以操作掩码以定义哪些主成分应用于重建预览和提取数据。</span></p>
+
+</div></body></html>

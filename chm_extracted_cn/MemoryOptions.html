@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>内存选项</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="内存选项">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+a.rvts4, span.rvts4
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts4:hover { color: #0000ff; }
+span.rvts5
+{
+ font-size: 16pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #ea7600;
+}
+span.rvts6
+{
+ font-size: 14pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+.rvps2
+{
+ text-align: justify;
+ margin: 0px 0px 10px 0px;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>内存选项</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><img border="0" src="Images/image1362526698.jpg" width="466" height="191"></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts5>内存策略</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>内存策略影响软件运行和处理数据时数据对象在内存中的保存方式。</span></p>
+<p class=rvps1><span class=rvts2>策略之间的主要区别在于软件可以处理的数据量以及加载/保存/计算的性能。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>请查看</span><a class=rvts4 href="DataObjectMemoryConsumption.html">数据对象内存消耗</a><span class=rvts2>文章，了解测量数据的大小。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2>这些选项对计算机上的</span><span class=rvts3>所有用户</span><span class=rvts2>共享。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>内存策略"程序堆"</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>这是标准"内存策略"；如果没有内存问题，应使用此策略。</span></p>
+<p class=rvps1><span class=rvts2>软件使用最多4 GB快速物理内存用于数据对象（实际最大 < 4 GB）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts2>在以下情况下使用此内存策略：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>您使用小型图谱数据对象（< 500 MB）</span></li>
+<li class=rvps1><span class=rvts2>您没有快速固态硬盘（SSD）</span></li>
+<li class=rvps1><span class=rvts2>您使用的是32位操作系统</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>内存策略"内存映射文件"</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>此策略使软件能够处理大于4 GB的项目数据。</span></p>
+<p class=rvps1><span class=rvts2>为此，软件在快速硬盘上使用一个大文件来存储数据对象。该文件由操作系统使用快速物理内存自动缓存。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>在以下情况下使用此内存策略：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>您使用的是64位操作系统</span></li>
+<li class=rvps1><span class=rvts2>已安装的物理内存量大于您的项目大小（例如 > 8 GB）</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>在使用此内存策略之前，请注意以下事项：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>出于性能原因，"文件位置"应位于快速固态硬盘（SSD）上。</span></li>
+<li class=rvps1><span class=rvts2>文件大小应根据SSD大小和项目大小需求进行调整。</span></li>
+<li class=rvps1><span class=rvts2>每个软件实例将创建一个指定大小的内存映射文件！</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>文件位置：</span></p>
+<p class=rvps1><span class=rvts2>内存映射文件的位置；应位于快速固态硬盘上（例如，如果SSD的驱动器号是E，则为"E:\"）。</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>文件大小：</span></p>
+<p class=rvps1><span class=rvts2>内存映射文件的大小，即WITec Project/Control的每个实例在SSD上所需的空间量。</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>映射大小：</span></p>
+<p class=rvps1><span class=rvts2>用于在内存映射文件和应用程序之间映射数据的物理内存量。</span></p>
+<p class=rvps1><span class=rvts2>我们推荐值为32 MB。</span></p>
+
+</div></body></html>

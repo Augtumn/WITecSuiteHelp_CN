@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>光刻命令</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="Lithography Commands">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 14pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+span.rvts5
+{
+ font-size: 12pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+span.rvts6
+{
+ font-size: 11pt;
+ font-family: 'Cambria';
+ font-style: italic;
+ color: #000000;
+}
+span.rvts7
+{
+ font-family: 'Courier New';
+ color: #000000;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+.rvps2
+{
+ text-align: justify;
+ margin: 0px 0px 10px 0px;
+}
+.rvps3
+{
+ text-align: justify;
+ border-color: #000000;
+ border-style: solid;
+ border-width: 1px;
+ padding: 5px 5px 5px 5px;
+ margin: 0px 19px 10px 19px;
+}
+.rvps4
+{
+ margin: 0px 0px 14px 0px;
+}
+.rvps5
+{
+ text-align: justify;
+ margin: 0px 0px 10px 48px;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>光刻命令</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps2><span class=rvts2>软件安装时附带了多个示例脚本。强烈建议查看这些脚本，以了解以下命令如何组合使用。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps4><span class=rvts4>概述</span></p>
+<p class=rvps4><span class=rvts5>语法</span></p>
+<p class=rvps2><span class=rvts2>每个命令必须有括号并以分号结尾。</span></p>
+<p class=rvps2><span class=rvts2>示例： &nbsp; &nbsp; &nbsp; &nbsp;</span><span class=rvts7>TestCommand ();</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps4><span class=rvts5>长短命令名称</span></p>
+<p class=rvps2><span class=rvts2>所有命令都有长名称和短名称。命令 MovingSpeed(10) 等同于 MS(10)。在以下描述中，短名称显示在长名称后面的方括号中。</span></p>
+<p class=rvps2><span class=rvts2>命令不区分大小写。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps4><span class=rvts5>注释</span></p>
+<p class=rvps2><span class=rvts2>对于注释单行，可以在行首使用 "//"。对于完整块，可以使用 "/*" 和 "*/" 符号标记文本块的开始和结束。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps4><span class=rvts5>包含</span></p>
+<p class=rvps2><span class=rvts2>使用 #include 指令可以将子脚本添加到脚本中。这有助于在其他脚本中重用部分内容。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps4><span class=rvts4>命令</span></p>
+<p class=rvps2><span class=rvts3>MovingSpeed [ms] (v)</span></p>
+<p class=rvps2><span class=rvts2>设置后续移动的速度。速度值 v 必须以 [µm/s] 为单位设置。速度必须在 0.1 到 1000 的范围内。</span></p>
+<p class=rvps2><span class=rvts2>示例： &nbsp; &nbsp; &nbsp; &nbsp;</span><span class=rvts7>MovingSpeed (20);</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>Sleep [sl] (t) </span></p>
+<p class=rvps2><span class=rvts2>光刻脚本的处理暂停 t 毫秒。参数可以省略，此时睡眠持续时间为 100ms。</span></p>
+<p class=rvps2><span class=rvts2>示例： &nbsp; &nbsp; &nbsp; &nbsp;</span><span class=rvts7>Sleep (500);</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>MoveZMicroscope [mz] (z)</span></p>
+<p class=rvps2><span class=rvts2>步进电机的驱动方式是使物镜与样品之间的距离增加 z 值。距离必须以 [µm] 为单位设置。如果物镜与样品之间的距离会超出软件范围，脚本将不会启动。</span></p>
+<p class=rvps2><span class=rvts2>示例： &nbsp; &nbsp; &nbsp; &nbsp;</span><span class=rvts7>MoveZMicroscope (-10);</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>SetTrigger [st] (T1, T2, T3)</span></p>
+<p class=rvps2><span class=rvts2>使用此命令可以设置、重置和切换最多三个独立的触发信号。T1、T2 和 T3 可以是：DontChange、Off、On 或 Invert。触发信号的输出连接器可以使用信号路由设备进行设置。T1 定义的触发信号默认输出到 Trig 2 Out。三个参数均可省略。</span></p>
+<p class=rvps2><span class=rvts2>示例： &nbsp; &nbsp; &nbsp; &nbsp;</span><span class=rvts7>SetTrigger (On);</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>DisplayMessage [dm] (MessageText)</span></p>
+<p class=rvps2><span class=rvts2>在消息窗口中显示 MessageText 中指定的消息。</span></p>
+<p class=rvps2><span class=rvts2>示例： &nbsp; &nbsp; &nbsp; &nbsp;</span><span class=rvts7>DisplayMessage ("I'm drawing now");</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>Setpoint [sp] (S)</span></p>
+<p class=rvps2><span class=rvts2>将 PI 控制器子系统的设点值设置为 S [V]。如果系统中不包含 PI 控制器，则此命令不可用。</span></p>
+<p class=rvps2><span class=rvts2>示例： &nbsp; &nbsp; &nbsp; &nbsp;</span><span class=rvts7>Setpoint (0.5);</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>Snapshot [snap] (FileBaseName, C) </span></p>
+<p class=rvps2><span class=rvts2>使用摄像机拍摄快照并将图像存储为位图文件。文件名命名为 FileBaseName-xxxx.bmp，其中 xxxx 是计数器值，从 0000 开始，表示当前脚本中已存储了多少个文件。要指定彩色还是黑白图像，将参数 C 设置为 1 表示彩色，0 表示单色。</span></p>
+<p class=rvps2><span class=rvts2>示例： &nbsp; &nbsp; &nbsp; &nbsp;</span><span class=rvts7>Snapshot("ImageName", 0);</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>SetLaserShutter [sls] (State)</span></p>
+<p class=rvps2><span class=rvts2>使用此命令可以打开或关闭当前使用的激光的快门。激光必须是配备激光快门的 True Power Laser。状态可以是 "Open" 或 "Close"。</span></p>
+<p class=rvps2><span class=rvts2>示例： &nbsp; &nbsp; &nbsp; &nbsp;</span><span class=rvts7>SetLaserShutter (Open);</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps4><span class=rvts4>与压电扫描台相关的命令</span></p>
+<p class=rvps2><span class=rvts2>这些命令仅在显微镜配备压电扫描台时可用。</span></p>
+<p class=rvps2><span class=rvts3>PushTransformation [pusht] ()</span></p>
+<p class=rvps2><span class=rvts2>您指定的每个坐标 P(x,y,z)（用于压电台）在发送到扫描台之前都会经过所谓的变换矩阵 M 进行变换。</span></p>
+<p class=rvps5><span class=rvts6>T = M * P</span></p>
+<p class=rvps2><span class=rvts2>要"保存"当前变换矩阵的副本，请使用 PushTransformation() 命令。变换依次存储在栈中，因此您可以存储多个变换，并以相反顺序将它们弹出。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>PopTransformation [popt] ()</span></p>
+<p class=rvps2><span class=rvts2>从栈中弹出最后一次"推入"的变换。调用 PopTransformation() 的次数多于 PushTransformation() 被调用的次数会导致错误。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>Rotate [rot] (Alpha, Beta, Gamma)</span></p>
+<p class=rvps2><span class=rvts2>当前变换矩阵乘以由三个角度 Alpha、Beta 和 Gamma 生成的旋转矩阵。Alpha 绕 X 轴旋转坐标，Beta 绕 Y 轴旋转坐标，Gamma 绕 Z 轴旋转坐标。所有参数均可省略。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>Scale [sc] (Sx , Sy , Sz)</span></p>
+<p class=rvps2><span class=rvts2>当前变换矩阵乘以由三个缩放因子 Sx、Sy 和 Sz 生成的缩放矩阵。所有参数均可省略。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>SetOrigin [so] (Ox , Oy , Oz)</span></p>
+<p class=rvps2><span class=rvts2>当前变换矩阵乘以由三个原点坐标 Ox、Oy 和 Oz 生成的平移矩阵。所有参数均可省略，此时扫描台的当前位置用作当前变换中的 (0,0,0) 位置。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>MoveRelative [mr] (Dx , Dy , Dz)</span></p>
+<p class=rvps2><span class=rvts2>将扫描台移动到新位置</span></p>
+<p class=rvps5><span class=rvts6>T = T + M * D</span></p>
+<p class=rvps2><span class=rvts2>如果新位置超出扫描范围，脚本将不会启动。所有参数均可省略。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>MoveAbsolute [ma] (Px, Py, Pz)</span></p>
+<p class=rvps2><span class=rvts2>将扫描台移动到新位置</span></p>
+<p class=rvps5><span class=rvts6>T = M * P</span></p>
+<p class=rvps2><span class=rvts2>如果新位置超出扫描范围，脚本将不会启动。所有参数均可省略。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>JumpRelative [jr] (Dx, Dy, Dz)</span></p>
+<p class=rvps2><span class=rvts2>与 MoveRelative 相同，但新位置以（标称）速度 1000 µm/s 驱动。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>JumpAbsolute [ja] (Px , Py, Pz)</span></p>
+<p class=rvps2><span class=rvts2>与 MoveAbsolute 相同，但新位置以（标称）速度 1000 µm/s 驱动。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>WaitForStablePosition [wpos] ()</span></p>
+<p class=rvps2><span class=rvts2>在扫描台位置未稳定期间暂停光刻脚本的处理。如果在 2000 次查询后位置仍未稳定，脚本将无论如何继续执行。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps4><span class=rvts4>与步进电机驱动的样品定位器相关的命令</span></p>
+<p class=rvps1><span class=rvts2>这些命令仅在以下情况下可用：</span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>显微镜配备步进电机驱动的样品定位器</span></li>
+<li class=rvps1><span class=rvts2>alphaControl 为 Marvin 3a 代（序列号 120-1200-XXX）（固件 1.016）或更新版本</span></li>
+</ul>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>SetOriginSamplePos [so_sp] ()</span></p>
+<p class=rvps2><span class=rvts2>样品定位器的当前位置被视为样品定位坐标系的原点 (0/0)。样品定位器的绝对定位命令相对于此原点解释。</span></p>
+<p class=rvps3><span class=rvts2>此命令在脚本启动时自动执行一次。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>MoveRelativeSamplePos [mr_sp] (Dx, Dy)</span></p>
+<p class=rvps2><span class=rvts2>相对于当前位置移动样品定位器。所有参数均可省略。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>MoveAbsoluteSamplePos [ma_sp] (Px , Py)</span></p>
+<p class=rvps2><span class=rvts2>将样品定位器移动到绝对位置（相对于最后设置的原点）。所有参数均可省略。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>JumpRelativeSamplePos [jr_sp] (Dx , Dy)</span></p>
+<p class=rvps2><span class=rvts2>与 MoveRelativeSamplePos 相同，但新位置以尽可能快的速度驱动。X 轴和 Y 轴可能在不同时间到达最终位置。</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts3>JumpAbsoluteSamplePos [ja_sp] (Px, Py)</span></p>
+<p class=rvps2><span class=rvts2>与 MoveAbsoluteSamplePos 相同，但新位置以尽可能快的速度驱动。X 轴和 Y 轴可能在不同时间到达最终位置。</span></p>
+
+</div></body></html>

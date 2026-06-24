@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>使用图谱强度校正</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="强度校正">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+a.rvts3, span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #0000ff;
+ text-decoration: none;
+}
+a.rvts3:hover { color: #0000ff; }
+span.rvts4
+{
+ font-size: 12pt;
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #151f6d;
+}
+span.rvts5
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #000000;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+.rvps2
+{
+ margin: 0px 0px 0px 24px;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>使用图谱强度校正</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+<div></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts2>要执行正确的强度校正，需要完成以下步骤。</span></p>
+<p class=rvps1><span class=rvts5></span>
+<br><span class=rvts5>注意：</span><span class=rvts2>&nbsp;</span><span class=rvts5>所有测量必须使用相同的激光、相同的光谱位置和相同的 CCD 相机设置！</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>准备工作</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>测量一系列</span><span class=rvts5>参考光谱</span><span class=rvts2>（约 500 到 2000 个，时间序列），例如荧光光谱</span>
+<br><span class=rvts2>荧光光谱上必须</span><span class=rvts5>没有拉曼信号</span><span class=rvts2>！</span>
+<br><span class=rvts2><br></span></li>
+<li class=rvps1><span class=rvts2>只有在可以从参考光谱中扣除</span><span class=rvts5>背景</span><span class=rvts2>的情况下，校正才有效。</span>
+<br><span class=rvts2>如果无法使用参考光谱本身（从没有任何信号的区域，例如瑞利附近）确定背景，或者如果背景来自CCD的强变化，您必须测量一系列</span><span class=rvts5>暗光谱</span><span class=rvts2>（约 500 到 2000 个，时间序列）。这些暗光谱的平均值可用于扣除背景。</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>测量与校正</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<ol style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li value=1 class=rvps1><span class=rvts2>在与参考光谱相同的条件下执行您的拉曼测量。</span>
+<br><span class=rvts2><br></span></li>
+<li value=2 class=rvps1><span class=rvts2>如有必要，从您的拉曼测量中</span><a class=rvts3 href="DropActionGraphFilterDialog.html">去除宇宙射线</a><span class=rvts2>。</span>
+<br><span class=rvts2>不要执行任何背景扣除。只有在您发现测量过程中偏移漂移时，才使用0阶多项式/水平线扣除。</span>
+<br><span class=rvts5><br></span></li>
+<li value=3 class=rvps1><span class=rvts2>将您的拉曼测量拖放到</span><a class=rvts3 href="DropActionGraphIntensityCorrection.html">图谱强度校正对话框</a><span class=rvts2>拖放操作上</span>
+<br><span class=rvts2><br></span></li>
+<li value=4 class=rvps1><span class=rvts2>将您的参考系列拖放到"拖放参考"按钮上</span>
+<br><span class=rvts2><br></span></li>
+<li value=5 class=rvps1><span class=rvts2>从参考中扣除背景：</span></li>
+</ol>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;"><ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps2 style="margin-left: 0"><span class=rvts2>在参考预览图谱查看器中设置蓝色掩模到没有任何信号的区域</span>
+<br><span class=rvts2>然后在参考偏移组框中按下"获取掩模平均值"。</span>
+<br><span class=rvts2>或</span></li>
+<li class=rvps2 style="margin-left: 0"><span class=rvts2>将</span><span class=rvts5>暗光谱</span><span class=rvts2>系列拖放到参考偏移组框中的"拖放光谱"按钮上。</span>
+<br><span class=rvts2><br></span></li>
+</ul></ul>
+<ol style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li value=6 class=rvps1><span class=rvts2>从您的拉曼测量中扣除背景：</span></li>
+</ol>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;"><ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps2 style="margin-left: 0"><span class=rvts2>在结果预览图谱查看器中设置蓝色掩模到没有任何信号的区域，然后在测量偏移组框中按下"获取掩模平均值"。</span>
+<br><span class=rvts2>或</span></li>
+<li class=rvps2 style="margin-left: 0"><span class=rvts2>将</span><span class=rvts5>暗光谱</span><span class=rvts2>系列拖放到测量偏移组框中的"拖放光谱"按钮上。</span>
+<br><span class=rvts2><br></span></li>
+</ul></ul>
+<ol style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li value=7 class=rvps1><span class=rvts2>如果您的荧光光谱存在没有任何信号的区域，请从绿色掩模中将其移除</span>
+<br><span class=rvts2><br></span></li>
+<li value=8 class=rvps1><span class=rvts2>按下提取。</span></li>
+</ol>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>结果看起来如何？</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>在下面的图谱查看器中，您可以看到强度校正的结果。</span></p>
+<p class=rvps1><span class=rvts2>您不会在单个含噪光谱中看到差异，但在高强度光谱或平均光谱中可以看到差异。</span></p>
+<p class=rvps1><span class=rvts2>两条光谱均显示了一个包含荧光偏移的平均拉曼光谱，该偏移已使用</span><a class=rvts3 href="DropActionGraphBackgroundSubtraction.html">形状背景扣除</a><span class=rvts2>进行扣除。</span></p>
+<p class=rvps1><span class=rvts2>红色显示未进行强度校正的结果，蓝色显示经校正后的结果：</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p><img border="0" src="Images/image1750185116.jpg" width="752" height="383"><span class=rvts2></span></p>
+
+</div></body></html>

@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>C#</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="C#">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{ font-size: 10pt; font-family: 'Arial'; font-style: normal; font-weight: normal; color: #000000; text-decoration: none; ; }
+span.rvts1 { font-family: 'Arial Unicode MS'; }
+span.rvts2 { font-family: 'Microsoft Sans Serif'; color: #000000; }
+span.rvts3 { font-family: 'Courier New'; color: #000000; }
+span.rvts4 { font-size: 11pt; font-family: 'Calibri'; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */ { text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; }
+.rvps1 { text-align: justify; margin: 0px 0px 10px 0px; }
+.rvps2 { text-align: justify; border-color: #000000; border-style: solid; border-width: 1px; padding: 5px 5px 5px 5px; margin: 0px 19px 10px 19px; }
+.rvps3 { }
+.rvps4 { background: #c0c0c0; margin: 0px 12px 0px 12px; }
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>C#</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+<div></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts2>一个示例 Visual Studio 解决方案可以在以下位置找到</span></p>
+<p class=rvps2><span class=rvts2>C:\Program Data\WITec\WITec Suite 6.X\Common Files\WITec.SDK</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>使用 SDK 的示例代码：</span></p>
+<p class=rvps4><span class=rvts3>using (WITecSDK witecSDK = new WITecSDK())</span></p>
+<p class=rvps4><span class=rvts3>{</span></p>
+<p class=rvps4><span class=rvts3>    witecSDK.ConnectWithWriteAccess();</span></p>
+<p class=rvps4><span class=rvts3>    using (VideoImageAcquisition videoImageAcquisition = witecSDK.CreateVideoImageAcquisition())</span></p>
+<p class=rvps4><span class=rvts3>    {</span></p>
+<p class=rvps4><span class=rvts3>        Bitmap videoImage = videoImageAcquisition.AcquireVideoImage().GetAwaiter().GetResult();</span></p>
+<p class=rvps4><span class=rvts3>    }</span></p>
+<p class=rvps4><span class=rvts3>}</span></p>
+<p class=rvps3><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts2>不使用 SDK 的示例代码：</span></p>
+<p class=rvps4><span class=rvts3>// 前提条件：添加对 "BasicUniversalCOMServerLib" 的引用（引用 -> 添加 -> COM -> BasicUniversalCOMServerLib）</span></p>
+<p class=rvps4><span class=rvts3>static void Main(string[] args)</span></p>
+<p class=rvps4><span class=rvts3>{</span></p>
+<p class=rvps4><span class=rvts3>    // 连接到 WITec Control</span></p>
+<p class=rvps4><span class=rvts3>    string serverName = Environment.MachineName;</span></p>
+<p class=rvps4><span class=rvts3>    Guid bucsCoreGuid = new Guid("C45E77CE-3D66-489A-B5E2-159F443BD1AA");</span></p>
+<p class=rvps4><span class=rvts3>    Type bucsCoreType = Type.GetTypeFromCLSID(bucsCoreGuid, serverName, true);</span></p>
+<p class=rvps4><span class=rvts3>    IBUCSCore wcCoreInterface = Activator.CreateInstance(bucsCoreType) as IBUCSCore;</span></p>
+<p class=rvps4><span class=rvts3>    // 获取参数修改器</span></p>
+<p class=rvps4><span class=rvts3>    IBUCSFloat parameterModifier = wcCoreInterface.GetSubSystemDefaultInterface("UserParameters|SequencerAsTimeGoesBy|IntegrationTime");</span></p>
+<p class=rvps4><span class=rvts3>    // 读取浮点参数的值</span></p>
+<p class=rvps4><span class=rvts3>    float value = parameterModifier.GetValue();</span></p>
+<p class=rvps4><span class=rvts3>    Console.WriteLine("参数浮点值: " + value);</span></p>
+<p class=rvps4><span class=rvts3>    // 请求写访问</span></p>
+<p class=rvps4><span class=rvts3>    // 前提条件：WITec Control 必须允许远程写访问（控制窗口，参数：COM 自动化 -> 允许远程访问）</span></p>
+<p class=rvps4><span class=rvts3>    ((IBUCSAccess)wcCoreInterface).RequestWriteAccess(true);</span></p>
+<p class=rvps4><span class=rvts3>    // 写入浮点参数的值</span></p>
+<p class=rvps4><span class=rvts3>    parameterModifier.SetValue(0.42f);</span></p>
+<p class=rvps4><span class=rvts3>    // 获取所有可用子系统的列表</span></p>
+<p class=rvps4><span class=rvts3>    CBUCSSubSystemsList subSystemNameList = wcCoreInterface.GetSubSystemsList(null, 0);</span></p>
+<p class=rvps4><span class=rvts3>    for (int i = 0; i &lt; subSystemNameList.GetNumberOfSystems(); i++)</span></p>
+<p class=rvps4><span class=rvts3>    {</span></p>
+<p class=rvps4><span class=rvts3>        Console.WriteLine("子系统名称: " + subSystemNameList.GetSubSystemName(i));</span></p>
+<p class=rvps4><span class=rvts3>        var subSystemName = subSystemNameList.GetSubSystemName(i);</span></p>
+<p class=rvps4><span class=rvts3>        var subSystemParameterList = wcCoreInterface.GetSubSystemsList(subSystemName, 10);</span></p>
+<p class=rvps4><span class=rvts3>        for (int j = 0; j &lt; subSystemParameterList.GetNumberOfSystems(); j++)</span></p>
+<p class=rvps4><span class=rvts3>        {</span></p>
+<p class=rvps4><span class=rvts3>            Console.WriteLine("参数名称: " + subSystemParameterList.GetSubSystemName(j));</span></p>
+<p class=rvps4><span class=rvts3>        }</span></p>
+<p class=rvps4><span class=rvts3>    }</span></p>
+<p class=rvps4><span class=rvts3>}</span><span class=rvts1></span></p>
+
+</div></body></html>

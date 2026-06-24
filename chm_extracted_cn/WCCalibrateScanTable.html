@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>校准扫描台</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #000000;
+}
+span.rvts3
+{
+ font-family: 'Microsoft Sans Serif';
+ color: #808080;
+}
+span.rvts4
+{
+ font-family: 'Microsoft Sans Serif';
+ font-weight: bold;
+ color: #808080;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: justify;
+ border-color: #000000;
+ border-style: solid;
+ border-width: 1px;
+ padding: 5px 5px 5px 5px;
+ margin: 0px 19px 10px 19px;
+}
+.rvps2
+{
+ text-align: justify;
+ margin: 0px 0px 5px 0px;
+}
+.rvps3
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>校准扫描台</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+<div></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps3><span class=rvts2>此序列器在每次启动 WITec Control 时执行，但通常对用户不可见。</span></p>
+<p class=rvps2><span class=rvts2>只有高级用户才应更改此处的设置。</span></p>
+<p class=rvps2><span class=rvts2>执行时，扫描台每轴将驱动到两个不同位置，测量电容传感器的输出。使用这些值，为每轴计算导线误差和偏移误差。这些值随后用于在校准使用期间校正扫描台的静态定位。一个名为校准信息的文本数据对象被添加到项目树中以供参考。</span></p>
+<p class=rvps1><span class=rvts2>如果扫描台校准失败，也应检查此文件。如果 alphaControl 上扫描台的偏移电位器未设置到其最小位置，可能会发生这种情况。</span></p>
+<p class=rvps2><span class=rvts2>以下参数可用于设置校准例程：</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps2><span class=rvts4>开始校准 </span></p>
+<p class=rvps2><span class=rvts3>此触发按钮启动校准序列器。</span></p>
+<p class=rvps2><span class=rvts3><br></span></p>
+<p class=rvps2><span class=rvts4>校准 X 轴（校准 Y 轴，校准 Z 轴）</span></p>
+<p class=rvps2><span class=rvts3>此参数决定 X（Y, Z）轴是否进行校准（是）或不校准（否）。</span></p>
+<p class=rvps2><span class=rvts3><br></span></p>
+<p class=rvps2><span class=rvts4>X 轴位置 1/2（Y 轴位置 1/2 Z 轴位置 1/2）[µm]</span></p>
+<p class=rvps2><span class=rvts3>使用这些参数可以输入用于校准 X（Y, Z）轴的两个目标位置。输入超出范围的值将使软件自动输入可能的最大/最小值。</span></p>
+<p class=rvps2><span class=rvts3><br></span></p>
+<p class=rvps2><span class=rvts4>相对于当前位置校准</span></p>
+<p class=rvps2><span class=rvts3>如果选择此选项（是），扫描台将不会移动到例如 XAxisPos1 中输入的位置，而是移动到（[当前 X 轴位置] + XAxisPos1）。类似地，它将移动到（[当前 X 轴位置] + XAxisPos2）而不是 XAxisPos2。</span></p>
+
+</div></body></html>

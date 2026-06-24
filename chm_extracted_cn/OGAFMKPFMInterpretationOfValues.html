@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>数值解读</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #525D68; vertical-align: top;z-index: 2; visibility: visible; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-family: 'Microsoft Sans Serif';
+}
+span.rvts3
+{
+ font-size: 9pt;
+ font-family: 'Microsoft Sans Serif';
+ color: #151f6d;
+}
+span.rvts4
+{
+ font-size: 7pt;
+ font-family: 'Microsoft Sans Serif';
+ vertical-align: sub;
+}
+span.rvts5
+{
+ font-size: 8pt;
+ font-family: 'Microsoft Sans Serif';
+}
+span.rvts6
+{
+ font-size: 11pt;
+ font-family: 'Times New Roman';
+}
+span.rvts7
+{
+ font-size: 11pt;
+ font-family: 'Cambria';
+ font-style: italic;
+ color: #000000;
+}
+span.rvts8
+{
+ font-size: 7pt;
+ font-family: 'Cambria';
+ font-style: italic;
+ vertical-align: sub;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: center;
+ margin: 15px 0px 15px 0px;
+}
+.rvps2
+{
+ text-align: center;
+}
+.rvps3
+{
+}
+.rvps4
+{
+ line-height: 1.25;
+}
+.rvps5
+{
+ text-align: justify;
+ line-height: 1.25;
+}
+.rvps6
+{
+ text-align: justify;
+ line-height: 1.25;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#ea7600" face="Microsoft Sans Serif"><b>数值解读</b></font></div>
+<div><font color="#000000" face="Microsoft Sans Serif"><br></font></div>
+<div></div>
+</font>
+</TD></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps5><span class=rvts2>KPFM 测量期间测量的 V</span><span class=rvts4>DC</span><span class=rvts2> 值不能等同于 V</span><span class=rvts4>CPD</span><span class=rvts2>，因为它们受到偏移影响（由于相移</span><span class=rvts5>）</span><span class=rvts2>并且是反相的。同样重要的是要注意，这些值始终是加权平均值，探针和样品的所有表面元素都会对其产生影响。测量的主要目的是观察具有不同功函数的材料或区域之间的对比度。要进行定量测量，需要一个能够在超高真空下工作的系统。</span></p>
+<p class=rvps2><img border="0" src="Images/image72677372.jpg" width="642" height="322"></p>
+<p class=rvps1><span class=rvts3>图 1：Bruker 参考样品上 5 种不同悬臂梁的典型结果，显示了 Al 到 Si 再到 Au 边缘的截面</span></p>
+<p class=rvps4><span class=rvts2>要获得更有用的值，可以使用以下公式，通过对参考样品使用所用悬臂梁来确定 </span><span class=rvts7>V</span><span class=rvts8>offset</span><span class=rvts4>。</span></p>
+<p class=rvps3><span class=rvts2> &nbsp; &nbsp; &nbsp; &nbsp;</span><img border="0" src="Images/image5280345.jpg" width="198" height="33"></p>
+<p class=rvps6><span class=rvts2>然而，如果要计算功函数的值，在测量样品之前需要对参考样品进行校准。每次更换悬臂梁时都必须这样做。功函数的值需要从文献中获得参考材料的数据。为了进行线性校准，至少需要两种不同的材料。要根据测量的 </span><span class=rvts7>V</span><span class=rvts8>DC</span><span class=rvts2> 计算功函数值，需要以下公式：</span></p>
+<p class=rvps3><span class=rvts2> &nbsp; &nbsp; &nbsp; &nbsp;</span><img border="0" src="Images/image814662657.jpg" width="191" height="52"></p>
+<p class=rvps5><span class=rvts2>s 和 </span><span class=rvts7>V</span><span class=rvts8>offset</span><span class=rvts2> 的值是根据参考值和在该材料上测量的值计算得出的：</span></p>
+<p class=rvps3><span class=rvts2> &nbsp; &nbsp; &nbsp; &nbsp;</span><img border="0" src="Images/image1254264010.jpg" width="185" height="72"></p>
+<p class=rvps3><span class=rvts2> &nbsp; &nbsp; &nbsp; &nbsp;</span><img border="0" src="Images/image570947886.jpg" width="322" height="77"></p>
+<p class=rvps3><span class=rvts2> &nbsp; &nbsp; &nbsp; &nbsp;</span><img border="0" src="Images/image1191296963.jpg" width="233" height="53"></p>
+<p class=rvps5><span class=rvts2>使用计算器拖放操作，可以为 KPFM 图像或截面的每个点计算功函数值（图 2）。</span></p>
+<p class=rvps5><span class=rvts6><br></span></p>
+<p class=rvps2><img border="0" src="Images/image1226909890.jpg" width="643" height="321"></p>
+<p class=rvps1><a name=RichViewCheckpoint0></a>
+<span class=rvts3>图 2：使用 EFM 悬臂梁校正后 Al 到 Si 再到 Au 边缘的截面</span></p>
+<p class=rvps2><img border="0" src="Images/image1598822276.jpg" width="643" height="142"></p>
+<p class=rvps1><span class=rvts3>图 3：使用 EFM 悬臂梁校正后 Al 到 Si 再到 Au 边缘的 KPFM 图像</span></p>
+<p class=rvps5><span class=rvts2>测量值强烈依赖于方法的分辨率。如前所述，KPFM-AM 的分辨率是有限的。这意味着小斑点的测量值始终会与周围材料进行平均。此外，悬臂梁在测量过程中会发生变化，这也将影响校准。为了获得更可靠的结果，应使用另一个悬臂梁重复测量。</span><span class=rvts1></span></p>
+
+</div></body></html>
